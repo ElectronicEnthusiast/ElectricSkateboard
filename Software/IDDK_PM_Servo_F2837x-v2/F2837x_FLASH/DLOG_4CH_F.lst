@@ -1,0 +1,967 @@
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE    1
+
+       1              ;***************************************************************
+       2              ;* TMS320C2000 C/C++ Codegen                   PC v15.12.1.LTS *
+       3              ;* Date/Time created: Sun Feb 26 22:57:19 2017                 *
+       4              ;***************************************************************
+       5                      .compiler_opts --abi=coffabi --cla_support=cla0 --float_support=fpu32 --hll_source=on --mem_model:cod
+       6        0002  FP      .set    XAR2
+       7              
+       8              $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       9                      .dwattr $C$DW$CU, DW_AT_name("../utility Src Files/DLOG_4CH_F.c")
+      10                      .dwattr $C$DW$CU, DW_AT_producer("TI TMS320C2000 C/C++ Codegen PC v15.12.1.LTS Copyright (c) 1996-201
+      11                      .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\Keith\workspace_v6_1_3\IDDK_PM_Servo_F2837x-v2\F2837x_FLAS
+      13              ;       C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_15.12.1.LTS\bin\opt2000.exe C:\\Users\\Keith\\AppData\\Local\
+      14              ;       C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_15.12.1.LTS\bin\ac2000.exe -@C:\\Users\\Keith\\AppData\\Local
+      15 00000000               .sect   ".text"
+      16                      .clink
+      17                      .global _DLOG_4CH_F_init
+      18              
+      19              $C$DW$1 .dwtag  DW_TAG_subprogram
+      20                      .dwattr $C$DW$1, DW_AT_name("DLOG_4CH_F_init")
+      21                      .dwattr $C$DW$1, DW_AT_low_pc(_DLOG_4CH_F_init)
+      22                      .dwattr $C$DW$1, DW_AT_high_pc(0x00)
+      23                      .dwattr $C$DW$1, DW_AT_TI_symbol_name("_DLOG_4CH_F_init")
+      24                      .dwattr $C$DW$1, DW_AT_external
+      25                      .dwattr $C$DW$1, DW_AT_TI_begin_file("../utility Src Files/DLOG_4CH_F.c")
+      26                      .dwattr $C$DW$1, DW_AT_TI_begin_line(0x07)
+      27                      .dwattr $C$DW$1, DW_AT_TI_begin_column(0x06)
+      28                      .dwattr $C$DW$1, DW_AT_TI_max_frame_size(-4)
+      29                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 8,column 1,is_stmt,address _DLOG_4CH_F_init,isa
+      30              
+      31                      .dwfde $C$DW$CIE, _DLOG_4CH_F_init
+      32              $C$DW$2 .dwtag  DW_TAG_formal_parameter
+      33                      .dwattr $C$DW$2, DW_AT_name("v")
+      34                      .dwattr $C$DW$2, DW_AT_TI_symbol_name("_v")
+      35                      .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$24)
+      36                      .dwattr $C$DW$2, DW_AT_location[DW_OP_reg12]
+      37              
+      38              
+      39              ;***************************************************************
+      40              ;* FNAME: _DLOG_4CH_F_init              FR SIZE:   2           *
+      41              ;*                                                             *
+      42              ;* FUNCTION ENVIRONMENT                                        *
+      43              ;*                                                             *
+      44              ;* FUNCTION PROPERTIES                                         *
+      45              ;*                            0 Parameter,  0 Auto,  2 SOE     *
+      46              ;***************************************************************
+      47              
+      48              _DLOG_4CH_F_init:
+      49              ;* AR4   assigned to _v
+      50              $C$DW$3 .dwtag  DW_TAG_variable
+      51                      .dwattr $C$DW$3, DW_AT_name("v")
+      52                      .dwattr $C$DW$3, DW_AT_TI_symbol_name("_v")
+      53                      .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$25)
+      54                      .dwattr $C$DW$3, DW_AT_location[DW_OP_reg12]
+      55              
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE    2
+
+      56                      .dwcfi  cfa_offset, -2
+      57                      .dwcfi  save_reg_to_mem, 26, 0
+      58 00000000 B2BD          MOVL      *SP++,XAR1            ; [CPU_] 
+      59                      .dwcfi  save_reg_to_mem, 7, 2
+      60                      .dwcfi  cfa_offset, -4
+      61                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 9,column 2,is_stmt,isa 0
+      62 00000001 0200          MOVB      ACC,#0                ; [CPU_] |9| 
+      63                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 10,column 2,is_stmt,isa 0
+      64 00000002 D000          MOVB      XAR0,#0               ; [CPU_] |10| 
+      65                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 11,column 2,is_stmt,isa 0
+      66 00000003 D500          MOVB      XAR5,#0               ; [CPU_] |11| 
+      67                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 12,column 2,is_stmt,isa 0
+      68 00000004 3100          MOV       P,#0                  ; [CPU_] |12| 
+      69                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 13,column 2,is_stmt,isa 0
+      70 00000005 B600          MOVB      XAR7,#0               ; [CPU_] |13| 
+      71                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 9,column 2,is_stmt,isa 0
+      72 00000006 1EC4          MOVL      *+XAR4[0],ACC         ; [CPU_] |9| 
+      73                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 14,column 2,is_stmt,isa 0
+      74 00000007 BE00          MOVB      XAR6,#0               ; [CPU_] |14| 
+      75                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 15,column 2,is_stmt,isa 0
+      76 00000008 D10C          MOVB      XAR1,#12              ; [CPU_] |15| 
+      77                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 17,column 2,is_stmt,isa 0
+      78 00000009 E591          ZERO      R1H                   ; [CPU_] |17| 
+      79                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 18,column 2,is_stmt,isa 0
+      80 0000000a E590          ZERO      R0H                   ; [CPU_] |18| 
+      81                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 10,column 2,is_stmt,isa 0
+      82 0000000b 3AD4          MOVL      *+XAR4[2],XAR0        ; [CPU_] |10| 
+      83                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 13,column 2,is_stmt,isa 0
+      84 0000000c D008          MOVB      XAR0,#8               ; [CPU_] |13| 
+      85                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 11,column 2,is_stmt,isa 0
+      86 0000000d A0E4          MOVL      *+XAR4[4],XAR5        ; [CPU_] |11| 
+      87                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 12,column 2,is_stmt,isa 0
+      88 0000000e A9F4          MOVL      *+XAR4[6],P           ; [CPU_] |12| 
+      89                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 13,column 2,is_stmt,isa 0
+      90 0000000f C394          MOVL      *+XAR4[AR0],XAR7      ; [CPU_] |13| 
+      91                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 14,column 2,is_stmt,isa 0
+      92 00000010 D00A          MOVB      XAR0,#10              ; [CPU_] |14| 
+      93 00000011 C294          MOVL      *+XAR4[AR0],XAR6      ; [CPU_] |14| 
+      94                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 16,column 2,is_stmt,isa 0
+      95 00000012 D00E          MOVB      XAR0,#14              ; [CPU_] |16| 
+      96                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 15,column 2,is_stmt,isa 0
+      97 00000013 1E9C          MOVL      *+XAR4[AR1],ACC       ; [CPU_] |15| 
+      98                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 23,column 2,is_stmt,isa 0
+      99 00000014 D118          MOVB      XAR1,#24              ; [CPU_] |23| 
+     100                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 16,column 2,is_stmt,isa 0
+     101 00000015 C294          MOVL      *+XAR4[AR0],XAR6      ; [CPU_] |16| 
+     102                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 17,column 2,is_stmt,isa 0
+     103 00000016 D010          MOVB      XAR0,#16              ; [CPU_] |17| 
+     104 00000017 E203          MOV32     *+XAR4[AR0],R1H       ; [CPU_] |17| 
+         00000018 0194 
+     105                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 18,column 2,is_stmt,isa 0
+     106 00000019 D012          MOVB      XAR0,#18              ; [CPU_] |18| 
+     107 0000001a E203          MOV32     *+XAR4[AR0],R0H       ; [CPU_] |18| 
+         0000001b 0094 
+     108                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 19,column 2,is_stmt,isa 0
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE    3
+
+     109 0000001c D014          MOVB      XAR0,#20              ; [CPU_] |19| 
+     110 0000001d 2B94          MOV       *+XAR4[AR0],#0        ; [CPU_] |19| 
+     111                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 20,column 2,is_stmt,isa 0
+     112 0000001e D015          MOVB      XAR0,#21              ; [CPU_] |20| 
+     113 0000001f 2B94          MOV       *+XAR4[AR0],#0        ; [CPU_] |20| 
+     114                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 21,column 2,is_stmt,isa 0
+     115 00000020 D016          MOVB      XAR0,#22              ; [CPU_] |21| 
+     116 00000021 2B94          MOV       *+XAR4[AR0],#0        ; [CPU_] |21| 
+     117                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 22,column 2,is_stmt,isa 0
+     118 00000022 D017          MOVB      XAR0,#23              ; [CPU_] |22| 
+     119 00000023 2B94          MOV       *+XAR4[AR0],#0        ; [CPU_] |22| 
+     120                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 23,column 2,is_stmt,isa 0
+     121 00000024 2B9C          MOV       *+XAR4[AR1],#0        ; [CPU_] |23| 
+     122 00000025 8BBE          MOVL      XAR1,*--SP            ; [CPU_] 
+     123                      .dwcfi  cfa_offset, -2
+     124                      .dwcfi  restore_reg, 7
+     125              $C$DW$4 .dwtag  DW_TAG_TI_branch
+     126                      .dwattr $C$DW$4, DW_AT_low_pc(0x00)
+     127                      .dwattr $C$DW$4, DW_AT_TI_return
+     128              
+     129 00000026 0006          LRETR     ; [CPU_] 
+     130                      ; return occurs ; [] 
+     131                      .dwattr $C$DW$1, DW_AT_TI_end_file("../utility Src Files/DLOG_4CH_F.c")
+     132                      .dwattr $C$DW$1, DW_AT_TI_end_line(0x18)
+     133                      .dwattr $C$DW$1, DW_AT_TI_end_column(0x01)
+     134                      .dwendentry
+     135                      .dwendtag $C$DW$1
+     136              
+     137 00000027               .sect   ".text"
+     138                      .clink
+     139                      .global _DLOG_4CH_F_FUNC
+     140              
+     141              $C$DW$5 .dwtag  DW_TAG_subprogram
+     142                      .dwattr $C$DW$5, DW_AT_name("DLOG_4CH_F_FUNC")
+     143                      .dwattr $C$DW$5, DW_AT_low_pc(_DLOG_4CH_F_FUNC)
+     144                      .dwattr $C$DW$5, DW_AT_high_pc(0x00)
+     145                      .dwattr $C$DW$5, DW_AT_TI_symbol_name("_DLOG_4CH_F_FUNC")
+     146                      .dwattr $C$DW$5, DW_AT_external
+     147                      .dwattr $C$DW$5, DW_AT_TI_begin_file("../utility Src Files/DLOG_4CH_F.c")
+     148                      .dwattr $C$DW$5, DW_AT_TI_begin_line(0x1b)
+     149                      .dwattr $C$DW$5, DW_AT_TI_begin_column(0x06)
+     150                      .dwattr $C$DW$5, DW_AT_TI_max_frame_size(-6)
+     151                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 28,column 1,is_stmt,address _DLOG_4CH_F_FUNC,is
+     152              
+     153                      .dwfde $C$DW$CIE, _DLOG_4CH_F_FUNC
+     154              $C$DW$6 .dwtag  DW_TAG_formal_parameter
+     155                      .dwattr $C$DW$6, DW_AT_name("v")
+     156                      .dwattr $C$DW$6, DW_AT_TI_symbol_name("_v")
+     157                      .dwattr $C$DW$6, DW_AT_type(*$C$DW$T$24)
+     158                      .dwattr $C$DW$6, DW_AT_location[DW_OP_reg12]
+     159              
+     160              
+     161              ;***************************************************************
+     162              ;* FNAME: _DLOG_4CH_F_FUNC              FR SIZE:   4           *
+     163              ;*                                                             *
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE    4
+
+     164              ;* FUNCTION ENVIRONMENT                                        *
+     165              ;*                                                             *
+     166              ;* FUNCTION PROPERTIES                                         *
+     167              ;*                            2 Parameter,  0 Auto,  2 SOE     *
+     168              ;***************************************************************
+     169              
+     170              _DLOG_4CH_F_FUNC:
+     171              ;* R0HL  assigned to $O$C1
+     172              ;* AR4   assigned to _v
+     173              $C$DW$7 .dwtag  DW_TAG_variable
+     174                      .dwattr $C$DW$7, DW_AT_name("v")
+     175                      .dwattr $C$DW$7, DW_AT_TI_symbol_name("_v")
+     176                      .dwattr $C$DW$7, DW_AT_type(*$C$DW$T$25)
+     177                      .dwattr $C$DW$7, DW_AT_location[DW_OP_reg12]
+     178              
+     179                      .dwcfi  cfa_offset, -2
+     180                      .dwcfi  save_reg_to_mem, 26, 0
+     181 00000027 B2BD          MOVL      *SP++,XAR1            ; [CPU_] 
+     182                      .dwcfi  save_reg_to_mem, 7, 2
+     183                      .dwcfi  cfa_offset, -4
+     184 00000028 FE02          ADDB      SP,#2                 ; [CPU_U] 
+     185                      .dwcfi  cfa_offset, -6
+     186                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 29,column 2,is_stmt,isa 0
+     187 00000029 D014          MOVB      XAR0,#20              ; [CPU_] |29| 
+     188 0000002a 9294          MOV       AL,*+XAR4[AR0]        ; [CPU_] |29| 
+     189 0000002b 5201          CMPB      AL,#1                 ; [CPU_] |29| 
+     190 0000002c 6140          B         $C$L1,EQ              ; [CPU_] |29| 
+     191                      ; branchcc occurs ; [] |29| 
+     192 0000002d 5202          CMPB      AL,#2                 ; [CPU_] |29| 
+     193 0000002e 6052          B         $C$L2,NEQ             ; [CPU_] |29| 
+     194                      ; branchcc occurs ; [] |29| 
+     195                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 39,column 3,is_stmt,isa 0
+     196 0000002f 83A4          MOVL      XAR5,XAR4             ; [CPU_] |39| 
+     197                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 40,column 3,is_stmt,isa 0
+     198 00000030 D015          MOVB      XAR0,#21              ; [CPU_] |40| 
+     199 00000031 D116          MOVB      XAR1,#22              ; [CPU_] |40| 
+     200                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 39,column 3,is_stmt,isa 0
+     201 00000032 DD16          ADDB      XAR5,#22              ; [CPU_] |39| 
+     202 00000033 0AC5          INC       *+XAR5[0]             ; [CPU_] |39| 
+     203                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 40,column 3,is_stmt,isa 0
+     204 00000034 9294          MOV       AL,*+XAR4[AR0]        ; [CPU_] |40| 
+     205 00000035 549C          CMP       AL,*+XAR4[AR1]        ; [CPU_] |40| 
+     206 00000036 604A          B         $C$L2,NEQ             ; [CPU_] |40| 
+     207                      ; branchcc occurs ; [] |40| 
+     208                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 42,column 4,is_stmt,isa 0
+     209 00000037 D016          MOVB      XAR0,#22              ; [CPU_] |42| 
+     210 00000038 2B94          MOV       *+XAR4[AR0],#0        ; [CPU_] |42| 
+     211                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 43,column 4,is_stmt,isa 0
+     212 00000039 C4C4          MOVL      XAR6,*+XAR4[0]        ; [CPU_] |43| 
+     213 0000003a D118          MOVB      XAR1,#24              ; [CPU_] |43| 
+     214 0000003b 3B01          SETC      SXM                   ; [CPU_] 
+     215 0000003c D008          MOVB      XAR0,#8               ; [CPU_] |43| 
+     216 0000003d C4C6          MOVL      XAR6,*+XAR6[0]        ; [CPU_] |43| 
+     217 0000003e 5603          MOV       ACC,*+XAR4[AR1] << 1  ; [CPU_] |43| 
+         0000003f 019C 
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE    5
+
+     218 00000040 0794          ADDL      ACC,*+XAR4[AR0]       ; [CPU_] |43| 
+     219                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 44,column 4,is_stmt,isa 0
+     220 00000041 83A9          MOVL      XAR5,ACC              ; [CPU_] |44| 
+     221                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 43,column 4,is_stmt,isa 0
+     222 00000042 C2C5          MOVL      *+XAR5[0],XAR6        ; [CPU_] |43| 
+     223                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 44,column 4,is_stmt,isa 0
+     224 00000043 C4D4          MOVL      XAR6,*+XAR4[2]        ; [CPU_] |44| 
+     225 00000044 D118          MOVB      XAR1,#24              ; [CPU_] |44| 
+     226 00000045 D00A          MOVB      XAR0,#10              ; [CPU_] |44| 
+     227 00000046 C4C6          MOVL      XAR6,*+XAR6[0]        ; [CPU_] |44| 
+     228 00000047 5603          MOV       ACC,*+XAR4[AR1] << 1  ; [CPU_] |44| 
+         00000048 019C 
+     229 00000049 0794          ADDL      ACC,*+XAR4[AR0]       ; [CPU_] |44| 
+     230                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 45,column 4,is_stmt,isa 0
+     231 0000004a 83A9          MOVL      XAR5,ACC              ; [CPU_] |45| 
+     232                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 44,column 4,is_stmt,isa 0
+     233 0000004b C2C5          MOVL      *+XAR5[0],XAR6        ; [CPU_] |44| 
+     234                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 45,column 4,is_stmt,isa 0
+     235 0000004c C4E4          MOVL      XAR6,*+XAR4[4]        ; [CPU_] |45| 
+     236 0000004d D118          MOVB      XAR1,#24              ; [CPU_] |45| 
+     237 0000004e D00C          MOVB      XAR0,#12              ; [CPU_] |45| 
+     238 0000004f 5603          MOV       ACC,*+XAR4[AR1] << 1  ; [CPU_] |45| 
+         00000050 019C 
+     239 00000051 C5C6          MOVL      XAR7,*+XAR6[0]        ; [CPU_] |45| 
+     240 00000052 0794          ADDL      ACC,*+XAR4[AR0]       ; [CPU_] |45| 
+     241                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 47,column 4,is_stmt,isa 0
+     242 00000053 83A9          MOVL      XAR5,ACC              ; [CPU_] |47| 
+     243                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 46,column 4,is_stmt,isa 0
+     244 00000054 D118          MOVB      XAR1,#24              ; [CPU_] |46| 
+     245 00000055 D00E          MOVB      XAR0,#14              ; [CPU_] |46| 
+     246                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 45,column 4,is_stmt,isa 0
+     247 00000056 C3C5          MOVL      *+XAR5[0],XAR7        ; [CPU_] |45| 
+     248                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 46,column 4,is_stmt,isa 0
+     249 00000057 C5F4          MOVL      XAR7,*+XAR4[6]        ; [CPU_] |46| 
+     250                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 47,column 4,is_stmt,isa 0
+     251 00000058 C4A4          MOVL      XAR6,XAR4             ; [CPU_] |47| 
+     252                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 46,column 4,is_stmt,isa 0
+     253 00000059 5603          MOV       ACC,*+XAR4[AR1] << 1  ; [CPU_] |46| 
+         0000005a 019C 
+     254 0000005b 0794          ADDL      ACC,*+XAR4[AR0]       ; [CPU_] |46| 
+     255 0000005c C5C7          MOVL      XAR7,*+XAR7[0]        ; [CPU_] |46| 
+     256                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 48,column 4,is_stmt,isa 0
+     257 0000005d 83A9          MOVL      XAR5,ACC              ; [CPU_] |48| 
+     258                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 47,column 4,is_stmt,isa 0
+     259 0000005e DE18          ADDB      XAR6,#24              ; [CPU_] |47| 
+     260                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 48,column 4,is_stmt,isa 0
+     261 0000005f D017          MOVB      XAR0,#23              ; [CPU_] |48| 
+     262 00000060 D118          MOVB      XAR1,#24              ; [CPU_] |48| 
+     263                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 46,column 4,is_stmt,isa 0
+     264 00000061 C3C5          MOVL      *+XAR5[0],XAR7        ; [CPU_] |46| 
+     265                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 47,column 4,is_stmt,isa 0
+     266 00000062 0AC6          INC       *+XAR6[0]             ; [CPU_] |47| 
+     267                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 48,column 4,is_stmt,isa 0
+     268 00000063 9294          MOV       AL,*+XAR4[AR0]        ; [CPU_] |48| 
+     269 00000064 549C          CMP       AL,*+XAR4[AR1]        ; [CPU_] |48| 
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE    6
+
+     270 00000065 601B          B         $C$L2,NEQ             ; [CPU_] |48| 
+     271                      ; branchcc occurs ; [] |48| 
+     272                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 50,column 5,is_stmt,isa 0
+     273 00000066 D118          MOVB      XAR1,#24              ; [CPU_] |50| 
+     274                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 51,column 5,is_stmt,isa 0
+     275 00000067 D014          MOVB      XAR0,#20              ; [CPU_] |51| 
+     276                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 50,column 5,is_stmt,isa 0
+     277 00000068 2B9C          MOV       *+XAR4[AR1],#0        ; [CPU_] |50| 
+     278                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 51,column 5,is_stmt,isa 0
+     279 00000069 56BF          MOVB      *+XAR4[AR0],#1,UNC    ; [CPU_] |51| 
+         0000006a 0194 
+     280 0000006b 6F15          B         $C$L2,UNC             ; [CPU_] |51| 
+     281                      ; branch occurs ; [] |51| 
+     282 0000006c       $C$L1:    
+     283                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 32,column 3,is_stmt,isa 0
+     284 0000006c 83C4          MOVL      XAR5,*+XAR4[0]        ; [CPU_] |32| 
+     285 0000006d D012          MOVB      XAR0,#18              ; [CPU_] |32| 
+     286 0000006e E2AF          MOV32     R0H,*+XAR4[AR0]       ; [CPU_] |32| 
+         0000006f 0094 
+     287 00000070 E2AF          MOV32     R1H,*+XAR5[0]         ; [CPU_] |32| 
+         00000071 01C5 
+     288 00000072 E694          CMPF32    R1H,R0H               ; [CPU_] |32| 
+         00000073 0001 
+     289 00000074 AD14          MOVST0    ZF, NF                ; [CPU_] |32| 
+     290 00000075 650B          B         $C$L2,LEQ             ; [CPU_] |32| 
+     291                      ; branchcc occurs ; [] |32| 
+     292 00000076 D010          MOVB      XAR0,#16              ; [CPU_] |32| 
+     293 00000077 E2AF          MOV32     R1H,*+XAR4[AR0]       ; [CPU_] |32| 
+         00000078 0194 
+     294 00000079 E694          CMPF32    R1H,R0H               ; [CPU_] |32| 
+         0000007a 0001 
+     295 0000007b AD14          MOVST0    ZF, NF                ; [CPU_] |32| 
+     296 0000007c 6304          B         $C$L2,GEQ             ; [CPU_] |32| 
+     297                      ; branchcc occurs ; [] |32| 
+     298                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 35,column 4,is_stmt,isa 0
+     299 0000007d D014          MOVB      XAR0,#20              ; [CPU_] |35| 
+     300 0000007e 56BF          MOVB      *+XAR4[AR0],#2,UNC    ; [CPU_] |35| 
+         0000007f 0294 
+     301 00000080       $C$L2:    
+     302                      .dwpsn  file "../utility Src Files/DLOG_4CH_F.c",line 56,column 2,is_stmt,isa 0
+     303 00000080 83C4          MOVL      XAR5,*+XAR4[0]        ; [CPU_] |56| 
+     304 00000081 D010          MOVB      XAR0,#16              ; [CPU_] |56| 
+     305 00000082 06C5          MOVL      ACC,*+XAR5[0]         ; [CPU_] |56| 
+     306 00000083 FE82          SUBB      SP,#2                 ; [CPU_U] 
+     307                      .dwcfi  cfa_offset, -4
+     308 00000084 1E94          MOVL      *+XAR4[AR0],ACC       ; [CPU_] |56| 
+     309 00000085 8BBE          MOVL      XAR1,*--SP            ; [CPU_] 
+     310                      .dwcfi  cfa_offset, -2
+     311                      .dwcfi  restore_reg, 7
+     312              $C$DW$8 .dwtag  DW_TAG_TI_branch
+     313                      .dwattr $C$DW$8, DW_AT_low_pc(0x00)
+     314                      .dwattr $C$DW$8, DW_AT_TI_return
+     315              
+     316 00000086 0006          LRETR     ; [CPU_] 
+     317                      ; return occurs ; [] 
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE    7
+
+     318                      .dwattr $C$DW$5, DW_AT_TI_end_file("../utility Src Files/DLOG_4CH_F.c")
+     319                      .dwattr $C$DW$5, DW_AT_TI_end_line(0x39)
+     320                      .dwattr $C$DW$5, DW_AT_TI_end_column(0x01)
+     321                      .dwendentry
+     322                      .dwendtag $C$DW$5
+     323              
+     324              
+     325              ;***************************************************************
+     326              ;* TYPE INFORMATION                                            *
+     327              ;***************************************************************
+     328              
+     329              $C$DW$T$22      .dwtag  DW_TAG_structure_type
+     330                      .dwattr $C$DW$T$22, DW_AT_byte_size(0x1a)
+     331              $C$DW$9 .dwtag  DW_TAG_member
+     332                      .dwattr $C$DW$9, DW_AT_type(*$C$DW$T$20)
+     333                      .dwattr $C$DW$9, DW_AT_name("input_ptr1")
+     334                      .dwattr $C$DW$9, DW_AT_TI_symbol_name("_input_ptr1")
+     335                      .dwattr $C$DW$9, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+     336                      .dwattr $C$DW$9, DW_AT_accessibility(DW_ACCESS_public)
+     337              
+     338              $C$DW$10        .dwtag  DW_TAG_member
+     339                      .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$20)
+     340                      .dwattr $C$DW$10, DW_AT_name("input_ptr2")
+     341                      .dwattr $C$DW$10, DW_AT_TI_symbol_name("_input_ptr2")
+     342                      .dwattr $C$DW$10, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
+     343                      .dwattr $C$DW$10, DW_AT_accessibility(DW_ACCESS_public)
+     344              
+     345              $C$DW$11        .dwtag  DW_TAG_member
+     346                      .dwattr $C$DW$11, DW_AT_type(*$C$DW$T$20)
+     347                      .dwattr $C$DW$11, DW_AT_name("input_ptr3")
+     348                      .dwattr $C$DW$11, DW_AT_TI_symbol_name("_input_ptr3")
+     349                      .dwattr $C$DW$11, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+     350                      .dwattr $C$DW$11, DW_AT_accessibility(DW_ACCESS_public)
+     351              
+     352              $C$DW$12        .dwtag  DW_TAG_member
+     353                      .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$20)
+     354                      .dwattr $C$DW$12, DW_AT_name("input_ptr4")
+     355                      .dwattr $C$DW$12, DW_AT_TI_symbol_name("_input_ptr4")
+     356                      .dwattr $C$DW$12, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+     357                      .dwattr $C$DW$12, DW_AT_accessibility(DW_ACCESS_public)
+     358              
+     359              $C$DW$13        .dwtag  DW_TAG_member
+     360                      .dwattr $C$DW$13, DW_AT_type(*$C$DW$T$20)
+     361                      .dwattr $C$DW$13, DW_AT_name("output_ptr1")
+     362                      .dwattr $C$DW$13, DW_AT_TI_symbol_name("_output_ptr1")
+     363                      .dwattr $C$DW$13, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+     364                      .dwattr $C$DW$13, DW_AT_accessibility(DW_ACCESS_public)
+     365              
+     366              $C$DW$14        .dwtag  DW_TAG_member
+     367                      .dwattr $C$DW$14, DW_AT_type(*$C$DW$T$20)
+     368                      .dwattr $C$DW$14, DW_AT_name("output_ptr2")
+     369                      .dwattr $C$DW$14, DW_AT_TI_symbol_name("_output_ptr2")
+     370                      .dwattr $C$DW$14, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+     371                      .dwattr $C$DW$14, DW_AT_accessibility(DW_ACCESS_public)
+     372              
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE    8
+
+     373              $C$DW$15        .dwtag  DW_TAG_member
+     374                      .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$20)
+     375                      .dwattr $C$DW$15, DW_AT_name("output_ptr3")
+     376                      .dwattr $C$DW$15, DW_AT_TI_symbol_name("_output_ptr3")
+     377                      .dwattr $C$DW$15, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+     378                      .dwattr $C$DW$15, DW_AT_accessibility(DW_ACCESS_public)
+     379              
+     380              $C$DW$16        .dwtag  DW_TAG_member
+     381                      .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$20)
+     382                      .dwattr $C$DW$16, DW_AT_name("output_ptr4")
+     383                      .dwattr $C$DW$16, DW_AT_TI_symbol_name("_output_ptr4")
+     384                      .dwattr $C$DW$16, DW_AT_data_member_location[DW_OP_plus_uconst 0xe]
+     385                      .dwattr $C$DW$16, DW_AT_accessibility(DW_ACCESS_public)
+     386              
+     387              $C$DW$17        .dwtag  DW_TAG_member
+     388                      .dwattr $C$DW$17, DW_AT_type(*$C$DW$T$19)
+     389                      .dwattr $C$DW$17, DW_AT_name("prev_value")
+     390                      .dwattr $C$DW$17, DW_AT_TI_symbol_name("_prev_value")
+     391                      .dwattr $C$DW$17, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+     392                      .dwattr $C$DW$17, DW_AT_accessibility(DW_ACCESS_public)
+     393              
+     394              $C$DW$18        .dwtag  DW_TAG_member
+     395                      .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$19)
+     396                      .dwattr $C$DW$18, DW_AT_name("trig_value")
+     397                      .dwattr $C$DW$18, DW_AT_TI_symbol_name("_trig_value")
+     398                      .dwattr $C$DW$18, DW_AT_data_member_location[DW_OP_plus_uconst 0x12]
+     399                      .dwattr $C$DW$18, DW_AT_accessibility(DW_ACCESS_public)
+     400              
+     401              $C$DW$19        .dwtag  DW_TAG_member
+     402                      .dwattr $C$DW$19, DW_AT_type(*$C$DW$T$21)
+     403                      .dwattr $C$DW$19, DW_AT_name("status")
+     404                      .dwattr $C$DW$19, DW_AT_TI_symbol_name("_status")
+     405                      .dwattr $C$DW$19, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+     406                      .dwattr $C$DW$19, DW_AT_accessibility(DW_ACCESS_public)
+     407              
+     408              $C$DW$20        .dwtag  DW_TAG_member
+     409                      .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$21)
+     410                      .dwattr $C$DW$20, DW_AT_name("pre_scalar")
+     411                      .dwattr $C$DW$20, DW_AT_TI_symbol_name("_pre_scalar")
+     412                      .dwattr $C$DW$20, DW_AT_data_member_location[DW_OP_plus_uconst 0x15]
+     413                      .dwattr $C$DW$20, DW_AT_accessibility(DW_ACCESS_public)
+     414              
+     415              $C$DW$21        .dwtag  DW_TAG_member
+     416                      .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$21)
+     417                      .dwattr $C$DW$21, DW_AT_name("skip_count")
+     418                      .dwattr $C$DW$21, DW_AT_TI_symbol_name("_skip_count")
+     419                      .dwattr $C$DW$21, DW_AT_data_member_location[DW_OP_plus_uconst 0x16]
+     420                      .dwattr $C$DW$21, DW_AT_accessibility(DW_ACCESS_public)
+     421              
+     422              $C$DW$22        .dwtag  DW_TAG_member
+     423                      .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$21)
+     424                      .dwattr $C$DW$22, DW_AT_name("size")
+     425                      .dwattr $C$DW$22, DW_AT_TI_symbol_name("_size")
+     426                      .dwattr $C$DW$22, DW_AT_data_member_location[DW_OP_plus_uconst 0x17]
+     427                      .dwattr $C$DW$22, DW_AT_accessibility(DW_ACCESS_public)
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE    9
+
+     428              
+     429              $C$DW$23        .dwtag  DW_TAG_member
+     430                      .dwattr $C$DW$23, DW_AT_type(*$C$DW$T$21)
+     431                      .dwattr $C$DW$23, DW_AT_name("count")
+     432                      .dwattr $C$DW$23, DW_AT_TI_symbol_name("_count")
+     433                      .dwattr $C$DW$23, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+     434                      .dwattr $C$DW$23, DW_AT_accessibility(DW_ACCESS_public)
+     435              
+     436                      .dwendtag $C$DW$T$22
+     437              
+     438              $C$DW$T$23      .dwtag  DW_TAG_typedef
+     439                      .dwattr $C$DW$T$23, DW_AT_name("DLOG_4CH_F")
+     440                      .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$22)
+     441                      .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
+     442              
+     443              $C$DW$T$24      .dwtag  DW_TAG_pointer_type
+     444                      .dwattr $C$DW$T$24, DW_AT_type(*$C$DW$T$23)
+     445                      .dwattr $C$DW$T$24, DW_AT_address_class(0x20)
+     446              
+     447              $C$DW$24        .dwtag  DW_TAG_TI_far_type
+     448                      .dwattr $C$DW$24, DW_AT_type(*$C$DW$T$24)
+     449              
+     450              $C$DW$T$25      .dwtag  DW_TAG_const_type
+     451                      .dwattr $C$DW$T$25, DW_AT_type(*$C$DW$24)
+     452              
+     453              $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+     454                      .dwattr $C$DW$T$2, DW_AT_name("void")
+     455              
+     456              $C$DW$T$4       .dwtag  DW_TAG_base_type
+     457                      .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+     458                      .dwattr $C$DW$T$4, DW_AT_name("bool")
+     459                      .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+     460              
+     461              $C$DW$T$5       .dwtag  DW_TAG_base_type
+     462                      .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+     463                      .dwattr $C$DW$T$5, DW_AT_name("signed char")
+     464                      .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+     465              
+     466              $C$DW$T$6       .dwtag  DW_TAG_base_type
+     467                      .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+     468                      .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+     469                      .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+     470              
+     471              $C$DW$T$7       .dwtag  DW_TAG_base_type
+     472                      .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+     473                      .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+     474                      .dwattr $C$DW$T$7, DW_AT_byte_size(0x01)
+     475              
+     476              $C$DW$T$8       .dwtag  DW_TAG_base_type
+     477                      .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+     478                      .dwattr $C$DW$T$8, DW_AT_name("short")
+     479                      .dwattr $C$DW$T$8, DW_AT_byte_size(0x01)
+     480              
+     481              $C$DW$T$9       .dwtag  DW_TAG_base_type
+     482                      .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE   10
+
+     483                      .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+     484                      .dwattr $C$DW$T$9, DW_AT_byte_size(0x01)
+     485              
+     486              $C$DW$T$10      .dwtag  DW_TAG_base_type
+     487                      .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+     488                      .dwattr $C$DW$T$10, DW_AT_name("int")
+     489                      .dwattr $C$DW$T$10, DW_AT_byte_size(0x01)
+     490              
+     491              $C$DW$T$21      .dwtag  DW_TAG_typedef
+     492                      .dwattr $C$DW$T$21, DW_AT_name("int16")
+     493                      .dwattr $C$DW$T$21, DW_AT_type(*$C$DW$T$10)
+     494                      .dwattr $C$DW$T$21, DW_AT_language(DW_LANG_C)
+     495              
+     496              $C$DW$T$11      .dwtag  DW_TAG_base_type
+     497                      .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+     498                      .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+     499                      .dwattr $C$DW$T$11, DW_AT_byte_size(0x01)
+     500              
+     501              $C$DW$T$12      .dwtag  DW_TAG_base_type
+     502                      .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+     503                      .dwattr $C$DW$T$12, DW_AT_name("long")
+     504                      .dwattr $C$DW$T$12, DW_AT_byte_size(0x02)
+     505              
+     506              $C$DW$T$13      .dwtag  DW_TAG_base_type
+     507                      .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+     508                      .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+     509                      .dwattr $C$DW$T$13, DW_AT_byte_size(0x02)
+     510              
+     511              $C$DW$T$14      .dwtag  DW_TAG_base_type
+     512                      .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+     513                      .dwattr $C$DW$T$14, DW_AT_name("long long")
+     514                      .dwattr $C$DW$T$14, DW_AT_byte_size(0x04)
+     515              
+     516              $C$DW$T$15      .dwtag  DW_TAG_base_type
+     517                      .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+     518                      .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+     519                      .dwattr $C$DW$T$15, DW_AT_byte_size(0x04)
+     520              
+     521              $C$DW$T$16      .dwtag  DW_TAG_base_type
+     522                      .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+     523                      .dwattr $C$DW$T$16, DW_AT_name("float")
+     524                      .dwattr $C$DW$T$16, DW_AT_byte_size(0x02)
+     525              
+     526              $C$DW$T$19      .dwtag  DW_TAG_typedef
+     527                      .dwattr $C$DW$T$19, DW_AT_name("float32")
+     528                      .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$16)
+     529                      .dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
+     530              
+     531              $C$DW$T$20      .dwtag  DW_TAG_pointer_type
+     532                      .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$T$19)
+     533                      .dwattr $C$DW$T$20, DW_AT_address_class(0x20)
+     534              
+     535              $C$DW$T$17      .dwtag  DW_TAG_base_type
+     536                      .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+     537                      .dwattr $C$DW$T$17, DW_AT_name("double")
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE   11
+
+     538                      .dwattr $C$DW$T$17, DW_AT_byte_size(0x02)
+     539              
+     540              $C$DW$T$18      .dwtag  DW_TAG_base_type
+     541                      .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+     542                      .dwattr $C$DW$T$18, DW_AT_name("long double")
+     543                      .dwattr $C$DW$T$18, DW_AT_byte_size(0x04)
+     544              
+     545                      .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+     546              
+     547              ;***************************************************************
+     548              ;* DWARF CIE ENTRIES                                           *
+     549              ;***************************************************************
+     550              
+     551              $C$DW$CIE       .dwcie 26
+     552                      .dwcfi  cfa_register, 20
+     553                      .dwcfi  cfa_offset, 0
+     554                      .dwcfi  undefined, 0
+     555                      .dwcfi  undefined, 1
+     556                      .dwcfi  undefined, 2
+     557                      .dwcfi  undefined, 3
+     558                      .dwcfi  undefined, 20
+     559                      .dwcfi  undefined, 21
+     560                      .dwcfi  undefined, 22
+     561                      .dwcfi  undefined, 23
+     562                      .dwcfi  undefined, 24
+     563                      .dwcfi  undefined, 25
+     564                      .dwcfi  undefined, 26
+     565                      .dwcfi  same_value, 28
+     566                      .dwcfi  undefined, 29
+     567                      .dwcfi  undefined, 30
+     568                      .dwcfi  undefined, 31
+     569                      .dwcfi  undefined, 32
+     570                      .dwcfi  undefined, 33
+     571                      .dwcfi  undefined, 34
+     572                      .dwcfi  undefined, 35
+     573                      .dwcfi  undefined, 36
+     574                      .dwcfi  undefined, 37
+     575                      .dwcfi  undefined, 38
+     576                      .dwcfi  undefined, 75
+     577                      .dwcfi  undefined, 76
+     578                      .dwcfi  undefined, 77
+     579                      .dwcfi  undefined, 4
+     580                      .dwcfi  undefined, 5
+     581                      .dwcfi  same_value, 6
+     582                      .dwcfi  same_value, 7
+     583                      .dwcfi  same_value, 8
+     584                      .dwcfi  same_value, 9
+     585                      .dwcfi  same_value, 10
+     586                      .dwcfi  same_value, 11
+     587                      .dwcfi  undefined, 12
+     588                      .dwcfi  undefined, 13
+     589                      .dwcfi  undefined, 14
+     590                      .dwcfi  undefined, 15
+     591                      .dwcfi  undefined, 16
+     592                      .dwcfi  undefined, 17
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE   12
+
+     593                      .dwcfi  undefined, 18
+     594                      .dwcfi  undefined, 19
+     595                      .dwcfi  undefined, 43
+     596                      .dwcfi  undefined, 44
+     597                      .dwcfi  undefined, 47
+     598                      .dwcfi  undefined, 48
+     599                      .dwcfi  undefined, 51
+     600                      .dwcfi  undefined, 52
+     601                      .dwcfi  undefined, 55
+     602                      .dwcfi  undefined, 56
+     603                      .dwcfi  same_value, 59
+     604                      .dwcfi  same_value, 60
+     605                      .dwcfi  same_value, 63
+     606                      .dwcfi  same_value, 64
+     607                      .dwcfi  same_value, 67
+     608                      .dwcfi  same_value, 68
+     609                      .dwcfi  same_value, 71
+     610                      .dwcfi  same_value, 72
+     611                      .dwcfi  undefined, 73
+     612                      .dwcfi  undefined, 74
+     613                      .dwcfi  undefined, 39
+     614                      .dwcfi  undefined, 40
+     615                      .dwcfi  undefined, 27
+     616                      .dwendentry
+     617              
+     618              ;***************************************************************
+     619              ;* DWARF REGISTER MAP                                          *
+     620              ;***************************************************************
+     621              
+     622              $C$DW$25        .dwtag  DW_TAG_TI_assign_register
+     623                      .dwattr $C$DW$25, DW_AT_name("AL")
+     624                      .dwattr $C$DW$25, DW_AT_location[DW_OP_reg0]
+     625              
+     626              $C$DW$26        .dwtag  DW_TAG_TI_assign_register
+     627                      .dwattr $C$DW$26, DW_AT_name("AH")
+     628                      .dwattr $C$DW$26, DW_AT_location[DW_OP_reg1]
+     629              
+     630              $C$DW$27        .dwtag  DW_TAG_TI_assign_register
+     631                      .dwattr $C$DW$27, DW_AT_name("PL")
+     632                      .dwattr $C$DW$27, DW_AT_location[DW_OP_reg2]
+     633              
+     634              $C$DW$28        .dwtag  DW_TAG_TI_assign_register
+     635                      .dwattr $C$DW$28, DW_AT_name("PH")
+     636                      .dwattr $C$DW$28, DW_AT_location[DW_OP_reg3]
+     637              
+     638              $C$DW$29        .dwtag  DW_TAG_TI_assign_register
+     639                      .dwattr $C$DW$29, DW_AT_name("SP")
+     640                      .dwattr $C$DW$29, DW_AT_location[DW_OP_reg20]
+     641              
+     642              $C$DW$30        .dwtag  DW_TAG_TI_assign_register
+     643                      .dwattr $C$DW$30, DW_AT_name("XT")
+     644                      .dwattr $C$DW$30, DW_AT_location[DW_OP_reg21]
+     645              
+     646              $C$DW$31        .dwtag  DW_TAG_TI_assign_register
+     647                      .dwattr $C$DW$31, DW_AT_name("T")
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE   13
+
+     648                      .dwattr $C$DW$31, DW_AT_location[DW_OP_reg22]
+     649              
+     650              $C$DW$32        .dwtag  DW_TAG_TI_assign_register
+     651                      .dwattr $C$DW$32, DW_AT_name("ST0")
+     652                      .dwattr $C$DW$32, DW_AT_location[DW_OP_reg23]
+     653              
+     654              $C$DW$33        .dwtag  DW_TAG_TI_assign_register
+     655                      .dwattr $C$DW$33, DW_AT_name("ST1")
+     656                      .dwattr $C$DW$33, DW_AT_location[DW_OP_reg24]
+     657              
+     658              $C$DW$34        .dwtag  DW_TAG_TI_assign_register
+     659                      .dwattr $C$DW$34, DW_AT_name("PC")
+     660                      .dwattr $C$DW$34, DW_AT_location[DW_OP_reg25]
+     661              
+     662              $C$DW$35        .dwtag  DW_TAG_TI_assign_register
+     663                      .dwattr $C$DW$35, DW_AT_name("RPC")
+     664                      .dwattr $C$DW$35, DW_AT_location[DW_OP_reg26]
+     665              
+     666              $C$DW$36        .dwtag  DW_TAG_TI_assign_register
+     667                      .dwattr $C$DW$36, DW_AT_name("FP")
+     668                      .dwattr $C$DW$36, DW_AT_location[DW_OP_reg28]
+     669              
+     670              $C$DW$37        .dwtag  DW_TAG_TI_assign_register
+     671                      .dwattr $C$DW$37, DW_AT_name("DP")
+     672                      .dwattr $C$DW$37, DW_AT_location[DW_OP_reg29]
+     673              
+     674              $C$DW$38        .dwtag  DW_TAG_TI_assign_register
+     675                      .dwattr $C$DW$38, DW_AT_name("SXM")
+     676                      .dwattr $C$DW$38, DW_AT_location[DW_OP_reg30]
+     677              
+     678              $C$DW$39        .dwtag  DW_TAG_TI_assign_register
+     679                      .dwattr $C$DW$39, DW_AT_name("PM")
+     680                      .dwattr $C$DW$39, DW_AT_location[DW_OP_reg31]
+     681              
+     682              $C$DW$40        .dwtag  DW_TAG_TI_assign_register
+     683                      .dwattr $C$DW$40, DW_AT_name("OVM")
+     684                      .dwattr $C$DW$40, DW_AT_location[DW_OP_regx 0x20]
+     685              
+     686              $C$DW$41        .dwtag  DW_TAG_TI_assign_register
+     687                      .dwattr $C$DW$41, DW_AT_name("PAGE0")
+     688                      .dwattr $C$DW$41, DW_AT_location[DW_OP_regx 0x21]
+     689              
+     690              $C$DW$42        .dwtag  DW_TAG_TI_assign_register
+     691                      .dwattr $C$DW$42, DW_AT_name("AMODE")
+     692                      .dwattr $C$DW$42, DW_AT_location[DW_OP_regx 0x22]
+     693              
+     694              $C$DW$43        .dwtag  DW_TAG_TI_assign_register
+     695                      .dwattr $C$DW$43, DW_AT_name("INTM")
+     696                      .dwattr $C$DW$43, DW_AT_location[DW_OP_regx 0x23]
+     697              
+     698              $C$DW$44        .dwtag  DW_TAG_TI_assign_register
+     699                      .dwattr $C$DW$44, DW_AT_name("IFR")
+     700                      .dwattr $C$DW$44, DW_AT_location[DW_OP_regx 0x24]
+     701              
+     702              $C$DW$45        .dwtag  DW_TAG_TI_assign_register
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE   14
+
+     703                      .dwattr $C$DW$45, DW_AT_name("IER")
+     704                      .dwattr $C$DW$45, DW_AT_location[DW_OP_regx 0x25]
+     705              
+     706              $C$DW$46        .dwtag  DW_TAG_TI_assign_register
+     707                      .dwattr $C$DW$46, DW_AT_name("V")
+     708                      .dwattr $C$DW$46, DW_AT_location[DW_OP_regx 0x26]
+     709              
+     710              $C$DW$47        .dwtag  DW_TAG_TI_assign_register
+     711                      .dwattr $C$DW$47, DW_AT_name("PSEUDOH")
+     712                      .dwattr $C$DW$47, DW_AT_location[DW_OP_regx 0x4c]
+     713              
+     714              $C$DW$48        .dwtag  DW_TAG_TI_assign_register
+     715                      .dwattr $C$DW$48, DW_AT_name("VOL")
+     716                      .dwattr $C$DW$48, DW_AT_location[DW_OP_regx 0x4d]
+     717              
+     718              $C$DW$49        .dwtag  DW_TAG_TI_assign_register
+     719                      .dwattr $C$DW$49, DW_AT_name("AR0")
+     720                      .dwattr $C$DW$49, DW_AT_location[DW_OP_reg4]
+     721              
+     722              $C$DW$50        .dwtag  DW_TAG_TI_assign_register
+     723                      .dwattr $C$DW$50, DW_AT_name("XAR0")
+     724                      .dwattr $C$DW$50, DW_AT_location[DW_OP_reg5]
+     725              
+     726              $C$DW$51        .dwtag  DW_TAG_TI_assign_register
+     727                      .dwattr $C$DW$51, DW_AT_name("AR1")
+     728                      .dwattr $C$DW$51, DW_AT_location[DW_OP_reg6]
+     729              
+     730              $C$DW$52        .dwtag  DW_TAG_TI_assign_register
+     731                      .dwattr $C$DW$52, DW_AT_name("XAR1")
+     732                      .dwattr $C$DW$52, DW_AT_location[DW_OP_reg7]
+     733              
+     734              $C$DW$53        .dwtag  DW_TAG_TI_assign_register
+     735                      .dwattr $C$DW$53, DW_AT_name("AR2")
+     736                      .dwattr $C$DW$53, DW_AT_location[DW_OP_reg8]
+     737              
+     738              $C$DW$54        .dwtag  DW_TAG_TI_assign_register
+     739                      .dwattr $C$DW$54, DW_AT_name("XAR2")
+     740                      .dwattr $C$DW$54, DW_AT_location[DW_OP_reg9]
+     741              
+     742              $C$DW$55        .dwtag  DW_TAG_TI_assign_register
+     743                      .dwattr $C$DW$55, DW_AT_name("AR3")
+     744                      .dwattr $C$DW$55, DW_AT_location[DW_OP_reg10]
+     745              
+     746              $C$DW$56        .dwtag  DW_TAG_TI_assign_register
+     747                      .dwattr $C$DW$56, DW_AT_name("XAR3")
+     748                      .dwattr $C$DW$56, DW_AT_location[DW_OP_reg11]
+     749              
+     750              $C$DW$57        .dwtag  DW_TAG_TI_assign_register
+     751                      .dwattr $C$DW$57, DW_AT_name("AR4")
+     752                      .dwattr $C$DW$57, DW_AT_location[DW_OP_reg12]
+     753              
+     754              $C$DW$58        .dwtag  DW_TAG_TI_assign_register
+     755                      .dwattr $C$DW$58, DW_AT_name("XAR4")
+     756                      .dwattr $C$DW$58, DW_AT_location[DW_OP_reg13]
+     757              
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE   15
+
+     758              $C$DW$59        .dwtag  DW_TAG_TI_assign_register
+     759                      .dwattr $C$DW$59, DW_AT_name("AR5")
+     760                      .dwattr $C$DW$59, DW_AT_location[DW_OP_reg14]
+     761              
+     762              $C$DW$60        .dwtag  DW_TAG_TI_assign_register
+     763                      .dwattr $C$DW$60, DW_AT_name("XAR5")
+     764                      .dwattr $C$DW$60, DW_AT_location[DW_OP_reg15]
+     765              
+     766              $C$DW$61        .dwtag  DW_TAG_TI_assign_register
+     767                      .dwattr $C$DW$61, DW_AT_name("AR6")
+     768                      .dwattr $C$DW$61, DW_AT_location[DW_OP_reg16]
+     769              
+     770              $C$DW$62        .dwtag  DW_TAG_TI_assign_register
+     771                      .dwattr $C$DW$62, DW_AT_name("XAR6")
+     772                      .dwattr $C$DW$62, DW_AT_location[DW_OP_reg17]
+     773              
+     774              $C$DW$63        .dwtag  DW_TAG_TI_assign_register
+     775                      .dwattr $C$DW$63, DW_AT_name("AR7")
+     776                      .dwattr $C$DW$63, DW_AT_location[DW_OP_reg18]
+     777              
+     778              $C$DW$64        .dwtag  DW_TAG_TI_assign_register
+     779                      .dwattr $C$DW$64, DW_AT_name("XAR7")
+     780                      .dwattr $C$DW$64, DW_AT_location[DW_OP_reg19]
+     781              
+     782              $C$DW$65        .dwtag  DW_TAG_TI_assign_register
+     783                      .dwattr $C$DW$65, DW_AT_name("R0HL")
+     784                      .dwattr $C$DW$65, DW_AT_location[DW_OP_regx 0x2b]
+     785              
+     786              $C$DW$66        .dwtag  DW_TAG_TI_assign_register
+     787                      .dwattr $C$DW$66, DW_AT_name("R0H")
+     788                      .dwattr $C$DW$66, DW_AT_location[DW_OP_regx 0x2c]
+     789              
+     790              $C$DW$67        .dwtag  DW_TAG_TI_assign_register
+     791                      .dwattr $C$DW$67, DW_AT_name("R1HL")
+     792                      .dwattr $C$DW$67, DW_AT_location[DW_OP_regx 0x2f]
+     793              
+     794              $C$DW$68        .dwtag  DW_TAG_TI_assign_register
+     795                      .dwattr $C$DW$68, DW_AT_name("R1H")
+     796                      .dwattr $C$DW$68, DW_AT_location[DW_OP_regx 0x30]
+     797              
+     798              $C$DW$69        .dwtag  DW_TAG_TI_assign_register
+     799                      .dwattr $C$DW$69, DW_AT_name("R2HL")
+     800                      .dwattr $C$DW$69, DW_AT_location[DW_OP_regx 0x33]
+     801              
+     802              $C$DW$70        .dwtag  DW_TAG_TI_assign_register
+     803                      .dwattr $C$DW$70, DW_AT_name("R2H")
+     804                      .dwattr $C$DW$70, DW_AT_location[DW_OP_regx 0x34]
+     805              
+     806              $C$DW$71        .dwtag  DW_TAG_TI_assign_register
+     807                      .dwattr $C$DW$71, DW_AT_name("R3HL")
+     808                      .dwattr $C$DW$71, DW_AT_location[DW_OP_regx 0x37]
+     809              
+     810              $C$DW$72        .dwtag  DW_TAG_TI_assign_register
+     811                      .dwattr $C$DW$72, DW_AT_name("R3H")
+     812                      .dwattr $C$DW$72, DW_AT_location[DW_OP_regx 0x38]
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE   16
+
+     813              
+     814              $C$DW$73        .dwtag  DW_TAG_TI_assign_register
+     815                      .dwattr $C$DW$73, DW_AT_name("R4HL")
+     816                      .dwattr $C$DW$73, DW_AT_location[DW_OP_regx 0x3b]
+     817              
+     818              $C$DW$74        .dwtag  DW_TAG_TI_assign_register
+     819                      .dwattr $C$DW$74, DW_AT_name("R4H")
+     820                      .dwattr $C$DW$74, DW_AT_location[DW_OP_regx 0x3c]
+     821              
+     822              $C$DW$75        .dwtag  DW_TAG_TI_assign_register
+     823                      .dwattr $C$DW$75, DW_AT_name("R5HL")
+     824                      .dwattr $C$DW$75, DW_AT_location[DW_OP_regx 0x3f]
+     825              
+     826              $C$DW$76        .dwtag  DW_TAG_TI_assign_register
+     827                      .dwattr $C$DW$76, DW_AT_name("R5H")
+     828                      .dwattr $C$DW$76, DW_AT_location[DW_OP_regx 0x40]
+     829              
+     830              $C$DW$77        .dwtag  DW_TAG_TI_assign_register
+     831                      .dwattr $C$DW$77, DW_AT_name("R6HL")
+     832                      .dwattr $C$DW$77, DW_AT_location[DW_OP_regx 0x43]
+     833              
+     834              $C$DW$78        .dwtag  DW_TAG_TI_assign_register
+     835                      .dwattr $C$DW$78, DW_AT_name("R6H")
+     836                      .dwattr $C$DW$78, DW_AT_location[DW_OP_regx 0x44]
+     837              
+     838              $C$DW$79        .dwtag  DW_TAG_TI_assign_register
+     839                      .dwattr $C$DW$79, DW_AT_name("R7HL")
+     840                      .dwattr $C$DW$79, DW_AT_location[DW_OP_regx 0x47]
+     841              
+     842              $C$DW$80        .dwtag  DW_TAG_TI_assign_register
+     843                      .dwattr $C$DW$80, DW_AT_name("R7H")
+     844                      .dwattr $C$DW$80, DW_AT_location[DW_OP_regx 0x48]
+     845              
+     846              $C$DW$81        .dwtag  DW_TAG_TI_assign_register
+     847                      .dwattr $C$DW$81, DW_AT_name("RBL")
+     848                      .dwattr $C$DW$81, DW_AT_location[DW_OP_regx 0x49]
+     849              
+     850              $C$DW$82        .dwtag  DW_TAG_TI_assign_register
+     851                      .dwattr $C$DW$82, DW_AT_name("RB")
+     852                      .dwattr $C$DW$82, DW_AT_location[DW_OP_regx 0x4a]
+     853              
+     854              $C$DW$83        .dwtag  DW_TAG_TI_assign_register
+     855                      .dwattr $C$DW$83, DW_AT_name("STFL")
+     856                      .dwattr $C$DW$83, DW_AT_location[DW_OP_regx 0x27]
+     857              
+     858              $C$DW$84        .dwtag  DW_TAG_TI_assign_register
+     859                      .dwattr $C$DW$84, DW_AT_name("STF")
+     860                      .dwattr $C$DW$84, DW_AT_location[DW_OP_regx 0x28]
+     861              
+     862              $C$DW$85        .dwtag  DW_TAG_TI_assign_register
+     863                      .dwattr $C$DW$85, DW_AT_name("FPUHAZ")
+     864                      .dwattr $C$DW$85, DW_AT_location[DW_OP_reg27]
+     865              
+     866                      .dwendtag $C$DW$CU
+     867              
+TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:19 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+DLOG_4CH_F.asm                                                       PAGE   17
+
+
+No Assembly Errors, No Assembly Warnings
