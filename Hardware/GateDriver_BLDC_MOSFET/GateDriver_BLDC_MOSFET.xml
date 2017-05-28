@@ -1,0 +1,2138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/Users/Keith/Documents/GitHub/MotorController/Hardware/GateDriver_BLDC_MOSFET/GateDriver_BLDC_MOSFET.sch</source>
+    <date>3/8/2017 8:42:47 PM</date>
+    <tool>Eeschema 4.0.5</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date>19 oct 2012</date>
+        <source>GateDriver_BLDC_MOSFET.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/GateDriveSheet/" tstamps="/5802F342/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>GateDriveSheet.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/AnalogSenseSheet/" tstamps="/5802F349/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>AnalogSenseSheet.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Power_Inputs/" tstamps="/581F1F0E/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Power_Inputs.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J2">
+      <value>TI_BOOSTER_40_J2</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x10_Pitch2.54mm</footprint>
+      <libsource lib="boosterpack" part="Ti_Booster_40_J2"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5802FC8E</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>TI_BOOSTER_40_J4</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x10_Pitch2.54mm</footprint>
+      <libsource lib="boosterpack" part="Ti_Booster_40_J4"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5802FC95</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>UCC21520DW</value>
+      <footprint>KicadPcbPackages:SOIC-16W_7.5x10.3mm_Pitch1.27mm</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="UCC21520DW"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>580304BA</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>580338C3</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58033B11</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58035181</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>Jumper_NC_Small</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="Jumper_NC_Small"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>580351DD</tstamp>
+    </comp>
+    <comp ref="JP2">
+      <value>Jumper_NO_Small</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="Jumper_NO_Small"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5803523C</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58038EB1</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5803A80F</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>10pF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5803D228</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>10pF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5803D299</tstamp>
+    </comp>
+    <comp ref="R_boot1">
+      <value>2.2</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5803DBCA</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>10uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5803E0BF</tstamp>
+    </comp>
+    <comp ref="C_boot1">
+      <value>0.47uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5803E753</tstamp>
+    </comp>
+    <comp ref="Rg_ON1">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5803F0BF</tstamp>
+    </comp>
+    <comp ref="Rg_ON2">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5803F171</tstamp>
+    </comp>
+    <comp ref="Rg_OFF1">
+      <value>0</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5803F1D9</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5803F699</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>580404E9</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>UCC21520DW</value>
+      <footprint>KicadPcbPackages:SOIC-16W_7.5x10.3mm_Pitch1.27mm</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="UCC21520DW"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E578</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E590</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E596</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E5A8</tstamp>
+    </comp>
+    <comp ref="JP3">
+      <value>Jumper_NC_Small</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="Jumper_NC_Small"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E5AF</tstamp>
+    </comp>
+    <comp ref="JP4">
+      <value>Jumper_NO_Small</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="Jumper_NO_Small"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E5B5</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E5BF</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E5DA</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>10pF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E5E2</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>10pF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E5E8</tstamp>
+    </comp>
+    <comp ref="R_boot2">
+      <value>2.2</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E5F2</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>10uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E5FE</tstamp>
+    </comp>
+    <comp ref="C_boot2">
+      <value>0.47uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E60D</tstamp>
+    </comp>
+    <comp ref="Rg_ON3">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E61E</tstamp>
+    </comp>
+    <comp ref="Rg_ON4">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E624</tstamp>
+    </comp>
+    <comp ref="Rg_OFF2">
+      <value>0</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E62A</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E630</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5806E640</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>UCC21520DW</value>
+      <footprint>KicadPcbPackages:SOIC-16W_7.5x10.3mm_Pitch1.27mm</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="UCC21520DW"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58070679</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58070691</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58070697</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>580706A7</tstamp>
+    </comp>
+    <comp ref="JP5">
+      <value>Jumper_NC_Small</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="Jumper_NC_Small"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>580706AE</tstamp>
+    </comp>
+    <comp ref="JP6">
+      <value>Jumper_NO_Small</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="Jumper_NO_Small"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>580706B4</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>580706BD</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>580706D8</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>10pF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>580706E0</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>10pF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>580706E6</tstamp>
+    </comp>
+    <comp ref="R_boot3">
+      <value>2.2</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>580706F0</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>10uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>580706FC</tstamp>
+    </comp>
+    <comp ref="C_boot3">
+      <value>0.47uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58070707</tstamp>
+    </comp>
+    <comp ref="Rg_ON5">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58070716</tstamp>
+    </comp>
+    <comp ref="Rg_ON6">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5807071C</tstamp>
+    </comp>
+    <comp ref="Rg_OFF3">
+      <value>0</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58070722</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58070728</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58070732</tstamp>
+    </comp>
+    <comp ref="JP7">
+      <value>Jumper_NC_Small</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="Jumper_NC_Small"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58212600</tstamp>
+    </comp>
+    <comp ref="MotorA1">
+      <value>MotorA</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="PowerPin"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58702D9C</tstamp>
+    </comp>
+    <comp ref="MotorB1">
+      <value>MotorB</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="PowerPin"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>587053F1</tstamp>
+    </comp>
+    <comp ref="Gate_A_Top1">
+      <value>Gate_A_Top</value>
+      <footprint>Wire_Pads:SolderWirePad_single_1-5mmDrill</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58999AFA</tstamp>
+    </comp>
+    <comp ref="Gate_A_Bottom1">
+      <value>Gate_A_Bottom</value>
+      <footprint>Wire_Pads:SolderWirePad_single_1-5mmDrill</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>5899AA7E</tstamp>
+    </comp>
+    <comp ref="Gate_B_Bottom1">
+      <value>Gate_B_Bottom</value>
+      <footprint>Wire_Pads:SolderWirePad_single_1-5mmDrill</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>589A1964</tstamp>
+    </comp>
+    <comp ref="Gate_B_Top1">
+      <value>Gate_B_Top</value>
+      <footprint>Wire_Pads:SolderWirePad_single_1-5mmDrill</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>589A1C06</tstamp>
+    </comp>
+    <comp ref="MotorC1">
+      <value>MotorC</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="PowerPin"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>589B7308</tstamp>
+    </comp>
+    <comp ref="Gate_C_Bottom1">
+      <value>Gate_C_Bottom</value>
+      <footprint>Wire_Pads:SolderWirePad_single_1-5mmDrill</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>589C7ACE</tstamp>
+    </comp>
+    <comp ref="Gate_C_Top1">
+      <value>Gate_C_Top</value>
+      <footprint>Wire_Pads:SolderWirePad_single_1-5mmDrill</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>589D212C</tstamp>
+    </comp>
+    <comp ref="Dg_OFF1">
+      <value>VS-MBRS130L-M3</value>
+      <footprint>Diodes_SMD:D_SMB_Standard</footprint>
+      <libsource lib="device" part="D_Schottky"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58A5BA1F</tstamp>
+    </comp>
+    <comp ref="D_boot1">
+      <value>VS-MBRS130L-M3</value>
+      <footprint>Diodes_SMD:D_SMB_Standard</footprint>
+      <libsource lib="device" part="D_Schottky"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58A5D18F</tstamp>
+    </comp>
+    <comp ref="D_boot2">
+      <value>VS-MBRS130L-M3</value>
+      <footprint>Diodes_SMD:D_SMB_Standard</footprint>
+      <libsource lib="device" part="D_Schottky"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58A650B2</tstamp>
+    </comp>
+    <comp ref="Dg_OFF2">
+      <value>VS-MBRS130L-M3</value>
+      <footprint>Diodes_SMD:D_SMB_Standard</footprint>
+      <libsource lib="device" part="D_Schottky"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58A69641</tstamp>
+    </comp>
+    <comp ref="D_boot3">
+      <value>VS-MBRS130L-M3</value>
+      <footprint>Diodes_SMD:D_SMB_Standard</footprint>
+      <libsource lib="device" part="D_Schottky"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58A6A6DD</tstamp>
+    </comp>
+    <comp ref="Dg_OFF3">
+      <value>VS-MBRS130L-M3</value>
+      <footprint>Diodes_SMD:D_SMB_Standard</footprint>
+      <libsource lib="device" part="D_Schottky"/>
+      <sheetpath names="/GateDriveSheet/" tstamps="/5802F342/"/>
+      <tstamp>58A6AE3D</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>TI_BOOSTER_40_J1</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x10_Pitch2.54mm</footprint>
+      <libsource lib="boosterpack" part="Ti_Booster_40_J1"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5802FB8D</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>TI_BOOSTER_40_J3</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x10_Pitch2.54mm</footprint>
+      <libsource lib="boosterpack" part="Ti_Booster_40_J3"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5802FB94</tstamp>
+    </comp>
+    <comp ref="JP13">
+      <value>Jumper_NC_Small</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="Jumper_NC_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5809CADA</tstamp>
+    </comp>
+    <comp ref="JP12">
+      <value>Jumper_NC_Small</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="Jumper_NC_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>582105B3</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>AMC1301DWVR</value>
+      <footprint>KicadPcbPackages:SOIC-8-DWV</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="AMC1301DWVR"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58237AEA</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>4.7k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58237B04</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>4.7k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58237B0B</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>39</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58237B23</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>39</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58237B2A</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>0.01uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58237B37</tstamp>
+    </comp>
+    <comp ref="C38">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58237B3E</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>4.7uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58237B45</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>KTR10EZPF1004</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5823D41F</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>KTR10EZPF1004</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5823D7CE</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>KTR10EZPF1004</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5823D851</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>KTR10EZPF1004</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5823DD0F</tstamp>
+    </comp>
+    <comp ref="Rsense1">
+      <value>101</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58241C41</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>4.1k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>582426F3</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>50k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58242DC5</tstamp>
+    </comp>
+    <comp ref="R52">
+      <value>17.16</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58248DE7</tstamp>
+    </comp>
+    <comp ref="R53">
+      <value>4.84</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5824947A</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>0.01uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5824C580</tstamp>
+    </comp>
+    <comp ref="Rsense2">
+      <value>20k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58266936</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>4.7k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5827277F</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>4.7k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58272863</tstamp>
+    </comp>
+    <comp ref="C44">
+      <value>0.01uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58274015</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>OPA2320AIDGKR</value>
+      <footprint>KicadPcbPackages:VSSOP-8</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="OPA2320AIDGKR"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5828517B</tstamp>
+    </comp>
+    <comp ref="C35">
+      <value>0.01uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5829134F</tstamp>
+    </comp>
+    <comp ref="R46">
+      <value>4.7k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58291CDA</tstamp>
+    </comp>
+    <comp ref="C47">
+      <value>0.01uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58292266</tstamp>
+    </comp>
+    <comp ref="R43">
+      <value>7.5k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5829B559</tstamp>
+    </comp>
+    <comp ref="C43">
+      <value>180pF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5829B698</tstamp>
+    </comp>
+    <comp ref="C53">
+      <value>0.01uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>582ABBA9</tstamp>
+    </comp>
+    <comp ref="R54">
+      <value>17.16</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>583E861C</tstamp>
+    </comp>
+    <comp ref="R55">
+      <value>4.84</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>583E8622</tstamp>
+    </comp>
+    <comp ref="R56">
+      <value>17.16</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5856FB5C</tstamp>
+    </comp>
+    <comp ref="R57">
+      <value>4.84</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>5856FB62</tstamp>
+    </comp>
+    <comp ref="R50">
+      <value>100</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>587D1998</tstamp>
+    </comp>
+    <comp ref="C51">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>587D199E</tstamp>
+    </comp>
+    <comp ref="R88">
+      <value>100</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>587F38E6</tstamp>
+    </comp>
+    <comp ref="C86">
+      <value>1500pF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>587F38EC</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>589807D1</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>0.01uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>585CB118</tstamp>
+    </comp>
+    <comp ref="R58">
+      <value>100</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>589B2557</tstamp>
+    </comp>
+    <comp ref="C55">
+      <value>1500pF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>589B255D</tstamp>
+    </comp>
+    <comp ref="R59">
+      <value>100</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>589B6A1C</tstamp>
+    </comp>
+    <comp ref="C56">
+      <value>1500pF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>589B6A22</tstamp>
+    </comp>
+    <comp ref="HallSense1">
+      <value>LA_100_P</value>
+      <footprint>KicadPcbPackages:la_55_p</footprint>
+      <libsource lib="la_55_p" part="LA_55_P"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>589E9DB1</tstamp>
+    </comp>
+    <comp ref="HallSense2">
+      <value>LA_100_P</value>
+      <footprint>KicadPcbPackages:la_55_p</footprint>
+      <libsource lib="la_55_p" part="LA_55_P"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>589F2BB4</tstamp>
+    </comp>
+    <comp ref="HallSense3">
+      <value>LA_100_P</value>
+      <footprint>KicadPcbPackages:la_55_p</footprint>
+      <libsource lib="la_55_p" part="LA_55_P"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>589F76D2</tstamp>
+    </comp>
+    <comp ref="Fuse_1A5">
+      <value>MFU1206FF01000P100</value>
+      <footprint>SMD_Packages:SMD-1206_Pol</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="F_Small"/>
+      <sheetpath names="/AnalogSenseSheet/" tstamps="/5802F349/"/>
+      <tstamp>58A9F4D3</tstamp>
+    </comp>
+    <comp ref="+/-15V_Input1">
+      <value>CONN_01X03</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X03"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>581F75B2</tstamp>
+    </comp>
+    <comp ref="Fuse_1A3">
+      <value>MFU1206FF01000P100</value>
+      <footprint>SMD_Packages:SMD-1206_Pol</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="F_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>5820B4DE</tstamp>
+    </comp>
+    <comp ref="Fuse_5A1">
+      <value>MFU1206FF05000P100</value>
+      <footprint>SMD_Packages:SMD-1206_Pol</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="F_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>5820B73F</tstamp>
+    </comp>
+    <comp ref="Fuse_1A2">
+      <value>MFU1206FF01000P100</value>
+      <footprint>SMD_Packages:SMD-1206_Pol</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="F_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>5820C334</tstamp>
+    </comp>
+    <comp ref="C98">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>5821CDE9</tstamp>
+    </comp>
+    <comp ref="C91">
+      <value>4.7uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>5821CE02</tstamp>
+    </comp>
+    <comp ref="C96">
+      <value>10uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>5821E84D</tstamp>
+    </comp>
+    <comp ref="FerriteBead2">
+      <value>BLM31SN500SH1L</value>
+      <footprint>Choke_SMD:Choke_SMD_1206_Standard</footprint>
+      <libsource lib="device" part="L_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>582206E3</tstamp>
+    </comp>
+    <comp ref="U13">
+      <value>TLV70433DBVR</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-5</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="TLV70433DBVR"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>58221B44</tstamp>
+    </comp>
+    <comp ref="C92">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>58221CE4</tstamp>
+    </comp>
+    <comp ref="C89">
+      <value>10uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>58221F6A</tstamp>
+    </comp>
+    <comp ref="C102">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>58221FE9</tstamp>
+    </comp>
+    <comp ref="C104">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>5822C599</tstamp>
+    </comp>
+    <comp ref="C105">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>5822C614</tstamp>
+    </comp>
+    <comp ref="C106">
+      <value>10uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>5822F04E</tstamp>
+    </comp>
+    <comp ref="U14">
+      <value>REF2033AIDDCR</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-5</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="REF2033AIDDCR"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>582B9EFA</tstamp>
+    </comp>
+    <comp ref="17V_Input1">
+      <value>CONN_01X02</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>582BFE9A</tstamp>
+    </comp>
+    <comp ref="5V_Input1">
+      <value>CONN_01X02</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>582C5D3C</tstamp>
+    </comp>
+    <comp ref="C97">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>582C6786</tstamp>
+    </comp>
+    <comp ref="C93">
+      <value>4.7uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>582C678D</tstamp>
+    </comp>
+    <comp ref="C95">
+      <value>10uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>582C6794</tstamp>
+    </comp>
+    <comp ref="FerriteBead1">
+      <value>BLM31SN500SH1L</value>
+      <footprint>Choke_SMD:Choke_SMD_1206_Standard</footprint>
+      <libsource lib="device" part="L_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>582C8724</tstamp>
+    </comp>
+    <comp ref="Fuse_1A1">
+      <value>MFU1206FF01000P100</value>
+      <footprint>SMD_Packages:SMD-1206_Pol</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="F_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>582C8E2D</tstamp>
+    </comp>
+    <comp ref="C101">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>582D51F0</tstamp>
+    </comp>
+    <comp ref="C99">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>582D63D0</tstamp>
+    </comp>
+    <comp ref="C94">
+      <value>0.1uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>582D725C</tstamp>
+    </comp>
+    <comp ref="C107">
+      <value>10uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>5822FAB2</tstamp>
+    </comp>
+    <comp ref="C100">
+      <value>10uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>589CA2C8</tstamp>
+    </comp>
+    <comp ref="C90">
+      <value>10uF_ceramic</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>589CB414</tstamp>
+    </comp>
+    <comp ref="BATT+1">
+      <value>BATT+</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="PowerPin"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>58707C93</tstamp>
+    </comp>
+    <comp ref="BATT-1">
+      <value>BATT-</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="PowerPin"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>58707D56</tstamp>
+    </comp>
+    <comp ref="Fuse_1A4">
+      <value>MFU1206FF01000P100</value>
+      <footprint>SMD_Packages:SMD-1206_Pol</footprint>
+      <libsource lib="GateDriver_BLDC_MOSFET-cache" part="F_Small"/>
+      <sheetpath names="/Power_Inputs/" tstamps="/581F1F0E/"/>
+      <tstamp>58A8478B</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="GateDriver_BLDC_MOSFET-cache" part="AMC1301DWVR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AMC1301DWVR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD1" type="input"/>
+        <pin num="2" name="VINP" type="input"/>
+        <pin num="3" name="VINN" type="input"/>
+        <pin num="4" name="GND1" type="input"/>
+        <pin num="5" name="GND2" type="input"/>
+        <pin num="6" name="VOUTN" type="input"/>
+        <pin num="7" name="VOUTP" type="input"/>
+        <pin num="8" name="VDD2" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X02">
+      <description>Connector, single row, 01x02</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X03">
+      <description>Connector, single row, 01x03</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X03</fp>
+        <fp>Pin_Header_Angled_1X03</fp>
+        <fp>Socket_Strip_Straight_1X03</fp>
+        <fp>Socket_Strip_Angled_1X03</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C_Small">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>Diode_*</fp>
+        <fp>D-*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="GateDriver_BLDC_MOSFET-cache" part="F_Small">
+      <footprints>
+        <fp>CP*</fp>
+        <fp>SM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">F_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Jumper_NC_Small">
+      <description>Jumper, normally closed</description>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_NC_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Jumper_NO_Small">
+      <description>Jumper, normally open</description>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_NO_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="la_55_p" part="LA_55_P">
+      <fields>
+        <field name="Reference">HallSense</field>
+        <field name="Value">LA_55_P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+15V" type="input"/>
+        <pin num="2" name="-15V" type="input"/>
+        <pin num="3" name="M" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="L_Small">
+      <description>Inductor, small symbol</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="GateDriver_BLDC_MOSFET-cache" part="OPA2320AIDGKR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">OPA2320AIDGKR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OutA" type="input"/>
+        <pin num="2" name="-InA" type="input"/>
+        <pin num="3" name="+InA" type="input"/>
+        <pin num="4" name="V-" type="input"/>
+        <pin num="5" name="+InB" type="input"/>
+        <pin num="6" name="-InB" type="input"/>
+        <pin num="7" name="OutB" type="input"/>
+        <pin num="8" name="V+" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="GateDriver_BLDC_MOSFET-cache" part="PowerPin">
+      <fields>
+        <field name="Reference">Pin</field>
+        <field name="Value">PowerPin</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Power" type="input"/>
+        <pin num="??" name="Power" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="GateDriver_BLDC_MOSFET-cache" part="REF2033AIDDCR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">REF2033AIDDCR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBIAS" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="VIN" type="input"/>
+        <pin num="5" name="VREF" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="TEST_1P">
+      <description>point</description>
+      <fields>
+        <field name="Reference">W</field>
+        <field name="Value">TEST_1P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="GateDriver_BLDC_MOSFET-cache" part="TLV70433DBVR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV70433DBVR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="input"/>
+        <pin num="2" name="IN" type="input"/>
+        <pin num="3" name="OUT" type="input"/>
+        <pin num="4" name="NC1" type="NotConnected"/>
+        <pin num="5" name="NC1" type="NotConnected"/>
+      </pins>
+    </libpart>
+    <libpart lib="boosterpack" part="Ti_Booster_40_J1">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Ti_Booster_40_J1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1.01/Vcc" type="power_out"/>
+        <pin num="2" name="1.02/PB5" type="BiDi"/>
+        <pin num="3" name="1.03/PB0/Rxd" type="BiDi"/>
+        <pin num="4" name="1.04/PB1/TxD" type="BiDi"/>
+        <pin num="5" name="1.05/PE4" type="BiDi"/>
+        <pin num="6" name="1.06/PE5" type="BiDi"/>
+        <pin num="7" name="1.07/PB4" type="BiDi"/>
+        <pin num="8" name="1.08/PA5" type="BiDi"/>
+        <pin num="9" name="1.09/PA6" type="BiDi"/>
+        <pin num="10" name="1.10/PA7" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="boosterpack" part="Ti_Booster_40_J2">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Ti_Booster_40_J2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="2.01/GND" type="power_out"/>
+        <pin num="2" name="2.02/PB2" type="BiDi"/>
+        <pin num="3" name="2.03/PE0" type="BiDi"/>
+        <pin num="4" name="2.04/PF0" type="BiDi"/>
+        <pin num="5" name="2.05/RESET" type="BiDi"/>
+        <pin num="6" name="2.06/PB7" type="BiDi"/>
+        <pin num="7" name="2.07/PB6" type="BiDi"/>
+        <pin num="8" name="2.08/PA4" type="BiDi"/>
+        <pin num="9" name="2.09/PA3" type="BiDi"/>
+        <pin num="10" name="2.10/PA2" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="boosterpack" part="Ti_Booster_40_J3">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Ti_Booster_40_J3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="3.01/+5V" type="power_out"/>
+        <pin num="2" name="3.02/GND" type="BiDi"/>
+        <pin num="3" name="3.03/PD0" type="BiDi"/>
+        <pin num="4" name="3.04/PD1" type="BiDi"/>
+        <pin num="5" name="3.05/PD2" type="BiDi"/>
+        <pin num="6" name="3.06/PD3" type="BiDi"/>
+        <pin num="7" name="3.07/PE1" type="BiDi"/>
+        <pin num="8" name="3.08/PE2" type="BiDi"/>
+        <pin num="9" name="3.09/PE3" type="BiDi"/>
+        <pin num="10" name="3.10/PF1" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="boosterpack" part="Ti_Booster_40_J4">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Ti_Booster_40_J4</field>
+      </fields>
+      <pins>
+        <pin num="1" name="4.01/PF2" type="BiDi"/>
+        <pin num="2" name="4.02/PF3" type="BiDi"/>
+        <pin num="3" name="4.03/PB3" type="BiDi"/>
+        <pin num="4" name="4.04/PC4" type="BiDi"/>
+        <pin num="5" name="4.05/PC5" type="BiDi"/>
+        <pin num="6" name="4.06/PC6" type="BiDi"/>
+        <pin num="7" name="4.07/PC7" type="BiDi"/>
+        <pin num="8" name="4.08/PD6" type="BiDi"/>
+        <pin num="9" name="4.09/PD7" type="BiDi"/>
+        <pin num="10" name="4.10/PF4" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="GateDriver_BLDC_MOSFET-cache" part="UCC21520DW">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">UCC21520DW</field>
+      </fields>
+      <pins>
+        <pin num="1" name="INA" type="input"/>
+        <pin num="2" name="INB" type="input"/>
+        <pin num="3" name="VCCI" type="input"/>
+        <pin num="4" name="GND" type="input"/>
+        <pin num="5" name="DISABLE" type="input"/>
+        <pin num="6" name="DeadTime" type="input"/>
+        <pin num="8" name="VCCI" type="input"/>
+        <pin num="9" name="VSSB" type="input"/>
+        <pin num="10" name="OUTB" type="output"/>
+        <pin num="11" name="VDDB" type="input"/>
+        <pin num="14" name="VSSA" type="input"/>
+        <pin num="15" name="OUTA" type="output"/>
+        <pin num="16" name="VDDA" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="la_55_p">
+      <uri>C:\Users\Keith\Documents\GitHub\MotorController\Hardware\GateDriver_BLDC_MOSFET\Kicad_Custom_Libraries\la_55_p.lib</uri>
+    </library>
+    <library logical="GateDriver_BLDC_MOSFET-cache">
+      <uri>C:\Users\Keith\Documents\GitHub\MotorController\Hardware\GateDriver_BLDC_MOSFET\GateDriver_BLDC_MOSFET-cache.lib</uri>
+    </library>
+    <library logical="boosterpack">
+      <uri>C:\Users\Keith\Documents\GitHub\MotorController\Hardware\GateDriver_BLDC_MOSFET\boosterpack.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(Dg_OFF1-Pad2)">
+      <node ref="Rg_OFF1" pin="2"/>
+      <node ref="Dg_OFF1" pin="2"/>
+    </net>
+    <net code="2" name="Net-(JP3-Pad2)">
+      <node ref="R11" pin="1"/>
+      <node ref="U2" pin="6"/>
+      <node ref="JP3" pin="2"/>
+    </net>
+    <net code="3" name="Net-(J4-Pad9)">
+      <node ref="R6" pin="2"/>
+      <node ref="J4" pin="9"/>
+    </net>
+    <net code="4" name="Net-(R6-Pad1)">
+      <node ref="R6" pin="1"/>
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="5" name="Net-(J4-Pad4)">
+      <node ref="R5" pin="2"/>
+      <node ref="J4" pin="4"/>
+    </net>
+    <net code="6" name="Net-(J4-Pad3)">
+      <node ref="R4" pin="2"/>
+      <node ref="J4" pin="3"/>
+    </net>
+    <net code="7" name="Net-(Gate_A_Top1-Pad1)">
+      <node ref="Rg_OFF1" pin="1"/>
+      <node ref="Gate_A_Top1" pin="1"/>
+      <node ref="Rg_ON1" pin="1"/>
+    </net>
+    <net code="8" name="Net-(C_boot2-Pad1)">
+      <node ref="D_boot2" pin="1"/>
+      <node ref="U2" pin="16"/>
+      <node ref="C_boot2" pin="1"/>
+    </net>
+    <net code="9" name="Net-(D_boot2-Pad2)">
+      <node ref="R_boot2" pin="1"/>
+      <node ref="D_boot2" pin="2"/>
+    </net>
+    <net code="10" name="Net-(C_boot2-Pad2)">
+      <node ref="MotorB1" pin="1"/>
+      <node ref="U2" pin="14"/>
+      <node ref="C_boot2" pin="2"/>
+    </net>
+    <net code="11" name="Net-(JP4-Pad2)">
+      <node ref="JP4" pin="2"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="12" name="Net-(J4-Pad6)">
+      <node ref="J4" pin="6"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="13" name="Net-(Dg_OFF3-Pad2)">
+      <node ref="Rg_OFF3" pin="2"/>
+      <node ref="Dg_OFF3" pin="2"/>
+    </net>
+    <net code="14" name="Net-(D_boot3-Pad2)">
+      <node ref="R_boot3" pin="1"/>
+      <node ref="D_boot3" pin="2"/>
+    </net>
+    <net code="15" name="Net-(C_boot3-Pad1)">
+      <node ref="U3" pin="16"/>
+      <node ref="D_boot3" pin="1"/>
+      <node ref="C_boot3" pin="1"/>
+    </net>
+    <net code="16" name="Net-(Dg_OFF2-Pad2)">
+      <node ref="Dg_OFF2" pin="2"/>
+      <node ref="Rg_OFF2" pin="2"/>
+    </net>
+    <net code="17" name="Net-(D_boot1-Pad2)">
+      <node ref="D_boot1" pin="2"/>
+      <node ref="R_boot1" pin="1"/>
+    </net>
+    <net code="18" name="Net-(C_boot1-Pad1)">
+      <node ref="D_boot1" pin="1"/>
+      <node ref="U1" pin="16"/>
+      <node ref="C_boot1" pin="1"/>
+    </net>
+    <net code="19" name="Net-(Gate_C_Bottom1-Pad1)">
+      <node ref="Gate_C_Bottom1" pin="1"/>
+      <node ref="Rg_ON6" pin="1"/>
+    </net>
+    <net code="20" name="Net-(Gate_B_Bottom1-Pad1)">
+      <node ref="Gate_B_Bottom1" pin="1"/>
+      <node ref="Rg_ON4" pin="1"/>
+    </net>
+    <net code="21" name="Net-(Gate_A_Bottom1-Pad1)">
+      <node ref="Gate_A_Bottom1" pin="1"/>
+      <node ref="Rg_ON2" pin="1"/>
+    </net>
+    <net code="22" name="VSS">
+      <node ref="R20" pin="2"/>
+      <node ref="C92" pin="2"/>
+      <node ref="C89" pin="2"/>
+      <node ref="C23" pin="2"/>
+      <node ref="C102" pin="2"/>
+      <node ref="U4" pin="4"/>
+      <node ref="U2" pin="9"/>
+      <node ref="Rsense2" pin="1"/>
+      <node ref="BATT-1" pin="1"/>
+      <node ref="C19" pin="2"/>
+      <node ref="U13" pin="1"/>
+      <node ref="C100" pin="2"/>
+      <node ref="C90" pin="2"/>
+      <node ref="C96" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="U3" pin="9"/>
+      <node ref="17V_Input1" pin="1"/>
+      <node ref="U1" pin="9"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C98" pin="2"/>
+      <node ref="C91" pin="2"/>
+    </net>
+    <net code="23" name="Net-(C_boot1-Pad2)">
+      <node ref="C_boot1" pin="2"/>
+      <node ref="MotorA1" pin="1"/>
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="24" name="VDD">
+      <node ref="C16" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="U3" pin="11"/>
+      <node ref="R_boot2" pin="2"/>
+      <node ref="C14" pin="1"/>
+      <node ref="C17" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="R_boot1" pin="2"/>
+      <node ref="R_boot3" pin="2"/>
+      <node ref="C15" pin="1"/>
+      <node ref="U1" pin="11"/>
+      <node ref="U2" pin="11"/>
+      <node ref="C92" pin="1"/>
+      <node ref="C89" pin="1"/>
+      <node ref="C90" pin="1"/>
+      <node ref="Fuse_5A1" pin="1"/>
+      <node ref="U13" pin="2"/>
+    </net>
+    <net code="25" name="Net-(JP2-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="JP2" pin="2"/>
+    </net>
+    <net code="26" name="Net-(JP1-Pad2)">
+      <node ref="R10" pin="1"/>
+      <node ref="JP1" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="27" name="Net-(J4-Pad10)">
+      <node ref="R3" pin="2"/>
+      <node ref="J4" pin="10"/>
+    </net>
+    <net code="28" name="Net-(R3-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="29" name="Net-(Gate_B_Top1-Pad1)">
+      <node ref="Rg_ON3" pin="1"/>
+      <node ref="Gate_B_Top1" pin="1"/>
+      <node ref="Rg_OFF2" pin="1"/>
+    </net>
+    <net code="30" name="Net-(Rg_ON4-Pad2)">
+      <node ref="Rg_ON4" pin="2"/>
+      <node ref="U2" pin="10"/>
+    </net>
+    <net code="31" name="Net-(Rg_ON2-Pad2)">
+      <node ref="Rg_ON2" pin="2"/>
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="32" name="Net-(J4-Pad5)">
+      <node ref="R1" pin="2"/>
+      <node ref="J4" pin="5"/>
+    </net>
+    <net code="33" name="GND">
+      <node ref="C32" pin="2"/>
+      <node ref="C55" pin="2"/>
+      <node ref="C56" pin="2"/>
+      <node ref="C94" pin="2"/>
+      <node ref="C99" pin="2"/>
+      <node ref="U3" pin="4"/>
+      <node ref="C101" pin="2"/>
+      <node ref="+/-15V_Input1" pin="2"/>
+      <node ref="C95" pin="2"/>
+      <node ref="C93" pin="2"/>
+      <node ref="C97" pin="2"/>
+      <node ref="C53" pin="2"/>
+      <node ref="R55" pin="2"/>
+      <node ref="C47" pin="2"/>
+      <node ref="C44" pin="2"/>
+      <node ref="U7" pin="4"/>
+      <node ref="C107" pin="2"/>
+      <node ref="U14" pin="2"/>
+      <node ref="R53" pin="2"/>
+      <node ref="C104" pin="2"/>
+      <node ref="C105" pin="1"/>
+      <node ref="C106" pin="1"/>
+      <node ref="C38" pin="2"/>
+      <node ref="5V_Input1" pin="1"/>
+      <node ref="C31" pin="2"/>
+      <node ref="R57" pin="2"/>
+      <node ref="C51" pin="2"/>
+      <node ref="C86" pin="2"/>
+      <node ref="JP13" pin="1"/>
+      <node ref="U4" pin="5"/>
+      <node ref="JP4" pin="1"/>
+      <node ref="C9" pin="2"/>
+      <node ref="JP2" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="JP7" pin="2"/>
+      <node ref="U2" pin="4"/>
+      <node ref="U1" pin="4"/>
+      <node ref="C4" pin="2"/>
+      <node ref="JP6" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C12" pin="2"/>
+    </net>
+    <net code="34" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+      <node ref="JP7" pin="1"/>
+    </net>
+    <net code="35" name="Net-(J4-Pad8)">
+      <node ref="J4" pin="8"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="36" name="Net-(J4-Pad2)">
+      <node ref="J4" pin="2"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="37" name="Net-(J4-Pad1)">
+      <node ref="J4" pin="1"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="38" name="Net-(Dg_OFF1-Pad1)">
+      <node ref="U1" pin="15"/>
+      <node ref="Dg_OFF1" pin="1"/>
+      <node ref="Rg_ON1" pin="2"/>
+    </net>
+    <net code="39" name="Net-(Dg_OFF3-Pad1)">
+      <node ref="U3" pin="15"/>
+      <node ref="Rg_ON5" pin="2"/>
+      <node ref="Dg_OFF3" pin="1"/>
+    </net>
+    <net code="40" name="Net-(Gate_C_Top1-Pad1)">
+      <node ref="Rg_ON5" pin="1"/>
+      <node ref="Rg_OFF3" pin="1"/>
+      <node ref="Gate_C_Top1" pin="1"/>
+    </net>
+    <net code="41" name="Net-(JP6-Pad2)">
+      <node ref="JP6" pin="2"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="42" name="Net-(JP5-Pad2)">
+      <node ref="JP5" pin="2"/>
+      <node ref="U3" pin="6"/>
+      <node ref="R12" pin="1"/>
+    </net>
+    <net code="43" name="Net-(R9-Pad1)">
+      <node ref="U3" pin="5"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="44" name="Net-(Dg_OFF2-Pad1)">
+      <node ref="Dg_OFF2" pin="1"/>
+      <node ref="Rg_ON3" pin="2"/>
+      <node ref="U2" pin="15"/>
+    </net>
+    <net code="45" name="Net-(Rg_ON6-Pad2)">
+      <node ref="Rg_ON6" pin="2"/>
+      <node ref="U3" pin="10"/>
+    </net>
+    <net code="46" name="Net-(C_boot3-Pad2)">
+      <node ref="C_boot3" pin="2"/>
+      <node ref="U3" pin="14"/>
+      <node ref="MotorC1" pin="1"/>
+    </net>
+    <net code="47" name="Net-(C10-Pad1)">
+      <node ref="R2" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C10" pin="1"/>
+    </net>
+    <net code="48" name="Net-(C7-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="49" name="Net-(J4-Pad7)">
+      <node ref="J4" pin="7"/>
+    </net>
+    <net code="50" name="Net-(J2-Pad10)">
+      <node ref="J2" pin="10"/>
+    </net>
+    <net code="51" name="Net-(J2-Pad9)">
+      <node ref="J2" pin="9"/>
+    </net>
+    <net code="52" name="Net-(J2-Pad8)">
+      <node ref="J2" pin="8"/>
+    </net>
+    <net code="53" name="Net-(J2-Pad7)">
+      <node ref="J2" pin="7"/>
+    </net>
+    <net code="54" name="Net-(J2-Pad6)">
+      <node ref="J2" pin="6"/>
+    </net>
+    <net code="55" name="Net-(J2-Pad5)">
+      <node ref="J2" pin="5"/>
+    </net>
+    <net code="56" name="Net-(J2-Pad4)">
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="57" name="Net-(J2-Pad3)">
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="58" name="Net-(J2-Pad2)">
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="59" name="Net-(C12-Pad1)">
+      <node ref="C12" pin="1"/>
+      <node ref="U3" pin="2"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="60" name="Net-(C9-Pad1)">
+      <node ref="U3" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="61" name="+3V3">
+      <node ref="C5" pin="1"/>
+      <node ref="U1" pin="8"/>
+      <node ref="JP1" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="JP3" pin="1"/>
+      <node ref="C32" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C53" pin="1"/>
+      <node ref="C38" pin="1"/>
+      <node ref="U7" pin="8"/>
+      <node ref="U4" pin="8"/>
+      <node ref="U3" pin="8"/>
+      <node ref="U3" pin="3"/>
+      <node ref="U2" pin="8"/>
+      <node ref="C2" pin="1"/>
+      <node ref="JP5" pin="1"/>
+      <node ref="Fuse_1A5" pin="2"/>
+      <node ref="U1" pin="3"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="62" name="Net-(C11-Pad1)">
+      <node ref="U2" pin="2"/>
+      <node ref="R5" pin="1"/>
+      <node ref="C11" pin="1"/>
+    </net>
+    <net code="63" name="Net-(C8-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="64" name="Net-(HallSense2-Pad3)">
+      <node ref="HallSense2" pin="3"/>
+      <node ref="R54" pin="1"/>
+    </net>
+    <net code="65" name="Net-(R54-Pad2)">
+      <node ref="R58" pin="2"/>
+      <node ref="R55" pin="1"/>
+      <node ref="R54" pin="2"/>
+    </net>
+    <net code="66" name="Net-(J3-Pad2)">
+      <node ref="JP13" pin="2"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="67" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1"/>
+      <node ref="JP12" pin="2"/>
+    </net>
+    <net code="68" name="Net-(R32-Pad2)">
+      <node ref="R32" pin="2"/>
+      <node ref="U4" pin="7"/>
+    </net>
+    <net code="69" name="Net-(R31-Pad2)">
+      <node ref="R31" pin="2"/>
+      <node ref="U4" pin="6"/>
+    </net>
+    <net code="70" name="Isol_+3.3V">
+      <node ref="U4" pin="1"/>
+      <node ref="C100" pin="1"/>
+      <node ref="U13" pin="3"/>
+      <node ref="C23" pin="1"/>
+      <node ref="C102" pin="1"/>
+      <node ref="R19" pin="1"/>
+    </net>
+    <net code="71" name="+5V">
+      <node ref="C31" pin="1"/>
+      <node ref="JP12" pin="1"/>
+      <node ref="Fuse_1A4" pin="1"/>
+      <node ref="C97" pin="1"/>
+      <node ref="C93" pin="1"/>
+      <node ref="C95" pin="1"/>
+      <node ref="FerriteBead1" pin="2"/>
+    </net>
+    <net code="72" name="Net-(HallSense3-Pad3)">
+      <node ref="R56" pin="1"/>
+      <node ref="HallSense3" pin="3"/>
+    </net>
+    <net code="73" name="BusVoltageIn+">
+      <node ref="C44" pin="1"/>
+      <node ref="R38" pin="1"/>
+      <node ref="U7" pin="3"/>
+      <node ref="R46" pin="2"/>
+    </net>
+    <net code="74" name="BusVoltageIn-">
+      <node ref="U7" pin="2"/>
+      <node ref="R37" pin="1"/>
+      <node ref="C43" pin="2"/>
+      <node ref="R43" pin="1"/>
+    </net>
+    <net code="75" name="BusVoltageOpampOutput">
+      <node ref="R50" pin="2"/>
+      <node ref="U7" pin="1"/>
+      <node ref="R43" pin="2"/>
+      <node ref="C43" pin="1"/>
+    </net>
+    <net code="76" name="Net-(R16-Pad1)">
+      <node ref="R25" pin="2"/>
+      <node ref="Rsense1" pin="2"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="77" name="Net-(C35-Pad1)">
+      <node ref="R31" pin="1"/>
+      <node ref="R37" pin="2"/>
+      <node ref="C35" pin="1"/>
+    </net>
+    <net code="78" name="Net-(C35-Pad2)">
+      <node ref="R38" pin="2"/>
+      <node ref="C35" pin="2"/>
+      <node ref="R32" pin="1"/>
+    </net>
+    <net code="79" name="Net-(Rsense1-Pad1)">
+      <node ref="Rsense2" pin="2"/>
+      <node ref="Rsense1" pin="1"/>
+    </net>
+    <net code="80" name="+BATT">
+      <node ref="BATT+1" pin="1"/>
+      <node ref="R13" pin="2"/>
+    </net>
+    <net code="81" name="Net-(R13-Pad1)">
+      <node ref="R14" pin="2"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="82" name="Net-(R14-Pad1)">
+      <node ref="R14" pin="1"/>
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="83" name="Net-(R15-Pad1)">
+      <node ref="R16" pin="2"/>
+      <node ref="R15" pin="1"/>
+    </net>
+    <net code="84" name="Net-(C19-Pad1)">
+      <node ref="R26" pin="2"/>
+      <node ref="C19" pin="1"/>
+      <node ref="R20" pin="1"/>
+      <node ref="R19" pin="2"/>
+    </net>
+    <net code="85" name="Net-(HallSense1-Pad3)">
+      <node ref="R52" pin="1"/>
+      <node ref="HallSense1" pin="3"/>
+    </net>
+    <net code="86" name="+15V">
+      <node ref="HallSense1" pin="1"/>
+      <node ref="Fuse_1A3" pin="1"/>
+      <node ref="HallSense3" pin="1"/>
+      <node ref="HallSense2" pin="1"/>
+    </net>
+    <net code="87" name="-15V">
+      <node ref="HallSense1" pin="2"/>
+      <node ref="HallSense2" pin="2"/>
+      <node ref="Fuse_1A2" pin="1"/>
+      <node ref="HallSense3" pin="2"/>
+    </net>
+    <net code="88" name="VEE">
+      <node ref="U14" pin="1"/>
+      <node ref="C101" pin="1"/>
+      <node ref="R46" pin="1"/>
+      <node ref="C47" pin="1"/>
+    </net>
+    <net code="89" name="Net-(Fuse_1A5-Pad1)">
+      <node ref="J1" pin="1"/>
+      <node ref="Fuse_1A5" pin="1"/>
+    </net>
+    <net code="90" name="BatteryBusVoltage">
+      <node ref="J3" pin="3"/>
+      <node ref="R50" pin="1"/>
+      <node ref="C51" pin="1"/>
+    </net>
+    <net code="91" name="Net-(J3-Pad8)">
+      <node ref="J3" pin="8"/>
+    </net>
+    <net code="92" name="Net-(J3-Pad7)">
+      <node ref="J3" pin="7"/>
+    </net>
+    <net code="93" name="PhaseB_Current">
+      <node ref="C55" pin="1"/>
+      <node ref="R58" pin="1"/>
+      <node ref="J3" pin="5"/>
+    </net>
+    <net code="94" name="PhaseA_Current">
+      <node ref="C86" pin="1"/>
+      <node ref="J3" pin="4"/>
+      <node ref="R88" pin="1"/>
+    </net>
+    <net code="95" name="Net-(U7-Pad5)">
+      <node ref="U7" pin="5"/>
+    </net>
+    <net code="96" name="Net-(U7-Pad6)">
+      <node ref="U7" pin="6"/>
+    </net>
+    <net code="97" name="Net-(U7-Pad7)">
+      <node ref="U7" pin="7"/>
+    </net>
+    <net code="98" name="PhaseC_Current">
+      <node ref="R59" pin="1"/>
+      <node ref="J3" pin="6"/>
+      <node ref="C56" pin="1"/>
+    </net>
+    <net code="99" name="Net-(R56-Pad2)">
+      <node ref="R57" pin="1"/>
+      <node ref="R56" pin="2"/>
+      <node ref="R59" pin="2"/>
+    </net>
+    <net code="100" name="Net-(C28-Pad2)">
+      <node ref="U4" pin="3"/>
+      <node ref="C28" pin="2"/>
+      <node ref="R26" pin="1"/>
+    </net>
+    <net code="101" name="Net-(C28-Pad1)">
+      <node ref="C28" pin="1"/>
+      <node ref="R25" pin="1"/>
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="102" name="Net-(J3-Pad10)">
+      <node ref="J3" pin="10"/>
+    </net>
+    <net code="103" name="Net-(J3-Pad9)">
+      <node ref="J3" pin="9"/>
+    </net>
+    <net code="104" name="Net-(J1-Pad10)">
+      <node ref="J1" pin="10"/>
+    </net>
+    <net code="105" name="Net-(J1-Pad9)">
+      <node ref="J1" pin="9"/>
+    </net>
+    <net code="106" name="Net-(J1-Pad8)">
+      <node ref="J1" pin="8"/>
+    </net>
+    <net code="107" name="Net-(J1-Pad7)">
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="108" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6"/>
+    </net>
+    <net code="109" name="Net-(J1-Pad5)">
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="110" name="Net-(J1-Pad4)">
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="111" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="112" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="113" name="Net-(R52-Pad2)">
+      <node ref="R52" pin="2"/>
+      <node ref="R88" pin="2"/>
+      <node ref="R53" pin="1"/>
+    </net>
+    <net code="114" name="Net-(FerriteBead1-Pad1)">
+      <node ref="Fuse_1A1" pin="2"/>
+      <node ref="FerriteBead1" pin="1"/>
+    </net>
+    <net code="115" name="Net-(C99-Pad1)">
+      <node ref="U14" pin="5"/>
+      <node ref="C99" pin="1"/>
+    </net>
+    <net code="116" name="Net-(FerriteBead2-Pad1)">
+      <node ref="Fuse_5A1" pin="2"/>
+      <node ref="FerriteBead2" pin="1"/>
+    </net>
+    <net code="117" name="Net-(+/-15V_Input1-Pad1)">
+      <node ref="C104" pin="1"/>
+      <node ref="+/-15V_Input1" pin="1"/>
+      <node ref="Fuse_1A3" pin="2"/>
+      <node ref="C107" pin="1"/>
+    </net>
+    <net code="118" name="Net-(5V_Input1-Pad2)">
+      <node ref="5V_Input1" pin="2"/>
+      <node ref="Fuse_1A4" pin="2"/>
+    </net>
+    <net code="119" name="Net-(C94-Pad1)">
+      <node ref="C94" pin="1"/>
+      <node ref="Fuse_1A1" pin="1"/>
+      <node ref="U14" pin="4"/>
+      <node ref="U14" pin="3"/>
+    </net>
+    <net code="120" name="Net-(U13-Pad4)">
+      <node ref="U13" pin="4"/>
+    </net>
+    <net code="121" name="Net-(U13-Pad5)">
+      <node ref="U13" pin="5"/>
+    </net>
+    <net code="122" name="Net-(+/-15V_Input1-Pad3)">
+      <node ref="Fuse_1A2" pin="2"/>
+      <node ref="+/-15V_Input1" pin="3"/>
+      <node ref="C106" pin="2"/>
+      <node ref="C105" pin="2"/>
+    </net>
+    <net code="123" name="Net-(17V_Input1-Pad2)">
+      <node ref="17V_Input1" pin="2"/>
+      <node ref="FerriteBead2" pin="2"/>
+      <node ref="C96" pin="1"/>
+      <node ref="C98" pin="1"/>
+      <node ref="C91" pin="1"/>
+    </net>
+  </nets>
+</export>

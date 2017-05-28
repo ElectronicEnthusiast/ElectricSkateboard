@@ -1,0 +1,924 @@
+EESchema Schematic File Version 2
+LIBS:GateDriver_BLDC_MOSFET-rescue
+LIBS:boosterpack
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:la_55_p
+LIBS:GateDriver_BLDC_MOSFET-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L VSS #PWR052
+U 1 1 581F67D8
+P 8150 3400
+F 0 "#PWR052" H 8150 3250 50  0001 C CNN
+F 1 "VSS" H 8150 3550 50  0000 C CNN
+F 2 "" H 8150 3400 50  0000 C CNN
+F 3 "" H 8150 3400 50  0000 C CNN
+	1    8150 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L VDD #PWR053
+U 1 1 581F67DE
+P 4150 1400
+F 0 "#PWR053" H 4150 1250 50  0001 C CNN
+F 1 "VDD" H 4150 1550 50  0000 C CNN
+F 2 "" H 4150 1400 50  0000 C CNN
+F 3 "" H 4150 1400 50  0000 C CNN
+	1    4150 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 +/-15V_Input1
+U 1 1 581F75B2
+P 6600 1600
+F 0 "+/-15V_Input1" V 6700 1600 50  0000 C CNN
+F 1 "CONN_01X03" V 6700 1600 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 6600 1600 50  0001 C CNN
+F 3 "" H 6600 1600 50  0000 C CNN
+	1    6600 1600
+	-1   0    0    -1  
+$EndComp
+Text Notes 7200 2700 0    59   ~ 0
+Raw Battery Bus High Voltage Input To Power Motor
+Text Notes 6250 1050 0    59   ~ 0
+Isolated +/-15V Power Input for LEM Current Transducer\n     Converter P/N#: SHHN000A3CL41Z\n     9Watt output (0.3Amps)\n     Referenced to microcontroller ground
+Text Notes 600  1200 0    59   ~ 0
+Separate 17V Input for Gate Driver Bootstrap Circuit\nVDD Is Gate Driver Output Voltage\n     (Note that this is isolated from the +/- 15V Current Transfucer Supply Power)\n     (Also notice the ground for the Battery is the ground for this power rail)
+$Comp
+L -15V #PWR63
+U 1 1 5820B293
+P 8150 1900
+F 0 "#PWR63" H 8150 2000 50  0001 C CNN
+F 1 "-15V" H 8150 2050 50  0000 C CNN
+F 2 "" H 8150 1900 50  0000 C CNN
+F 3 "" H 8150 1900 50  0000 C CNN
+	1    8150 1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +15V #PWR054
+U 1 1 5820B37F
+P 8150 1250
+F 0 "#PWR054" H 8150 1100 50  0001 C CNN
+F 1 "+15V" H 8150 1390 50  0000 C CNN
+F 2 "" H 8150 1250 50  0000 C CNN
+F 3 "" H 8150 1250 50  0000 C CNN
+	1    8150 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L F_Small Fuse_1A3
+U 1 1 5820B4DE
+P 7850 1300
+F 0 "Fuse_1A3" H 7700 1350 50  0000 L CNN
+F 1 "MFU1206FF01000P100" H 7730 1240 39  0001 L CNN
+F 2 "SMD_Packages:SMD-1206_Pol" H 7850 1300 50  0001 C CNN
+F 3 "" H 7850 1300 50  0000 C CNN
+	1    7850 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L F_Small Fuse_5A1
+U 1 1 5820B73F
+P 3800 1450
+F 0 "Fuse_5A1" H 3650 1500 50  0000 L CNN
+F 1 "MFU1206FF05000P100" H 3680 1390 39  0001 L CNN
+F 2 "SMD_Packages:SMD-1206_Pol" H 3800 1450 50  0001 C CNN
+F 3 "" H 3800 1450 50  0000 C CNN
+	1    3800 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L F_Small Fuse_1A2
+U 1 1 5820C334
+P 7800 1950
+F 0 "Fuse_1A2" H 7650 1900 50  0000 L CNN
+F 1 "MFU1206FF01000P100" H 7680 1890 39  0001 L CNN
+F 2 "SMD_Packages:SMD-1206_Pol" H 7800 1950 50  0001 C CNN
+F 3 "" H 7800 1950 50  0000 C CNN
+	1    7800 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C98
+U 1 1 5821CDE9
+P 2700 1650
+F 0 "C98" H 2710 1720 50  0000 L CNN
+F 1 "0.1uF_ceramic" H 2350 1600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2700 1650 50  0001 C CNN
+F 3 "" H 2700 1650 50  0000 C CNN
+	1    2700 1650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C91
+U 1 1 5821CE02
+P 1800 1600
+F 0 "C91" H 1810 1670 50  0000 L CNN
+F 1 "4.7uF_ceramic" H 1810 1520 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1800 1600 50  0001 C CNN
+F 3 "" H 1800 1600 50  0000 C CNN
+	1    1800 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VSS #PWR055
+U 1 1 5821CEE6
+P 2700 1900
+F 0 "#PWR055" H 2700 1750 50  0001 C CNN
+F 1 "VSS" H 2700 2050 50  0000 C CNN
+F 2 "" H 2700 1900 50  0000 C CNN
+F 3 "" H 2700 1900 50  0000 C CNN
+	1    2700 1900
+	1    0    0    1   
+$EndComp
+$Comp
+L C_Small C96
+U 1 1 5821E84D
+P 2250 1700
+F 0 "C96" H 2260 1770 50  0000 L CNN
+F 1 "10uF_ceramic" H 2050 1650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2250 1700 50  0001 C CNN
+F 3 "" H 2250 1700 50  0000 C CNN
+	1    2250 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L L_Small FerriteBead2
+U 1 1 582206E3
+P 3200 1450
+F 0 "FerriteBead2" V 3250 1200 50  0000 L CNN
+F 1 "BLM31SN500SH1L" H 3150 1350 50  0001 L CNN
+F 2 "Choke_SMD:Choke_SMD_1206_Standard" H 3200 1450 50  0001 C CNN
+F 3 "" H 3200 1450 50  0000 C CNN
+	1    3200 1450
+	0    1    -1   0   
+$EndComp
+$Comp
+L TLV70433DBVR U13
+U 1 1 58221B44
+P 2450 3150
+F 0 "U13" H 2450 3500 79  0000 C CNN
+F 1 "TLV70433DBVR" H 2500 3400 79  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 2550 3050 79  0001 C CNN
+F 3 "" H 2550 3050 79  0001 C CNN
+	1    2450 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C92
+U 1 1 58221CE4
+P 1800 3200
+F 0 "C92" H 1810 3270 50  0000 L CNN
+F 1 "0.1uF_ceramic" H 1550 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1800 3200 50  0001 C CNN
+F 3 "" H 1800 3200 50  0000 C CNN
+	1    1800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C89
+U 1 1 58221F6A
+P 850 3200
+F 0 "C89" H 860 3270 50  0000 L CNN
+F 1 "10uF_ceramic" H 500 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 850 3200 50  0001 C CNN
+F 3 "" H 850 3200 50  0000 C CNN
+	1    850  3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C102
+U 1 1 58221FE9
+P 3900 3300
+F 0 "C102" H 3910 3370 50  0000 L CNN
+F 1 "0.1uF_ceramic" H 3550 3250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3900 3300 50  0001 C CNN
+F 3 "" H 3900 3300 50  0000 C CNN
+	1    3900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L VSS #PWR056
+U 1 1 582227DC
+P 2450 3550
+F 0 "#PWR056" H 2450 3400 50  0001 C CNN
+F 1 "VSS" H 2450 3700 50  0000 C CNN
+F 2 "" H 2450 3550 50  0000 C CNN
+F 3 "" H 2450 3550 50  0000 C CNN
+	1    2450 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L VDD #PWR057
+U 1 1 58222FB9
+P 600 3000
+F 0 "#PWR057" H 600 2850 50  0001 C CNN
+F 1 "VDD" H 600 3150 50  0000 C CNN
+F 2 "" H 600 3000 50  0000 C CNN
+F 3 "" H 600 3000 50  0000 C CNN
+	1    600  3000
+	1    0    0    -1  
+$EndComp
+Text Notes 600  2700 0    59   ~ 0
+Separate 3.3V Power is used to power the AMC1301 Analog Diff Amplifiers\n     (notice this power is isolated from the microcontroller "3.3V" power rail)\n     (Also notice the ground for the Battery is the ground for this power rail)
+$Comp
+L Isol_+3.3V #U058
+U 1 1 58229DD5
+P 4700 3000
+F 0 "#U058" H 4700 3150 79  0001 C CNN
+F 1 "Isol_+3.3V" H 4700 3150 39  0000 C CNN
+F 2 "" H 4700 3000 79  0001 C CNN
+F 3 "" H 4700 3000 79  0001 C CNN
+	1    4700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C104
+U 1 1 5822C599
+P 7100 1450
+F 0 "C104" H 7110 1520 50  0000 L CNN
+F 1 "0.1uF_ceramic" H 6900 1400 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7100 1450 50  0001 C CNN
+F 3 "" H 7100 1450 50  0000 C CNN
+	1    7100 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C105
+U 1 1 5822C614
+P 7100 1750
+F 0 "C105" H 7110 1820 50  0000 L CNN
+F 1 "0.1uF_ceramic" H 6900 1700 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7100 1750 50  0001 C CNN
+F 3 "" H 7100 1750 50  0000 C CNN
+	1    7100 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C106
+U 1 1 5822F04E
+P 7500 1800
+F 0 "C106" H 7510 1870 50  0000 L CNN
+F 1 "10uF_ceramic" H 7250 1750 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7500 1800 50  0001 C CNN
+F 3 "" H 7500 1800 50  0000 C CNN
+	1    7500 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L REF2033AIDDCR U14
+U 1 1 582B9EFA
+P 2650 6400
+F 0 "U14" H 2650 6700 39  0000 C CNN
+F 1 "REF2033AIDDCR" H 2650 6200 39  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 2650 6400 39  0001 C CNN
+F 3 "" H 2650 6400 39  0001 C CNN
+	1    2650 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 17V_Input1
+U 1 1 582BFE9A
+P 850 1500
+F 0 "17V_Input1" V 950 1500 50  0000 C CNN
+F 1 "CONN_01X02" V 950 1500 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 850 1500 50  0001 C CNN
+F 3 "" H 850 1500 50  0000 C CNN
+	1    850  1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 5V_Input1
+U 1 1 582C5D3C
+P 950 4800
+F 0 "5V_Input1" V 1050 4800 50  0000 C CNN
+F 1 "CONN_01X02" V 1050 4800 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 950 4800 50  0001 C CNN
+F 3 "" H 950 4800 50  0000 C CNN
+	1    950  4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C97
+U 1 1 582C6786
+P 2650 4900
+F 0 "C97" H 2660 4970 50  0000 L CNN
+F 1 "0.1uF_ceramic" H 2300 4850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2650 4900 50  0001 C CNN
+F 3 "" H 2650 4900 50  0000 C CNN
+	1    2650 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C93
+U 1 1 582C678D
+P 1800 4900
+F 0 "C93" H 1810 4970 50  0000 L CNN
+F 1 "4.7uF_ceramic" H 1810 4820 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1800 4900 50  0001 C CNN
+F 3 "" H 1800 4900 50  0000 C CNN
+	1    1800 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C95
+U 1 1 582C6794
+P 2200 4950
+F 0 "C95" H 2210 5020 50  0000 L CNN
+F 1 "10uF_ceramic" H 2000 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2200 4950 50  0001 C CNN
+F 3 "" H 2200 4950 50  0000 C CNN
+	1    2200 4950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L L_Small FerriteBead1
+U 1 1 582C8724
+P 1200 6250
+F 0 "FerriteBead1" V 1250 6000 50  0000 L CNN
+F 1 "BLM31SN500SH1L" H 1150 6150 50  0001 L CNN
+F 2 "Choke_SMD:Choke_SMD_1206_Standard" H 1200 6250 50  0001 C CNN
+F 3 "" H 1200 6250 50  0000 C CNN
+	1    1200 6250
+	0    1    -1   0   
+$EndComp
+$Comp
+L F_Small Fuse_1A1
+U 1 1 582C8E2D
+P 1700 6250
+F 0 "Fuse_1A1" H 1550 6300 50  0000 L CNN
+F 1 "MFU1206FF01000P100" H 1580 6190 39  0001 L CNN
+F 2 "SMD_Packages:SMD-1206_Pol" H 1700 6250 50  0001 C CNN
+F 3 "" H 1700 6250 50  0000 C CNN
+	1    1700 6250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-GateDriver_BLDC_MOSFET #PWR059
+U 1 1 582CC082
+P 2650 5250
+F 0 "#PWR059" H 2650 5250 30  0001 C CNN
+F 1 "GND" H 2650 5180 50  0000 C CNN
+F 2 "" H 2650 5250 60  0001 C CNN
+F 3 "" H 2650 5250 60  0001 C CNN
+	1    2650 5250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR060
+U 1 1 582CD740
+P 1800 4600
+F 0 "#PWR060" H 1800 4690 20  0001 C CNN
+F 1 "+5V" H 1800 4750 50  0000 C CNN
+F 2 "" H 1800 4600 60  0001 C CNN
+F 3 "" H 1800 4600 60  0001 C CNN
+	1    1800 4600
+	1    0    0    -1  
+$EndComp
+Text Notes 1000 4400 0    60   ~ 0
+Unsolder this jumper (JP14) for the 5V if the 5V rail is powered from the USB.\nIf isolation is desired between the microcontroller:\n1) Provide 5V to this connector externally\n2) Disconnect the jumper providing the 5V from USB power to the F28379D Launchpad PCB\n     (This includes jumpers JP1, JP2, JP3 on the F28379D Launchpad)
+$Comp
+L GND-RESCUE-GateDriver_BLDC_MOSFET #PWR061
+U 1 1 582CF39E
+P 3100 6700
+F 0 "#PWR061" H 3100 6700 30  0001 C CNN
+F 1 "GND" H 3100 6630 50  0000 C CNN
+F 2 "" H 3100 6700 60  0001 C CNN
+F 3 "" H 3100 6700 60  0001 C CNN
+	1    3100 6700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C101
+U 1 1 582D51F0
+P 3600 6500
+F 0 "C101" H 3610 6570 50  0000 L CNN
+F 1 "0.1uF_ceramic" H 3450 6450 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3600 6500 50  0001 C CNN
+F 3 "" H 3600 6500 50  0000 C CNN
+	1    3600 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C99
+U 1 1 582D63D0
+P 3250 6350
+F 0 "C99" H 3260 6420 50  0000 L CNN
+F 1 "0.1uF_ceramic" H 3100 6300 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3250 6350 50  0001 C CNN
+F 3 "" H 3250 6350 50  0000 C CNN
+	1    3250 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C94
+U 1 1 582D725C
+P 1950 6450
+F 0 "C94" H 1960 6520 50  0000 L CNN
+F 1 "0.1uF_ceramic" H 1800 6400 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1950 6450 50  0001 C CNN
+F 3 "" H 1950 6450 50  0000 C CNN
+	1    1950 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-GateDriver_BLDC_MOSFET #PWR062
+U 1 1 582D7301
+P 1950 6650
+F 0 "#PWR062" H 1950 6650 30  0001 C CNN
+F 1 "GND" H 1950 6580 50  0000 C CNN
+F 2 "" H 1950 6650 60  0001 C CNN
+F 3 "" H 1950 6650 60  0001 C CNN
+	1    1950 6650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR063
+U 1 1 584F5319
+P 800 6150
+F 0 "#PWR063" H 800 6240 20  0001 C CNN
+F 1 "+5V" H 800 6300 50  0000 C CNN
+F 2 "" H 800 6150 60  0001 C CNN
+F 3 "" H 800 6150 60  0001 C CNN
+	1    800  6150
+	1    0    0    -1  
+$EndComp
+Text Notes 1050 6000 0    60   ~ 0
+1.65V reference voltage is used to bias the differential signals of the AMC\nVEE == 1.65V
+$Comp
+L C_Small C107
+U 1 1 5822FAB2
+P 7550 1500
+F 0 "C107" H 7560 1570 50  0000 L CNN
+F 1 "10uF_ceramic" H 7300 1450 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7550 1500 50  0001 C CNN
+F 3 "" H 7550 1500 50  0000 C CNN
+	1    7550 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C100
+U 1 1 589CA2C8
+P 3350 3250
+F 0 "C100" H 3360 3320 50  0000 L CNN
+F 1 "10uF_ceramic" H 3000 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3350 3250 50  0001 C CNN
+F 3 "" H 3350 3250 50  0000 C CNN
+	1    3350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C90
+U 1 1 589CB414
+P 1300 3300
+F 0 "C90" H 1310 3370 50  0000 L CNN
+F 1 "10uF_ceramic" H 950 3250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1300 3300 50  0001 C CNN
+F 3 "" H 1300 3300 50  0000 C CNN
+	1    1300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG064
+U 1 1 586C00F1
+P 8050 3000
+F 0 "#FLG064" H 8050 3095 50  0001 C CNN
+F 1 "PWR_FLAG" H 8050 3180 50  0000 C CNN
+F 2 "" H 8050 3000 50  0000 C CNN
+F 3 "" H 8050 3000 50  0000 C CNN
+	1    8050 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG065
+U 1 1 586C0453
+P 7900 3350
+F 0 "#FLG065" H 7900 3445 50  0001 C CNN
+F 1 "PWR_FLAG" H 7900 3530 50  0000 C CNN
+F 2 "" H 7900 3350 50  0000 C CNN
+F 3 "" H 7900 3350 50  0000 C CNN
+	1    7900 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG066
+U 1 1 586C1B8C
+P 8400 1950
+F 0 "#FLG066" H 8400 2045 50  0001 C CNN
+F 1 "PWR_FLAG" H 8400 2130 50  0000 C CNN
+F 2 "" H 8400 1950 50  0000 C CNN
+F 3 "" H 8400 1950 50  0000 C CNN
+	1    8400 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG067
+U 1 1 586C2346
+P 8600 1100
+F 0 "#FLG067" H 8600 1195 50  0001 C CNN
+F 1 "PWR_FLAG" H 8600 1280 50  0000 C CNN
+F 2 "" H 8600 1100 50  0000 C CNN
+F 3 "" H 8600 1100 50  0000 C CNN
+	1    8600 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG068
+U 1 1 586C2A5D
+P 4400 1450
+F 0 "#FLG068" H 4400 1545 50  0001 C CNN
+F 1 "PWR_FLAG" H 4400 1630 50  0000 C CNN
+F 2 "" H 4400 1450 50  0000 C CNN
+F 3 "" H 4400 1450 50  0000 C CNN
+	1    4400 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG069
+U 1 1 586C3B71
+P 5050 3100
+F 0 "#FLG069" H 5050 3195 50  0001 C CNN
+F 1 "PWR_FLAG" H 5050 3280 50  0000 C CNN
+F 2 "" H 5050 3100 50  0000 C CNN
+F 3 "" H 5050 3100 50  0000 C CNN
+	1    5050 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG070
+U 1 1 586C62A8
+P 3100 4750
+F 0 "#FLG070" H 3100 4845 50  0001 C CNN
+F 1 "PWR_FLAG" H 3100 4930 50  0000 C CNN
+F 2 "" H 3100 4750 50  0000 C CNN
+F 3 "" H 3100 4750 50  0000 C CNN
+	1    3100 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG071
+U 1 1 586C6D4C
+P 4100 6350
+F 0 "#FLG071" H 4100 6445 50  0001 C CNN
+F 1 "PWR_FLAG" H 4100 6530 50  0000 C CNN
+F 2 "" H 4100 6350 50  0000 C CNN
+F 3 "" H 4100 6350 50  0000 C CNN
+	1    4100 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR072
+U 1 1 586CDD68
+P 7650 4800
+F 0 "#PWR072" H 7650 4650 50  0001 C CNN
+F 1 "+3.3V" H 7650 4940 50  0000 C CNN
+F 2 "" H 7650 4800 50  0000 C CNN
+F 3 "" H 7650 4800 50  0000 C CNN
+	1    7650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG073
+U 1 1 586CE513
+P 7650 4950
+F 0 "#FLG073" H 7650 5045 50  0001 C CNN
+F 1 "PWR_FLAG" H 7650 5130 50  0000 C CNN
+F 2 "" H 7650 4950 50  0000 C CNN
+F 3 "" H 7650 4950 50  0000 C CNN
+	1    7650 4950
+	-1   0    0    1   
+$EndComp
+Text Notes 6850 4550 0    59   ~ 0
+Microcontroller operating voltage\n	Note this is the operating voltage for the microcontroller side of the \n	AMC1301 isolated differential amplifier and OPA320 analog measurement opamp\n	NOTE: KEEP NOISE AWAY FROM THIS POWER RAIL (KEEP MOTOR CIRCUITRY AWAY!)
+$Comp
+L GND-RESCUE-GateDriver_BLDC_MOSFET #PWR074
+U 1 1 586EB237
+P 8400 5050
+F 0 "#PWR074" H 8400 5050 30  0001 C CNN
+F 1 "GND" H 8400 4980 39  0000 C CNN
+F 2 "" H 8400 5050 60  0001 C CNN
+F 3 "" H 8400 5050 60  0001 C CNN
+	1    8400 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG075
+U 1 1 586EB598
+P 8400 4900
+F 0 "#FLG075" H 8400 4995 50  0001 C CNN
+F 1 "PWR_FLAG" H 8400 5080 50  0000 C CNN
+F 2 "" H 8400 4900 50  0000 C CNN
+F 3 "" H 8400 4900 50  0000 C CNN
+	1    8400 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1450 4400 1450
+Wire Wire Line
+	6800 1500 6800 1500
+Wire Wire Line
+	6800 1950 7700 1950
+Wire Wire Line
+	6800 1950 6800 1700
+Wire Wire Line
+	1050 1450 3100 1450
+Wire Wire Line
+	2700 1750 2700 1900
+Wire Wire Line
+	1800 1850 1800 1700
+Connection ~ 2700 1850
+Connection ~ 2700 1450
+Wire Wire Line
+	1800 1450 1800 1500
+Connection ~ 1800 1450
+Wire Wire Line
+	2250 1850 2250 1800
+Connection ~ 2250 1850
+Wire Wire Line
+	2250 1600 2250 1450
+Connection ~ 2250 1450
+Wire Wire Line
+	3300 1450 3700 1450
+Wire Wire Line
+	2700 1550 2700 1450
+Wire Wire Line
+	600  3100 2100 3100
+Connection ~ 1800 3100
+Wire Wire Line
+	2450 3450 2450 3550
+Wire Wire Line
+	1800 3450 1800 3300
+Connection ~ 2450 3450
+Wire Wire Line
+	3900 3450 3900 3400
+Connection ~ 3900 3450
+Wire Wire Line
+	850  3450 850  3300
+Connection ~ 1800 3450
+Wire Wire Line
+	600  3000 600  3100
+Connection ~ 850  3100
+Wire Wire Line
+	6800 1300 6800 1500
+Wire Wire Line
+	7100 1300 7100 1350
+Wire Wire Line
+	8150 1300 8150 1250
+Connection ~ 7100 1300
+Wire Wire Line
+	8150 1950 8150 1900
+Wire Wire Line
+	7100 1950 7100 1850
+Connection ~ 7100 1950
+Wire Wire Line
+	7550 1300 7550 1400
+Connection ~ 7550 1300
+Wire Wire Line
+	1050 1550 1050 1850
+Connection ~ 1800 1850
+Wire Wire Line
+	1050 1850 2700 1850
+Wire Wire Line
+	7500 1950 7500 1900
+Connection ~ 7500 1950
+Wire Wire Line
+	7900 1950 8400 1950
+Wire Wire Line
+	7950 1300 8300 1300
+Wire Wire Line
+	6800 1300 7750 1300
+Wire Wire Line
+	1800 4600 1800 4800
+Wire Wire Line
+	1150 4850 1150 5100
+Wire Wire Line
+	1150 5100 2650 5100
+Wire Wire Line
+	2650 5000 2650 5250
+Wire Wire Line
+	2200 5050 2200 5100
+Connection ~ 2200 5100
+Wire Wire Line
+	1800 5000 1800 5100
+Connection ~ 1800 5100
+Wire Wire Line
+	2650 4750 2650 4800
+Connection ~ 1800 4750
+Wire Wire Line
+	2200 4750 2200 4850
+Connection ~ 2200 4750
+Connection ~ 2650 4750
+Wire Wire Line
+	1300 6250 1600 6250
+Connection ~ 2650 5100
+Wire Wire Line
+	3100 6500 3100 6700
+Wire Wire Line
+	3050 6500 3250 6500
+Wire Wire Line
+	3600 6600 3600 6650
+Wire Wire Line
+	3600 6650 3100 6650
+Connection ~ 3100 6650
+Wire Wire Line
+	3250 6250 3250 6200
+Wire Wire Line
+	3250 6200 3050 6200
+Wire Wire Line
+	3250 6500 3250 6450
+Connection ~ 3100 6500
+Wire Wire Line
+	1800 6250 2250 6250
+Connection ~ 2200 6250
+Wire Wire Line
+	2250 6450 2200 6450
+Wire Wire Line
+	2200 6450 2200 6250
+Wire Wire Line
+	1950 6350 1950 6250
+Connection ~ 1950 6250
+Wire Wire Line
+	1950 6550 1950 6650
+Wire Wire Line
+	1100 6250 800  6250
+Wire Wire Line
+	800  6250 800  6150
+Wire Wire Line
+	1550 4750 3100 4750
+Wire Wire Line
+	3350 3150 3350 3100
+Connection ~ 3350 3100
+Wire Wire Line
+	3350 3450 3350 3350
+Connection ~ 3350 3450
+Wire Wire Line
+	1300 3200 1300 3100
+Connection ~ 1300 3100
+Wire Wire Line
+	1300 3400 1300 3450
+Connection ~ 1300 3450
+Connection ~ 8150 1950
+Wire Wire Line
+	8600 1100 8300 1100
+Wire Wire Line
+	8300 1100 8300 1300
+Connection ~ 8150 1300
+Connection ~ 4150 1450
+Wire Wire Line
+	8400 5050 8400 4900
+Wire Wire Line
+	7650 4950 7650 4800
+Wire Wire Line
+	4150 1400 4150 1450
+Wire Wire Line
+	2800 3100 5050 3100
+Connection ~ 4700 3100
+Wire Wire Line
+	3900 3200 3900 3100
+Connection ~ 3900 3100
+Wire Wire Line
+	4700 3000 4700 3100
+$Comp
+L PowerPin BATT+1
+U 1 1 58707C93
+P 9350 3000
+F 0 "BATT+1" H 9550 2900 60  0001 C CNN
+F 1 "BATT+" H 9550 3100 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 9370 2880 60  0001 C CNN
+F 3 "" H 9370 2880 60  0001 C CNN
+	1    9350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerPin BATT-1
+U 1 1 58707D56
+P 9350 3350
+F 0 "BATT-1" H 9550 3250 60  0001 C CNN
+F 1 "BATT-" H 9550 3450 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 9370 3230 60  0001 C CNN
+F 3 "" H 9370 3230 60  0001 C CNN
+	1    9350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-GateDriver_BLDC_MOSFET #PWR076
+U 1 1 589B623E
+P 8450 1650
+F 0 "#PWR076" H 8450 1650 30  0001 C CNN
+F 1 "GND" H 8450 1580 50  0000 C CNN
+F 2 "" H 8450 1650 60  0001 C CNN
+F 3 "" H 8450 1650 60  0001 C CNN
+	1    8450 1650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6800 1600 7500 1600
+Wire Wire Line
+	7500 1600 7500 1700
+Wire Wire Line
+	7500 1650 8450 1650
+Wire Wire Line
+	7550 1600 7550 1650
+Connection ~ 7550 1650
+Connection ~ 7500 1650
+Wire Wire Line
+	7100 1550 7100 1650
+Connection ~ 7100 1600
+$Comp
+L +BATT #PWR077
+U 1 1 581F67D2
+P 8150 2950
+F 0 "#PWR077" H 8150 2800 50  0001 C CNN
+F 1 "+BATT" H 8150 3090 50  0000 C CNN
+F 2 "" H 8150 2950 50  0000 C CNN
+F 3 "" H 8150 2950 50  0000 C CNN
+	1    8150 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3000 9350 3000
+Wire Wire Line
+	7900 3350 9350 3350
+Wire Wire Line
+	8150 3400 8150 3350
+Connection ~ 8150 3350
+Wire Wire Line
+	8150 3000 8150 2950
+Connection ~ 8150 3000
+$Comp
+L F_Small Fuse_1A4
+U 1 1 58A8478B
+P 1450 4750
+F 0 "Fuse_1A4" H 1300 4800 50  0000 L CNN
+F 1 "MFU1206FF01000P100" H 1330 4690 39  0001 L CNN
+F 2 "SMD_Packages:SMD-1206_Pol" H 1450 4750 50  0001 C CNN
+F 3 "" H 1450 4750 50  0000 C CNN
+	1    1450 4750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	850  3450 3900 3450
+Wire Wire Line
+	1350 4750 1150 4750
+Wire Wire Line
+	3050 6350 4100 6350
+Wire Wire Line
+	3600 6350 3600 6400
+Connection ~ 3600 6350
+$Comp
+L VEE #PWR078
+U 1 1 58AA6EAE
+P 3800 6300
+F 0 "#PWR078" H 3800 6150 50  0001 C CNN
+F 1 "VEE" H 3800 6450 50  0000 C CNN
+F 2 "" H 3800 6300 50  0000 C CNN
+F 3 "" H 3800 6300 50  0000 C CNN
+	1    3800 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 6300 3800 6350
+Connection ~ 3800 6350
+$EndSCHEMATC

@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LA_55_P
+D LEM Current transducert 50 A
+K Capteur - mesure courant
+$ENDCMP
+#
+#End Doc Library
