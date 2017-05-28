@@ -3,6 +3,6 @@
 <projectOptions>
 	<deviceFamily value="C2000"/>
 	<isTargetManual value="false"/>
-	<origin value="C:/Users/Keith/Documents/GitHub/MotorController/Software/IDDK_PM_Servo_F2837x-v2"/>
+	<origin value="C:/Users/Keith/Documents/GitHub/ElectricSkateboard/Software/IDDK_PM_Servo_F2837x-v2"/>
 	<connection value="common/targetdb/connections/TIXDS100v2_Connection.xml"/>
 </projectOptions>

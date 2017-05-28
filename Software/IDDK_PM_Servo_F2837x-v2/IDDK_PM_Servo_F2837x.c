@@ -359,13 +359,6 @@ inline void currentSensorSuite()
 	current_sensor[LEM_CURRENT_SENSE-1].Cs   = -current_sensor[LEM_CURRENT_SENSE-1].As
 			                                   -current_sensor[LEM_CURRENT_SENSE-1].Bs;
 
-	current_sensor[SD_CURRENT_SENSE-1].As    = ((temp=SDFM1_READ_FILTER1_DATA_16BIT)*SD_PU_SCALE_FACTOR -
-			                                    offset_SDFM1) * SDFM_TO_SHUNT;
-	current_sensor[SD_CURRENT_SENSE-1].Bs    = ((temp=SDFM1_READ_FILTER2_DATA_16BIT)*SD_PU_SCALE_FACTOR -
-			                                    offset_SDFM2) * SDFM_TO_SHUNT;
-	current_sensor[SD_CURRENT_SENSE-1].Cs    = -current_sensor[SD_CURRENT_SENSE-1].As
-			                                   -current_sensor[SD_CURRENT_SENSE-1].Bs;
-
 	return;
 }
 #endif
@@ -1866,7 +1859,8 @@ interrupt void MotorControlISR(void)
  	DlogCh1 = posEncElecTheta[POSITION_ENCODER];
  	DlogCh2 = rg1.Out;     // current_sensor[SHUNT_CURRENT_SENSE-1].As;
  	DlogCh3 = clarke1.As;  // current_sensor[LEM_CURRENT_SENSE-1].As;
- 	DlogCh4 = clarke1.Bs;  // current_sensor[SD_CURRENT_SENSE-1].As;
+//// 	DlogCh4 = clarke1.Bs;  // current_sensor[SD_CURRENT_SENSE-1].As;
+
 
 //------------------------------------------------------------------------------
 // Variable display on DACs B and A

@@ -1,11 +1,11 @@
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE    1
 
        1              ;***************************************************************
        2              ;* TMS320C2000 C/C++ Codegen                   PC v15.12.1.LTS *
-       3              ;* Date/Time created: Sun Feb 26 22:53:28 2017                 *
+       3              ;* Date/Time created: Sun May 28 09:38:32 2017                 *
        4              ;***************************************************************
        5                      .compiler_opts --abi=coffabi --cla_support=cla0 --float_support=fpu32 --hll_source=on --mem_model:cod
        6        0002  FP      .set    XAR2
@@ -14,7 +14,7 @@ F2837xD_SysCtrl.asm                                                  PAGE    1
        9                      .dwattr $C$DW$CU, DW_AT_name("C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2
       10                      .dwattr $C$DW$CU, DW_AT_producer("TI TMS320C2000 C/C++ Codegen PC v15.12.1.LTS Copyright (c) 1996-201
       11                      .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\Keith\workspace_v6_1_3\IDDK_PM_Servo_F2837x-v2\F2837x_RAM"
+      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\Keith\Documents\GitHub\ElectricSkateboard\Software\IDDK_PM
       13              
       14              $C$DW$1 .dwtag  DW_TAG_subprogram
       15                      .dwattr $C$DW$1, DW_AT_name("F28x_usDelay")
@@ -58,7 +58,7 @@ F2837xD_SysCtrl.asm                                                  PAGE    1
       53              $C$DW$7 .dwtag  DW_TAG_variable
       54                      .dwattr $C$DW$7, DW_AT_name("WdRegs")
       55                      .dwattr $C$DW$7, DW_AT_TI_symbol_name("_WdRegs")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE    2
@@ -118,7 +118,7 @@ F2837xD_SysCtrl.asm                                                  PAGE    2
      108                      .dwattr $C$DW$13, DW_AT_TI_begin_line(0x20)
      109                      .dwattr $C$DW$13, DW_AT_TI_begin_column(0x06)
      110                      .dwattr $C$DW$13, DW_AT_TI_max_frame_size(-2)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE    3
@@ -178,7 +178,7 @@ F2837xD_SysCtrl.asm                                                  PAGE    3
          00000011 0008 
      156                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
      157 00000012 92C4          MOV       AL,*+XAR4[0]          ; [CPU_] |70| 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE    4
@@ -238,7 +238,7 @@ F2837xD_SysCtrl.asm                                                  PAGE    4
          00000033 0118 
      200                      ; call occurs [#_InitSysPll] ; [] |88| 
      201                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE    5
@@ -298,7 +298,7 @@ F2837xD_SysCtrl.asm                                                  PAGE    5
      253                      .dwcfi  save_reg_to_mem, 7, 2
      254                      .dwcfi  cfa_offset, -4
      255 00000038 7622   EALLOW
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE    6
@@ -358,7 +358,7 @@ F2837xD_SysCtrl.asm                                                  PAGE    6
          00000059 0002 
      298                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
      299 0000005a DE28          ADDB      XAR6,#40              ; [CPU_] |137| 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE    7
@@ -418,7 +418,7 @@ F2837xD_SysCtrl.asm                                                  PAGE    7
      339 0000007b 1A28!         OR        @_CpuSysRegs+40,#0x0002 ; [CPU_] |138| 
          0000007c 0002 
      340                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE    8
@@ -478,7 +478,7 @@ F2837xD_SysCtrl.asm                                                  PAGE    8
      381 0000009d 1A30!         OR        @_CpuSysRegs+48,#0x0008 ; [CPU_] |154| 
          0000009e 0008 
      382                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE    9
@@ -538,7 +538,7 @@ F2837xD_SysCtrl.asm                                                  PAGE    9
      422                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
      423 000000c0 1A3C!         OR        @_CpuSysRegs+60,#0x0004 ; [CPU_] |177| 
          000000c1 0004 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   10
@@ -598,7 +598,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   10
      463                      .dwendentry
      464                      .dwendtag $C$DW$19
      465              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   11
@@ -658,7 +658,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   11
      517 000000ec A928!         MOVL      @_CpuSysRegs+40,P     ; [CPU_] |203| 
      518                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
      519 000000ed 1E2A!         MOVL      @_CpuSysRegs+42,ACC   ; [CPU_] |204| 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   12
@@ -718,7 +718,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   12
      571                      .dwfde $C$DW$CIE, _InitFlash
      572              
      573              ;***************************************************************
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   13
@@ -778,7 +778,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   13
      615                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
      616 0000001d 1A00!         OR        @_Flash0CtrlRegs+384,#0x0002 ; [CPU_] |263| 
          0000001e 0002 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   14
@@ -838,7 +838,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   14
      665              
      666 000000fd       _ServiceDog:
      667                      .dwcfi  cfa_offset, -2
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   15
@@ -898,7 +898,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   15
      717              ;*                            0 Parameter,  1 Auto,  0 SOE     *
      718              ;***************************************************************
      719              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   16
@@ -958,7 +958,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   16
      771              
      772                      .dwfde $C$DW$CIE, _InitSysPll
      773              $C$DW$31        .dwtag  DW_TAG_formal_parameter
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   17
@@ -1018,7 +1018,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   17
      826              $C$DW$37        .dwtag  DW_TAG_variable
      827                      .dwattr $C$DW$37, DW_AT_name("fmult")
      828                      .dwattr $C$DW$37, DW_AT_TI_symbol_name("_fmult")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   18
@@ -1078,7 +1078,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   18
      878 00000135 FFD7          LSR       AH,8                  ; [CPU_] |318| 
      879 00000136 0EA8          MOVU      ACC,AH                ; [CPU_] |318| 
      880 00000137 0FAB          CMPL      ACC,P                 ; [CPU_] |318| 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   19
@@ -1138,7 +1138,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   19
      930                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
      931 00000153 6F03          B         $C$L5,UNC             ; [CPU_] |341| 
      932                      ; branch occurs ; [] |341| 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   20
@@ -1198,7 +1198,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   20
      978 00000173 0614!         MOVL      ACC,@_ClkCfgRegs+20   ; [CPU_] |354| 
      979                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
      980 00000174 9B00          MOVB      AH,#0                 ; [CPU_] |355| 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   21
@@ -1258,7 +1258,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   21
     1026 00000198 DC0E          ADDB      XAR4,#14              ; [CPU_] |389| 
     1027 00000199 1AC4          OR        *+XAR4[0],#0x0002     ; [CPU_] |389| 
          0000019a 0002 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   22
@@ -1318,7 +1318,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   22
     1078                      .dwattr $C$DW$44, DW_AT_name("clock_source")
     1079                      .dwattr $C$DW$44, DW_AT_TI_symbol_name("_clock_source")
     1080                      .dwattr $C$DW$44, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   23
@@ -1378,7 +1378,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   23
     1133                      .dwattr $C$DW$50, DW_AT_type(*$C$DW$T$385)
     1134                      .dwattr $C$DW$50, DW_AT_location[DW_OP_reg10]
     1135              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   24
@@ -1438,7 +1438,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   24
     1185 000001ca 6008          B         $C$L13,NEQ            ; [CPU_] |412| 
     1186                      ; branchcc occurs ; [] |412| 
     1187 000001cb D024          MOVB      XAR0,#36              ; [CPU_] |412| 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   25
@@ -1498,7 +1498,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   25
     1237                      ; call occurs [#_AuxIntOsc2Sel] ; [] |425| 
     1238 000001e0       $C$L16:    
     1239                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   26
@@ -1558,7 +1558,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   26
     1285 00000208       $C$L18:    
     1286                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
     1287 00000208 4020!         TBIT      @_ClkCfgRegs+32,#0    ; [CPU_] |453| 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   27
@@ -1618,7 +1618,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   27
     1335                      .dwattr $C$DW$55, DW_AT_TI_call
     1336              
     1337 0000022a 7640!         LCR       #_F28x_usDelay        ; [CPU_] |484| 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   28
@@ -1678,7 +1678,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   28
     1387                      .dwattr $C$DW$57, DW_AT_external
     1388                      .dwattr $C$DW$57, DW_AT_type(*$C$DW$T$19)
     1389                      .dwattr $C$DW$57, DW_AT_TI_begin_file("C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   29
@@ -1738,7 +1738,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   29
     1440                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
     1441 00000259 0200          MOVB      ACC,#0                ; [CPU_] |527| 
     1442 0000025a 1901          SUBB      ACC,#1                ; [CPU_] |527| 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   30
@@ -1798,7 +1798,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   30
          00000264 FFFE 
     1494 00000265 5002          ORB       AL,#0x02              ; [CPU_] |559| 
     1495 00000266 9608!         MOV       @_ClkCfgRegs+8,AL     ; [CPU_] |559| 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   31
@@ -1858,7 +1858,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   31
          00000270 FFFC 
     1546 00000271 761A   EDIS
     1547 00000272 FF69          SPM       #0                    ; [CPU_] 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   32
@@ -1918,7 +1918,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   32
     1597 0000027c 9608!         MOV       @_ClkCfgRegs+8,AL     ; [CPU_] |592| 
     1598 0000027d 761A   EDIS
     1599 0000027e FF69          SPM       #0                    ; [CPU_] 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   33
@@ -1978,7 +1978,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   33
     1651 00000286 18C5          AND       *+XAR5[0],#0xfff7     ; [CPU_] |609| 
          00000287 FFF7 
     1652                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   34
@@ -2038,7 +2038,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   34
     1703                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
     1704 00000291 D00A          MOVB      XAR0,#10              ; [CPU_] |626| 
     1705 00000292 761F!         MOVW      DP,#_ClkCfgRegs+10    ; [CPU_U] 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   35
@@ -2098,7 +2098,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   35
     1755                      .dwcfi  cfa_offset, -2
     1756                      .dwcfi  save_reg_to_mem, 26, 0
     1757 0000029e 7622   EALLOW
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   36
@@ -2158,7 +2158,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   36
     1808 000002a9 761F!         MOVW      DP,#_CpuSysRegs+118   ; [CPU_U] 
          000002aa 0001 
     1809                      .dwpsn  file "C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_SysCtrl.c"
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   37
@@ -2218,7 +2218,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   37
          000002b5 FFFC 
     1860 000002b6 5001          ORB       AL,#0x01              ; [CPU_] |660| 
     1861 000002b7 9636!         MOV       @_CpuSysRegs+118,AL   ; [CPU_] |660| 
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   38
@@ -2278,7 +2278,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   38
     1912 000002c2 9636!         MOV       @_CpuSysRegs+118,AL   ; [CPU_] |672| 
     1913 000002c3 761A   EDIS
     1914 000002c4       $C$L24:    
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   39
@@ -2338,7 +2338,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   39
     1963              ;*                                                             *
     1964              ;* FUNCTION ENVIRONMENT                                        *
     1965              ;*                                                             *
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   40
@@ -2398,7 +2398,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   40
     2010 000002f2 180E!         AND       @_ClkCfgRegs+14,#0xfffe ; [CPU_] |697| 
          000002f3 FFFE 
     2011 000002f4 761A   EDIS
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   41
@@ -2458,7 +2458,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   41
     2064                      .dwattr $C$DW$82, DW_AT_name("INTOSC2TRIM")
     2065                      .dwattr $C$DW$82, DW_AT_TI_symbol_name("_INTOSC2TRIM")
     2066                      .dwattr $C$DW$82, DW_AT_data_member_location[DW_OP_plus_uconst 0x22]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   42
@@ -2518,7 +2518,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   42
     2119                      .dwattr $C$DW$90, DW_AT_type(*$C$DW$T$32)
     2120                      .dwattr $C$DW$90, DW_AT_name("ANAREFTRIMC")
     2121                      .dwattr $C$DW$90, DW_AT_TI_symbol_name("_ANAREFTRIMC")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   43
@@ -2578,7 +2578,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   43
     2174                      .dwattr $C$DW$96, DW_AT_bit_size(0x05)
     2175                      .dwattr $C$DW$96, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     2176                      .dwattr $C$DW$96, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   44
@@ -2638,7 +2638,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   44
     2229                      .dwattr $C$DW$101, DW_AT_accessibility(DW_ACCESS_public)
     2230              
     2231              $C$DW$102       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   45
@@ -2698,7 +2698,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   45
     2284                      .dwattr $C$DW$107, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     2285                      .dwattr $C$DW$107, DW_AT_accessibility(DW_ACCESS_public)
     2286              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   46
@@ -2758,7 +2758,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   46
     2339              
     2340              
     2341              $C$DW$T$32      .dwtag  DW_TAG_union_type
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   47
@@ -2818,7 +2818,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   47
     2394                      .dwattr $C$DW$118, DW_AT_TI_symbol_name("_rsvd1")
     2395                      .dwattr $C$DW$118, DW_AT_bit_offset(0x08)
     2396                      .dwattr $C$DW$118, DW_AT_bit_size(0x08)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   48
@@ -2878,7 +2878,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   48
     2449                      .dwattr $C$DW$123, DW_AT_bit_size(0x0e)
     2450                      .dwattr $C$DW$123, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     2451                      .dwattr $C$DW$123, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   49
@@ -2938,7 +2938,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   49
     2504                      .dwattr $C$DW$128, DW_AT_accessibility(DW_ACCESS_public)
     2505              
     2506              $C$DW$129       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   50
@@ -2998,7 +2998,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   50
     2559              $C$DW$134       .dwtag  DW_TAG_member
     2560                      .dwattr $C$DW$134, DW_AT_type(*$C$DW$T$19)
     2561                      .dwattr $C$DW$134, DW_AT_name("rsvd1")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   51
@@ -3058,7 +3058,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   51
     2614              
     2615                      .dwendtag $C$DW$T$40
     2616              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   52
@@ -3118,7 +3118,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   52
     2669              
     2670              $C$DW$145       .dwtag  DW_TAG_member
     2671                      .dwattr $C$DW$145, DW_AT_type(*$C$DW$T$41)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   53
@@ -3178,7 +3178,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   53
     2724                      .dwattr $C$DW$150, DW_AT_bit_size(0x01)
     2725                      .dwattr $C$DW$150, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     2726                      .dwattr $C$DW$150, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   54
@@ -3238,7 +3238,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   54
     2779                      .dwattr $C$DW$156, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     2780                      .dwattr $C$DW$156, DW_AT_accessibility(DW_ACCESS_public)
     2781              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   55
@@ -3298,7 +3298,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   55
     2834                      .dwattr $C$DW$162, DW_AT_accessibility(DW_ACCESS_public)
     2835              
     2836                      .dwendtag $C$DW$T$43
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   56
@@ -3358,7 +3358,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   56
     2889                      .dwendtag $C$DW$T$45
     2890              
     2891              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   57
@@ -3418,7 +3418,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   57
     2944                      .dwattr $C$DW$173, DW_AT_name("XTALOFF")
     2945                      .dwattr $C$DW$173, DW_AT_TI_symbol_name("_XTALOFF")
     2946                      .dwattr $C$DW$173, DW_AT_bit_offset(0x0b)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   58
@@ -3478,7 +3478,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   58
     2999              
     3000              
     3001              $C$DW$T$49      .dwtag  DW_TAG_structure_type
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   59
@@ -3538,7 +3538,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   59
     3054                      .dwattr $C$DW$184, DW_AT_bit_size(0x06)
     3055                      .dwattr $C$DW$184, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     3056                      .dwattr $C$DW$184, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   60
@@ -3598,7 +3598,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   60
     3109                      .dwattr $C$DW$189, DW_AT_accessibility(DW_ACCESS_public)
     3110              
     3111              $C$DW$190       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   61
@@ -3658,7 +3658,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   61
     3164                      .dwattr $C$DW$195, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
     3165                      .dwattr $C$DW$195, DW_AT_accessibility(DW_ACCESS_public)
     3166              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   62
@@ -3718,7 +3718,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   62
     3219                      .dwattr $C$DW$203, DW_AT_TI_symbol_name("_AUXPLLCTL1")
     3220                      .dwattr $C$DW$203, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
     3221                      .dwattr $C$DW$203, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   63
@@ -3778,7 +3778,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   63
     3274                      .dwattr $C$DW$211, DW_AT_name("rsvd4")
     3275                      .dwattr $C$DW$211, DW_AT_TI_symbol_name("_rsvd4")
     3276                      .dwattr $C$DW$211, DW_AT_data_member_location[DW_OP_plus_uconst 0x2a]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   64
@@ -3838,7 +3838,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   64
     3329              
     3330              $C$DW$218       .dwtag  DW_TAG_member
     3331                      .dwattr $C$DW$218, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   65
@@ -3898,7 +3898,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   65
     3384                      .dwattr $C$DW$223, DW_AT_type(*$C$DW$T$19)
     3385                      .dwattr $C$DW$223, DW_AT_name("EPWM3")
     3386                      .dwattr $C$DW$223, DW_AT_TI_symbol_name("_EPWM3")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   66
@@ -3958,7 +3958,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   66
     3439                      .dwattr $C$DW$229, DW_AT_name("EPWM9")
     3440                      .dwattr $C$DW$229, DW_AT_TI_symbol_name("_EPWM9")
     3441                      .dwattr $C$DW$229, DW_AT_bit_offset(0x07)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   67
@@ -4018,7 +4018,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   67
     3494                      .dwattr $C$DW$235, DW_AT_TI_symbol_name("_rsvd3")
     3495                      .dwattr $C$DW$235, DW_AT_bit_offset(0x01)
     3496                      .dwattr $C$DW$235, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   68
@@ -4078,7 +4078,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   68
     3549                      .dwattr $C$DW$240, DW_AT_bit_size(0x01)
     3550                      .dwattr $C$DW$240, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     3551                      .dwattr $C$DW$240, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   69
@@ -4138,7 +4138,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   69
     3604              $C$DW$246       .dwtag  DW_TAG_member
     3605                      .dwattr $C$DW$246, DW_AT_type(*$C$DW$T$27)
     3606                      .dwattr $C$DW$246, DW_AT_name("all")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   70
@@ -4198,7 +4198,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   70
     3659              
     3660              $C$DW$252       .dwtag  DW_TAG_member
     3661                      .dwattr $C$DW$252, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   71
@@ -4258,7 +4258,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   71
     3714                      .dwendtag $C$DW$T$61
     3715              
     3716              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   72
@@ -4318,7 +4318,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   72
     3769                      .dwattr $C$DW$263, DW_AT_name("rsvd4")
     3770                      .dwattr $C$DW$263, DW_AT_TI_symbol_name("_rsvd4")
     3771                      .dwattr $C$DW$263, DW_AT_bit_offset(0x0c)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   73
@@ -4378,7 +4378,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   73
     3824                      .dwattr $C$DW$269, DW_AT_TI_symbol_name("_rsvd7")
     3825                      .dwattr $C$DW$269, DW_AT_bit_offset(0x00)
     3826                      .dwattr $C$DW$269, DW_AT_bit_size(0x0c)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   74
@@ -4438,7 +4438,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   74
     3879                      .dwattr $C$DW$274, DW_AT_bit_size(0x01)
     3880                      .dwattr $C$DW$274, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     3881                      .dwattr $C$DW$274, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   75
@@ -4498,7 +4498,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   75
     3934                      .dwattr $C$DW$280, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     3935                      .dwattr $C$DW$280, DW_AT_accessibility(DW_ACCESS_public)
     3936              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   76
@@ -4558,7 +4558,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   76
     3989              
     3990              $C$DW$286       .dwtag  DW_TAG_member
     3991                      .dwattr $C$DW$286, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   77
@@ -4618,7 +4618,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   77
     4044                      .dwattr $C$DW$291, DW_AT_accessibility(DW_ACCESS_public)
     4045              
     4046                      .dwendtag $C$DW$T$68
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   78
@@ -4678,7 +4678,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   78
     4099                      .dwattr $C$DW$297, DW_AT_name("rsvd6")
     4100                      .dwattr $C$DW$297, DW_AT_TI_symbol_name("_rsvd6")
     4101                      .dwattr $C$DW$297, DW_AT_bit_offset(0x0a)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   79
@@ -4738,7 +4738,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   79
     4154              
     4155              $C$DW$303       .dwtag  DW_TAG_member
     4156                      .dwattr $C$DW$303, DW_AT_type(*$C$DW$T$69)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   80
@@ -4798,7 +4798,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   80
     4209                      .dwattr $C$DW$308, DW_AT_bit_size(0x01)
     4210                      .dwattr $C$DW$308, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     4211                      .dwattr $C$DW$308, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   81
@@ -4858,7 +4858,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   81
     4264              $C$DW$314       .dwtag  DW_TAG_member
     4265                      .dwattr $C$DW$314, DW_AT_type(*$C$DW$T$27)
     4266                      .dwattr $C$DW$314, DW_AT_name("all")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   82
@@ -4918,7 +4918,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   82
     4319              
     4320              $C$DW$320       .dwtag  DW_TAG_member
     4321                      .dwattr $C$DW$320, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   83
@@ -4978,7 +4978,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   83
     4374                      .dwattr $C$DW$325, DW_AT_type(*$C$DW$T$19)
     4375                      .dwattr $C$DW$325, DW_AT_name("SPI_B")
     4376                      .dwattr $C$DW$325, DW_AT_TI_symbol_name("_SPI_B")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   84
@@ -5038,7 +5038,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   84
     4429                      .dwattr $C$DW$331, DW_AT_name("rsvd5")
     4430                      .dwattr $C$DW$331, DW_AT_TI_symbol_name("_rsvd5")
     4431                      .dwattr $C$DW$331, DW_AT_bit_offset(0x00)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   85
@@ -5098,7 +5098,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   85
     4484                      .dwattr $C$DW$336, DW_AT_bit_offset(0x00)
     4485                      .dwattr $C$DW$336, DW_AT_bit_size(0x0e)
     4486                      .dwattr $C$DW$336, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   86
@@ -5158,7 +5158,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   86
     4539              $C$DW$T$79      .dwtag  DW_TAG_structure_type
     4540                      .dwattr $C$DW$T$79, DW_AT_name("CPUSEL8_BITS")
     4541                      .dwattr $C$DW$T$79, DW_AT_byte_size(0x02)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   87
@@ -5218,7 +5218,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   87
     4594                      .dwattr $C$DW$347, DW_AT_accessibility(DW_ACCESS_public)
     4595              
     4596                      .dwendtag $C$DW$T$79
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   88
@@ -5278,7 +5278,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   88
     4649              $C$DW$353       .dwtag  DW_TAG_member
     4650                      .dwattr $C$DW$353, DW_AT_type(*$C$DW$T$19)
     4651                      .dwattr $C$DW$353, DW_AT_name("rsvd2")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   89
@@ -5338,7 +5338,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   89
     4704                      .dwattr $C$DW$358, DW_AT_name("PIEVERRADDR")
     4705                      .dwattr $C$DW$358, DW_AT_TI_symbol_name("_PIEVERRADDR")
     4706                      .dwattr $C$DW$358, DW_AT_bit_offset(0x0d)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   90
@@ -5398,7 +5398,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   90
     4759                      .dwattr $C$DW$364, DW_AT_TI_symbol_name("_PCLKCR5")
     4760                      .dwattr $C$DW$364, DW_AT_bit_offset(0x07)
     4761                      .dwattr $C$DW$364, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   91
@@ -5458,7 +5458,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   91
     4814                      .dwattr $C$DW$370, DW_AT_bit_offset(0x01)
     4815                      .dwattr $C$DW$370, DW_AT_bit_size(0x01)
     4816                      .dwattr $C$DW$370, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   92
@@ -5518,7 +5518,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   92
     4869                      .dwattr $C$DW$376, DW_AT_bit_size(0x01)
     4870                      .dwattr $C$DW$376, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
     4871                      .dwattr $C$DW$376, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   93
@@ -5578,7 +5578,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   93
     4924                      .dwattr $C$DW$382, DW_AT_name("bit")
     4925                      .dwattr $C$DW$382, DW_AT_TI_symbol_name("_bit")
     4926                      .dwattr $C$DW$382, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   94
@@ -5638,7 +5638,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   94
     4979                      .dwattr $C$DW$389, DW_AT_name("PCLKCR0")
     4980                      .dwattr $C$DW$389, DW_AT_TI_symbol_name("_PCLKCR0")
     4981                      .dwattr $C$DW$389, DW_AT_data_member_location[DW_OP_plus_uconst 0x22]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   95
@@ -5698,7 +5698,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   95
     5034                      .dwattr $C$DW$397, DW_AT_type(*$C$DW$T$238)
     5035                      .dwattr $C$DW$397, DW_AT_name("PCLKCR8")
     5036                      .dwattr $C$DW$397, DW_AT_TI_symbol_name("_PCLKCR8")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   96
@@ -5758,7 +5758,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   96
     5089              $C$DW$405       .dwtag  DW_TAG_member
     5090                      .dwattr $C$DW$405, DW_AT_type(*$C$DW$T$224)
     5091                      .dwattr $C$DW$405, DW_AT_name("PCLKCR16")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   97
@@ -5818,7 +5818,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   97
     5144              
     5145              $C$DW$413       .dwtag  DW_TAG_member
     5146                      .dwattr $C$DW$413, DW_AT_type(*$C$DW$T$248)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   98
@@ -5878,7 +5878,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   98
     5199                      .dwattr $C$DW$418, DW_AT_name("all")
     5200                      .dwattr $C$DW$418, DW_AT_TI_symbol_name("_all")
     5201                      .dwattr $C$DW$418, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE   99
@@ -5938,7 +5938,7 @@ F2837xD_SysCtrl.asm                                                  PAGE   99
     5254                      .dwattr $C$DW$424, DW_AT_type(*$C$DW$T$19)
     5255                      .dwattr $C$DW$424, DW_AT_name("rsvd3")
     5256                      .dwattr $C$DW$424, DW_AT_TI_symbol_name("_rsvd3")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  100
@@ -5998,7 +5998,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  100
     5309                      .dwattr $C$DW$429, DW_AT_TI_symbol_name("_CAN_B")
     5310                      .dwattr $C$DW$429, DW_AT_bit_offset(0x0e)
     5311                      .dwattr $C$DW$429, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  101
@@ -6058,7 +6058,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  101
     5364              $C$DW$435       .dwtag  DW_TAG_member
     5365                      .dwattr $C$DW$435, DW_AT_type(*$C$DW$T$92)
     5366                      .dwattr $C$DW$435, DW_AT_name("bit")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  102
@@ -6118,7 +6118,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  102
     5419                      .dwattr $C$DW$440, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
     5420                      .dwattr $C$DW$440, DW_AT_accessibility(DW_ACCESS_public)
     5421              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  103
@@ -6178,7 +6178,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  103
     5474              
     5475              $C$DW$446       .dwtag  DW_TAG_member
     5476                      .dwattr $C$DW$446, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  104
@@ -6238,7 +6238,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  104
     5529                      .dwattr $C$DW$451, DW_AT_type(*$C$DW$T$19)
     5530                      .dwattr $C$DW$451, DW_AT_name("ADC_B")
     5531                      .dwattr $C$DW$451, DW_AT_TI_symbol_name("_ADC_B")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  105
@@ -6298,7 +6298,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  105
     5584                      .dwattr $C$DW$456, DW_AT_accessibility(DW_ACCESS_public)
     5585              
     5586              $C$DW$457       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  106
@@ -6358,7 +6358,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  106
     5639                      .dwattr $C$DW$462, DW_AT_bit_offset(0x0b)
     5640                      .dwattr $C$DW$462, DW_AT_bit_size(0x01)
     5641                      .dwattr $C$DW$462, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  107
@@ -6418,7 +6418,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  107
     5694                      .dwattr $C$DW$T$101, DW_AT_byte_size(0x02)
     5695              $C$DW$468       .dwtag  DW_TAG_member
     5696                      .dwattr $C$DW$468, DW_AT_type(*$C$DW$T$27)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  108
@@ -6478,7 +6478,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  108
     5749                      .dwattr $C$DW$473, DW_AT_accessibility(DW_ACCESS_public)
     5750              
     5751              $C$DW$474       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  109
@@ -6538,7 +6538,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  109
     5804              
     5805                      .dwendtag $C$DW$T$102
     5806              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  110
@@ -6598,7 +6598,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  110
     5859                      .dwattr $C$DW$485, DW_AT_type(*$C$DW$T$19)
     5860                      .dwattr $C$DW$485, DW_AT_name("LS3_1")
     5861                      .dwattr $C$DW$485, DW_AT_TI_symbol_name("_LS3_1")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  111
@@ -6658,7 +6658,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  111
     5914                      .dwattr $C$DW$490, DW_AT_accessibility(DW_ACCESS_public)
     5915              
     5916              $C$DW$491       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  112
@@ -6718,7 +6718,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  112
     5969                      .dwattr $C$DW$496, DW_AT_bit_offset(0x0b)
     5970                      .dwattr $C$DW$496, DW_AT_bit_size(0x01)
     5971                      .dwattr $C$DW$496, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  113
@@ -6778,7 +6778,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  113
     6024              $C$DW$T$108     .dwtag  DW_TAG_structure_type
     6025                      .dwattr $C$DW$T$108, DW_AT_name("DC1_BITS")
     6026                      .dwattr $C$DW$T$108, DW_AT_byte_size(0x02)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  114
@@ -6838,7 +6838,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  114
     6079                      .dwattr $C$DW$507, DW_AT_accessibility(DW_ACCESS_public)
     6080              
     6081              $C$DW$508       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  115
@@ -6898,7 +6898,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  115
     6134                      .dwattr $C$DW$513, DW_AT_name("all")
     6135                      .dwattr $C$DW$513, DW_AT_TI_symbol_name("_all")
     6136                      .dwattr $C$DW$513, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  116
@@ -6958,7 +6958,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  116
     6189                      .dwattr $C$DW$519, DW_AT_type(*$C$DW$T$19)
     6190                      .dwattr $C$DW$519, DW_AT_name("GS4")
     6191                      .dwattr $C$DW$519, DW_AT_TI_symbol_name("_GS4")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  117
@@ -7018,7 +7018,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  117
     6244                      .dwattr $C$DW$525, DW_AT_name("GS10")
     6245                      .dwattr $C$DW$525, DW_AT_TI_symbol_name("_GS10")
     6246                      .dwattr $C$DW$525, DW_AT_bit_offset(0x05)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  118
@@ -7078,7 +7078,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  118
     6299                      .dwattr $C$DW$531, DW_AT_TI_symbol_name("_rsvd1")
     6300                      .dwattr $C$DW$531, DW_AT_bit_offset(0x00)
     6301                      .dwattr $C$DW$531, DW_AT_bit_size(0x10)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  119
@@ -7138,7 +7138,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  119
     6354                      .dwattr $C$DW$536, DW_AT_bit_size(0x0e)
     6355                      .dwattr $C$DW$536, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     6356                      .dwattr $C$DW$536, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  120
@@ -7198,7 +7198,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  120
     6409                      .dwattr $C$DW$541, DW_AT_accessibility(DW_ACCESS_public)
     6410              
     6411              $C$DW$542       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  121
@@ -7258,7 +7258,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  121
     6464              
     6465              $C$DW$548       .dwtag  DW_TAG_member
     6466                      .dwattr $C$DW$548, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  122
@@ -7318,7 +7318,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  122
     6519              $C$DW$554       .dwtag  DW_TAG_member
     6520                      .dwattr $C$DW$554, DW_AT_type(*$C$DW$T$19)
     6521                      .dwattr $C$DW$554, DW_AT_name("rsvd3")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  123
@@ -7378,7 +7378,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  123
     6574                      .dwattr $C$DW$559, DW_AT_name("ECAP1")
     6575                      .dwattr $C$DW$559, DW_AT_TI_symbol_name("_ECAP1")
     6576                      .dwattr $C$DW$559, DW_AT_bit_offset(0x0f)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  124
@@ -7438,7 +7438,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  124
     6629                      .dwattr $C$DW$565, DW_AT_TI_symbol_name("_rsvd1")
     6630                      .dwattr $C$DW$565, DW_AT_bit_offset(0x09)
     6631                      .dwattr $C$DW$565, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  125
@@ -7498,7 +7498,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  125
     6684              
     6685              $C$DW$T$118     .dwtag  DW_TAG_structure_type
     6686                      .dwattr $C$DW$T$118, DW_AT_name("DC5_BITS")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  126
@@ -7558,7 +7558,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  126
     6739                      .dwattr $C$DW$576, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
     6740                      .dwattr $C$DW$576, DW_AT_accessibility(DW_ACCESS_public)
     6741              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  127
@@ -7618,7 +7618,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  127
     6794              
     6795              $C$DW$582       .dwtag  DW_TAG_member
     6796                      .dwattr $C$DW$582, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  128
@@ -7678,7 +7678,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  128
     6849              $C$DW$588       .dwtag  DW_TAG_member
     6850                      .dwattr $C$DW$588, DW_AT_type(*$C$DW$T$19)
     6851                      .dwattr $C$DW$588, DW_AT_name("rsvd10")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  129
@@ -7738,7 +7738,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  129
     6904                      .dwattr $C$DW$593, DW_AT_name("rsvd1")
     6905                      .dwattr $C$DW$593, DW_AT_TI_symbol_name("_rsvd1")
     6906                      .dwattr $C$DW$593, DW_AT_bit_offset(0x0d)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  130
@@ -7798,7 +7798,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  130
     6959                      .dwattr $C$DW$599, DW_AT_TI_symbol_name("_rsvd7")
     6960                      .dwattr $C$DW$599, DW_AT_bit_offset(0x00)
     6961                      .dwattr $C$DW$599, DW_AT_bit_size(0x08)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  131
@@ -7858,7 +7858,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  131
     7014                      .dwattr $C$DW$604, DW_AT_bit_size(0x01)
     7015                      .dwattr $C$DW$604, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     7016                      .dwattr $C$DW$604, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  132
@@ -7918,7 +7918,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  132
     7069                      .dwattr $C$DW$610, DW_AT_name("bit")
     7070                      .dwattr $C$DW$610, DW_AT_TI_symbol_name("_bit")
     7071                      .dwattr $C$DW$610, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  133
@@ -7978,7 +7978,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  133
     7124              
     7125              $C$DW$616       .dwtag  DW_TAG_member
     7126                      .dwattr $C$DW$616, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  134
@@ -8038,7 +8038,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  134
     7179                      .dwattr $C$DW$621, DW_AT_type(*$C$DW$T$321)
     7180                      .dwattr $C$DW$621, DW_AT_name("Z1_LINKPOINTER")
     7181                      .dwattr $C$DW$621, DW_AT_TI_symbol_name("_Z1_LINKPOINTER")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  135
@@ -8098,7 +8098,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  135
     7234              $C$DW$629       .dwtag  DW_TAG_member
     7235                      .dwattr $C$DW$629, DW_AT_type(*$C$DW$T$27)
     7236                      .dwattr $C$DW$629, DW_AT_name("Z1_CSMKEY3")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  136
@@ -8158,7 +8158,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  136
     7289              
     7290                      .dwendtag $C$DW$T$129
     7291              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  137
@@ -8218,7 +8218,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  137
     7344              $C$DW$644       .dwtag  DW_TAG_member
     7345                      .dwattr $C$DW$644, DW_AT_type(*$C$DW$T$27)
     7346                      .dwattr $C$DW$644, DW_AT_name("Z2_CSMKEY1")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  138
@@ -8278,7 +8278,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  138
     7399              
     7400              $C$DW$652       .dwtag  DW_TAG_member
     7401                      .dwattr $C$DW$652, DW_AT_type(*$C$DW$T$329)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  139
@@ -8338,7 +8338,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  139
     7454                      .dwattr $C$DW$658, DW_AT_type(*$C$DW$T$19)
     7455                      .dwattr $C$DW$658, DW_AT_name("CPUSEL3")
     7456                      .dwattr $C$DW$658, DW_AT_TI_symbol_name("_CPUSEL3")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  140
@@ -8398,7 +8398,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  140
     7509                      .dwattr $C$DW$664, DW_AT_name("CPUSEL9")
     7510                      .dwattr $C$DW$664, DW_AT_TI_symbol_name("_CPUSEL9")
     7511                      .dwattr $C$DW$664, DW_AT_bit_offset(0x06)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  141
@@ -8458,7 +8458,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  141
     7564                      .dwattr $C$DW$670, DW_AT_TI_symbol_name("_rsvd1")
     7565                      .dwattr $C$DW$670, DW_AT_bit_offset(0x00)
     7566                      .dwattr $C$DW$670, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  142
@@ -8518,7 +8518,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  142
     7619              $C$DW$676       .dwtag  DW_TAG_member
     7620                      .dwattr $C$DW$676, DW_AT_type(*$C$DW$T$210)
     7621                      .dwattr $C$DW$676, DW_AT_name("PARTIDL")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  143
@@ -8578,7 +8578,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  143
     7674              
     7675              $C$DW$684       .dwtag  DW_TAG_member
     7676                      .dwattr $C$DW$684, DW_AT_type(*$C$DW$T$117)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  144
@@ -8638,7 +8638,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  144
     7729                      .dwattr $C$DW$691, DW_AT_accessibility(DW_ACCESS_public)
     7730              
     7731              $C$DW$692       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  145
@@ -8698,7 +8698,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  145
     7784                      .dwattr $C$DW$699, DW_AT_data_member_location[DW_OP_plus_uconst 0x36]
     7785                      .dwattr $C$DW$699, DW_AT_accessibility(DW_ACCESS_public)
     7786              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  146
@@ -8758,7 +8758,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  146
     7839                      .dwattr $C$DW$707, DW_AT_TI_symbol_name("_SOFTPRES1")
     7840                      .dwattr $C$DW$707, DW_AT_data_member_location[DW_OP_plus_uconst 0x84]
     7841                      .dwattr $C$DW$707, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  147
@@ -8818,7 +8818,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  147
     7894                      .dwattr $C$DW$715, DW_AT_name("SOFTPRES9")
     7895                      .dwattr $C$DW$715, DW_AT_TI_symbol_name("_SOFTPRES9")
     7896                      .dwattr $C$DW$715, DW_AT_data_member_location[DW_OP_plus_uconst 0x94]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  148
@@ -8878,7 +8878,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  148
     7949                      .dwattr $C$DW$723, DW_AT_type(*$C$DW$T$136)
     7950                      .dwattr $C$DW$723, DW_AT_name("rsvd11")
     7951                      .dwattr $C$DW$723, DW_AT_TI_symbol_name("_rsvd11")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  149
@@ -8938,7 +8938,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  149
     8004              $C$DW$731       .dwtag  DW_TAG_member
     8005                      .dwattr $C$DW$731, DW_AT_type(*$C$DW$T$78)
     8006                      .dwattr $C$DW$731, DW_AT_name("CPUSEL7")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  150
@@ -8998,7 +8998,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  150
     8059              
     8060              $C$DW$739       .dwtag  DW_TAG_member
     8061                      .dwattr $C$DW$739, DW_AT_type(*$C$DW$T$137)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  151
@@ -9058,7 +9058,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  151
     8114                      .dwattr $C$DW$745, DW_AT_accessibility(DW_ACCESS_public)
     8115              
     8116              $C$DW$746       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  152
@@ -9118,7 +9118,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  152
     8169              $C$DW$751       .dwtag  DW_TAG_member
     8170                      .dwattr $C$DW$751, DW_AT_type(*$C$DW$T$19)
     8171                      .dwattr $C$DW$751, DW_AT_name("rsvd1")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  153
@@ -9178,7 +9178,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  153
     8224                      .dwattr $C$DW$756, DW_AT_name("rsvd1")
     8225                      .dwattr $C$DW$756, DW_AT_TI_symbol_name("_rsvd1")
     8226                      .dwattr $C$DW$756, DW_AT_bit_offset(0x00)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  154
@@ -9238,7 +9238,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  154
     8279                      .dwattr $C$DW$761, DW_AT_bit_offset(0x0e)
     8280                      .dwattr $C$DW$761, DW_AT_bit_size(0x01)
     8281                      .dwattr $C$DW$761, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  155
@@ -9298,7 +9298,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  155
     8334                      .dwattr $C$DW$766, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     8335                      .dwattr $C$DW$766, DW_AT_accessibility(DW_ACCESS_public)
     8336              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  156
@@ -9358,7 +9358,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  156
     8389                      .dwattr $C$DW$772, DW_AT_accessibility(DW_ACCESS_public)
     8390              
     8391              $C$DW$773       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  157
@@ -9418,7 +9418,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  157
     8444              $C$DW$778       .dwtag  DW_TAG_member
     8445                      .dwattr $C$DW$778, DW_AT_type(*$C$DW$T$19)
     8446                      .dwattr $C$DW$778, DW_AT_name("UNC_ERR_L")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  158
@@ -9478,7 +9478,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  158
     8499              
     8500              
     8501              $C$DW$T$150     .dwtag  DW_TAG_structure_type
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  159
@@ -9538,7 +9538,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  159
     8554                      .dwattr $C$DW$789, DW_AT_bit_size(0x01)
     8555                      .dwattr $C$DW$789, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
     8556                      .dwattr $C$DW$789, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  160
@@ -9598,7 +9598,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  160
     8609              $C$DW$795       .dwtag  DW_TAG_member
     8610                      .dwattr $C$DW$795, DW_AT_type(*$C$DW$T$149)
     8611                      .dwattr $C$DW$795, DW_AT_name("bit")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  161
@@ -9658,7 +9658,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  161
     8664                      .dwattr $C$DW$T$155, DW_AT_name("FADDR_TEST_BITS")
     8665                      .dwattr $C$DW$T$155, DW_AT_byte_size(0x02)
     8666              $C$DW$800       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  162
@@ -9718,7 +9718,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  162
     8719                      .dwattr $C$DW$805, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     8720                      .dwattr $C$DW$805, DW_AT_accessibility(DW_ACCESS_public)
     8721              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  163
@@ -9778,7 +9778,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  163
     8774              
     8775                      .dwendtag $C$DW$T$158
     8776              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  164
@@ -9838,7 +9838,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  164
     8829              
     8830              
     8831              $C$DW$T$161     .dwtag  DW_TAG_structure_type
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  165
@@ -9898,7 +9898,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  165
     8884                      .dwattr $C$DW$821, DW_AT_type(*$C$DW$T$161)
     8885                      .dwattr $C$DW$821, DW_AT_name("bit")
     8886                      .dwattr $C$DW$821, DW_AT_TI_symbol_name("_bit")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  166
@@ -9958,7 +9958,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  166
     8939                      .dwattr $C$DW$826, DW_AT_accessibility(DW_ACCESS_public)
     8940              
     8941                      .dwendtag $C$DW$T$163
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  167
@@ -10018,7 +10018,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  167
     8994              $C$DW$832       .dwtag  DW_TAG_member
     8995                      .dwattr $C$DW$832, DW_AT_type(*$C$DW$T$19)
     8996                      .dwattr $C$DW$832, DW_AT_name("ERR_TYPE")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  168
@@ -10078,7 +10078,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  168
     9049                      .dwattr $C$DW$837, DW_AT_name("ECC")
     9050                      .dwattr $C$DW$837, DW_AT_TI_symbol_name("_ECC")
     9051                      .dwattr $C$DW$837, DW_AT_bit_offset(0x08)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  169
@@ -10138,7 +10138,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  169
     9104                      .dwattr $C$DW$842, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     9105                      .dwattr $C$DW$842, DW_AT_accessibility(DW_ACCESS_public)
     9106              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  170
@@ -10198,7 +10198,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  170
     9159                      .dwattr $C$DW$850, DW_AT_TI_symbol_name("_FMSTAT")
     9160                      .dwattr $C$DW$850, DW_AT_data_member_location[DW_OP_plus_uconst 0x2a]
     9161                      .dwattr $C$DW$850, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  171
@@ -10258,7 +10258,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  171
     9214                      .dwattr $C$DW$857, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
     9215                      .dwattr $C$DW$857, DW_AT_accessibility(DW_ACCESS_public)
     9216              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  172
@@ -10318,7 +10318,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  172
     9269                      .dwattr $C$DW$865, DW_AT_TI_symbol_name("_ERR_INTCLR")
     9270                      .dwattr $C$DW$865, DW_AT_data_member_location[DW_OP_plus_uconst 0x16]
     9271                      .dwattr $C$DW$865, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  173
@@ -10378,7 +10378,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  173
     9324                      .dwattr $C$DW$873, DW_AT_name("FECC_STATUS")
     9325                      .dwattr $C$DW$873, DW_AT_TI_symbol_name("_FECC_STATUS")
     9326                      .dwattr $C$DW$873, DW_AT_data_member_location[DW_OP_plus_uconst 0x26]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  174
@@ -10438,7 +10438,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  174
     9379                      .dwattr $C$DW$878, DW_AT_accessibility(DW_ACCESS_public)
     9380              
     9381              $C$DW$879       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  175
@@ -10498,7 +10498,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  175
     9434                      .dwattr $C$DW$884, DW_AT_bit_offset(0x0b)
     9435                      .dwattr $C$DW$884, DW_AT_bit_size(0x01)
     9436                      .dwattr $C$DW$884, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  176
@@ -10558,7 +10558,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  176
     9489                      .dwattr $C$DW$890, DW_AT_bit_size(0x01)
     9490                      .dwattr $C$DW$890, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     9491                      .dwattr $C$DW$890, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  177
@@ -10618,7 +10618,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  177
     9544                      .dwattr $C$DW$896, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
     9545                      .dwattr $C$DW$896, DW_AT_accessibility(DW_ACCESS_public)
     9546              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  178
@@ -10678,7 +10678,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  178
     9599              
     9600              $C$DW$902       .dwtag  DW_TAG_member
     9601                      .dwattr $C$DW$902, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  179
@@ -10738,7 +10738,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  179
     9654                      .dwattr $C$DW$907, DW_AT_type(*$C$DW$T$19)
     9655                      .dwattr $C$DW$907, DW_AT_name("PAGP")
     9656                      .dwattr $C$DW$907, DW_AT_TI_symbol_name("_PAGP")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  180
@@ -10798,7 +10798,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  180
     9709                      .dwattr $C$DW$912, DW_AT_TI_symbol_name("_RWAIT")
     9710                      .dwattr $C$DW$912, DW_AT_bit_offset(0x04)
     9711                      .dwattr $C$DW$912, DW_AT_bit_size(0x04)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  181
@@ -10858,7 +10858,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  181
     9764                      .dwattr $C$DW$917, DW_AT_bit_size(0x01)
     9765                      .dwattr $C$DW$917, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     9766                      .dwattr $C$DW$917, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  182
@@ -10918,7 +10918,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  182
     9819                      .dwattr $C$DW$T$185, DW_AT_name("FUSEERR_BITS")
     9820                      .dwattr $C$DW$T$185, DW_AT_byte_size(0x02)
     9821              $C$DW$923       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  183
@@ -10978,7 +10978,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  183
     9874                      .dwattr $C$DW$928, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     9875                      .dwattr $C$DW$928, DW_AT_accessibility(DW_ACCESS_public)
     9876              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  184
@@ -11038,7 +11038,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  184
     9929                      .dwattr $C$DW$934, DW_AT_type(*$C$DW$T$19)
     9930                      .dwattr $C$DW$934, DW_AT_name("GPIO5")
     9931                      .dwattr $C$DW$934, DW_AT_TI_symbol_name("_GPIO5")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  185
@@ -11098,7 +11098,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  185
     9984                      .dwattr $C$DW$940, DW_AT_name("GPIO11")
     9985                      .dwattr $C$DW$940, DW_AT_TI_symbol_name("_GPIO11")
     9986                      .dwattr $C$DW$940, DW_AT_bit_offset(0x04)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  186
@@ -11158,7 +11158,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  186
    10039                      .dwattr $C$DW$946, DW_AT_TI_symbol_name("_GPIO17")
    10040                      .dwattr $C$DW$946, DW_AT_bit_offset(0x0e)
    10041                      .dwattr $C$DW$946, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  187
@@ -11218,7 +11218,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  187
    10094                      .dwattr $C$DW$952, DW_AT_bit_offset(0x08)
    10095                      .dwattr $C$DW$952, DW_AT_bit_size(0x01)
    10096                      .dwattr $C$DW$952, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  188
@@ -11278,7 +11278,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  188
    10149                      .dwattr $C$DW$958, DW_AT_bit_size(0x01)
    10150                      .dwattr $C$DW$958, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
    10151                      .dwattr $C$DW$958, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  189
@@ -11338,7 +11338,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  189
    10204                      .dwattr $C$DW$963, DW_AT_accessibility(DW_ACCESS_public)
    10205              
    10206              $C$DW$964       .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  190
@@ -11398,7 +11398,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  190
    10259              
    10260              $C$DW$970       .dwtag  DW_TAG_member
    10261                      .dwattr $C$DW$970, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  191
@@ -11458,7 +11458,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  191
    10314              $C$DW$976       .dwtag  DW_TAG_member
    10315                      .dwattr $C$DW$976, DW_AT_type(*$C$DW$T$19)
    10316                      .dwattr $C$DW$976, DW_AT_name("GPIO45")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  192
@@ -11518,7 +11518,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  192
    10369                      .dwattr $C$DW$982, DW_AT_type(*$C$DW$T$19)
    10370                      .dwattr $C$DW$982, DW_AT_name("GPIO51")
    10371                      .dwattr $C$DW$982, DW_AT_TI_symbol_name("_GPIO51")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  193
@@ -11578,7 +11578,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  193
    10424                      .dwattr $C$DW$988, DW_AT_name("GPIO57")
    10425                      .dwattr $C$DW$988, DW_AT_TI_symbol_name("_GPIO57")
    10426                      .dwattr $C$DW$988, DW_AT_bit_offset(0x06)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  194
@@ -11638,7 +11638,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  194
    10479                      .dwattr $C$DW$994, DW_AT_TI_symbol_name("_GPIO63")
    10480                      .dwattr $C$DW$994, DW_AT_bit_offset(0x00)
    10481                      .dwattr $C$DW$994, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  195
@@ -11698,7 +11698,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  195
    10534                      .dwattr $C$DW$999, DW_AT_bit_size(0x08)
    10535                      .dwattr $C$DW$999, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
    10536                      .dwattr $C$DW$999, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  196
@@ -11758,7 +11758,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  196
    10589                      .dwattr $C$DW$1004, DW_AT_accessibility(DW_ACCESS_public)
    10590              
    10591              $C$DW$1005      .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  197
@@ -11818,7 +11818,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  197
    10644              $C$DW$1010      .dwtag  DW_TAG_member
    10645                      .dwattr $C$DW$1010, DW_AT_type(*$C$DW$T$19)
    10646                      .dwattr $C$DW$1010, DW_AT_name("rsvd1")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  198
@@ -11878,7 +11878,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  198
    10699                      .dwattr $C$DW$1015, DW_AT_name("rsvd3")
    10700                      .dwattr $C$DW$1015, DW_AT_TI_symbol_name("_rsvd3")
    10701                      .dwattr $C$DW$1015, DW_AT_bit_offset(0x0d)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  199
@@ -11938,7 +11938,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  199
    10754                      .dwattr $C$DW$1021, DW_AT_TI_symbol_name("_rsvd8")
    10755                      .dwattr $C$DW$1021, DW_AT_bit_offset(0x0c)
    10756                      .dwattr $C$DW$1021, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  200
@@ -11998,7 +11998,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  200
    10809                      .dwattr $C$DW$1027, DW_AT_bit_offset(0x06)
    10810                      .dwattr $C$DW$1027, DW_AT_bit_size(0x01)
    10811                      .dwattr $C$DW$1027, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  201
@@ -12058,7 +12058,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  201
    10864                      .dwattr $C$DW$1033, DW_AT_bit_size(0x01)
    10865                      .dwattr $C$DW$1033, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
    10866                      .dwattr $C$DW$1033, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  202
@@ -12118,7 +12118,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  202
    10919                      .dwattr $C$DW$1038, DW_AT_accessibility(DW_ACCESS_public)
    10920              
    10921                      .dwendtag $C$DW$T$199
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  203
@@ -12178,7 +12178,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  203
    10974              $C$DW$1044      .dwtag  DW_TAG_member
    10975                      .dwattr $C$DW$1044, DW_AT_type(*$C$DW$T$19)
    10976                      .dwattr $C$DW$1044, DW_AT_name("WDINTE")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  204
@@ -12238,7 +12238,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  204
    11029              
    11030                      .dwendtag $C$DW$T$202
    11031              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  205
@@ -12298,7 +12298,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  205
    11084                      .dwattr $C$DW$1054, DW_AT_bit_offset(0x0f)
    11085                      .dwattr $C$DW$1054, DW_AT_bit_size(0x01)
    11086                      .dwattr $C$DW$1054, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  206
@@ -12358,7 +12358,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  206
    11139                      .dwattr $C$DW$T$206, DW_AT_byte_size(0x02)
    11140              $C$DW$1060      .dwtag  DW_TAG_member
    11141                      .dwattr $C$DW$1060, DW_AT_type(*$C$DW$T$27)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  207
@@ -12418,7 +12418,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  207
    11194                      .dwattr $C$DW$1065, DW_AT_accessibility(DW_ACCESS_public)
    11195              
    11196                      .dwendtag $C$DW$T$207
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  208
@@ -12478,7 +12478,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  208
    11249              $C$DW$1071      .dwtag  DW_TAG_member
    11250                      .dwattr $C$DW$1071, DW_AT_type(*$C$DW$T$19)
    11251                      .dwattr $C$DW$1071, DW_AT_name("QUAL")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  209
@@ -12538,7 +12538,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  209
    11304                      .dwattr $C$DW$1077, DW_AT_type(*$C$DW$T$19)
    11305                      .dwattr $C$DW$1077, DW_AT_name("FLASH_SIZE")
    11306                      .dwattr $C$DW$1077, DW_AT_TI_symbol_name("_FLASH_SIZE")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  210
@@ -12598,7 +12598,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  210
    11359                      .dwattr $C$DW$1082, DW_AT_TI_symbol_name("_CLA1")
    11360                      .dwattr $C$DW$1082, DW_AT_bit_offset(0x0f)
    11361                      .dwattr $C$DW$1082, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  211
@@ -12658,7 +12658,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  211
    11414                      .dwattr $C$DW$1088, DW_AT_bit_offset(0x00)
    11415                      .dwattr $C$DW$1088, DW_AT_bit_size(0x0a)
    11416                      .dwattr $C$DW$1088, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  212
@@ -12718,7 +12718,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  212
    11469                      .dwattr $C$DW$T$212, DW_AT_byte_size(0x02)
    11470              $C$DW$1094      .dwtag  DW_TAG_member
    11471                      .dwattr $C$DW$1094, DW_AT_type(*$C$DW$T$27)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  213
@@ -12778,7 +12778,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  213
    11524                      .dwattr $C$DW$1099, DW_AT_accessibility(DW_ACCESS_public)
    11525              
    11526              $C$DW$1100      .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  214
@@ -12838,7 +12838,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  214
    11579              $C$DW$1105      .dwtag  DW_TAG_member
    11580                      .dwattr $C$DW$1105, DW_AT_type(*$C$DW$T$19)
    11581                      .dwattr $C$DW$1105, DW_AT_name("McBSP_B")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  215
@@ -12898,7 +12898,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  215
    11634                      .dwattr $C$DW$1110, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
    11635                      .dwattr $C$DW$1110, DW_AT_accessibility(DW_ACCESS_public)
    11636              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  216
@@ -12958,7 +12958,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  216
    11689              $C$DW$T$218     .dwtag  DW_TAG_union_type
    11690                      .dwattr $C$DW$T$218, DW_AT_name("PCLKCR12_REG")
    11691                      .dwattr $C$DW$T$218, DW_AT_byte_size(0x02)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  217
@@ -13018,7 +13018,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  217
    11744                      .dwattr $C$DW$1121, DW_AT_bit_size(0x01)
    11745                      .dwattr $C$DW$1121, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
    11746                      .dwattr $C$DW$1121, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  218
@@ -13078,7 +13078,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  218
    11799                      .dwattr $C$DW$1126, DW_AT_accessibility(DW_ACCESS_public)
    11800              
    11801              $C$DW$1127      .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  219
@@ -13138,7 +13138,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  219
    11854              
    11855              $C$DW$1133      .dwtag  DW_TAG_member
    11856                      .dwattr $C$DW$1133, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  220
@@ -13198,7 +13198,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  220
    11909                      .dwattr $C$DW$1138, DW_AT_type(*$C$DW$T$19)
    11910                      .dwattr $C$DW$1138, DW_AT_name("rsvd1")
    11911                      .dwattr $C$DW$1138, DW_AT_TI_symbol_name("_rsvd1")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  221
@@ -13258,7 +13258,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  221
    11964                      .dwattr $C$DW$1144, DW_AT_name("DAC_B")
    11965                      .dwattr $C$DW$1144, DW_AT_TI_symbol_name("_DAC_B")
    11966                      .dwattr $C$DW$1144, DW_AT_bit_offset(0x0e)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  222
@@ -13318,7 +13318,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  222
    12019              
    12020              
    12021              $C$DW$T$225     .dwtag  DW_TAG_structure_type
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  223
@@ -13378,7 +13378,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  223
    12074                      .dwattr $C$DW$1155, DW_AT_type(*$C$DW$T$225)
    12075                      .dwattr $C$DW$1155, DW_AT_name("bit")
    12076                      .dwattr $C$DW$1155, DW_AT_TI_symbol_name("_bit")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  224
@@ -13438,7 +13438,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  224
    12129                      .dwattr $C$DW$1160, DW_AT_accessibility(DW_ACCESS_public)
    12130              
    12131              $C$DW$1161      .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  225
@@ -13498,7 +13498,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  225
    12184              
    12185              $C$DW$1167      .dwtag  DW_TAG_member
    12186                      .dwattr $C$DW$1167, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  226
@@ -13558,7 +13558,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  226
    12239                      .dwendtag $C$DW$T$227
    12240              
    12241              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  227
@@ -13618,7 +13618,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  227
    12294                      .dwattr $C$DW$1178, DW_AT_name("ECAP4")
    12295                      .dwattr $C$DW$1178, DW_AT_TI_symbol_name("_ECAP4")
    12296                      .dwattr $C$DW$1178, DW_AT_bit_offset(0x0c)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  228
@@ -13678,7 +13678,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  228
    12349                      .dwattr $C$DW$1184, DW_AT_TI_symbol_name("_rsvd4")
    12350                      .dwattr $C$DW$1184, DW_AT_bit_offset(0x00)
    12351                      .dwattr $C$DW$1184, DW_AT_bit_size(0x10)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  229
@@ -13738,7 +13738,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  229
    12404                      .dwattr $C$DW$1189, DW_AT_bit_size(0x01)
    12405                      .dwattr $C$DW$1189, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
    12406                      .dwattr $C$DW$1189, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  230
@@ -13798,7 +13798,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  230
    12459                      .dwattr $C$DW$T$233, DW_AT_name("PCLKCR6_BITS")
    12460                      .dwattr $C$DW$T$233, DW_AT_byte_size(0x02)
    12461              $C$DW$1195      .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  231
@@ -13858,7 +13858,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  231
    12514              
    12515              $C$DW$1201      .dwtag  DW_TAG_member
    12516                      .dwattr $C$DW$1201, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  232
@@ -13918,7 +13918,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  232
    12569                      .dwattr $C$DW$1206, DW_AT_accessibility(DW_ACCESS_public)
    12570              
    12571                      .dwendtag $C$DW$T$234
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  233
@@ -13978,7 +13978,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  233
    12624                      .dwattr $C$DW$1212, DW_AT_name("rsvd2")
    12625                      .dwattr $C$DW$1212, DW_AT_TI_symbol_name("_rsvd2")
    12626                      .dwattr $C$DW$1212, DW_AT_bit_offset(0x00)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  234
@@ -14038,7 +14038,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  234
    12679                      .dwattr $C$DW$1217, DW_AT_bit_offset(0x0d)
    12680                      .dwattr $C$DW$1217, DW_AT_bit_size(0x01)
    12681                      .dwattr $C$DW$1217, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  235
@@ -14098,7 +14098,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  235
    12734                      .dwattr $C$DW$T$238, DW_AT_byte_size(0x02)
    12735              $C$DW$1223      .dwtag  DW_TAG_member
    12736                      .dwattr $C$DW$1223, DW_AT_type(*$C$DW$T$27)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  236
@@ -14158,7 +14158,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  236
    12789                      .dwattr $C$DW$1228, DW_AT_accessibility(DW_ACCESS_public)
    12790              
    12791              $C$DW$1229      .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  237
@@ -14218,7 +14218,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  237
    12844              $C$DW$1234      .dwtag  DW_TAG_member
    12845                      .dwattr $C$DW$1234, DW_AT_type(*$C$DW$T$19)
    12846                      .dwattr $C$DW$1234, DW_AT_name("rsvd1")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  238
@@ -14278,7 +14278,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  238
    12899              
    12900              
    12901              $C$DW$T$242     .dwtag  DW_TAG_union_type
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  239
@@ -14338,7 +14338,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  239
    12954                      .dwattr $C$DW$1245, DW_AT_TI_symbol_name("_ADC_D_MODE")
    12955                      .dwattr $C$DW$1245, DW_AT_bit_offset(0x0c)
    12956                      .dwattr $C$DW$1245, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  240
@@ -14398,7 +14398,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  240
    13009              $C$DW$1251      .dwtag  DW_TAG_member
    13010                      .dwattr $C$DW$1251, DW_AT_type(*$C$DW$T$243)
    13011                      .dwattr $C$DW$1251, DW_AT_name("bit")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  241
@@ -14458,7 +14458,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  241
    13064                      .dwattr $C$DW$T$247, DW_AT_name("RESC_BITS")
    13065                      .dwattr $C$DW$T$247, DW_AT_byte_size(0x02)
    13066              $C$DW$1256      .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  242
@@ -14518,7 +14518,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  242
    13119              
    13120              $C$DW$1262      .dwtag  DW_TAG_member
    13121                      .dwattr $C$DW$1262, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  243
@@ -14578,7 +14578,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  243
    13174              $C$DW$1268      .dwtag  DW_TAG_member
    13175                      .dwattr $C$DW$1268, DW_AT_type(*$C$DW$T$19)
    13176                      .dwattr $C$DW$1268, DW_AT_name("TRSTn_pin_status")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  244
@@ -14638,7 +14638,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  244
    13229                      .dwattr $C$DW$1273, DW_AT_name("CPU2HWBISTRST0")
    13230                      .dwattr $C$DW$1273, DW_AT_TI_symbol_name("_CPU2HWBISTRST0")
    13231                      .dwattr $C$DW$1273, DW_AT_bit_offset(0x0d)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  245
@@ -14698,7 +14698,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  245
    13284                      .dwattr $C$DW$1278, DW_AT_bit_offset(0x0f)
    13285                      .dwattr $C$DW$1278, DW_AT_bit_size(0x01)
    13286                      .dwattr $C$DW$1278, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  246
@@ -14758,7 +14758,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  246
    13339              $C$DW$T$253     .dwtag  DW_TAG_structure_type
    13340                      .dwattr $C$DW$T$253, DW_AT_name("SECMSEL_BITS")
    13341                      .dwattr $C$DW$T$253, DW_AT_byte_size(0x02)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  247
@@ -14818,7 +14818,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  247
    13394                      .dwattr $C$DW$1289, DW_AT_accessibility(DW_ACCESS_public)
    13395              
    13396              $C$DW$1290      .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  248
@@ -14878,7 +14878,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  248
    13449              $C$DW$1295      .dwtag  DW_TAG_member
    13450                      .dwattr $C$DW$1295, DW_AT_type(*$C$DW$T$19)
    13451                      .dwattr $C$DW$1295, DW_AT_name("CPU1_CLA1")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  249
@@ -14938,7 +14938,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  249
    13504              
    13505              
    13506              $C$DW$T$256     .dwtag  DW_TAG_union_type
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  250
@@ -14998,7 +14998,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  250
    13559                      .dwattr $C$DW$1306, DW_AT_TI_symbol_name("_USB_A")
    13560                      .dwattr $C$DW$1306, DW_AT_bit_offset(0x0f)
    13561                      .dwattr $C$DW$1306, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  251
@@ -15058,7 +15058,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  251
    13614                      .dwattr $C$DW$1311, DW_AT_bit_size(0x01)
    13615                      .dwattr $C$DW$1311, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
    13616                      .dwattr $C$DW$1311, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  252
@@ -15118,7 +15118,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  252
    13669              $C$DW$1317      .dwtag  DW_TAG_member
    13670                      .dwattr $C$DW$1317, DW_AT_type(*$C$DW$T$27)
    13671                      .dwattr $C$DW$1317, DW_AT_name("all")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  253
@@ -15178,7 +15178,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  253
    13724              
    13725              $C$DW$1323      .dwtag  DW_TAG_member
    13726                      .dwattr $C$DW$1323, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  254
@@ -15238,7 +15238,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  254
    13779                      .dwendtag $C$DW$T$261
    13780              
    13781              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  255
@@ -15298,7 +15298,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  255
    13834                      .dwattr $C$DW$1334, DW_AT_name("rsvd4")
    13835                      .dwattr $C$DW$1334, DW_AT_TI_symbol_name("_rsvd4")
    13836                      .dwattr $C$DW$1334, DW_AT_bit_offset(0x0c)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  256
@@ -15358,7 +15358,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  256
    13889                      .dwattr $C$DW$1340, DW_AT_TI_symbol_name("_rsvd7")
    13890                      .dwattr $C$DW$1340, DW_AT_bit_offset(0x00)
    13891                      .dwattr $C$DW$1340, DW_AT_bit_size(0x0c)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  257
@@ -15418,7 +15418,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  257
    13944                      .dwattr $C$DW$1345, DW_AT_bit_size(0x0e)
    13945                      .dwattr $C$DW$1345, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
    13946                      .dwattr $C$DW$1345, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  258
@@ -15478,7 +15478,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  258
    13999                      .dwattr $C$DW$1350, DW_AT_accessibility(DW_ACCESS_public)
    14000              
    14001              $C$DW$1351      .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  259
@@ -15538,7 +15538,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  259
    14054              
    14055              $C$DW$1357      .dwtag  DW_TAG_member
    14056                      .dwattr $C$DW$1357, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  260
@@ -15598,7 +15598,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  260
    14109              $C$DW$1363      .dwtag  DW_TAG_member
    14110                      .dwattr $C$DW$1363, DW_AT_type(*$C$DW$T$19)
    14111                      .dwattr $C$DW$1363, DW_AT_name("rsvd3")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  261
@@ -15658,7 +15658,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  261
    14164                      .dwattr $C$DW$1368, DW_AT_name("ECAP1")
    14165                      .dwattr $C$DW$1368, DW_AT_TI_symbol_name("_ECAP1")
    14166                      .dwattr $C$DW$1368, DW_AT_bit_offset(0x0f)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  262
@@ -15718,7 +15718,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  262
    14219                      .dwattr $C$DW$1374, DW_AT_TI_symbol_name("_rsvd1")
    14220                      .dwattr $C$DW$1374, DW_AT_bit_offset(0x09)
    14221                      .dwattr $C$DW$1374, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  263
@@ -15778,7 +15778,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  263
    14274              
    14275              $C$DW$T$271     .dwtag  DW_TAG_structure_type
    14276                      .dwattr $C$DW$T$271, DW_AT_name("SOFTPRES4_BITS")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  264
@@ -15838,7 +15838,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  264
    14329                      .dwattr $C$DW$1385, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
    14330                      .dwattr $C$DW$1385, DW_AT_accessibility(DW_ACCESS_public)
    14331              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  265
@@ -15898,7 +15898,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  265
    14384              
    14385              $C$DW$1391      .dwtag  DW_TAG_member
    14386                      .dwattr $C$DW$1391, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  266
@@ -15958,7 +15958,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  266
    14439              $C$DW$1397      .dwtag  DW_TAG_member
    14440                      .dwattr $C$DW$1397, DW_AT_type(*$C$DW$T$19)
    14441                      .dwattr $C$DW$1397, DW_AT_name("rsvd8")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  267
@@ -16018,7 +16018,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  267
    14494                      .dwattr $C$DW$1402, DW_AT_name("SCI_C")
    14495                      .dwattr $C$DW$1402, DW_AT_TI_symbol_name("_SCI_C")
    14496                      .dwattr $C$DW$1402, DW_AT_bit_offset(0x0d)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  268
@@ -16078,7 +16078,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  268
    14549              
    14550              
    14551              $C$DW$T$277     .dwtag  DW_TAG_structure_type
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  269
@@ -16138,7 +16138,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  269
    14604                      .dwattr $C$DW$1413, DW_AT_bit_size(0x01)
    14605                      .dwattr $C$DW$1413, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
    14606                      .dwattr $C$DW$1413, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  270
@@ -16198,7 +16198,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  270
    14659                      .dwattr $C$DW$1418, DW_AT_accessibility(DW_ACCESS_public)
    14660              
    14661              $C$DW$1419      .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  271
@@ -16258,7 +16258,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  271
    14714                      .dwattr $C$DW$1424, DW_AT_name("all")
    14715                      .dwattr $C$DW$1424, DW_AT_TI_symbol_name("_all")
    14716                      .dwattr $C$DW$1424, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  272
@@ -16318,7 +16318,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  272
    14769                      .dwattr $C$DW$1429, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
    14770                      .dwattr $C$DW$1429, DW_AT_accessibility(DW_ACCESS_public)
    14771              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  273
@@ -16378,7 +16378,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  273
    14824              $C$DW$T$284     .dwtag  DW_TAG_union_type
    14825                      .dwattr $C$DW$T$284, DW_AT_name("SYSPLLCTL1_REG")
    14826                      .dwattr $C$DW$T$284, DW_AT_byte_size(0x02)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  274
@@ -16438,7 +16438,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  274
    14879                      .dwattr $C$DW$1440, DW_AT_bit_size(0x06)
    14880                      .dwattr $C$DW$1440, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
    14881                      .dwattr $C$DW$1440, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  275
@@ -16498,7 +16498,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  275
    14934                      .dwattr $C$DW$1445, DW_AT_accessibility(DW_ACCESS_public)
    14935              
    14936              $C$DW$1446      .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  276
@@ -16558,7 +16558,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  276
    14989              $C$DW$1451      .dwtag  DW_TAG_member
    14990                      .dwattr $C$DW$1451, DW_AT_type(*$C$DW$T$19)
    14991                      .dwattr $C$DW$1451, DW_AT_name("TMR2CLKPRESCALE")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  277
@@ -16618,7 +16618,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  277
    15044                      .dwattr $C$DW$1456, DW_AT_name("ENABLE")
    15045                      .dwattr $C$DW$1456, DW_AT_TI_symbol_name("_ENABLE")
    15046                      .dwattr $C$DW$1456, DW_AT_bit_offset(0x0f)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  278
@@ -16678,7 +16678,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  278
    15099                      .dwattr $C$DW$1461, DW_AT_bit_offset(0x00)
    15100                      .dwattr $C$DW$1461, DW_AT_bit_size(0x08)
    15101                      .dwattr $C$DW$1461, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  279
@@ -16738,7 +16738,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  279
    15154                      .dwattr $C$DW$1466, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
    15155                      .dwattr $C$DW$1466, DW_AT_accessibility(DW_ACCESS_public)
    15156              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  280
@@ -16798,7 +16798,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  280
    15209              
    15210              $C$DW$1472      .dwtag  DW_TAG_member
    15211                      .dwattr $C$DW$1472, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  281
@@ -16858,7 +16858,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  281
    15264                      .dwattr $C$DW$1477, DW_AT_type(*$C$DW$T$19)
    15265                      .dwattr $C$DW$1477, DW_AT_name("rsvd1")
    15266                      .dwattr $C$DW$1477, DW_AT_TI_symbol_name("_rsvd1")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  282
@@ -16918,7 +16918,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  282
    15319              $C$DW$1483      .dwtag  DW_TAG_member
    15320                      .dwattr $C$DW$1483, DW_AT_type(*$C$DW$T$19)
    15321                      .dwattr $C$DW$1483, DW_AT_name("rsvd2")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  283
@@ -16978,7 +16978,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  283
    15374              
    15375              $C$DW$1490      .dwtag  DW_TAG_member
    15376                      .dwattr $C$DW$1490, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  284
@@ -17038,7 +17038,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  284
    15429                      .dwattr $C$DW$1495, DW_AT_type(*$C$DW$T$19)
    15430                      .dwattr $C$DW$1495, DW_AT_name("rsvd1")
    15431                      .dwattr $C$DW$1495, DW_AT_TI_symbol_name("_rsvd1")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  285
@@ -17098,7 +17098,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  285
    15484                      .dwattr $C$DW$1500, DW_AT_TI_symbol_name("_BMODE")
    15485                      .dwattr $C$DW$1500, DW_AT_bit_offset(0x00)
    15486                      .dwattr $C$DW$1500, DW_AT_bit_size(0x08)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  286
@@ -17158,7 +17158,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  286
    15539                      .dwattr $C$DW$1505, DW_AT_bit_size(0x03)
    15540                      .dwattr $C$DW$1505, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
    15541                      .dwattr $C$DW$1505, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  287
@@ -17218,7 +17218,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  287
    15594                      .dwattr $C$DW$1511, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
    15595                      .dwattr $C$DW$1511, DW_AT_accessibility(DW_ACCESS_public)
    15596              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  288
@@ -17278,7 +17278,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  288
    15649              
    15650              $C$DW$1517      .dwtag  DW_TAG_member
    15651                      .dwattr $C$DW$1517, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  289
@@ -17338,7 +17338,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  289
    15704              $C$DW$1523      .dwtag  DW_TAG_member
    15705                      .dwattr $C$DW$1523, DW_AT_type(*$C$DW$T$19)
    15706                      .dwattr $C$DW$1523, DW_AT_name("rsvd1")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  290
@@ -17398,7 +17398,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  290
    15759                      .dwattr $C$DW$1528, DW_AT_name("EXEONLY_SECTB")
    15760                      .dwattr $C$DW$1528, DW_AT_TI_symbol_name("_EXEONLY_SECTB")
    15761                      .dwattr $C$DW$1528, DW_AT_bit_offset(0x0e)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  291
@@ -17458,7 +17458,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  291
    15814                      .dwattr $C$DW$1534, DW_AT_TI_symbol_name("_EXEONLY_SECTH")
    15815                      .dwattr $C$DW$1534, DW_AT_bit_offset(0x08)
    15816                      .dwattr $C$DW$1534, DW_AT_bit_size(0x01)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  292
@@ -17518,7 +17518,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  292
    15869                      .dwattr $C$DW$1540, DW_AT_bit_offset(0x02)
    15870                      .dwattr $C$DW$1540, DW_AT_bit_size(0x01)
    15871                      .dwattr $C$DW$1540, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  293
@@ -17578,7 +17578,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  293
    15924              $C$DW$T$316     .dwtag  DW_TAG_structure_type
    15925                      .dwattr $C$DW$T$316, DW_AT_name("Z1_GRABRAMR_BITS")
    15926                      .dwattr $C$DW$T$316, DW_AT_byte_size(0x02)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  294
@@ -17638,7 +17638,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  294
    15979                      .dwattr $C$DW$1551, DW_AT_accessibility(DW_ACCESS_public)
    15980              
    15981              $C$DW$1552      .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  295
@@ -17698,7 +17698,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  295
    16034                      .dwattr $C$DW$1557, DW_AT_name("all")
    16035                      .dwattr $C$DW$1557, DW_AT_TI_symbol_name("_all")
    16036                      .dwattr $C$DW$1557, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  296
@@ -17758,7 +17758,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  296
    16089                      .dwattr $C$DW$1563, DW_AT_type(*$C$DW$T$19)
    16090                      .dwattr $C$DW$1563, DW_AT_name("GRAB_SECTE")
    16091                      .dwattr $C$DW$1563, DW_AT_TI_symbol_name("_GRAB_SECTE")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  297
@@ -17818,7 +17818,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  297
    16144                      .dwattr $C$DW$1569, DW_AT_name("GRAB_SECTK")
    16145                      .dwattr $C$DW$1569, DW_AT_TI_symbol_name("_GRAB_SECTK")
    16146                      .dwattr $C$DW$1569, DW_AT_bit_offset(0x0a)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  298
@@ -17878,7 +17878,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  298
    16199              $C$DW$T$319     .dwtag  DW_TAG_union_type
    16200                      .dwattr $C$DW$T$319, DW_AT_name("Z1_GRABSECTR_REG")
    16201                      .dwattr $C$DW$T$319, DW_AT_byte_size(0x02)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  299
@@ -17938,7 +17938,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  299
    16254                      .dwattr $C$DW$1580, DW_AT_type(*$C$DW$T$320)
    16255                      .dwattr $C$DW$1580, DW_AT_name("bit")
    16256                      .dwattr $C$DW$1580, DW_AT_TI_symbol_name("_bit")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  300
@@ -17998,7 +17998,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  300
    16309                      .dwattr $C$DW$1585, DW_AT_accessibility(DW_ACCESS_public)
    16310              
    16311                      .dwendtag $C$DW$T$322
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  301
@@ -18058,7 +18058,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  301
    16364              $C$DW$1591      .dwtag  DW_TAG_member
    16365                      .dwattr $C$DW$1591, DW_AT_type(*$C$DW$T$19)
    16366                      .dwattr $C$DW$1591, DW_AT_name("BOOTPIN1")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  302
@@ -18118,7 +18118,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  302
    16419                      .dwattr $C$DW$1596, DW_AT_name("ALLONE")
    16420                      .dwattr $C$DW$1596, DW_AT_TI_symbol_name("_ALLONE")
    16421                      .dwattr $C$DW$1596, DW_AT_bit_offset(0x0b)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  303
@@ -18178,7 +18178,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  303
    16474              $C$DW$T$327     .dwtag  DW_TAG_union_type
    16475                      .dwattr $C$DW$T$327, DW_AT_name("Z2_CR_REG")
    16476                      .dwattr $C$DW$T$327, DW_AT_byte_size(0x01)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  304
@@ -18238,7 +18238,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  304
    16529                      .dwattr $C$DW$1607, DW_AT_bit_size(0x01)
    16530                      .dwattr $C$DW$1607, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
    16531                      .dwattr $C$DW$1607, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  305
@@ -18298,7 +18298,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  305
    16584                      .dwattr $C$DW$1613, DW_AT_data_member_location[DW_OP_plus_uconst 0x1]
    16585                      .dwattr $C$DW$1613, DW_AT_accessibility(DW_ACCESS_public)
    16586              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  306
@@ -18358,7 +18358,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  306
    16639              
    16640              $C$DW$1619      .dwtag  DW_TAG_member
    16641                      .dwattr $C$DW$1619, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  307
@@ -18418,7 +18418,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  307
    16694              $C$DW$1625      .dwtag  DW_TAG_member
    16695                      .dwattr $C$DW$1625, DW_AT_type(*$C$DW$T$19)
    16696                      .dwattr $C$DW$1625, DW_AT_name("EXEONLY_SECTJ")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  308
@@ -18478,7 +18478,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  308
    16749                      .dwattr $C$DW$1631, DW_AT_type(*$C$DW$T$19)
    16750                      .dwattr $C$DW$1631, DW_AT_name("rsvd1")
    16751                      .dwattr $C$DW$1631, DW_AT_TI_symbol_name("_rsvd1")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  309
@@ -18538,7 +18538,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  309
    16804                      .dwattr $C$DW$1636, DW_AT_TI_symbol_name("_GRAB_RAM1")
    16805                      .dwattr $C$DW$1636, DW_AT_bit_offset(0x0c)
    16806                      .dwattr $C$DW$1636, DW_AT_bit_size(0x02)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  310
@@ -18598,7 +18598,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  310
    16859                      .dwattr $C$DW$1642, DW_AT_bit_offset(0x00)
    16860                      .dwattr $C$DW$1642, DW_AT_bit_size(0x02)
    16861                      .dwattr $C$DW$1642, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  311
@@ -18658,7 +18658,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  311
    16914              $C$DW$T$334     .dwtag  DW_TAG_structure_type
    16915                      .dwattr $C$DW$T$334, DW_AT_name("Z2_GRABSECTR_BITS")
    16916                      .dwattr $C$DW$T$334, DW_AT_byte_size(0x02)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  312
@@ -18718,7 +18718,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  312
    16969                      .dwattr $C$DW$1653, DW_AT_accessibility(DW_ACCESS_public)
    16970              
    16971              $C$DW$1654      .dwtag  DW_TAG_member
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  313
@@ -18778,7 +18778,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  313
    17024              
    17025              $C$DW$1660      .dwtag  DW_TAG_member
    17026                      .dwattr $C$DW$1660, DW_AT_type(*$C$DW$T$19)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  314
@@ -18838,7 +18838,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  314
    17079                      .dwattr $C$DW$1665, DW_AT_accessibility(DW_ACCESS_public)
    17080              
    17081                      .dwendtag $C$DW$T$335
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  315
@@ -18898,7 +18898,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  315
    17134                      .dwattr $C$DW$1670, DW_AT_TI_symbol_name("_rsvd1")
    17135                      .dwattr $C$DW$1670, DW_AT_bit_offset(0x0c)
    17136                      .dwattr $C$DW$1670, DW_AT_bit_size(0x04)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  316
@@ -18958,7 +18958,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  316
    17189              $C$DW$1676      .dwtag  DW_TAG_member
    17190                      .dwattr $C$DW$1676, DW_AT_type(*$C$DW$T$338)
    17191                      .dwattr $C$DW$1676, DW_AT_name("bit")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  317
@@ -19018,7 +19018,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  317
    17244                      .dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
    17245              
    17246              $C$DW$1677      .dwtag  DW_TAG_TI_far_type
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  318
@@ -19078,7 +19078,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  318
    17299              $C$DW$T$24      .dwtag  DW_TAG_array_type
    17300                      .dwattr $C$DW$T$24, DW_AT_type(*$C$DW$T$19)
    17301                      .dwattr $C$DW$T$24, DW_AT_language(DW_LANG_C)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  319
@@ -19138,7 +19138,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  319
    17354                      .dwattr $C$DW$1688, DW_AT_upper_bound(0x25)
    17355              
    17356                      .dwendtag $C$DW$T$133
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  320
@@ -19198,7 +19198,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  320
    17409              $C$DW$T$170     .dwtag  DW_TAG_array_type
    17410                      .dwattr $C$DW$T$170, DW_AT_type(*$C$DW$T$19)
    17411                      .dwattr $C$DW$T$170, DW_AT_language(DW_LANG_C)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  321
@@ -19258,7 +19258,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  321
    17464                      .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
    17465                      .dwattr $C$DW$T$16, DW_AT_name("float")
    17466                      .dwattr $C$DW$T$16, DW_AT_byte_size(0x02)
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  322
@@ -19318,7 +19318,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  322
    17519                      .dwcfi  same_value, 11
    17520                      .dwcfi  undefined, 12
    17521                      .dwcfi  undefined, 13
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  323
@@ -19378,7 +19378,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  323
    17574              
    17575              $C$DW$1702      .dwtag  DW_TAG_TI_assign_register
    17576                      .dwattr $C$DW$1702, DW_AT_name("XT")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  324
@@ -19438,7 +19438,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  324
    17629                      .dwattr $C$DW$1715, DW_AT_location[DW_OP_regx 0x23]
    17630              
    17631              $C$DW$1716      .dwtag  DW_TAG_TI_assign_register
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  325
@@ -19498,7 +19498,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  325
    17684                      .dwattr $C$DW$1729, DW_AT_name("AR4")
    17685                      .dwattr $C$DW$1729, DW_AT_location[DW_OP_reg12]
    17686              
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  326
@@ -19558,7 +19558,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  326
    17739              $C$DW$1743      .dwtag  DW_TAG_TI_assign_register
    17740                      .dwattr $C$DW$1743, DW_AT_name("R3HL")
    17741                      .dwattr $C$DW$1743, DW_AT_location[DW_OP_regx 0x37]
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  327
@@ -19618,7 +19618,7 @@ F2837xD_SysCtrl.asm                                                  PAGE  327
    17794              
    17795              $C$DW$1757      .dwtag  DW_TAG_TI_assign_register
    17796                      .dwattr $C$DW$1757, DW_AT_name("FPUHAZ")
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:53:28 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 09:38:32 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 F2837xD_SysCtrl.asm                                                  PAGE  328

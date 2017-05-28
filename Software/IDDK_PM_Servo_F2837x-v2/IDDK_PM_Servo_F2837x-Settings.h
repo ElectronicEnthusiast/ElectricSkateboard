@@ -83,7 +83,7 @@ Following is the list of Current sense options
 ------------------------------------------------------------------------------*/
 #define SHUNT_CURRENT_SENSE 1
 #define LEM_CURRENT_SENSE   2
-#define SD_CURRENT_SENSE    3
+////#define SD_CURRENT_SENSE    3
 
 /*------------------------------------------------------------------------------
 This line sets the CURRENT_SENSE to user's choice from the above.
@@ -242,13 +242,12 @@ Current sensors scaling
 
 // ************************************************************************
 // Scaling factors to bring all current feedbacks to normal scale
-//   matching with shunt based measurement
-//  With shunt, 1.0pu current  == 9.945A
+//	LEM is scaled from 1.65==0Amps to 3.3V==150Amps
+//	The The AC signal from the LEM "LA 100-P model#" is read using a 22ohm resistor (
+//	The AC signal from the LEM "LA 100-P model#" is then offset by 1.65V using a differential opamp
 //       LEM,   1.0pu current  == 12A
-//       SDFM,  0.8906pu current  == 12.5A
 // ************************************************************************
 #define  LEM_TO_SHUNT    1.206637   // (12.0/9.945)
-#define  SDFM_TO_SHUNT   1.41131    // (12.5/0.8906)/9.945
 
 /*****************************************************************************
  * ***************************************************************************

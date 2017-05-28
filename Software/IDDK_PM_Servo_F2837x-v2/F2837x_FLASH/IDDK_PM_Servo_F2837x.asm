@@ -1,6 +1,6 @@
 ;***************************************************************
 ;* TMS320C2000 C/C++ Codegen                   PC v15.12.1.LTS *
-;* Date/Time created: Sun May 14 15:40:17 2017                 *
+;* Date/Time created: Sun May 28 10:39:54 2017                 *
 ;***************************************************************
 	.compiler_opts --abi=coffabi --cla_support=cla0 --float_support=fpu32 --hll_source=on --mem_model:code=flat --mem_model:data=large --object_format=coff --quiet --silicon_version=28 --symdebug:dwarf --symdebug:dwarf_version=3 --tmu_support=tmu0 
 FP	.set	XAR2
@@ -9,7 +9,7 @@ $C$DW$CU	.dwtag  DW_TAG_compile_unit
 	.dwattr $C$DW$CU, DW_AT_name("../IDDK_PM_Servo_F2837x.c")
 	.dwattr $C$DW$CU, DW_AT_producer("TI TMS320C2000 C/C++ Codegen PC v15.12.1.LTS Copyright (c) 1996-2015 Texas Instruments Incorporated")
 	.dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-	.dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\Keith\workspace_v6_1_3\IDDK_PM_Servo_F2837x-v2\F2837x_FLASH")
+	.dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\Keith\Documents\GitHub\ElectricSkateboard\Software\IDDK_PM_Servo_F2837x-v2\F2837x_FLASH")
 ;**************************************************************
 ;* CINIT RECORDS                                              *
 ;**************************************************************
@@ -2146,8 +2146,8 @@ $C$DW$210	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$210, DW_AT_declaration
 	.dwattr $C$DW$210, DW_AT_external
 
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_15.12.1.LTS\bin\opt2000.exe C:\\Users\\Keith\\AppData\\Local\\Temp\\144642 C:\\Users\\Keith\\AppData\\Local\\Temp\\144644 
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_15.12.1.LTS\bin\ac2000.exe -@C:\\Users\\Keith\\AppData\\Local\\Temp\\1446412 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_15.12.1.LTS\bin\opt2000.exe C:\\Users\\Keith\\AppData\\Local\\Temp\\172482 C:\\Users\\Keith\\AppData\\Local\\Temp\\172484 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_15.12.1.LTS\bin\ac2000.exe -@C:\\Users\\Keith\\AppData\\Local\\Temp\\1724812 
 	.sect	".text"
 	.clink
 	.global	_posEncoderSuite
@@ -2159,10 +2159,10 @@ $C$DW$211	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$211, DW_AT_TI_symbol_name("_posEncoderSuite")
 	.dwattr $C$DW$211, DW_AT_external
 	.dwattr $C$DW$211, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$211, DW_AT_TI_begin_line(0x17b)
+	.dwattr $C$DW$211, DW_AT_TI_begin_line(0x174)
 	.dwattr $C$DW$211, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$211, DW_AT_TI_max_frame_size(-4)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 380,column 1,is_stmt,address _posEncoderSuite,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 373,column 1,is_stmt,address _posEncoderSuite,isa 0
 
 	.dwfde $C$DW$CIE, _posEncoderSuite
 
@@ -2181,171 +2181,171 @@ _posEncoderSuite:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
         MOVW      DP,#_lsw              ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 385,column 2,is_stmt,isa 0
-        MOV       AL,@_lsw              ; [CPU_] |385| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 378,column 2,is_stmt,isa 0
+        MOV       AL,@_lsw              ; [CPU_] |378| 
         MOV32     *SP++,R4H             ; [CPU_] 
-        B         $C$L1,NEQ             ; [CPU_] |385| 
-        ; branchcc occurs ; [] |385| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 388,column 3,is_stmt,isa 0
-        MOVB      ACC,#0                ; [CPU_] |388| 
+        B         $C$L1,NEQ             ; [CPU_] |378| 
+        ; branchcc occurs ; [] |378| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 381,column 3,is_stmt,isa 0
+        MOVB      ACC,#0                ; [CPU_] |381| 
         MOVW      DP,#_EQep1Regs        ; [CPU_U] 
-        MOVL      @_EQep1Regs,ACC       ; [CPU_] |388| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 389,column 3,is_stmt,isa 0
-        OR        @_EQep1Regs+26,#0x0400 ; [CPU_] |389| 
+        MOVL      @_EQep1Regs,ACC       ; [CPU_] |381| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 382,column 3,is_stmt,isa 0
+        OR        @_EQep1Regs+26,#0x0400 ; [CPU_] |382| 
 $C$L1:    
         MOVW      DP,#_lsw              ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 396,column 2,is_stmt,isa 0
-        MOV       AL,@_lsw              ; [CPU_] |396| 
-        CMPB      AL,#1                 ; [CPU_] |396| 
-        B         $C$L2,NEQ             ; [CPU_] |396| 
-        ; branchcc occurs ; [] |396| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 389,column 2,is_stmt,isa 0
+        MOV       AL,@_lsw              ; [CPU_] |389| 
+        CMPB      AL,#1                 ; [CPU_] |389| 
+        B         $C$L2,NEQ             ; [CPU_] |389| 
+        ; branchcc occurs ; [] |389| 
         MOVW      DP,#_EQep1Regs+25     ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 398,column 3,is_stmt,isa 0
-        TBIT      @_EQep1Regs+25,#10    ; [CPU_] |398| 
-        B         $C$L3,TC              ; [CPU_] |398| 
-        ; branchcc occurs ; [] |398| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 391,column 3,is_stmt,isa 0
+        TBIT      @_EQep1Regs+25,#10    ; [CPU_] |391| 
+        B         $C$L3,TC              ; [CPU_] |391| 
+        ; branchcc occurs ; [] |391| 
 $C$L2:    
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 407,column 2,is_stmt,isa 0
-        CMPB      AL,#0                 ; [CPU_] |407| 
-        B         $C$L4,NEQ             ; [CPU_] |407| 
-        ; branchcc occurs ; [] |407| 
-        B         $C$L9,UNC             ; [CPU_] |407| 
-        ; branch occurs ; [] |407| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 400,column 2,is_stmt,isa 0
+        CMPB      AL,#0                 ; [CPU_] |400| 
+        B         $C$L4,NEQ             ; [CPU_] |400| 
+        ; branchcc occurs ; [] |400| 
+        B         $C$L9,UNC             ; [CPU_] |400| 
+        ; branch occurs ; [] |400| 
 $C$L3:    
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 400,column 4,is_stmt,isa 0
-        MOVL      ACC,@_EQep1Regs+8     ; [CPU_] |400| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 393,column 4,is_stmt,isa 0
+        MOVL      ACC,@_EQep1Regs+8     ; [CPU_] |393| 
         MOVW      DP,#_lsw              ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 403,column 4,is_stmt,isa 0
-        MOVB      @_lsw,#2,UNC          ; [CPU_] |403| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 396,column 4,is_stmt,isa 0
+        MOVB      @_lsw,#2,UNC          ; [CPU_] |396| 
         MOVW      DP,#_qep1+14          ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 400,column 4,is_stmt,isa 0
-        MOVL      @_qep1+14,ACC         ; [CPU_] |400| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 393,column 4,is_stmt,isa 0
+        MOVL      @_qep1+14,ACC         ; [CPU_] |393| 
 $C$L4:    
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 408,column 3,is_stmt,isa 0
-        MOVB      ACC,#28               ; [CPU_] |408| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 401,column 3,is_stmt,isa 0
+        MOVB      ACC,#28               ; [CPU_] |401| 
         MOVW      DP,#_eQEP+2           ; [CPU_U] 
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |408| 
-        MOVL      XAR4,ACC              ; [CPU_] |408| 
-        AND       AL,*+XAR4[0],#0x0020  ; [CPU_] |408| 
-        LSR       AL,5                  ; [CPU_] |408| 
-        MOVL      XAR4,@_eQEP+2         ; [CPU_] |408| 
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |401| 
+        MOVL      XAR4,ACC              ; [CPU_] |401| 
+        AND       AL,*+XAR4[0],#0x0020  ; [CPU_] |401| 
+        LSR       AL,5                  ; [CPU_] |401| 
+        MOVL      XAR4,@_eQEP+2         ; [CPU_] |401| 
         MOVW      DP,#_qep1+4           ; [CPU_U] 
-        MOV       @_qep1+4,AL           ; [CPU_] |408| 
-        MOVL      ACC,@_qep1+14         ; [CPU_] |408| 
-        ADDL      ACC,*+XAR4[0]         ; [CPU_] |408| 
-        MOVL      @_qep1+8,ACC          ; [CPU_] |408| 
-        B         $C$L5,LT              ; [CPU_] |408| 
-        ; branchcc occurs ; [] |408| 
-        CMPL      ACC,*+XAR4[4]         ; [CPU_] |408| 
-        B         $C$L6,LOS             ; [CPU_] |408| 
-        ; branchcc occurs ; [] |408| 
-        SUBL      ACC,*+XAR4[4]         ; [CPU_] |408| 
-        MOVL      @_qep1+8,ACC          ; [CPU_] |408| 
-        B         $C$L6,UNC             ; [CPU_] |408| 
-        ; branch occurs ; [] |408| 
+        MOV       @_qep1+4,AL           ; [CPU_] |401| 
+        MOVL      ACC,@_qep1+14         ; [CPU_] |401| 
+        ADDL      ACC,*+XAR4[0]         ; [CPU_] |401| 
+        MOVL      @_qep1+8,ACC          ; [CPU_] |401| 
+        B         $C$L5,LT              ; [CPU_] |401| 
+        ; branchcc occurs ; [] |401| 
+        CMPL      ACC,*+XAR4[4]         ; [CPU_] |401| 
+        B         $C$L6,LOS             ; [CPU_] |401| 
+        ; branchcc occurs ; [] |401| 
+        SUBL      ACC,*+XAR4[4]         ; [CPU_] |401| 
+        MOVL      @_qep1+8,ACC          ; [CPU_] |401| 
+        B         $C$L6,UNC             ; [CPU_] |401| 
+        ; branch occurs ; [] |401| 
 $C$L5:    
-        MOVL      ACC,*+XAR4[4]         ; [CPU_] |408| 
-        ADDL      @_qep1+8,ACC          ; [CPU_] |408| 
+        MOVL      ACC,*+XAR4[4]         ; [CPU_] |401| 
+        ADDL      @_qep1+8,ACC          ; [CPU_] |401| 
 $C$L6:    
-        I32TOF32  R1H,@_qep1+8          ; [CPU_] |408| 
-        MOV32     R0H,@_qep1+10         ; [CPU_] |408| 
-        MPYF32    R0H,R1H,R0H           ; [CPU_] |408| 
+        I32TOF32  R1H,@_qep1+8          ; [CPU_] |401| 
+        MOV32     R0H,@_qep1+10         ; [CPU_] |401| 
+        MPYF32    R0H,R1H,R0H           ; [CPU_] |401| 
         NOP       ; [CPU_] 
-        MOV32     @_qep1+2,R0H          ; [CPU_] |408| 
-        UI16TOF32 R0H,@_qep1+13         ; [CPU_] |408| 
-        MOV32     R1H,@_qep1+2          ; [CPU_] |408| 
-        MPYF32    R4H,R1H,R0H           ; [CPU_] |408| 
+        MOV32     @_qep1+2,R0H          ; [CPU_] |401| 
+        UI16TOF32 R0H,@_qep1+13         ; [CPU_] |401| 
+        MOV32     R1H,@_qep1+2          ; [CPU_] |401| 
+        MPYF32    R4H,R1H,R0H           ; [CPU_] |401| 
         NOP       ; [CPU_] 
-        MOV32     R0H,R4H               ; [CPU_] |408| 
+        MOV32     R0H,R4H               ; [CPU_] |401| 
 $C$DW$212	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$212, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$212, DW_AT_name("_floor")
 	.dwattr $C$DW$212, DW_AT_TI_call
 
-        LCR       #_floor               ; [CPU_] |408| 
-        ; call occurs [#_floor] ; [] |408| 
+        LCR       #_floor               ; [CPU_] |401| 
+        ; call occurs [#_floor] ; [] |401| 
         MOVW      DP,#_eQEP+2           ; [CPU_U] 
-        MOVB      ACC,#25               ; [CPU_] |408| 
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |408| 
-        MOVL      XAR4,ACC              ; [CPU_] |408| 
-        SUBF32    R0H,R4H,R0H           ; [CPU_] |408| 
+        MOVB      ACC,#25               ; [CPU_] |401| 
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |401| 
+        MOVL      XAR4,ACC              ; [CPU_] |401| 
+        SUBF32    R0H,R4H,R0H           ; [CPU_] |401| 
         MOVW      DP,#_qep1             ; [CPU_U] 
-        MOV32     @_qep1,R0H            ; [CPU_] |408| 
-        TBIT      *+XAR4[0],#10         ; [CPU_] |408| 
-        B         $C$L7,NTC             ; [CPU_] |408| 
-        ; branchcc occurs ; [] |408| 
-        MOVB      ACC,#8                ; [CPU_] |408| 
+        MOV32     @_qep1,R0H            ; [CPU_] |401| 
+        TBIT      *+XAR4[0],#10         ; [CPU_] |401| 
+        B         $C$L7,NTC             ; [CPU_] |401| 
+        ; branchcc occurs ; [] |401| 
+        MOVB      ACC,#8                ; [CPU_] |401| 
         MOVW      DP,#_eQEP+2           ; [CPU_U] 
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |408| 
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |401| 
         MOVW      DP,#_qep1+16          ; [CPU_U] 
-        MOVL      XAR4,ACC              ; [CPU_] |408| 
-        MOVB      @_qep1+16,#240,UNC    ; [CPU_] |408| 
+        MOVL      XAR4,ACC              ; [CPU_] |401| 
+        MOVB      @_qep1+16,#240,UNC    ; [CPU_] |401| 
         MOVW      DP,#_eQEP+2           ; [CPU_U] 
-        MOVB      ACC,#26               ; [CPU_] |408| 
-        MOVL      XAR6,*+XAR4[0]        ; [CPU_] |408| 
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |408| 
-        MOVL      XAR4,ACC              ; [CPU_] |408| 
+        MOVB      ACC,#26               ; [CPU_] |401| 
+        MOVL      XAR6,*+XAR4[0]        ; [CPU_] |401| 
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |401| 
+        MOVL      XAR4,ACC              ; [CPU_] |401| 
         MOVW      DP,#_qep1+6           ; [CPU_U] 
-        MOVL      @_qep1+6,XAR6         ; [CPU_] |408| 
-        OR        *+XAR4[0],#0x0400     ; [CPU_] |408| 
+        MOVL      @_qep1+6,XAR6         ; [CPU_] |401| 
+        OR        *+XAR4[0],#0x0400     ; [CPU_] |401| 
 $C$L7:    
-        MOVB      ACC,#25               ; [CPU_] |408| 
+        MOVB      ACC,#25               ; [CPU_] |401| 
         MOVW      DP,#_eQEP+2           ; [CPU_U] 
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |408| 
-        MOVL      XAR4,ACC              ; [CPU_] |408| 
-        TBIT      *+XAR4[0],#11         ; [CPU_] |408| 
-        B         $C$L9,NTC             ; [CPU_] |408| 
-        ; branchcc occurs ; [] |408| 
-        MOVB      ACC,#28               ; [CPU_] |408| 
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |408| 
-        MOVL      XAR4,ACC              ; [CPU_] |408| 
-        TBIT      *+XAR4[0],#3          ; [CPU_] |408| 
-        B         $C$L8,TC              ; [CPU_] |408| 
-        ; branchcc occurs ; [] |408| 
-        MOVB      ACC,#28               ; [CPU_] |408| 
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |408| 
-        MOVL      XAR4,ACC              ; [CPU_] |408| 
-        TBIT      *+XAR4[0],#2          ; [CPU_] |408| 
-        B         $C$L8,TC              ; [CPU_] |408| 
-        ; branchcc occurs ; [] |408| 
-        MOVB      ACC,#32               ; [CPU_] |408| 
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |408| 
-        MOVL      XAR5,ACC              ; [CPU_] |408| 
-        MOVZ      AR6,*+XAR5[0]         ; [CPU_] |408| 
-        MOVL      XAR4,#65535           ; [CPU_U] |408| 
-        MOVL      ACC,XAR4              ; [CPU_] |408| 
-        CMPL      ACC,XAR6              ; [CPU_] |408| 
-        B         $C$L9,EQ              ; [CPU_] |408| 
-        ; branchcc occurs ; [] |408| 
-        MOVB      ACC,#32               ; [CPU_] |408| 
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |408| 
-        MOVL      XAR4,ACC              ; [CPU_] |408| 
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |401| 
+        MOVL      XAR4,ACC              ; [CPU_] |401| 
+        TBIT      *+XAR4[0],#11         ; [CPU_] |401| 
+        B         $C$L9,NTC             ; [CPU_] |401| 
+        ; branchcc occurs ; [] |401| 
+        MOVB      ACC,#28               ; [CPU_] |401| 
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |401| 
+        MOVL      XAR4,ACC              ; [CPU_] |401| 
+        TBIT      *+XAR4[0],#3          ; [CPU_] |401| 
+        B         $C$L8,TC              ; [CPU_] |401| 
+        ; branchcc occurs ; [] |401| 
+        MOVB      ACC,#28               ; [CPU_] |401| 
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |401| 
+        MOVL      XAR4,ACC              ; [CPU_] |401| 
+        TBIT      *+XAR4[0],#2          ; [CPU_] |401| 
+        B         $C$L8,TC              ; [CPU_] |401| 
+        ; branchcc occurs ; [] |401| 
+        MOVB      ACC,#32               ; [CPU_] |401| 
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |401| 
+        MOVL      XAR5,ACC              ; [CPU_] |401| 
+        MOVZ      AR6,*+XAR5[0]         ; [CPU_] |401| 
+        MOVL      XAR4,#65535           ; [CPU_U] |401| 
+        MOVL      ACC,XAR4              ; [CPU_] |401| 
+        CMPL      ACC,XAR6              ; [CPU_] |401| 
+        B         $C$L9,EQ              ; [CPU_] |401| 
+        ; branchcc occurs ; [] |401| 
+        MOVB      ACC,#32               ; [CPU_] |401| 
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |401| 
+        MOVL      XAR4,ACC              ; [CPU_] |401| 
         MOVW      DP,#_qep1+5           ; [CPU_U] 
-        MOV       AL,*+XAR4[0]          ; [CPU_] |408| 
-        MOV       @_qep1+5,AL           ; [CPU_] |408| 
-        B         $C$L9,UNC             ; [CPU_] |408| 
-        ; branch occurs ; [] |408| 
+        MOV       AL,*+XAR4[0]          ; [CPU_] |401| 
+        MOV       @_qep1+5,AL           ; [CPU_] |401| 
+        B         $C$L9,UNC             ; [CPU_] |401| 
+        ; branch occurs ; [] |401| 
 $C$L8:    
-        MOVB      ACC,#28               ; [CPU_] |408| 
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |408| 
-        MOVL      XAR4,ACC              ; [CPU_] |408| 
-        MOVB      *+XAR4[0],#12,UNC     ; [CPU_] |408| 
+        MOVB      ACC,#28               ; [CPU_] |401| 
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |401| 
+        MOVL      XAR4,ACC              ; [CPU_] |401| 
+        MOVB      *+XAR4[0],#12,UNC     ; [CPU_] |401| 
 $C$L9:    
         MOVW      DP,#_qep1             ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 417,column 2,is_stmt,isa 0
-        MOV32     R1H,@_qep1            ; [CPU_] |417| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 418,column 2,is_stmt,isa 0
-        MOV32     R0H,@_qep1+2          ; [CPU_] |418| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 410,column 2,is_stmt,isa 0
+        MOV32     R1H,@_qep1            ; [CPU_] |410| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 411,column 2,is_stmt,isa 0
+        MOV32     R0H,@_qep1+2          ; [CPU_] |411| 
         MOVW      DP,#_posEncElecTheta+2 ; [CPU_U] 
         MOV32     R4H,*--SP             ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 417,column 2,is_stmt,isa 0
-        SUBF32    R1H,#16256,R1H        ; [CPU_] |417| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 418,column 2,is_stmt,isa 0
-        SUBF32    R0H,#16256,R0H        ; [CPU_] |418| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 417,column 2,is_stmt,isa 0
-        MOV32     @_posEncElecTheta+2,R1H ; [CPU_] |417| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 418,column 2,is_stmt,isa 0
-        MOV32     @_posEncMechTheta+2,R0H ; [CPU_] |418| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 410,column 2,is_stmt,isa 0
+        SUBF32    R1H,#16256,R1H        ; [CPU_] |410| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 411,column 2,is_stmt,isa 0
+        SUBF32    R0H,#16256,R0H        ; [CPU_] |411| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 410,column 2,is_stmt,isa 0
+        MOV32     @_posEncElecTheta+2,R1H ; [CPU_] |410| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 411,column 2,is_stmt,isa 0
+        MOV32     @_posEncMechTheta+2,R0H ; [CPU_] |411| 
 $C$DW$213	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$213, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$213, DW_AT_TI_return
@@ -2353,7 +2353,7 @@ $C$DW$213	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$211, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$211, DW_AT_TI_end_line(0x20b)
+	.dwattr $C$DW$211, DW_AT_TI_end_line(0x204)
 	.dwattr $C$DW$211, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$211
@@ -2369,10 +2369,10 @@ $C$DW$214	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$214, DW_AT_TI_symbol_name("_main")
 	.dwattr $C$DW$214, DW_AT_external
 	.dwattr $C$DW$214, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$214, DW_AT_TI_begin_line(0x212)
+	.dwattr $C$DW$214, DW_AT_TI_begin_line(0x20b)
 	.dwattr $C$DW$214, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$214, DW_AT_TI_max_frame_size(-22)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 531,column 1,is_stmt,address _main,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 524,column 1,is_stmt,address _main,isa 0
 
 	.dwfde $C$DW$CIE, _main
 
@@ -2429,1858 +2429,1858 @@ $C$DW$215	.dwtag  DW_TAG_variable
         MOV32     *SP++,R7H             ; [CPU_] 
         ADDB      SP,#6                 ; [CPU_U] 
 	.dwcfi	cfa_offset, -22
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 539,column 5,is_stmt,isa 0
-        MOV       AL,#_RamfuncsLoadSize+0 ; [CPU_] |539| 
-        MOVL      XAR5,#_RamfuncsLoadStart ; [CPU_U] |539| 
-        MOV       AH,#_RamfuncsLoadSize+0 >> 16 ; [CPU_] |539| 
-        MOVL      XAR4,#_RamfuncsRunStart ; [CPU_U] |539| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 532,column 5,is_stmt,isa 0
+        MOV       AL,#_RamfuncsLoadSize+0 ; [CPU_] |532| 
+        MOVL      XAR5,#_RamfuncsLoadStart ; [CPU_U] |532| 
+        MOV       AH,#_RamfuncsLoadSize+0 >> 16 ; [CPU_] |532| 
+        MOVL      XAR4,#_RamfuncsRunStart ; [CPU_U] |532| 
 $C$DW$216	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$216, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$216, DW_AT_name("_memcpy")
 	.dwattr $C$DW$216, DW_AT_TI_call
 
-        LCR       #_memcpy              ; [CPU_] |539| 
-        ; call occurs [#_memcpy] ; [] |539| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 545,column 2,is_stmt,isa 0
+        LCR       #_memcpy              ; [CPU_] |532| 
+        ; call occurs [#_memcpy] ; [] |532| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 538,column 2,is_stmt,isa 0
 $C$DW$217	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$217, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$217, DW_AT_name("_InitSysCtrl")
 	.dwattr $C$DW$217, DW_AT_TI_call
 
-        LCR       #_InitSysCtrl         ; [CPU_] |545| 
-        ; call occurs [#_InitSysCtrl] ; [] |545| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 553,column 2,is_stmt,isa 0
+        LCR       #_InitSysCtrl         ; [CPU_] |538| 
+        ; call occurs [#_InitSysCtrl] ; [] |538| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 546,column 2,is_stmt,isa 0
 $C$DW$218	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$218, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$218, DW_AT_name("_InitFlash")
 	.dwattr $C$DW$218, DW_AT_TI_call
 
-        LCR       #_InitFlash           ; [CPU_] |553| 
-        ; call occurs [#_InitFlash] ; [] |553| 
+        LCR       #_InitFlash           ; [CPU_] |546| 
+        ; call occurs [#_InitFlash] ; [] |546| 
         MOVW      DP,#_EnableFlag       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 557,column 9,is_stmt,isa 0
-        MOV       AL,@_EnableFlag       ; [CPU_] |557| 
-        B         $C$L11,NEQ            ; [CPU_] |557| 
-        ; branchcc occurs ; [] |557| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 550,column 9,is_stmt,isa 0
+        MOV       AL,@_EnableFlag       ; [CPU_] |550| 
+        B         $C$L11,NEQ            ; [CPU_] |550| 
+        ; branchcc occurs ; [] |550| 
 $C$L10:    
-        MOV       AL,@_EnableFlag       ; [CPU_] |557| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 559,column 4,is_stmt,isa 0
-        INC       @_BackTicker          ; [CPU_] |559| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 557,column 9,is_stmt,isa 0
-        CMPB      AL,#0                 ; [CPU_] |557| 
-        B         $C$L10,EQ             ; [CPU_] |557| 
-        ; branchcc occurs ; [] |557| 
+        MOV       AL,@_EnableFlag       ; [CPU_] |550| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 552,column 4,is_stmt,isa 0
+        INC       @_BackTicker          ; [CPU_] |552| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 550,column 9,is_stmt,isa 0
+        CMPB      AL,#0                 ; [CPU_] |550| 
+        B         $C$L10,EQ             ; [CPU_] |550| 
+        ; branchcc occurs ; [] |550| 
 $C$L11:    
  setc INTM
         SPM       #0                    ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 571,column 2,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 564,column 2,is_stmt,isa 0
 $C$DW$219	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$219, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$219, DW_AT_name("_InitPieCtrl")
 	.dwattr $C$DW$219, DW_AT_TI_call
 
-        LCR       #_InitPieCtrl         ; [CPU_] |571| 
-        ; call occurs [#_InitPieCtrl] ; [] |571| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 574,column 2,is_stmt,isa 0
-        AND       IER,#0x0000           ; [CPU_] |574| 
+        LCR       #_InitPieCtrl         ; [CPU_] |564| 
+        ; call occurs [#_InitPieCtrl] ; [] |564| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 567,column 2,is_stmt,isa 0
+        AND       IER,#0x0000           ; [CPU_] |567| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 568,column 2,is_stmt,isa 0
+        AND       IFR,#0x0000           ; [CPU_] |568| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 575,column 2,is_stmt,isa 0
-        AND       IFR,#0x0000           ; [CPU_] |575| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 582,column 2,is_stmt,isa 0
 $C$DW$220	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$220, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$220, DW_AT_name("_InitPieVectTable")
 	.dwattr $C$DW$220, DW_AT_TI_call
 
-        LCR       #_InitPieVectTable    ; [CPU_] |582| 
-        ; call occurs [#_InitPieVectTable] ; [] |582| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 587,column 2,is_stmt,isa 0
-        MOVL      XAR1,#20000           ; [CPU_U] |587| 
+        LCR       #_InitPieVectTable    ; [CPU_] |575| 
+        ; call occurs [#_InitPieVectTable] ; [] |575| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 580,column 2,is_stmt,isa 0
+        MOVL      XAR1,#20000           ; [CPU_U] |580| 
         MOVW      DP,#_CpuTimer0Regs+2  ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 579,column 2,is_stmt,isa 0
+        MOVL      XAR0,#10000           ; [CPU_U] |579| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 584,column 2,is_stmt,isa 0
+        MOVL      XAR7,#_A0             ; [CPU_U] |584| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 585,column 2,is_stmt,isa 0
+        MOVL      XAR6,#_A1             ; [CPU_U] |585| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 586,column 2,is_stmt,isa 0
-        MOVL      XAR0,#10000           ; [CPU_U] |586| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 591,column 2,is_stmt,isa 0
-        MOVL      XAR7,#_A0             ; [CPU_U] |591| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 592,column 2,is_stmt,isa 0
-        MOVL      XAR6,#_A1             ; [CPU_U] |592| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 593,column 2,is_stmt,isa 0
-        MOVL      XAR5,#_B1             ; [CPU_U] |593| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 594,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_C1             ; [CPU_U] |594| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 586,column 2,is_stmt,isa 0
-        MOVL      @_CpuTimer0Regs+2,XAR0 ; [CPU_] |586| 
-        MOVW      DP,#_Alpha_State_Ptr  ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 588,column 2,is_stmt,isa 0
-        MOVL      XAR0,#30000           ; [CPU_U] |588| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 591,column 2,is_stmt,isa 0
-        MOVL      @_Alpha_State_Ptr,XAR7 ; [CPU_] |591| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 592,column 2,is_stmt,isa 0
-        MOVL      @_A_Task_Ptr,XAR6     ; [CPU_] |592| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 593,column 2,is_stmt,isa 0
-        MOVL      @_B_Task_Ptr,XAR5     ; [CPU_] |593| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 594,column 2,is_stmt,isa 0
-        MOVL      @_C_Task_Ptr,XAR4     ; [CPU_] |594| 
-        MOVW      DP,#_CpuTimer1Regs+2  ; [CPU_U] 
+        MOVL      XAR5,#_B1             ; [CPU_U] |586| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 587,column 2,is_stmt,isa 0
-        MOVL      @_CpuTimer1Regs+2,XAR1 ; [CPU_] |587| 
+        MOVL      XAR4,#_C1             ; [CPU_U] |587| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 579,column 2,is_stmt,isa 0
+        MOVL      @_CpuTimer0Regs+2,XAR0 ; [CPU_] |579| 
+        MOVW      DP,#_Alpha_State_Ptr  ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 581,column 2,is_stmt,isa 0
+        MOVL      XAR0,#30000           ; [CPU_U] |581| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 584,column 2,is_stmt,isa 0
+        MOVL      @_Alpha_State_Ptr,XAR7 ; [CPU_] |584| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 585,column 2,is_stmt,isa 0
+        MOVL      @_A_Task_Ptr,XAR6     ; [CPU_] |585| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 586,column 2,is_stmt,isa 0
+        MOVL      @_B_Task_Ptr,XAR5     ; [CPU_] |586| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 587,column 2,is_stmt,isa 0
+        MOVL      @_C_Task_Ptr,XAR4     ; [CPU_] |587| 
+        MOVW      DP,#_CpuTimer1Regs+2  ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 580,column 2,is_stmt,isa 0
+        MOVL      @_CpuTimer1Regs+2,XAR1 ; [CPU_] |580| 
         MOVW      DP,#_CpuTimer2Regs+2  ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 588,column 2,is_stmt,isa 0
-        MOVL      @_CpuTimer2Regs+2,XAR0 ; [CPU_] |588| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 581,column 2,is_stmt,isa 0
+        MOVL      @_CpuTimer2Regs+2,XAR0 ; [CPU_] |581| 
  EALLOW
         MOVW      DP,#_CpuSysRegs+35    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 614,column 2,is_stmt,isa 0
-        MOVB      AL,#1                 ; [CPU_] |614| 
-        MOV       AH,#10000             ; [CPU_] |614| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 607,column 2,is_stmt,isa 0
+        MOVB      AL,#1                 ; [CPU_] |607| 
+        MOV       AH,#10000             ; [CPU_] |607| 
         SPM       #0                    ; [CPU_] 
-        MOVB      XAR4,#200             ; [CPU_] |614| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 605,column 2,is_stmt,isa 0
-        AND       @_CpuSysRegs+35,#0xfffb ; [CPU_] |605| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 614,column 2,is_stmt,isa 0
+        MOVB      XAR4,#200             ; [CPU_] |607| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 598,column 2,is_stmt,isa 0
+        AND       @_CpuSysRegs+35,#0xfffb ; [CPU_] |598| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 607,column 2,is_stmt,isa 0
 $C$DW$221	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$221, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$221, DW_AT_name("_PWM_1ch_UpDwnCnt_CNF")
 	.dwattr $C$DW$221, DW_AT_TI_call
 
-        LCR       #_PWM_1ch_UpDwnCnt_CNF ; [CPU_] |614| 
-        ; call occurs [#_PWM_1ch_UpDwnCnt_CNF] ; [] |614| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 615,column 2,is_stmt,isa 0
-        MOVB      AL,#2                 ; [CPU_] |615| 
-        MOVB      XAR4,#200             ; [CPU_] |615| 
-        MOV       AH,#10000             ; [CPU_] |615| 
+        LCR       #_PWM_1ch_UpDwnCnt_CNF ; [CPU_] |607| 
+        ; call occurs [#_PWM_1ch_UpDwnCnt_CNF] ; [] |607| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 608,column 2,is_stmt,isa 0
+        MOVB      AL,#2                 ; [CPU_] |608| 
+        MOVB      XAR4,#200             ; [CPU_] |608| 
+        MOV       AH,#10000             ; [CPU_] |608| 
 $C$DW$222	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$222, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$222, DW_AT_name("_PWM_1ch_UpDwnCnt_CNF")
 	.dwattr $C$DW$222, DW_AT_TI_call
 
-        LCR       #_PWM_1ch_UpDwnCnt_CNF ; [CPU_] |615| 
-        ; call occurs [#_PWM_1ch_UpDwnCnt_CNF] ; [] |615| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 616,column 2,is_stmt,isa 0
-        MOVB      AL,#3                 ; [CPU_] |616| 
-        MOVB      XAR4,#200             ; [CPU_] |616| 
-        MOV       AH,#10000             ; [CPU_] |616| 
+        LCR       #_PWM_1ch_UpDwnCnt_CNF ; [CPU_] |608| 
+        ; call occurs [#_PWM_1ch_UpDwnCnt_CNF] ; [] |608| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 609,column 2,is_stmt,isa 0
+        MOVB      AL,#3                 ; [CPU_] |609| 
+        MOVB      XAR4,#200             ; [CPU_] |609| 
+        MOV       AH,#10000             ; [CPU_] |609| 
 $C$DW$223	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$223, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$223, DW_AT_name("_PWM_1ch_UpDwnCnt_CNF")
 	.dwattr $C$DW$223, DW_AT_TI_call
 
-        LCR       #_PWM_1ch_UpDwnCnt_CNF ; [CPU_] |616| 
-        ; call occurs [#_PWM_1ch_UpDwnCnt_CNF] ; [] |616| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 624,column 2,is_stmt,isa 0
-        MOVB      AL,#5                 ; [CPU_] |624| 
-        MOVB      AH,#5                 ; [CPU_] |624| 
+        LCR       #_PWM_1ch_UpDwnCnt_CNF ; [CPU_] |609| 
+        ; call occurs [#_PWM_1ch_UpDwnCnt_CNF] ; [] |609| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 617,column 2,is_stmt,isa 0
+        MOVB      AL,#5                 ; [CPU_] |617| 
+        MOVB      AH,#5                 ; [CPU_] |617| 
 $C$DW$224	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$224, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$224, DW_AT_name("_PWM_1ch_UpCnt_CNF")
 	.dwattr $C$DW$224, DW_AT_TI_call
 
-        LCR       #_PWM_1ch_UpCnt_CNF   ; [CPU_] |624| 
-        ; call occurs [#_PWM_1ch_UpCnt_CNF] ; [] |624| 
+        LCR       #_PWM_1ch_UpCnt_CNF   ; [CPU_] |617| 
+        ; call occurs [#_PWM_1ch_UpCnt_CNF] ; [] |617| 
         MOVW      DP,#_EPwm5Regs+107    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 625,column 2,is_stmt,isa 0
-        MOV       AL,@_EPwm5Regs+107    ; [CPU_] |625| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 631,column 2,is_stmt,isa 0
-        MOVB      XAR4,#160             ; [CPU_] |631| 
-        MOV       AH,#625               ; [CPU_] |631| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 625,column 2,is_stmt,isa 0
-        MOV       AL,@_EPwm5Regs+99     ; [CPU_] |625| 
-        LSR       AL,1                  ; [CPU_] |625| 
-        MOV       @_EPwm5Regs+107,AL    ; [CPU_] |625| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 631,column 2,is_stmt,isa 0
-        MOVB      AL,#6                 ; [CPU_] |631| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 618,column 2,is_stmt,isa 0
+        MOV       AL,@_EPwm5Regs+107    ; [CPU_] |618| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 624,column 2,is_stmt,isa 0
+        MOVB      XAR4,#160             ; [CPU_] |624| 
+        MOV       AH,#625               ; [CPU_] |624| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 618,column 2,is_stmt,isa 0
+        MOV       AL,@_EPwm5Regs+99     ; [CPU_] |618| 
+        LSR       AL,1                  ; [CPU_] |618| 
+        MOV       @_EPwm5Regs+107,AL    ; [CPU_] |618| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 624,column 2,is_stmt,isa 0
+        MOVB      AL,#6                 ; [CPU_] |624| 
 $C$DW$225	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$225, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$225, DW_AT_name("_PWM_1ch_UpDwnCnt_CNF")
 	.dwattr $C$DW$225, DW_AT_TI_call
 
-        LCR       #_PWM_1ch_UpDwnCnt_CNF ; [CPU_] |631| 
-        ; call occurs [#_PWM_1ch_UpDwnCnt_CNF] ; [] |631| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 636,column 2,is_stmt,isa 0
-        MOVB      AL,#11                ; [CPU_] |636| 
-        MOV       AH,#10000             ; [CPU_] |636| 
+        LCR       #_PWM_1ch_UpDwnCnt_CNF ; [CPU_] |624| 
+        ; call occurs [#_PWM_1ch_UpDwnCnt_CNF] ; [] |624| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 629,column 2,is_stmt,isa 0
+        MOVB      AL,#11                ; [CPU_] |629| 
+        MOV       AH,#10000             ; [CPU_] |629| 
 $C$DW$226	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$226, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$226, DW_AT_name("_PWM_1ch_UpCnt_CNF")
 	.dwattr $C$DW$226, DW_AT_TI_call
 
-        LCR       #_PWM_1ch_UpCnt_CNF   ; [CPU_] |636| 
-        ; call occurs [#_PWM_1ch_UpCnt_CNF] ; [] |636| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 641,column 2,is_stmt,isa 0
-        MOVB      XAR1,#97              ; [CPU_] |641| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 654,column 2,is_stmt,isa 0
-        MOVL      XAR2,#_EPwm6Regs      ; [CPU_U] |654| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 662,column 2,is_stmt,isa 0
-        MOVL      XAR3,#_EPwm11Regs     ; [CPU_U] |662| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 639,column 2,is_stmt,isa 0
-        MOVL      XAR5,#_EPwm2Regs      ; [CPU_U] |639| 
-        MOVW      DP,#_EPwm2Regs+97     ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 644,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_EPwm3Regs      ; [CPU_U] |644| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 646,column 2,is_stmt,isa 0
-        MOVB      XAR0,#97              ; [CPU_] |646| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 639,column 2,is_stmt,isa 0
-        AND       *+XAR5[0],#0xffcf     ; [CPU_] |639| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 640,column 2,is_stmt,isa 0
-        OR        *+XAR5[0],#0x0004     ; [CPU_] |640| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 641,column 2,is_stmt,isa 0
-        MOV       AL,*+XAR5[AR1]        ; [CPU_] |641| 
-        MOVB      @_EPwm2Regs+97,#2,UNC ; [CPU_] |641| 
-        MOVW      DP,#_EPwm2Regs        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 656,column 2,is_stmt,isa 0
-        MOVB      XAR1,#97              ; [CPU_] |656| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 642,column 2,is_stmt,isa 0
-        OR        @_EPwm2Regs,#0x2000   ; [CPU_] |642| 
-        MOVW      DP,#_EPwm3Regs+97     ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 644,column 2,is_stmt,isa 0
-        AND       *+XAR4[0],#0xffcf     ; [CPU_] |644| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 645,column 2,is_stmt,isa 0
-        OR        *+XAR4[0],#0x0004     ; [CPU_] |645| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 646,column 2,is_stmt,isa 0
-        MOV       AL,*+XAR4[AR0]        ; [CPU_] |646| 
-        MOVB      @_EPwm3Regs+97,#2,UNC ; [CPU_] |646| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 663,column 2,is_stmt,isa 0
-        MOVB      XAR0,#97              ; [CPU_] |663| 
-        MOVW      DP,#_EPwm3Regs        ; [CPU_U] 
+        LCR       #_PWM_1ch_UpCnt_CNF   ; [CPU_] |629| 
+        ; call occurs [#_PWM_1ch_UpCnt_CNF] ; [] |629| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 634,column 2,is_stmt,isa 0
+        MOVB      XAR1,#97              ; [CPU_] |634| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 647,column 2,is_stmt,isa 0
-        OR        @_EPwm3Regs,#0x2000   ; [CPU_] |647| 
-        MOVW      DP,#_SyncSocRegs      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 649,column 2,is_stmt,isa 0
-        AND       @_SyncSocRegs,#0xfff8 ; [CPU_] |649| 
-        MOVW      DP,#_EPwm4Regs        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 651,column 2,is_stmt,isa 0
-        AND       @_EPwm4Regs,#0xffcf   ; [CPU_] |651| 
-        MOVW      DP,#_EPwm5Regs        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 652,column 2,is_stmt,isa 0
-        AND       @_EPwm5Regs,#0xffcf   ; [CPU_] |652| 
-        MOVW      DP,#_EPwm6Regs+97     ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 654,column 2,is_stmt,isa 0
-        AND       *+XAR2[0],#0xffcf     ; [CPU_] |654| 
+        MOVL      XAR2,#_EPwm6Regs      ; [CPU_U] |647| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 655,column 2,is_stmt,isa 0
-        OR        *+XAR2[0],#0x0004     ; [CPU_] |655| 
+        MOVL      XAR3,#_EPwm11Regs     ; [CPU_U] |655| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 632,column 2,is_stmt,isa 0
+        MOVL      XAR5,#_EPwm2Regs      ; [CPU_U] |632| 
+        MOVW      DP,#_EPwm2Regs+97     ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 637,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_EPwm3Regs      ; [CPU_U] |637| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 639,column 2,is_stmt,isa 0
+        MOVB      XAR0,#97              ; [CPU_] |639| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 632,column 2,is_stmt,isa 0
+        AND       *+XAR5[0],#0xffcf     ; [CPU_] |632| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 633,column 2,is_stmt,isa 0
+        OR        *+XAR5[0],#0x0004     ; [CPU_] |633| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 634,column 2,is_stmt,isa 0
+        MOV       AL,*+XAR5[AR1]        ; [CPU_] |634| 
+        MOVB      @_EPwm2Regs+97,#2,UNC ; [CPU_] |634| 
+        MOVW      DP,#_EPwm2Regs        ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 649,column 2,is_stmt,isa 0
+        MOVB      XAR1,#97              ; [CPU_] |649| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 635,column 2,is_stmt,isa 0
+        OR        @_EPwm2Regs,#0x2000   ; [CPU_] |635| 
+        MOVW      DP,#_EPwm3Regs+97     ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 637,column 2,is_stmt,isa 0
+        AND       *+XAR4[0],#0xffcf     ; [CPU_] |637| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 638,column 2,is_stmt,isa 0
+        OR        *+XAR4[0],#0x0004     ; [CPU_] |638| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 639,column 2,is_stmt,isa 0
+        MOV       AL,*+XAR4[AR0]        ; [CPU_] |639| 
+        MOVB      @_EPwm3Regs+97,#2,UNC ; [CPU_] |639| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 656,column 2,is_stmt,isa 0
-        MOV       AL,*+XAR2[AR1]        ; [CPU_] |656| 
-        MOVB      @_EPwm6Regs+97,#2,UNC ; [CPU_] |656| 
+        MOVB      XAR0,#97              ; [CPU_] |656| 
+        MOVW      DP,#_EPwm3Regs        ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 640,column 2,is_stmt,isa 0
+        OR        @_EPwm3Regs,#0x2000   ; [CPU_] |640| 
         MOVW      DP,#_SyncSocRegs      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 657,column 2,is_stmt,isa 0
-        OR        *+XAR2[0],#0x2000     ; [CPU_] |657| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 659,column 2,is_stmt,isa 0
-        AND       @_SyncSocRegs,#0xfe3f ; [CPU_] |659| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 642,column 2,is_stmt,isa 0
+        AND       @_SyncSocRegs,#0xfff8 ; [CPU_] |642| 
+        MOVW      DP,#_EPwm4Regs        ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 644,column 2,is_stmt,isa 0
+        AND       @_EPwm4Regs,#0xffcf   ; [CPU_] |644| 
+        MOVW      DP,#_EPwm5Regs        ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 645,column 2,is_stmt,isa 0
+        AND       @_EPwm5Regs,#0xffcf   ; [CPU_] |645| 
+        MOVW      DP,#_EPwm6Regs+97     ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 647,column 2,is_stmt,isa 0
+        AND       *+XAR2[0],#0xffcf     ; [CPU_] |647| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 648,column 2,is_stmt,isa 0
+        OR        *+XAR2[0],#0x0004     ; [CPU_] |648| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 649,column 2,is_stmt,isa 0
+        MOV       AL,*+XAR2[AR1]        ; [CPU_] |649| 
+        MOVB      @_EPwm6Regs+97,#2,UNC ; [CPU_] |649| 
+        MOVW      DP,#_SyncSocRegs      ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 650,column 2,is_stmt,isa 0
+        OR        *+XAR2[0],#0x2000     ; [CPU_] |650| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 652,column 2,is_stmt,isa 0
+        AND       @_SyncSocRegs,#0xfe3f ; [CPU_] |652| 
         MOVW      DP,#_EPwm10Regs       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 660,column 2,is_stmt,isa 0
-        AND       @_EPwm10Regs,#0xffcf  ; [CPU_] |660| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 653,column 2,is_stmt,isa 0
+        AND       @_EPwm10Regs,#0xffcf  ; [CPU_] |653| 
         MOVW      DP,#_EPwm11Regs+97    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 662,column 2,is_stmt,isa 0
-        OR        *+XAR3[0],#0x0004     ; [CPU_] |662| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 663,column 2,is_stmt,isa 0
-        MOV       AL,*+XAR3[AR0]        ; [CPU_] |663| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 667,column 2,is_stmt,isa 0
-        MOVB      XAR0,#107             ; [CPU_] |667| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 663,column 2,is_stmt,isa 0
-        MOVB      @_EPwm11Regs+97,#2,UNC ; [CPU_] |663| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 664,column 2,is_stmt,isa 0
-        OR        *+XAR3[0],#0x2000     ; [CPU_] |664| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 655,column 2,is_stmt,isa 0
+        OR        *+XAR3[0],#0x0004     ; [CPU_] |655| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 656,column 2,is_stmt,isa 0
+        MOV       AL,*+XAR3[AR0]        ; [CPU_] |656| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 660,column 2,is_stmt,isa 0
+        MOVB      XAR0,#107             ; [CPU_] |660| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 656,column 2,is_stmt,isa 0
+        MOVB      @_EPwm11Regs+97,#2,UNC ; [CPU_] |656| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 657,column 2,is_stmt,isa 0
+        OR        *+XAR3[0],#0x2000     ; [CPU_] |657| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 659,column 2,is_stmt,isa 0
+        MOV       AL,@_EPwm11Regs+99    ; [CPU_] |659| 
+        SUB       AL,#960               ; [CPU_] |659| 
+        MOV       @_EPwm11Regs+111,AL   ; [CPU_] |659| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 660,column 2,is_stmt,isa 0
+        MOV       AL,*+XAR3[AR0]        ; [CPU_] |660| 
+        MOV       @_EPwm11Regs+107,#1460 ; [CPU_] |660| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 661,column 2,is_stmt,isa 0
+        MOV       @_EPwm11Regs+113,#0   ; [CPU_] |661| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 666,column 2,is_stmt,isa 0
-        MOV       AL,@_EPwm11Regs+99    ; [CPU_] |666| 
-        SUB       AL,#960               ; [CPU_] |666| 
-        MOV       @_EPwm11Regs+111,AL   ; [CPU_] |666| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 667,column 2,is_stmt,isa 0
-        MOV       AL,*+XAR3[AR0]        ; [CPU_] |667| 
-        MOV       @_EPwm11Regs+107,#1460 ; [CPU_] |667| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 668,column 2,is_stmt,isa 0
-        MOV       @_EPwm11Regs+113,#0   ; [CPU_] |668| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 673,column 2,is_stmt,isa 0
 $C$DW$227	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$227, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$227, DW_AT_name("_InitEPwm1Gpio")
 	.dwattr $C$DW$227, DW_AT_TI_call
 
-        LCR       #_InitEPwm1Gpio       ; [CPU_] |673| 
-        ; call occurs [#_InitEPwm1Gpio] ; [] |673| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 674,column 2,is_stmt,isa 0
+        LCR       #_InitEPwm1Gpio       ; [CPU_] |666| 
+        ; call occurs [#_InitEPwm1Gpio] ; [] |666| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 667,column 2,is_stmt,isa 0
 $C$DW$228	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$228, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$228, DW_AT_name("_InitEPwm2Gpio")
 	.dwattr $C$DW$228, DW_AT_TI_call
 
-        LCR       #_InitEPwm2Gpio       ; [CPU_] |674| 
-        ; call occurs [#_InitEPwm2Gpio] ; [] |674| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 675,column 2,is_stmt,isa 0
+        LCR       #_InitEPwm2Gpio       ; [CPU_] |667| 
+        ; call occurs [#_InitEPwm2Gpio] ; [] |667| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 668,column 2,is_stmt,isa 0
 $C$DW$229	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$229, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$229, DW_AT_name("_InitEPwm3Gpio")
 	.dwattr $C$DW$229, DW_AT_TI_call
 
-        LCR       #_InitEPwm3Gpio       ; [CPU_] |675| 
-        ; call occurs [#_InitEPwm3Gpio] ; [] |675| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 676,column 2,is_stmt,isa 0
+        LCR       #_InitEPwm3Gpio       ; [CPU_] |668| 
+        ; call occurs [#_InitEPwm3Gpio] ; [] |668| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 669,column 2,is_stmt,isa 0
 $C$DW$230	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$230, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$230, DW_AT_name("_InitEPwm4Gpio")
 	.dwattr $C$DW$230, DW_AT_TI_call
 
-        LCR       #_InitEPwm4Gpio       ; [CPU_] |676| 
-        ; call occurs [#_InitEPwm4Gpio] ; [] |676| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 677,column 2,is_stmt,isa 0
+        LCR       #_InitEPwm4Gpio       ; [CPU_] |669| 
+        ; call occurs [#_InitEPwm4Gpio] ; [] |669| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 670,column 2,is_stmt,isa 0
 $C$DW$231	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$231, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$231, DW_AT_name("_InitEPwm5Gpio")
 	.dwattr $C$DW$231, DW_AT_TI_call
 
-        LCR       #_InitEPwm5Gpio       ; [CPU_] |677| 
-        ; call occurs [#_InitEPwm5Gpio] ; [] |677| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 678,column 2,is_stmt,isa 0
+        LCR       #_InitEPwm5Gpio       ; [CPU_] |670| 
+        ; call occurs [#_InitEPwm5Gpio] ; [] |670| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 671,column 2,is_stmt,isa 0
 $C$DW$232	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$232, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$232, DW_AT_name("_InitEPwm11Gpio")
 	.dwattr $C$DW$232, DW_AT_TI_call
 
-        LCR       #_InitEPwm11Gpio      ; [CPU_] |678| 
-        ; call occurs [#_InitEPwm11Gpio] ; [] |678| 
+        LCR       #_InitEPwm11Gpio      ; [CPU_] |671| 
+        ; call occurs [#_InitEPwm11Gpio] ; [] |671| 
  EDIS
         SPM       #0                    ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 686,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_dlog_4ch1      ; [CPU_U] |686| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 679,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_dlog_4ch1      ; [CPU_U] |679| 
 $C$DW$233	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$233, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$233, DW_AT_name("_DLOG_4CH_F_init")
 	.dwattr $C$DW$233, DW_AT_TI_call
 
-        LCR       #_DLOG_4CH_F_init     ; [CPU_] |686| 
-        ; call occurs [#_DLOG_4CH_F_init] ; [] |686| 
+        LCR       #_DLOG_4CH_F_init     ; [CPU_] |679| 
+        ; call occurs [#_DLOG_4CH_F_init] ; [] |679| 
         MOVW      DP,#_dlog_4ch1        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 687,column 2,is_stmt,isa 0
-        MOVL      XAR6,#_DlogCh1        ; [CPU_U] |687| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 697,column 2,is_stmt,isa 0
-        MOVIZ     R0H,#15395            ; [CPU_] |697| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 688,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_DlogCh2        ; [CPU_U] |688| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 689,column 2,is_stmt,isa 0
-        MOVL      XAR5,#_DlogCh3        ; [CPU_U] |689| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 691,column 2,is_stmt,isa 0
-        MOVL      XAR7,#_DBUFF_4CH1     ; [CPU_U] |691| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 687,column 2,is_stmt,isa 0
-        MOVL      @_dlog_4ch1,XAR6      ; [CPU_] |687| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 697,column 2,is_stmt,isa 0
-        MOVXI     R0H,#55050            ; [CPU_] |697| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 688,column 2,is_stmt,isa 0
-        MOVL      @_dlog_4ch1+2,XAR4    ; [CPU_] |688| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 692,column 2,is_stmt,isa 0
-        MOVL      XAR6,#_DBUFF_4CH2     ; [CPU_U] |692| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 680,column 2,is_stmt,isa 0
+        MOVL      XAR6,#_DlogCh1        ; [CPU_U] |680| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 690,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_DlogCh4        ; [CPU_U] |690| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 689,column 2,is_stmt,isa 0
-        MOVL      @_dlog_4ch1+4,XAR5    ; [CPU_] |689| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 693,column 2,is_stmt,isa 0
-        MOVL      XAR5,#_DBUFF_4CH3     ; [CPU_U] |693| 
+        MOVIZ     R0H,#15395            ; [CPU_] |690| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 681,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_DlogCh2        ; [CPU_U] |681| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 682,column 2,is_stmt,isa 0
+        MOVL      XAR5,#_DlogCh3        ; [CPU_U] |682| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 684,column 2,is_stmt,isa 0
+        MOVL      XAR7,#_DBUFF_4CH1     ; [CPU_U] |684| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 680,column 2,is_stmt,isa 0
+        MOVL      @_dlog_4ch1,XAR6      ; [CPU_] |680| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 690,column 2,is_stmt,isa 0
-        MOVL      @_dlog_4ch1+6,XAR4    ; [CPU_] |690| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 694,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_DBUFF_4CH4     ; [CPU_U] |694| 
+        MOVXI     R0H,#55050            ; [CPU_] |690| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 681,column 2,is_stmt,isa 0
+        MOVL      @_dlog_4ch1+2,XAR4    ; [CPU_] |681| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 685,column 2,is_stmt,isa 0
+        MOVL      XAR6,#_DBUFF_4CH2     ; [CPU_U] |685| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 683,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_DlogCh4        ; [CPU_U] |683| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 682,column 2,is_stmt,isa 0
+        MOVL      @_dlog_4ch1+4,XAR5    ; [CPU_] |682| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 686,column 2,is_stmt,isa 0
+        MOVL      XAR5,#_DBUFF_4CH3     ; [CPU_U] |686| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 683,column 2,is_stmt,isa 0
+        MOVL      @_dlog_4ch1+6,XAR4    ; [CPU_] |683| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 687,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_DBUFF_4CH4     ; [CPU_U] |687| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 684,column 2,is_stmt,isa 0
+        MOVL      @_dlog_4ch1+8,XAR7    ; [CPU_] |684| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 685,column 2,is_stmt,isa 0
+        MOVL      @_dlog_4ch1+10,XAR6   ; [CPU_] |685| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 686,column 2,is_stmt,isa 0
+        MOVL      @_dlog_4ch1+12,XAR5   ; [CPU_] |686| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 687,column 2,is_stmt,isa 0
+        MOVL      @_dlog_4ch1+14,XAR4   ; [CPU_] |687| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 688,column 2,is_stmt,isa 0
+        MOVB      @_dlog_4ch1+23,#200,UNC ; [CPU_] |688| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 689,column 2,is_stmt,isa 0
+        MOVB      @_dlog_4ch1+21,#5,UNC ; [CPU_] |689| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 690,column 2,is_stmt,isa 0
+        MOV32     @_dlog_4ch1+18,R0H    ; [CPU_] |690| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 691,column 2,is_stmt,isa 0
-        MOVL      @_dlog_4ch1+8,XAR7    ; [CPU_] |691| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 692,column 2,is_stmt,isa 0
-        MOVL      @_dlog_4ch1+10,XAR6   ; [CPU_] |692| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 693,column 2,is_stmt,isa 0
-        MOVL      @_dlog_4ch1+12,XAR5   ; [CPU_] |693| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 694,column 2,is_stmt,isa 0
-        MOVL      @_dlog_4ch1+14,XAR4   ; [CPU_] |694| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 695,column 2,is_stmt,isa 0
-        MOVB      @_dlog_4ch1+23,#200,UNC ; [CPU_] |695| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 696,column 2,is_stmt,isa 0
-        MOVB      @_dlog_4ch1+21,#5,UNC ; [CPU_] |696| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 697,column 2,is_stmt,isa 0
-        MOV32     @_dlog_4ch1+18,R0H    ; [CPU_] |697| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 698,column 2,is_stmt,isa 0
-        MOVB      @_dlog_4ch1+20,#2,UNC ; [CPU_] |698| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 708,column 2,is_stmt,isa 0
+        MOVB      @_dlog_4ch1+20,#2,UNC ; [CPU_] |691| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 701,column 2,is_stmt,isa 0
 $C$DW$234	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$234, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$234, DW_AT_name("_ConfigureADC")
 	.dwattr $C$DW$234, DW_AT_TI_call
 
-        LCR       #_ConfigureADC        ; [CPU_] |708| 
-        ; call occurs [#_ConfigureADC] ; [] |708| 
+        LCR       #_ConfigureADC        ; [CPU_] |701| 
+        ; call occurs [#_ConfigureADC] ; [] |701| 
  EALLOW
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 759,column 2,is_stmt,isa 0
-        MOVL      XAR6,#491520          ; [CPU_U] |759| 
-        MOVL      XAR5,#_AdccRegs       ; [CPU_U] |759| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 752,column 2,is_stmt,isa 0
+        MOVL      XAR6,#491520          ; [CPU_U] |752| 
+        MOVL      XAR5,#_AdccRegs       ; [CPU_U] |752| 
         MOVW      DP,#_AdccRegs+16      ; [CPU_U] 
-        MOVL      P,XAR6                ; [CPU_] |759| 
+        MOVL      P,XAR6                ; [CPU_] |752| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 754,column 2,is_stmt,isa 0
+        MOVB      XAR0,#17              ; [CPU_] |754| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 752,column 2,is_stmt,isa 0
+        MOVL      XAR4,XAR5             ; [CPU_] |752| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 756,column 2,is_stmt,isa 0
+        MOVL      XAR7,XAR5             ; [CPU_] |756| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 752,column 2,is_stmt,isa 0
+        MOV       AH,PL                 ; [CPU_] |752| 
+        MOV       AL,PH                 ; [CPU_] |752| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 761,column 2,is_stmt,isa 0
-        MOVB      XAR0,#17              ; [CPU_] |761| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 759,column 2,is_stmt,isa 0
-        MOVL      XAR4,XAR5             ; [CPU_] |759| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 763,column 2,is_stmt,isa 0
-        MOVL      XAR7,XAR5             ; [CPU_] |763| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 759,column 2,is_stmt,isa 0
-        MOV       AH,PL                 ; [CPU_] |759| 
-        MOV       AL,PH                 ; [CPU_] |759| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 768,column 2,is_stmt,isa 0
-        MOVL      XAR6,#_AdcdRegs       ; [CPU_U] |768| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 759,column 2,is_stmt,isa 0
-        ADDB      XAR4,#16              ; [CPU_] |759| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 763,column 2,is_stmt,isa 0
-        ADDB      XAR7,#64              ; [CPU_] |763| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 759,column 2,is_stmt,isa 0
-        OR        *+XAR4[0],AH          ; [CPU_] |759| 
-        OR        *+XAR4[1],AL          ; [CPU_] |759| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 764,column 2,is_stmt,isa 0
-        MOVL      XAR4,XAR5             ; [CPU_] |764| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 760,column 2,is_stmt,isa 0
-        AND       AL,@_AdccRegs+16,#0xfe00 ; [CPU_] |760| 
-        ORB       AL,#0x1e              ; [CPU_] |760| 
-        MOV       @_AdccRegs+16,AL      ; [CPU_] |760| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 764,column 2,is_stmt,isa 0
-        ADDB      XAR4,#66              ; [CPU_] |764| 
+        MOVL      XAR6,#_AdcdRegs       ; [CPU_U] |761| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 752,column 2,is_stmt,isa 0
+        ADDB      XAR4,#16              ; [CPU_] |752| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 756,column 2,is_stmt,isa 0
+        ADDB      XAR7,#64              ; [CPU_] |756| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 752,column 2,is_stmt,isa 0
+        OR        *+XAR4[0],AH          ; [CPU_] |752| 
+        OR        *+XAR4[1],AL          ; [CPU_] |752| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 757,column 2,is_stmt,isa 0
+        MOVL      XAR4,XAR5             ; [CPU_] |757| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 753,column 2,is_stmt,isa 0
+        AND       AL,@_AdccRegs+16,#0xfe00 ; [CPU_] |753| 
+        ORB       AL,#0x1e              ; [CPU_] |753| 
+        MOV       @_AdccRegs+16,AL      ; [CPU_] |753| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 757,column 2,is_stmt,isa 0
+        ADDB      XAR4,#66              ; [CPU_] |757| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 754,column 2,is_stmt,isa 0
+        AND       AL,*+XAR5[AR0],#0xfeff ; [CPU_] |754| 
+        ORB       AL,#0xf0              ; [CPU_] |754| 
+        MOV       @_AdccRegs+17,AL      ; [CPU_] |754| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 756,column 2,is_stmt,isa 0
+        AND       *+XAR7[0],#0xfff0     ; [CPU_] |756| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 765,column 2,is_stmt,isa 0
+        MOVL      XAR7,XAR6             ; [CPU_] |765| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 761,column 2,is_stmt,isa 0
-        AND       AL,*+XAR5[AR0],#0xfeff ; [CPU_] |761| 
-        ORB       AL,#0xf0              ; [CPU_] |761| 
-        MOV       @_AdccRegs+17,AL      ; [CPU_] |761| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 763,column 2,is_stmt,isa 0
-        AND       *+XAR7[0],#0xfff0     ; [CPU_] |763| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 772,column 2,is_stmt,isa 0
-        MOVL      XAR7,XAR6             ; [CPU_] |772| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 768,column 2,is_stmt,isa 0
-        MOVB      XAR0,#16              ; [CPU_] |768| 
+        MOVB      XAR0,#16              ; [CPU_] |761| 
         MOVW      DP,#_AdcdRegs+16      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 764,column 2,is_stmt,isa 0
-        AND       *+XAR4[0],#0xfc00     ; [CPU_] |764| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 772,column 2,is_stmt,isa 0
-        ADDB      XAR7,#64              ; [CPU_] |772| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 777,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_AdcaRegs       ; [CPU_U] |777| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 768,column 2,is_stmt,isa 0
-        MOVL      ACC,*+XAR6[AR0]       ; [CPU_] |768| 
-        AND       AH,#65528             ; [CPU_] |768| 
-        OR        AL,#32768             ; [CPU_] |768| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 757,column 2,is_stmt,isa 0
+        AND       *+XAR4[0],#0xfc00     ; [CPU_] |757| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 765,column 2,is_stmt,isa 0
+        ADDB      XAR7,#64              ; [CPU_] |765| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 770,column 2,is_stmt,isa 0
-        MOVB      XAR0,#17              ; [CPU_] |770| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 768,column 2,is_stmt,isa 0
-        MOVL      @_AdcdRegs+16,ACC     ; [CPU_] |768| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 769,column 2,is_stmt,isa 0
-        AND       AL,@_AdcdRegs+16,#0xfe00 ; [CPU_] |769| 
-        ORB       AL,#0x1e              ; [CPU_] |769| 
-        MOV       @_AdcdRegs+16,AL      ; [CPU_] |769| 
+        MOVL      XAR4,#_AdcaRegs       ; [CPU_U] |770| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 761,column 2,is_stmt,isa 0
+        MOVL      ACC,*+XAR6[AR0]       ; [CPU_] |761| 
+        AND       AH,#65528             ; [CPU_] |761| 
+        OR        AL,#32768             ; [CPU_] |761| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 763,column 2,is_stmt,isa 0
+        MOVB      XAR0,#17              ; [CPU_] |763| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 761,column 2,is_stmt,isa 0
+        MOVL      @_AdcdRegs+16,ACC     ; [CPU_] |761| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 762,column 2,is_stmt,isa 0
+        AND       AL,@_AdcdRegs+16,#0xfe00 ; [CPU_] |762| 
+        ORB       AL,#0x1e              ; [CPU_] |762| 
+        MOV       @_AdcdRegs+16,AL      ; [CPU_] |762| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 763,column 2,is_stmt,isa 0
+        AND       AL,*+XAR6[AR0],#0xfeff ; [CPU_] |763| 
+        ORB       AL,#0xf0              ; [CPU_] |763| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 770,column 2,is_stmt,isa 0
-        AND       AL,*+XAR6[AR0],#0xfeff ; [CPU_] |770| 
-        ORB       AL,#0xf0              ; [CPU_] |770| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 777,column 2,is_stmt,isa 0
-        MOVB      XAR0,#18              ; [CPU_] |777| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 773,column 2,is_stmt,isa 0
-        ADDB      XAR6,#66              ; [CPU_] |773| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 770,column 2,is_stmt,isa 0
-        MOV       @_AdcdRegs+17,AL      ; [CPU_] |770| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 772,column 2,is_stmt,isa 0
-        AND       *+XAR7[0],#0xfff0     ; [CPU_] |772| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 773,column 2,is_stmt,isa 0
-        AND       *+XAR6[0],#0xfc00     ; [CPU_] |773| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 782,column 2,is_stmt,isa 0
-        MOVL      XAR6,XAR4             ; [CPU_] |782| 
+        MOVB      XAR0,#18              ; [CPU_] |770| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 766,column 2,is_stmt,isa 0
+        ADDB      XAR6,#66              ; [CPU_] |766| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 763,column 2,is_stmt,isa 0
+        MOV       @_AdcdRegs+17,AL      ; [CPU_] |763| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 765,column 2,is_stmt,isa 0
+        AND       *+XAR7[0],#0xfff0     ; [CPU_] |765| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 766,column 2,is_stmt,isa 0
+        AND       *+XAR6[0],#0xfc00     ; [CPU_] |766| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 775,column 2,is_stmt,isa 0
+        MOVL      XAR6,XAR4             ; [CPU_] |775| 
         MOVW      DP,#_AdcaRegs+18      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 786,column 2,is_stmt,isa 0
-        MOVL      XAR7,#_AdcbRegs       ; [CPU_U] |786| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 777,column 2,is_stmt,isa 0
-        MOVL      ACC,*+XAR4[AR0]       ; [CPU_] |777| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 782,column 2,is_stmt,isa 0
-        ADDB      XAR6,#74              ; [CPU_] |782| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 777,column 2,is_stmt,isa 0
-        AND       AH,#65528             ; [CPU_] |777| 
-        AND       AL,#32767             ; [CPU_] |777| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 779,column 2,is_stmt,isa 0
-        MOVB      XAR0,#19              ; [CPU_] |779| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 777,column 2,is_stmt,isa 0
-        OR        AH,#1                 ; [CPU_] |777| 
-        MOVL      @_AdcaRegs+18,ACC     ; [CPU_] |777| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 778,column 2,is_stmt,isa 0
-        AND       AL,@_AdcaRegs+18,#0xfe00 ; [CPU_] |778| 
-        ORB       AL,#0x1e              ; [CPU_] |778| 
-        MOV       @_AdcaRegs+18,AL      ; [CPU_] |778| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 779,column 2,is_stmt,isa 0
-        AND       AL,*+XAR4[AR0],#0xfe1f ; [CPU_] |779| 
-        ORB       AL,#0x50              ; [CPU_] |779| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 781,column 2,is_stmt,isa 0
-        MOVB      XAR0,#72              ; [CPU_] |781| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 779,column 2,is_stmt,isa 0
-        MOV       @_AdcaRegs+19,AL      ; [CPU_] |779| 
+        MOVL      XAR7,#_AdcbRegs       ; [CPU_U] |779| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 770,column 2,is_stmt,isa 0
+        MOVL      ACC,*+XAR4[AR0]       ; [CPU_] |770| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 775,column 2,is_stmt,isa 0
+        ADDB      XAR6,#74              ; [CPU_] |775| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 770,column 2,is_stmt,isa 0
+        AND       AH,#65528             ; [CPU_] |770| 
+        AND       AL,#32767             ; [CPU_] |770| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 772,column 2,is_stmt,isa 0
+        MOVB      XAR0,#19              ; [CPU_] |772| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 770,column 2,is_stmt,isa 0
+        OR        AH,#1                 ; [CPU_] |770| 
+        MOVL      @_AdcaRegs+18,ACC     ; [CPU_] |770| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 771,column 2,is_stmt,isa 0
+        AND       AL,@_AdcaRegs+18,#0xfe00 ; [CPU_] |771| 
+        ORB       AL,#0x1e              ; [CPU_] |771| 
+        MOV       @_AdcaRegs+18,AL      ; [CPU_] |771| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 772,column 2,is_stmt,isa 0
+        AND       AL,*+XAR4[AR0],#0xfe1f ; [CPU_] |772| 
+        ORB       AL,#0x50              ; [CPU_] |772| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 774,column 2,is_stmt,isa 0
+        MOVB      XAR0,#72              ; [CPU_] |774| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 772,column 2,is_stmt,isa 0
+        MOV       @_AdcaRegs+19,AL      ; [CPU_] |772| 
         MOVW      DP,#_AdcaRegs+72      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 781,column 2,is_stmt,isa 0
-        AND       AL,*+XAR4[AR0],#0xfff0 ; [CPU_] |781| 
-        ORB       AL,#0x01              ; [CPU_] |781| 
-        MOV       @_AdcaRegs+72,AL      ; [CPU_] |781| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 782,column 2,is_stmt,isa 0
-        AND       *+XAR6[0],#0xfc00     ; [CPU_] |782| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 791,column 2,is_stmt,isa 0
-        MOVL      XAR6,XAR7             ; [CPU_] |791| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 786,column 2,is_stmt,isa 0
-        MOVB      XAR0,#18              ; [CPU_] |786| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 774,column 2,is_stmt,isa 0
+        AND       AL,*+XAR4[AR0],#0xfff0 ; [CPU_] |774| 
+        ORB       AL,#0x01              ; [CPU_] |774| 
+        MOV       @_AdcaRegs+72,AL      ; [CPU_] |774| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 775,column 2,is_stmt,isa 0
+        AND       *+XAR6[0],#0xfc00     ; [CPU_] |775| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 784,column 2,is_stmt,isa 0
+        MOVL      XAR6,XAR7             ; [CPU_] |784| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 779,column 2,is_stmt,isa 0
+        MOVB      XAR0,#18              ; [CPU_] |779| 
         MOVW      DP,#_AdcbRegs+18      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 791,column 2,is_stmt,isa 0
-        ADDB      XAR6,#74              ; [CPU_] |791| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 786,column 2,is_stmt,isa 0
-        MOVL      ACC,*+XAR7[AR0]       ; [CPU_] |786| 
-        AND       AH,#65528             ; [CPU_] |786| 
-        AND       AL,#32767             ; [CPU_] |786| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 788,column 2,is_stmt,isa 0
-        MOVB      XAR0,#19              ; [CPU_] |788| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 786,column 2,is_stmt,isa 0
-        OR        AH,#1                 ; [CPU_] |786| 
-        MOVL      @_AdcbRegs+18,ACC     ; [CPU_] |786| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 787,column 2,is_stmt,isa 0
-        AND       AL,@_AdcbRegs+18,#0xfe00 ; [CPU_] |787| 
-        ORB       AL,#0x1e              ; [CPU_] |787| 
-        MOV       @_AdcbRegs+18,AL      ; [CPU_] |787| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 788,column 2,is_stmt,isa 0
-        AND       AL,*+XAR7[AR0],#0xfe1f ; [CPU_] |788| 
-        ORB       AL,#0x50              ; [CPU_] |788| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 790,column 2,is_stmt,isa 0
-        MOVB      XAR0,#72              ; [CPU_] |790| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 788,column 2,is_stmt,isa 0
-        MOV       @_AdcbRegs+19,AL      ; [CPU_] |788| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 784,column 2,is_stmt,isa 0
+        ADDB      XAR6,#74              ; [CPU_] |784| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 779,column 2,is_stmt,isa 0
+        MOVL      ACC,*+XAR7[AR0]       ; [CPU_] |779| 
+        AND       AH,#65528             ; [CPU_] |779| 
+        AND       AL,#32767             ; [CPU_] |779| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 781,column 2,is_stmt,isa 0
+        MOVB      XAR0,#19              ; [CPU_] |781| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 779,column 2,is_stmt,isa 0
+        OR        AH,#1                 ; [CPU_] |779| 
+        MOVL      @_AdcbRegs+18,ACC     ; [CPU_] |779| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 780,column 2,is_stmt,isa 0
+        AND       AL,@_AdcbRegs+18,#0xfe00 ; [CPU_] |780| 
+        ORB       AL,#0x1e              ; [CPU_] |780| 
+        MOV       @_AdcbRegs+18,AL      ; [CPU_] |780| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 781,column 2,is_stmt,isa 0
+        AND       AL,*+XAR7[AR0],#0xfe1f ; [CPU_] |781| 
+        ORB       AL,#0x50              ; [CPU_] |781| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 783,column 2,is_stmt,isa 0
+        MOVB      XAR0,#72              ; [CPU_] |783| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 781,column 2,is_stmt,isa 0
+        MOV       @_AdcbRegs+19,AL      ; [CPU_] |781| 
         MOVW      DP,#_AdcbRegs+72      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 790,column 2,is_stmt,isa 0
-        AND       AL,*+XAR7[AR0],#0xfff0 ; [CPU_] |790| 
-        ORB       AL,#0x01              ; [CPU_] |790| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 795,column 2,is_stmt,isa 0
-        MOVB      XAR0,#20              ; [CPU_] |795| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 790,column 2,is_stmt,isa 0
-        MOV       @_AdcbRegs+72,AL      ; [CPU_] |790| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 783,column 2,is_stmt,isa 0
+        AND       AL,*+XAR7[AR0],#0xfff0 ; [CPU_] |783| 
+        ORB       AL,#0x01              ; [CPU_] |783| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 788,column 2,is_stmt,isa 0
+        MOVB      XAR0,#20              ; [CPU_] |788| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 783,column 2,is_stmt,isa 0
+        MOV       @_AdcbRegs+72,AL      ; [CPU_] |783| 
         MOVW      DP,#_AdcaRegs+20      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 791,column 2,is_stmt,isa 0
-        AND       *+XAR6[0],#0xfc00     ; [CPU_] |791| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 795,column 2,is_stmt,isa 0
-        MOVL      XAR6,#98304           ; [CPU_U] |795| 
-        MOVL      P,*+XAR4[AR0]         ; [CPU_] |795| 
-        AND       PH,#65529             ; [CPU_] |795| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 797,column 2,is_stmt,isa 0
-        MOVB      XAR0,#21              ; [CPU_] |797| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 795,column 2,is_stmt,isa 0
-        MOVL      *-SP[6],XAR6          ; [CPU_] |795| 
-        MOV       AH,*-SP[6]            ; [CPU_] |795| 
-        OR        AH,PL                 ; [CPU_] |795| 
-        MOV       *-SP[6],AH            ; [CPU_] |795| 
-        MOV       AL,*-SP[5]            ; [CPU_] |795| 
-        OR        AL,PH                 ; [CPU_] |795| 
-        MOV       *-SP[5],AL            ; [CPU_] |795| 
-        MOVL      ACC,*-SP[6]           ; [CPU_] |795| 
-        MOVL      @_AdcaRegs+20,ACC     ; [CPU_] |795| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 796,column 2,is_stmt,isa 0
-        AND       AL,@_AdcaRegs+20,#0xfe00 ; [CPU_] |796| 
-        ORB       AL,#0x1e              ; [CPU_] |796| 
-        MOV       @_AdcaRegs+20,AL      ; [CPU_] |796| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 797,column 2,is_stmt,isa 0
-        AND       AL,*+XAR4[AR0],#0xfe1f ; [CPU_] |797| 
-        ORB       AL,#0x50              ; [CPU_] |797| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 799,column 2,is_stmt,isa 0
-        MOVB      XAR0,#80              ; [CPU_] |799| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 797,column 2,is_stmt,isa 0
-        MOV       @_AdcaRegs+21,AL      ; [CPU_] |797| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 784,column 2,is_stmt,isa 0
+        AND       *+XAR6[0],#0xfc00     ; [CPU_] |784| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 788,column 2,is_stmt,isa 0
+        MOVL      XAR6,#98304           ; [CPU_U] |788| 
+        MOVL      P,*+XAR4[AR0]         ; [CPU_] |788| 
+        AND       PH,#65529             ; [CPU_] |788| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 790,column 2,is_stmt,isa 0
+        MOVB      XAR0,#21              ; [CPU_] |790| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 788,column 2,is_stmt,isa 0
+        MOVL      *-SP[6],XAR6          ; [CPU_] |788| 
+        MOV       AH,*-SP[6]            ; [CPU_] |788| 
+        OR        AH,PL                 ; [CPU_] |788| 
+        MOV       *-SP[6],AH            ; [CPU_] |788| 
+        MOV       AL,*-SP[5]            ; [CPU_] |788| 
+        OR        AL,PH                 ; [CPU_] |788| 
+        MOV       *-SP[5],AL            ; [CPU_] |788| 
+        MOVL      ACC,*-SP[6]           ; [CPU_] |788| 
+        MOVL      @_AdcaRegs+20,ACC     ; [CPU_] |788| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 789,column 2,is_stmt,isa 0
+        AND       AL,@_AdcaRegs+20,#0xfe00 ; [CPU_] |789| 
+        ORB       AL,#0x1e              ; [CPU_] |789| 
+        MOV       @_AdcaRegs+20,AL      ; [CPU_] |789| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 790,column 2,is_stmt,isa 0
+        AND       AL,*+XAR4[AR0],#0xfe1f ; [CPU_] |790| 
+        ORB       AL,#0x50              ; [CPU_] |790| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 792,column 2,is_stmt,isa 0
+        MOVB      XAR0,#80              ; [CPU_] |792| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 790,column 2,is_stmt,isa 0
+        MOV       @_AdcaRegs+21,AL      ; [CPU_] |790| 
         MOVW      DP,#_AdcaRegs+80      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 799,column 2,is_stmt,isa 0
-        AND       AL,*+XAR4[AR0],#0xfff0 ; [CPU_] |799| 
-        ORB       AL,#0x01              ; [CPU_] |799| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 804,column 2,is_stmt,isa 0
-        MOVB      XAR0,#20              ; [CPU_] |804| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 800,column 2,is_stmt,isa 0
-        ADDB      XAR4,#82              ; [CPU_] |800| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 799,column 2,is_stmt,isa 0
-        MOV       @_AdcaRegs+80,AL      ; [CPU_] |799| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 792,column 2,is_stmt,isa 0
+        AND       AL,*+XAR4[AR0],#0xfff0 ; [CPU_] |792| 
+        ORB       AL,#0x01              ; [CPU_] |792| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 797,column 2,is_stmt,isa 0
+        MOVB      XAR0,#20              ; [CPU_] |797| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 793,column 2,is_stmt,isa 0
+        ADDB      XAR4,#82              ; [CPU_] |793| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 792,column 2,is_stmt,isa 0
+        MOV       @_AdcaRegs+80,AL      ; [CPU_] |792| 
         MOVW      DP,#_AdcbRegs+20      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 800,column 2,is_stmt,isa 0
-        AND       *+XAR4[0],#0xfc00     ; [CPU_] |800| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 804,column 2,is_stmt,isa 0
-        MOVL      XAR4,#98304           ; [CPU_U] |804| 
-        MOVL      P,*+XAR7[AR0]         ; [CPU_] |804| 
-        AND       PH,#65529             ; [CPU_] |804| 
-        MOVL      *-SP[6],XAR4          ; [CPU_] |804| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 809,column 2,is_stmt,isa 0
-        MOVL      XAR4,XAR7             ; [CPU_] |809| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 806,column 2,is_stmt,isa 0
-        MOVB      XAR0,#21              ; [CPU_] |806| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 804,column 2,is_stmt,isa 0
-        MOV       AH,*-SP[6]            ; [CPU_] |804| 
-        OR        AH,PL                 ; [CPU_] |804| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 809,column 2,is_stmt,isa 0
-        ADDB      XAR4,#82              ; [CPU_] |809| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 804,column 2,is_stmt,isa 0
-        MOV       *-SP[6],AH            ; [CPU_] |804| 
-        MOV       AL,*-SP[5]            ; [CPU_] |804| 
-        OR        AL,PH                 ; [CPU_] |804| 
-        MOV       *-SP[5],AL            ; [CPU_] |804| 
-        MOVL      ACC,*-SP[6]           ; [CPU_] |804| 
-        MOVL      @_AdcbRegs+20,ACC     ; [CPU_] |804| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 805,column 2,is_stmt,isa 0
-        AND       AL,@_AdcbRegs+20,#0xfe00 ; [CPU_] |805| 
-        ORB       AL,#0x1e              ; [CPU_] |805| 
-        MOV       @_AdcbRegs+20,AL      ; [CPU_] |805| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 806,column 2,is_stmt,isa 0
-        AND       AL,*+XAR7[AR0],#0xfe1f ; [CPU_] |806| 
-        ORB       AL,#0x50              ; [CPU_] |806| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 808,column 2,is_stmt,isa 0
-        MOVB      XAR0,#80              ; [CPU_] |808| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 806,column 2,is_stmt,isa 0
-        MOV       @_AdcbRegs+21,AL      ; [CPU_] |806| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 793,column 2,is_stmt,isa 0
+        AND       *+XAR4[0],#0xfc00     ; [CPU_] |793| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 797,column 2,is_stmt,isa 0
+        MOVL      XAR4,#98304           ; [CPU_U] |797| 
+        MOVL      P,*+XAR7[AR0]         ; [CPU_] |797| 
+        AND       PH,#65529             ; [CPU_] |797| 
+        MOVL      *-SP[6],XAR4          ; [CPU_] |797| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 802,column 2,is_stmt,isa 0
+        MOVL      XAR4,XAR7             ; [CPU_] |802| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 799,column 2,is_stmt,isa 0
+        MOVB      XAR0,#21              ; [CPU_] |799| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 797,column 2,is_stmt,isa 0
+        MOV       AH,*-SP[6]            ; [CPU_] |797| 
+        OR        AH,PL                 ; [CPU_] |797| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 802,column 2,is_stmt,isa 0
+        ADDB      XAR4,#82              ; [CPU_] |802| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 797,column 2,is_stmt,isa 0
+        MOV       *-SP[6],AH            ; [CPU_] |797| 
+        MOV       AL,*-SP[5]            ; [CPU_] |797| 
+        OR        AL,PH                 ; [CPU_] |797| 
+        MOV       *-SP[5],AL            ; [CPU_] |797| 
+        MOVL      ACC,*-SP[6]           ; [CPU_] |797| 
+        MOVL      @_AdcbRegs+20,ACC     ; [CPU_] |797| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 798,column 2,is_stmt,isa 0
+        AND       AL,@_AdcbRegs+20,#0xfe00 ; [CPU_] |798| 
+        ORB       AL,#0x1e              ; [CPU_] |798| 
+        MOV       @_AdcbRegs+20,AL      ; [CPU_] |798| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 799,column 2,is_stmt,isa 0
+        AND       AL,*+XAR7[AR0],#0xfe1f ; [CPU_] |799| 
+        ORB       AL,#0x50              ; [CPU_] |799| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 801,column 2,is_stmt,isa 0
+        MOVB      XAR0,#80              ; [CPU_] |801| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 799,column 2,is_stmt,isa 0
+        MOV       @_AdcbRegs+21,AL      ; [CPU_] |799| 
         MOVW      DP,#_AdcbRegs+80      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 808,column 2,is_stmt,isa 0
-        AND       AL,*+XAR7[AR0],#0xfff0 ; [CPU_] |808| 
-        ORB       AL,#0x01              ; [CPU_] |808| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 813,column 2,is_stmt,isa 0
-        MOVB      XAR0,#20              ; [CPU_] |813| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 808,column 2,is_stmt,isa 0
-        MOV       @_AdcbRegs+80,AL      ; [CPU_] |808| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 801,column 2,is_stmt,isa 0
+        AND       AL,*+XAR7[AR0],#0xfff0 ; [CPU_] |801| 
+        ORB       AL,#0x01              ; [CPU_] |801| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 806,column 2,is_stmt,isa 0
+        MOVB      XAR0,#20              ; [CPU_] |806| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 801,column 2,is_stmt,isa 0
+        MOV       @_AdcbRegs+80,AL      ; [CPU_] |801| 
         MOVW      DP,#_AdccRegs+20      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 809,column 2,is_stmt,isa 0
-        AND       *+XAR4[0],#0xfc00     ; [CPU_] |809| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 813,column 2,is_stmt,isa 0
-        MOVL      XAR4,#98304           ; [CPU_U] |813| 
-        MOVL      P,*+XAR5[AR0]         ; [CPU_] |813| 
-        AND       PH,#65529             ; [CPU_] |813| 
-        MOVL      *-SP[6],XAR4          ; [CPU_] |813| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 822,column 2,is_stmt,isa 0
-        MOVL      XAR4,XAR7             ; [CPU_] |822| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 802,column 2,is_stmt,isa 0
+        AND       *+XAR4[0],#0xfc00     ; [CPU_] |802| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 806,column 2,is_stmt,isa 0
+        MOVL      XAR4,#98304           ; [CPU_U] |806| 
+        MOVL      P,*+XAR5[AR0]         ; [CPU_] |806| 
+        AND       PH,#65529             ; [CPU_] |806| 
+        MOVL      *-SP[6],XAR4          ; [CPU_] |806| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 815,column 2,is_stmt,isa 0
-        MOVB      XAR0,#21              ; [CPU_] |815| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 813,column 2,is_stmt,isa 0
-        MOV       AH,*-SP[6]            ; [CPU_] |813| 
-        OR        AH,PL                 ; [CPU_] |813| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 822,column 2,is_stmt,isa 0
-        ADDB      XAR4,#22              ; [CPU_] |822| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 813,column 2,is_stmt,isa 0
-        MOV       *-SP[6],AH            ; [CPU_] |813| 
-        MOV       AL,*-SP[5]            ; [CPU_] |813| 
-        OR        AL,PH                 ; [CPU_] |813| 
-        MOV       *-SP[5],AL            ; [CPU_] |813| 
-        MOVL      ACC,*-SP[6]           ; [CPU_] |813| 
-        MOVL      @_AdccRegs+20,ACC     ; [CPU_] |813| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 814,column 2,is_stmt,isa 0
-        AND       AL,@_AdccRegs+20,#0xfe00 ; [CPU_] |814| 
-        ORB       AL,#0x1e              ; [CPU_] |814| 
-        MOV       @_AdccRegs+20,AL      ; [CPU_] |814| 
+        MOVL      XAR4,XAR7             ; [CPU_] |815| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 808,column 2,is_stmt,isa 0
+        MOVB      XAR0,#21              ; [CPU_] |808| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 806,column 2,is_stmt,isa 0
+        MOV       AH,*-SP[6]            ; [CPU_] |806| 
+        OR        AH,PL                 ; [CPU_] |806| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 815,column 2,is_stmt,isa 0
-        AND       AL,*+XAR5[AR0],#0xfe1f ; [CPU_] |815| 
-        ORB       AL,#0x50              ; [CPU_] |815| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 817,column 2,is_stmt,isa 0
-        MOVB      XAR0,#80              ; [CPU_] |817| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 815,column 2,is_stmt,isa 0
-        MOV       @_AdccRegs+21,AL      ; [CPU_] |815| 
+        ADDB      XAR4,#22              ; [CPU_] |815| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 806,column 2,is_stmt,isa 0
+        MOV       *-SP[6],AH            ; [CPU_] |806| 
+        MOV       AL,*-SP[5]            ; [CPU_] |806| 
+        OR        AL,PH                 ; [CPU_] |806| 
+        MOV       *-SP[5],AL            ; [CPU_] |806| 
+        MOVL      ACC,*-SP[6]           ; [CPU_] |806| 
+        MOVL      @_AdccRegs+20,ACC     ; [CPU_] |806| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 807,column 2,is_stmt,isa 0
+        AND       AL,@_AdccRegs+20,#0xfe00 ; [CPU_] |807| 
+        ORB       AL,#0x1e              ; [CPU_] |807| 
+        MOV       @_AdccRegs+20,AL      ; [CPU_] |807| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 808,column 2,is_stmt,isa 0
+        AND       AL,*+XAR5[AR0],#0xfe1f ; [CPU_] |808| 
+        ORB       AL,#0x50              ; [CPU_] |808| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 810,column 2,is_stmt,isa 0
+        MOVB      XAR0,#80              ; [CPU_] |810| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 808,column 2,is_stmt,isa 0
+        MOV       @_AdccRegs+21,AL      ; [CPU_] |808| 
         MOVW      DP,#_AdccRegs+80      ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 810,column 2,is_stmt,isa 0
+        AND       AL,*+XAR5[AR0],#0xfff0 ; [CPU_] |810| 
+        ORB       AL,#0x01              ; [CPU_] |810| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 817,column 2,is_stmt,isa 0
-        AND       AL,*+XAR5[AR0],#0xfff0 ; [CPU_] |817| 
-        ORB       AL,#0x01              ; [CPU_] |817| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 824,column 2,is_stmt,isa 0
-        MOVB      XAR0,#23              ; [CPU_] |824| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 818,column 2,is_stmt,isa 0
-        ADDB      XAR5,#82              ; [CPU_] |818| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 817,column 2,is_stmt,isa 0
-        MOV       @_AdccRegs+80,AL      ; [CPU_] |817| 
+        MOVB      XAR0,#23              ; [CPU_] |817| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 811,column 2,is_stmt,isa 0
+        ADDB      XAR5,#82              ; [CPU_] |811| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 810,column 2,is_stmt,isa 0
+        MOV       @_AdccRegs+80,AL      ; [CPU_] |810| 
         MOVW      DP,#_AdcbRegs+22      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 818,column 2,is_stmt,isa 0
-        AND       *+XAR5[0],#0xfc00     ; [CPU_] |818| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 831,column 2,is_stmt,isa 0
-        MOVL      XAR5,#29887           ; [CPU_U] |831| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 811,column 2,is_stmt,isa 0
+        AND       *+XAR5[0],#0xfc00     ; [CPU_] |811| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 824,column 2,is_stmt,isa 0
+        MOVL      XAR5,#29887           ; [CPU_U] |824| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 815,column 2,is_stmt,isa 0
+        AND       *+XAR4[0],#32767      ; [CPU_] |815| 
+        AND       *+XAR4[1],#65528      ; [CPU_] |815| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 822,column 2,is_stmt,isa 0
-        AND       *+XAR4[0],#32767      ; [CPU_] |822| 
-        AND       *+XAR4[1],#65528      ; [CPU_] |822| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 829,column 2,is_stmt,isa 0
-        MOVL      XAR4,#29759           ; [CPU_U] |829| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 823,column 2,is_stmt,isa 0
-        AND       AL,@_AdcbRegs+22,#0xfe00 ; [CPU_] |823| 
-        ORB       AL,#0x1e              ; [CPU_] |823| 
-        MOV       @_AdcbRegs+22,AL      ; [CPU_] |823| 
+        MOVL      XAR4,#29759           ; [CPU_U] |822| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 816,column 2,is_stmt,isa 0
+        AND       AL,@_AdcbRegs+22,#0xfe00 ; [CPU_] |816| 
+        ORB       AL,#0x1e              ; [CPU_] |816| 
+        MOV       @_AdcbRegs+22,AL      ; [CPU_] |816| 
         MOVW      DP,#_adc_cal          ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 824,column 2,is_stmt,isa 0
-        AND       AL,*+XAR7[AR0],#0xfe1f ; [CPU_] |824| 
-        ORB       AL,#0x50              ; [CPU_] |824| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 829,column 2,is_stmt,isa 0
-        MOVL      @_adc_cal,XAR4        ; [CPU_] |829| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 817,column 2,is_stmt,isa 0
+        AND       AL,*+XAR7[AR0],#0xfe1f ; [CPU_] |817| 
+        ORB       AL,#0x50              ; [CPU_] |817| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 822,column 2,is_stmt,isa 0
+        MOVL      @_adc_cal,XAR4        ; [CPU_] |822| 
         MOVW      DP,#_AdcbRegs+23      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 824,column 2,is_stmt,isa 0
-        MOV       @_AdcbRegs+23,AL      ; [CPU_] |824| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 817,column 2,is_stmt,isa 0
+        MOV       @_AdcbRegs+23,AL      ; [CPU_] |817| 
         MOVW      DP,#_adc_cal          ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 830,column 2,is_stmt,isa 0
-        MOV       *+XAR4[0],#28672      ; [CPU_] |830| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 833,column 2,is_stmt,isa 0
-        MOVL      XAR4,#30015           ; [CPU_U] |833| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 831,column 2,is_stmt,isa 0
-        MOVL      @_adc_cal,XAR5        ; [CPU_] |831| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 823,column 2,is_stmt,isa 0
+        MOV       *+XAR4[0],#28672      ; [CPU_] |823| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 826,column 2,is_stmt,isa 0
+        MOVL      XAR4,#30015           ; [CPU_U] |826| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 824,column 2,is_stmt,isa 0
+        MOVL      @_adc_cal,XAR5        ; [CPU_] |824| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 825,column 2,is_stmt,isa 0
+        MOV       *+XAR5[0],#28672      ; [CPU_] |825| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 828,column 2,is_stmt,isa 0
+        MOVL      XAR5,#30143           ; [CPU_U] |828| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 826,column 2,is_stmt,isa 0
+        MOVL      @_adc_cal,XAR4        ; [CPU_] |826| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 827,column 2,is_stmt,isa 0
+        MOV       *+XAR4[0],#28672      ; [CPU_] |827| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 828,column 2,is_stmt,isa 0
+        MOVL      @_adc_cal,XAR5        ; [CPU_] |828| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 829,column 2,is_stmt,isa 0
+        MOV       *+XAR5[0],#28672      ; [CPU_] |829| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 845,column 2,is_stmt,isa 0
+        MOVL      XAR5,#_DacaRegs       ; [CPU_U] |845| 
+        MOVL      XAR4,XAR5             ; [CPU_] |845| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 832,column 2,is_stmt,isa 0
-        MOV       *+XAR5[0],#28672      ; [CPU_] |832| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 835,column 2,is_stmt,isa 0
-        MOVL      XAR5,#30143           ; [CPU_U] |835| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 833,column 2,is_stmt,isa 0
-        MOVL      @_adc_cal,XAR4        ; [CPU_] |833| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 834,column 2,is_stmt,isa 0
-        MOV       *+XAR4[0],#28672      ; [CPU_] |834| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 835,column 2,is_stmt,isa 0
-        MOVL      @_adc_cal,XAR5        ; [CPU_] |835| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 836,column 2,is_stmt,isa 0
-        MOV       *+XAR5[0],#28672      ; [CPU_] |836| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 852,column 2,is_stmt,isa 0
-        MOVL      XAR5,#_DacaRegs       ; [CPU_U] |852| 
-        MOVL      XAR4,XAR5             ; [CPU_] |852| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 839,column 2,is_stmt,isa 0
-        MOVL      XAR6,#_EPwm1Regs      ; [CPU_U] |839| 
-        MOVB      XAR0,#164             ; [CPU_] |839| 
+        MOVL      XAR6,#_EPwm1Regs      ; [CPU_U] |832| 
+        MOVB      XAR0,#164             ; [CPU_] |832| 
         MOVW      DP,#_EPwm1Regs+164    ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 845,column 2,is_stmt,isa 0
+        ADDB      XAR4,#1               ; [CPU_] |845| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 832,column 2,is_stmt,isa 0
+        AND       AL,*+XAR6[AR0],#0xf8ff ; [CPU_] |832| 
+        OR        AL,#0x0200            ; [CPU_] |832| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 833,column 2,is_stmt,isa 0
+        MOVB      XAR0,#166             ; [CPU_] |833| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 832,column 2,is_stmt,isa 0
+        MOV       @_EPwm1Regs+164,AL    ; [CPU_] |832| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 833,column 2,is_stmt,isa 0
+        AND       AL,*+XAR6[AR0],#0xfdff ; [CPU_] |833| 
+        OR        AL,#0x0100            ; [CPU_] |833| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 836,column 2,is_stmt,isa 0
+        MOVB      XAR0,#164             ; [CPU_] |836| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 833,column 2,is_stmt,isa 0
+        MOV       @_EPwm1Regs+166,AL    ; [CPU_] |833| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 834,column 2,is_stmt,isa 0
+        OR        @_EPwm1Regs+164,#0x0800 ; [CPU_] |834| 
+        MOVW      DP,#_EPwm6Regs+164    ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 836,column 2,is_stmt,isa 0
+        AND       AL,*+XAR2[AR0],#0xf8ff ; [CPU_] |836| 
+        OR        AL,#0x0200            ; [CPU_] |836| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 837,column 2,is_stmt,isa 0
+        MOVB      XAR0,#166             ; [CPU_] |837| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 836,column 2,is_stmt,isa 0
+        MOV       @_EPwm6Regs+164,AL    ; [CPU_] |836| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 837,column 2,is_stmt,isa 0
+        AND       AL,*+XAR2[AR0],#0xfdff ; [CPU_] |837| 
+        OR        AL,#0x0100            ; [CPU_] |837| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 840,column 2,is_stmt,isa 0
+        MOVB      XAR0,#164             ; [CPU_] |840| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 837,column 2,is_stmt,isa 0
+        MOV       @_EPwm6Regs+166,AL    ; [CPU_] |837| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 838,column 2,is_stmt,isa 0
+        OR        @_EPwm6Regs+164,#0x0800 ; [CPU_] |838| 
+        MOVW      DP,#_EPwm11Regs+164   ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 840,column 2,is_stmt,isa 0
+        AND       AL,*+XAR3[AR0],#0xfffc ; [CPU_] |840| 
+        ORB       AL,#0x04              ; [CPU_] |840| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 842,column 2,is_stmt,isa 0
+        MOVB      XAR0,#166             ; [CPU_] |842| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 840,column 2,is_stmt,isa 0
+        MOV       @_EPwm11Regs+164,AL   ; [CPU_] |840| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 841,column 2,is_stmt,isa 0
+        OR        @_EPwm11Regs+164,#0x0008 ; [CPU_] |841| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 842,column 2,is_stmt,isa 0
+        AND       AL,*+XAR3[AR0],#0xfffc ; [CPU_] |842| 
+        ORB       AL,#0x01              ; [CPU_] |842| 
+        MOV       @_EPwm11Regs+166,AL   ; [CPU_] |842| 
+        MOVW      DP,#_DacaRegs+1       ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 845,column 2,is_stmt,isa 0
+        OR        *+XAR4[0],#0x0001     ; [CPU_] |845| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 846,column 2,is_stmt,isa 0
+        OR        @_DacaRegs+1,#0x0004  ; [CPU_] |846| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 848,column 2,is_stmt,isa 0
+        OR        *+XAR5[4],#0x0001     ; [CPU_] |848| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 849,column 2,is_stmt,isa 0
+        AND       AL,@_DacaRegs+1,#0xff1f ; [CPU_] |849| 
+        ORB       AL,#0x50              ; [CPU_] |849| 
+        MOV       @_DacaRegs+1,AL       ; [CPU_] |849| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 850,column 2,is_stmt,isa 0
+        AND       AL,*+XAR5[3],#0xf000  ; [CPU_] |850| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 852,column 2,is_stmt,isa 0
+        MOVL      XAR5,#_DacbRegs       ; [CPU_U] |852| 
+        MOVL      XAR4,XAR5             ; [CPU_] |852| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 850,column 2,is_stmt,isa 0
+        OR        AL,#0x0400            ; [CPU_] |850| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 852,column 2,is_stmt,isa 0
         ADDB      XAR4,#1               ; [CPU_] |852| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 839,column 2,is_stmt,isa 0
-        AND       AL,*+XAR6[AR0],#0xf8ff ; [CPU_] |839| 
-        OR        AL,#0x0200            ; [CPU_] |839| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 840,column 2,is_stmt,isa 0
-        MOVB      XAR0,#166             ; [CPU_] |840| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 839,column 2,is_stmt,isa 0
-        MOV       @_EPwm1Regs+164,AL    ; [CPU_] |839| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 840,column 2,is_stmt,isa 0
-        AND       AL,*+XAR6[AR0],#0xfdff ; [CPU_] |840| 
-        OR        AL,#0x0100            ; [CPU_] |840| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 843,column 2,is_stmt,isa 0
-        MOVB      XAR0,#164             ; [CPU_] |843| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 840,column 2,is_stmt,isa 0
-        MOV       @_EPwm1Regs+166,AL    ; [CPU_] |840| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 841,column 2,is_stmt,isa 0
-        OR        @_EPwm1Regs+164,#0x0800 ; [CPU_] |841| 
-        MOVW      DP,#_EPwm6Regs+164    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 843,column 2,is_stmt,isa 0
-        AND       AL,*+XAR2[AR0],#0xf8ff ; [CPU_] |843| 
-        OR        AL,#0x0200            ; [CPU_] |843| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 844,column 2,is_stmt,isa 0
-        MOVB      XAR0,#166             ; [CPU_] |844| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 843,column 2,is_stmt,isa 0
-        MOV       @_EPwm6Regs+164,AL    ; [CPU_] |843| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 844,column 2,is_stmt,isa 0
-        AND       AL,*+XAR2[AR0],#0xfdff ; [CPU_] |844| 
-        OR        AL,#0x0100            ; [CPU_] |844| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 847,column 2,is_stmt,isa 0
-        MOVB      XAR0,#164             ; [CPU_] |847| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 844,column 2,is_stmt,isa 0
-        MOV       @_EPwm6Regs+166,AL    ; [CPU_] |844| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 845,column 2,is_stmt,isa 0
-        OR        @_EPwm6Regs+164,#0x0800 ; [CPU_] |845| 
-        MOVW      DP,#_EPwm11Regs+164   ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 847,column 2,is_stmt,isa 0
-        AND       AL,*+XAR3[AR0],#0xfffc ; [CPU_] |847| 
-        ORB       AL,#0x04              ; [CPU_] |847| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 849,column 2,is_stmt,isa 0
-        MOVB      XAR0,#166             ; [CPU_] |849| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 847,column 2,is_stmt,isa 0
-        MOV       @_EPwm11Regs+164,AL   ; [CPU_] |847| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 848,column 2,is_stmt,isa 0
-        OR        @_EPwm11Regs+164,#0x0008 ; [CPU_] |848| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 849,column 2,is_stmt,isa 0
-        AND       AL,*+XAR3[AR0],#0xfffc ; [CPU_] |849| 
-        ORB       AL,#0x01              ; [CPU_] |849| 
-        MOV       @_EPwm11Regs+166,AL   ; [CPU_] |849| 
-        MOVW      DP,#_DacaRegs+1       ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 850,column 2,is_stmt,isa 0
+        MOV       @_DacaRegs+3,AL       ; [CPU_] |850| 
+        MOVW      DP,#_DacbRegs+3       ; [CPU_U] 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 852,column 2,is_stmt,isa 0
         OR        *+XAR4[0],#0x0001     ; [CPU_] |852| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 853,column 2,is_stmt,isa 0
-        OR        @_DacaRegs+1,#0x0004  ; [CPU_] |853| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 854,column 2,is_stmt,isa 0
+        OR        *+XAR5[4],#0x0001     ; [CPU_] |854| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 855,column 2,is_stmt,isa 0
-        OR        *+XAR5[4],#0x0001     ; [CPU_] |855| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 856,column 2,is_stmt,isa 0
-        AND       AL,@_DacaRegs+1,#0xff1f ; [CPU_] |856| 
-        ORB       AL,#0x50              ; [CPU_] |856| 
-        MOV       @_DacaRegs+1,AL       ; [CPU_] |856| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 857,column 2,is_stmt,isa 0
-        AND       AL,*+XAR5[3],#0xf000  ; [CPU_] |857| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 859,column 2,is_stmt,isa 0
-        MOVL      XAR5,#_DacbRegs       ; [CPU_U] |859| 
-        MOVL      XAR4,XAR5             ; [CPU_] |859| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 857,column 2,is_stmt,isa 0
-        OR        AL,#0x0400            ; [CPU_] |857| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 859,column 2,is_stmt,isa 0
-        ADDB      XAR4,#1               ; [CPU_] |859| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 857,column 2,is_stmt,isa 0
-        MOV       @_DacaRegs+3,AL       ; [CPU_] |857| 
-        MOVW      DP,#_DacbRegs+3       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 859,column 2,is_stmt,isa 0
-        OR        *+XAR4[0],#0x0001     ; [CPU_] |859| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 861,column 2,is_stmt,isa 0
-        OR        *+XAR5[4],#0x0001     ; [CPU_] |861| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 862,column 2,is_stmt,isa 0
-        AND       AL,*+XAR5[3],#0xf000  ; [CPU_] |862| 
-        OR        AL,#0x0400            ; [CPU_] |862| 
-        MOV       @_DacbRegs+3,AL       ; [CPU_] |862| 
+        AND       AL,*+XAR5[3],#0xf000  ; [CPU_] |855| 
+        OR        AL,#0x0400            ; [CPU_] |855| 
+        MOV       @_DacbRegs+3,AL       ; [CPU_] |855| 
  EDIS
         SPM       #0                    ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 877,column 2,is_stmt,isa 0
-        MOVB      AL,#48                ; [CPU_] |877| 
-        MOVB      XAR4,#48              ; [CPU_] |877| 
-        MOVB      AH,#0                 ; [CPU_] |877| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 870,column 2,is_stmt,isa 0
+        MOVB      AL,#48                ; [CPU_] |870| 
+        MOVB      XAR4,#48              ; [CPU_] |870| 
+        MOVB      AH,#0                 ; [CPU_] |870| 
 $C$DW$235	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$235, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$235, DW_AT_name("_GPIO_SetupPinOptions")
 	.dwattr $C$DW$235, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinOptions ; [CPU_] |877| 
-        ; call occurs [#_GPIO_SetupPinOptions] ; [] |877| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 878,column 2,is_stmt,isa 0
-        MOVB      AL,#48                ; [CPU_] |878| 
-        MOVB      XAR4,#7               ; [CPU_] |878| 
-        MOVB      AH,#0                 ; [CPU_] |878| 
+        LCR       #_GPIO_SetupPinOptions ; [CPU_] |870| 
+        ; call occurs [#_GPIO_SetupPinOptions] ; [] |870| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 871,column 2,is_stmt,isa 0
+        MOVB      AL,#48                ; [CPU_] |871| 
+        MOVB      XAR4,#7               ; [CPU_] |871| 
+        MOVB      AH,#0                 ; [CPU_] |871| 
 $C$DW$236	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$236, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$236, DW_AT_name("_GPIO_SetupPinMux")
 	.dwattr $C$DW$236, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinMux    ; [CPU_] |878| 
-        ; call occurs [#_GPIO_SetupPinMux] ; [] |878| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 880,column 2,is_stmt,isa 0
-        MOVB      AL,#49                ; [CPU_] |880| 
-        MOVB      XAR4,#48              ; [CPU_] |880| 
-        MOVB      AH,#0                 ; [CPU_] |880| 
+        LCR       #_GPIO_SetupPinMux    ; [CPU_] |871| 
+        ; call occurs [#_GPIO_SetupPinMux] ; [] |871| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 873,column 2,is_stmt,isa 0
+        MOVB      AL,#49                ; [CPU_] |873| 
+        MOVB      XAR4,#48              ; [CPU_] |873| 
+        MOVB      AH,#0                 ; [CPU_] |873| 
 $C$DW$237	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$237, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$237, DW_AT_name("_GPIO_SetupPinOptions")
 	.dwattr $C$DW$237, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinOptions ; [CPU_] |880| 
-        ; call occurs [#_GPIO_SetupPinOptions] ; [] |880| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 881,column 2,is_stmt,isa 0
-        MOVB      AL,#49                ; [CPU_] |881| 
-        MOVB      XAR4,#7               ; [CPU_] |881| 
-        MOVB      AH,#0                 ; [CPU_] |881| 
+        LCR       #_GPIO_SetupPinOptions ; [CPU_] |873| 
+        ; call occurs [#_GPIO_SetupPinOptions] ; [] |873| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 874,column 2,is_stmt,isa 0
+        MOVB      AL,#49                ; [CPU_] |874| 
+        MOVB      XAR4,#7               ; [CPU_] |874| 
+        MOVB      AH,#0                 ; [CPU_] |874| 
 $C$DW$238	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$238, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$238, DW_AT_name("_GPIO_SetupPinMux")
 	.dwattr $C$DW$238, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinMux    ; [CPU_] |881| 
-        ; call occurs [#_GPIO_SetupPinMux] ; [] |881| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 883,column 2,is_stmt,isa 0
-        MOVB      AL,#50                ; [CPU_] |883| 
-        MOVB      XAR4,#48              ; [CPU_] |883| 
-        MOVB      AH,#0                 ; [CPU_] |883| 
+        LCR       #_GPIO_SetupPinMux    ; [CPU_] |874| 
+        ; call occurs [#_GPIO_SetupPinMux] ; [] |874| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 876,column 2,is_stmt,isa 0
+        MOVB      AL,#50                ; [CPU_] |876| 
+        MOVB      XAR4,#48              ; [CPU_] |876| 
+        MOVB      AH,#0                 ; [CPU_] |876| 
 $C$DW$239	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$239, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$239, DW_AT_name("_GPIO_SetupPinOptions")
 	.dwattr $C$DW$239, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinOptions ; [CPU_] |883| 
-        ; call occurs [#_GPIO_SetupPinOptions] ; [] |883| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 884,column 2,is_stmt,isa 0
-        MOVB      AL,#50                ; [CPU_] |884| 
-        MOVB      XAR4,#7               ; [CPU_] |884| 
-        MOVB      AH,#0                 ; [CPU_] |884| 
+        LCR       #_GPIO_SetupPinOptions ; [CPU_] |876| 
+        ; call occurs [#_GPIO_SetupPinOptions] ; [] |876| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 877,column 2,is_stmt,isa 0
+        MOVB      AL,#50                ; [CPU_] |877| 
+        MOVB      XAR4,#7               ; [CPU_] |877| 
+        MOVB      AH,#0                 ; [CPU_] |877| 
 $C$DW$240	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$240, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$240, DW_AT_name("_GPIO_SetupPinMux")
 	.dwattr $C$DW$240, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinMux    ; [CPU_] |884| 
-        ; call occurs [#_GPIO_SetupPinMux] ; [] |884| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 886,column 2,is_stmt,isa 0
-        MOVB      AL,#51                ; [CPU_] |886| 
-        MOVB      XAR4,#48              ; [CPU_] |886| 
-        MOVB      AH,#0                 ; [CPU_] |886| 
+        LCR       #_GPIO_SetupPinMux    ; [CPU_] |877| 
+        ; call occurs [#_GPIO_SetupPinMux] ; [] |877| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 879,column 2,is_stmt,isa 0
+        MOVB      AL,#51                ; [CPU_] |879| 
+        MOVB      XAR4,#48              ; [CPU_] |879| 
+        MOVB      AH,#0                 ; [CPU_] |879| 
 $C$DW$241	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$241, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$241, DW_AT_name("_GPIO_SetupPinOptions")
 	.dwattr $C$DW$241, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinOptions ; [CPU_] |886| 
-        ; call occurs [#_GPIO_SetupPinOptions] ; [] |886| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 887,column 2,is_stmt,isa 0
-        MOVB      AL,#51                ; [CPU_] |887| 
-        MOVB      XAR4,#7               ; [CPU_] |887| 
-        MOVB      AH,#0                 ; [CPU_] |887| 
+        LCR       #_GPIO_SetupPinOptions ; [CPU_] |879| 
+        ; call occurs [#_GPIO_SetupPinOptions] ; [] |879| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 880,column 2,is_stmt,isa 0
+        MOVB      AL,#51                ; [CPU_] |880| 
+        MOVB      XAR4,#7               ; [CPU_] |880| 
+        MOVB      AH,#0                 ; [CPU_] |880| 
 $C$DW$242	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$242, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$242, DW_AT_name("_GPIO_SetupPinMux")
 	.dwattr $C$DW$242, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinMux    ; [CPU_] |887| 
-        ; call occurs [#_GPIO_SetupPinMux] ; [] |887| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 890,column 2,is_stmt,isa 0
-        MOVB      AL,#52                ; [CPU_] |890| 
-        MOVB      XAR4,#48              ; [CPU_] |890| 
-        MOVB      AH,#0                 ; [CPU_] |890| 
+        LCR       #_GPIO_SetupPinMux    ; [CPU_] |880| 
+        ; call occurs [#_GPIO_SetupPinMux] ; [] |880| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 883,column 2,is_stmt,isa 0
+        MOVB      AL,#52                ; [CPU_] |883| 
+        MOVB      XAR4,#48              ; [CPU_] |883| 
+        MOVB      AH,#0                 ; [CPU_] |883| 
 $C$DW$243	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$243, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$243, DW_AT_name("_GPIO_SetupPinOptions")
 	.dwattr $C$DW$243, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinOptions ; [CPU_] |890| 
-        ; call occurs [#_GPIO_SetupPinOptions] ; [] |890| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 891,column 2,is_stmt,isa 0
-        MOVB      AL,#52                ; [CPU_] |891| 
-        MOVB      XAR4,#7               ; [CPU_] |891| 
-        MOVB      AH,#0                 ; [CPU_] |891| 
+        LCR       #_GPIO_SetupPinOptions ; [CPU_] |883| 
+        ; call occurs [#_GPIO_SetupPinOptions] ; [] |883| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 884,column 2,is_stmt,isa 0
+        MOVB      AL,#52                ; [CPU_] |884| 
+        MOVB      XAR4,#7               ; [CPU_] |884| 
+        MOVB      AH,#0                 ; [CPU_] |884| 
 $C$DW$244	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$244, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$244, DW_AT_name("_GPIO_SetupPinMux")
 	.dwattr $C$DW$244, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinMux    ; [CPU_] |891| 
-        ; call occurs [#_GPIO_SetupPinMux] ; [] |891| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 893,column 2,is_stmt,isa 0
-        MOVB      AL,#53                ; [CPU_] |893| 
-        MOVB      XAR4,#48              ; [CPU_] |893| 
-        MOVB      AH,#0                 ; [CPU_] |893| 
+        LCR       #_GPIO_SetupPinMux    ; [CPU_] |884| 
+        ; call occurs [#_GPIO_SetupPinMux] ; [] |884| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 886,column 2,is_stmt,isa 0
+        MOVB      AL,#53                ; [CPU_] |886| 
+        MOVB      XAR4,#48              ; [CPU_] |886| 
+        MOVB      AH,#0                 ; [CPU_] |886| 
 $C$DW$245	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$245, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$245, DW_AT_name("_GPIO_SetupPinOptions")
 	.dwattr $C$DW$245, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinOptions ; [CPU_] |893| 
-        ; call occurs [#_GPIO_SetupPinOptions] ; [] |893| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 894,column 2,is_stmt,isa 0
-        MOVB      AL,#53                ; [CPU_] |894| 
-        MOVB      XAR4,#7               ; [CPU_] |894| 
-        MOVB      AH,#0                 ; [CPU_] |894| 
+        LCR       #_GPIO_SetupPinOptions ; [CPU_] |886| 
+        ; call occurs [#_GPIO_SetupPinOptions] ; [] |886| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 887,column 2,is_stmt,isa 0
+        MOVB      AL,#53                ; [CPU_] |887| 
+        MOVB      XAR4,#7               ; [CPU_] |887| 
+        MOVB      AH,#0                 ; [CPU_] |887| 
 $C$DW$246	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$246, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$246, DW_AT_name("_GPIO_SetupPinMux")
 	.dwattr $C$DW$246, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinMux    ; [CPU_] |894| 
-        ; call occurs [#_GPIO_SetupPinMux] ; [] |894| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 900,column 2,is_stmt,isa 0
-        MOVB      AL,#1                 ; [CPU_] |900| 
-        MOVB      XAR4,#0               ; [CPU_] |900| 
-        MOVB      AH,#1                 ; [CPU_] |900| 
+        LCR       #_GPIO_SetupPinMux    ; [CPU_] |887| 
+        ; call occurs [#_GPIO_SetupPinMux] ; [] |887| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 893,column 2,is_stmt,isa 0
+        MOVB      AL,#1                 ; [CPU_] |893| 
+        MOVB      XAR4,#0               ; [CPU_] |893| 
+        MOVB      AH,#1                 ; [CPU_] |893| 
 $C$DW$247	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$247, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$247, DW_AT_name("_Sdfm_configureInputCtrl")
 	.dwattr $C$DW$247, DW_AT_TI_call
 
-        LCR       #_Sdfm_configureInputCtrl ; [CPU_] |900| 
-        ; call occurs [#_Sdfm_configureInputCtrl] ; [] |900| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 901,column 2,is_stmt,isa 0
-        MOVB      AL,#1                 ; [CPU_] |901| 
-        MOVB      XAR4,#0               ; [CPU_] |901| 
-        MOVB      AH,#2                 ; [CPU_] |901| 
+        LCR       #_Sdfm_configureInputCtrl ; [CPU_] |893| 
+        ; call occurs [#_Sdfm_configureInputCtrl] ; [] |893| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 894,column 2,is_stmt,isa 0
+        MOVB      AL,#1                 ; [CPU_] |894| 
+        MOVB      XAR4,#0               ; [CPU_] |894| 
+        MOVB      AH,#2                 ; [CPU_] |894| 
 $C$DW$248	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$248, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$248, DW_AT_name("_Sdfm_configureInputCtrl")
 	.dwattr $C$DW$248, DW_AT_TI_call
 
-        LCR       #_Sdfm_configureInputCtrl ; [CPU_] |901| 
-        ; call occurs [#_Sdfm_configureInputCtrl] ; [] |901| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 902,column 2,is_stmt,isa 0
-        MOVB      AL,#1                 ; [CPU_] |902| 
-        MOVB      XAR4,#0               ; [CPU_] |902| 
-        MOVB      AH,#4                 ; [CPU_] |902| 
+        LCR       #_Sdfm_configureInputCtrl ; [CPU_] |894| 
+        ; call occurs [#_Sdfm_configureInputCtrl] ; [] |894| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 895,column 2,is_stmt,isa 0
+        MOVB      AL,#1                 ; [CPU_] |895| 
+        MOVB      XAR4,#0               ; [CPU_] |895| 
+        MOVB      AH,#4                 ; [CPU_] |895| 
 $C$DW$249	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$249, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$249, DW_AT_name("_Sdfm_configureInputCtrl")
 	.dwattr $C$DW$249, DW_AT_TI_call
 
-        LCR       #_Sdfm_configureInputCtrl ; [CPU_] |902| 
-        ; call occurs [#_Sdfm_configureInputCtrl] ; [] |902| 
+        LCR       #_Sdfm_configureInputCtrl ; [CPU_] |895| 
+        ; call occurs [#_Sdfm_configureInputCtrl] ; [] |895| 
         MOVW      DP,#_HLT              ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 910,column 2,is_stmt,isa 0
-        MOV       AH,@_HLT              ; [CPU_] |910| 
-        MOV       AL,@_LLT              ; [CPU_] |910| 
-        MOVB      XAR4,#3               ; [CPU_] |910| 
-        MOVB      XAR5,#31              ; [CPU_] |910| 
-        MOV       *-SP[1],AH            ; [CPU_] |910| 
-        MOV       *-SP[2],AL            ; [CPU_] |910| 
-        MOVB      AH,#1                 ; [CPU_] |910| 
-        MOVB      AL,#1                 ; [CPU_] |910| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 903,column 2,is_stmt,isa 0
+        MOV       AH,@_HLT              ; [CPU_] |903| 
+        MOV       AL,@_LLT              ; [CPU_] |903| 
+        MOVB      XAR4,#3               ; [CPU_] |903| 
+        MOVB      XAR5,#31              ; [CPU_] |903| 
+        MOV       *-SP[1],AH            ; [CPU_] |903| 
+        MOV       *-SP[2],AL            ; [CPU_] |903| 
+        MOVB      AH,#1                 ; [CPU_] |903| 
+        MOVB      AL,#1                 ; [CPU_] |903| 
 $C$DW$250	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$250, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$250, DW_AT_name("_Sdfm_configureComparator")
 	.dwattr $C$DW$250, DW_AT_TI_call
 
-        LCR       #_Sdfm_configureComparator ; [CPU_] |910| 
-        ; call occurs [#_Sdfm_configureComparator] ; [] |910| 
+        LCR       #_Sdfm_configureComparator ; [CPU_] |903| 
+        ; call occurs [#_Sdfm_configureComparator] ; [] |903| 
         MOVW      DP,#_HLT              ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 911,column 2,is_stmt,isa 0
-        MOV       AH,@_HLT              ; [CPU_] |911| 
-        MOV       AL,@_LLT              ; [CPU_] |911| 
-        MOVB      XAR4,#3               ; [CPU_] |911| 
-        MOVB      XAR5,#31              ; [CPU_] |911| 
-        MOV       *-SP[1],AH            ; [CPU_] |911| 
-        MOV       *-SP[2],AL            ; [CPU_] |911| 
-        MOVB      AH,#2                 ; [CPU_] |911| 
-        MOVB      AL,#1                 ; [CPU_] |911| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 904,column 2,is_stmt,isa 0
+        MOV       AH,@_HLT              ; [CPU_] |904| 
+        MOV       AL,@_LLT              ; [CPU_] |904| 
+        MOVB      XAR4,#3               ; [CPU_] |904| 
+        MOVB      XAR5,#31              ; [CPU_] |904| 
+        MOV       *-SP[1],AH            ; [CPU_] |904| 
+        MOV       *-SP[2],AL            ; [CPU_] |904| 
+        MOVB      AH,#2                 ; [CPU_] |904| 
+        MOVB      AL,#1                 ; [CPU_] |904| 
 $C$DW$251	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$251, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$251, DW_AT_name("_Sdfm_configureComparator")
 	.dwattr $C$DW$251, DW_AT_TI_call
 
-        LCR       #_Sdfm_configureComparator ; [CPU_] |911| 
-        ; call occurs [#_Sdfm_configureComparator] ; [] |911| 
+        LCR       #_Sdfm_configureComparator ; [CPU_] |904| 
+        ; call occurs [#_Sdfm_configureComparator] ; [] |904| 
         MOVW      DP,#_HLT              ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 912,column 2,is_stmt,isa 0
-        MOV       AH,@_HLT              ; [CPU_] |912| 
-        MOV       AL,@_LLT              ; [CPU_] |912| 
-        MOVB      XAR4,#3               ; [CPU_] |912| 
-        MOVB      XAR5,#31              ; [CPU_] |912| 
-        MOV       *-SP[1],AH            ; [CPU_] |912| 
-        MOV       *-SP[2],AL            ; [CPU_] |912| 
-        MOVB      AH,#4                 ; [CPU_] |912| 
-        MOVB      AL,#1                 ; [CPU_] |912| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 905,column 2,is_stmt,isa 0
+        MOV       AH,@_HLT              ; [CPU_] |905| 
+        MOV       AL,@_LLT              ; [CPU_] |905| 
+        MOVB      XAR4,#3               ; [CPU_] |905| 
+        MOVB      XAR5,#31              ; [CPU_] |905| 
+        MOV       *-SP[1],AH            ; [CPU_] |905| 
+        MOV       *-SP[2],AL            ; [CPU_] |905| 
+        MOVB      AH,#4                 ; [CPU_] |905| 
+        MOVB      AL,#1                 ; [CPU_] |905| 
 $C$DW$252	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$252, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$252, DW_AT_name("_Sdfm_configureComparator")
 	.dwattr $C$DW$252, DW_AT_TI_call
 
-        LCR       #_Sdfm_configureComparator ; [CPU_] |912| 
-        ; call occurs [#_Sdfm_configureComparator] ; [] |912| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 921,column 2,is_stmt,isa 0
-        MOVB      *-SP[1],#127,UNC      ; [CPU_] |921| 
-        MOV       *-SP[2],#0            ; [CPU_] |921| 
-        MOVB      AL,#1                 ; [CPU_] |921| 
-        MOVB      XAR4,#1               ; [CPU_] |921| 
-        MOVB      XAR5,#3               ; [CPU_] |921| 
-        MOVB      AH,#1                 ; [CPU_] |921| 
-        MOVB      *-SP[3],#6,UNC        ; [CPU_] |921| 
+        LCR       #_Sdfm_configureComparator ; [CPU_] |905| 
+        ; call occurs [#_Sdfm_configureComparator] ; [] |905| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 914,column 2,is_stmt,isa 0
+        MOVB      *-SP[1],#127,UNC      ; [CPU_] |914| 
+        MOV       *-SP[2],#0            ; [CPU_] |914| 
+        MOVB      AL,#1                 ; [CPU_] |914| 
+        MOVB      XAR4,#1               ; [CPU_] |914| 
+        MOVB      XAR5,#3               ; [CPU_] |914| 
+        MOVB      AH,#1                 ; [CPU_] |914| 
+        MOVB      *-SP[3],#6,UNC        ; [CPU_] |914| 
 $C$DW$253	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$253, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$253, DW_AT_name("_Sdfm_configureData_filter")
 	.dwattr $C$DW$253, DW_AT_TI_call
 
-        LCR       #_Sdfm_configureData_filter ; [CPU_] |921| 
-        ; call occurs [#_Sdfm_configureData_filter] ; [] |921| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 922,column 2,is_stmt,isa 0
-        MOVB      *-SP[1],#127,UNC      ; [CPU_] |922| 
-        MOV       *-SP[2],#0            ; [CPU_] |922| 
-        MOVB      AL,#1                 ; [CPU_] |922| 
-        MOVB      XAR4,#1               ; [CPU_] |922| 
-        MOVB      XAR5,#3               ; [CPU_] |922| 
-        MOVB      AH,#2                 ; [CPU_] |922| 
-        MOVB      *-SP[3],#6,UNC        ; [CPU_] |922| 
+        LCR       #_Sdfm_configureData_filter ; [CPU_] |914| 
+        ; call occurs [#_Sdfm_configureData_filter] ; [] |914| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 915,column 2,is_stmt,isa 0
+        MOVB      *-SP[1],#127,UNC      ; [CPU_] |915| 
+        MOV       *-SP[2],#0            ; [CPU_] |915| 
+        MOVB      AL,#1                 ; [CPU_] |915| 
+        MOVB      XAR4,#1               ; [CPU_] |915| 
+        MOVB      XAR5,#3               ; [CPU_] |915| 
+        MOVB      AH,#2                 ; [CPU_] |915| 
+        MOVB      *-SP[3],#6,UNC        ; [CPU_] |915| 
 $C$DW$254	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$254, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$254, DW_AT_name("_Sdfm_configureData_filter")
 	.dwattr $C$DW$254, DW_AT_TI_call
 
-        LCR       #_Sdfm_configureData_filter ; [CPU_] |922| 
-        ; call occurs [#_Sdfm_configureData_filter] ; [] |922| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 923,column 2,is_stmt,isa 0
-        MOVB      *-SP[1],#127,UNC      ; [CPU_] |923| 
-        MOV       *-SP[2],#0            ; [CPU_] |923| 
-        MOVB      AL,#1                 ; [CPU_] |923| 
-        MOVB      XAR4,#1               ; [CPU_] |923| 
-        MOVB      XAR5,#3               ; [CPU_] |923| 
-        MOVB      AH,#4                 ; [CPU_] |923| 
-        MOVB      *-SP[3],#6,UNC        ; [CPU_] |923| 
+        LCR       #_Sdfm_configureData_filter ; [CPU_] |915| 
+        ; call occurs [#_Sdfm_configureData_filter] ; [] |915| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 916,column 2,is_stmt,isa 0
+        MOVB      *-SP[1],#127,UNC      ; [CPU_] |916| 
+        MOV       *-SP[2],#0            ; [CPU_] |916| 
+        MOVB      AL,#1                 ; [CPU_] |916| 
+        MOVB      XAR4,#1               ; [CPU_] |916| 
+        MOVB      XAR5,#3               ; [CPU_] |916| 
+        MOVB      AH,#4                 ; [CPU_] |916| 
+        MOVB      *-SP[3],#6,UNC        ; [CPU_] |916| 
 $C$DW$255	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$255, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$255, DW_AT_name("_Sdfm_configureData_filter")
 	.dwattr $C$DW$255, DW_AT_TI_call
 
-        LCR       #_Sdfm_configureData_filter ; [CPU_] |923| 
-        ; call occurs [#_Sdfm_configureData_filter] ; [] |923| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 926,column 5,is_stmt,isa 0
-        MOVB      *-SP[1],#1,UNC        ; [CPU_] |926| 
-        MOVB      AL,#1                 ; [CPU_] |926| 
-        MOVB      XAR4,#1               ; [CPU_] |926| 
-        MOVB      XAR5,#1               ; [CPU_] |926| 
-        MOVB      AH,#1                 ; [CPU_] |926| 
+        LCR       #_Sdfm_configureData_filter ; [CPU_] |916| 
+        ; call occurs [#_Sdfm_configureData_filter] ; [] |916| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 919,column 5,is_stmt,isa 0
+        MOVB      *-SP[1],#1,UNC        ; [CPU_] |919| 
+        MOVB      AL,#1                 ; [CPU_] |919| 
+        MOVB      XAR4,#1               ; [CPU_] |919| 
+        MOVB      XAR5,#1               ; [CPU_] |919| 
+        MOVB      AH,#1                 ; [CPU_] |919| 
 $C$DW$256	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$256, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$256, DW_AT_name("_Sdfm_configureExternalreset")
 	.dwattr $C$DW$256, DW_AT_TI_call
 
-        LCR       #_Sdfm_configureExternalreset ; [CPU_] |926| 
-        ; call occurs [#_Sdfm_configureExternalreset] ; [] |926| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 929,column 5,is_stmt,isa 0
-        MOVB      AL,#1                 ; [CPU_] |929| 
+        LCR       #_Sdfm_configureExternalreset ; [CPU_] |919| 
+        ; call occurs [#_Sdfm_configureExternalreset] ; [] |919| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 922,column 5,is_stmt,isa 0
+        MOVB      AL,#1                 ; [CPU_] |922| 
 $C$DW$257	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$257, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$257, DW_AT_name("_Sdfm_enableMFE")
 	.dwattr $C$DW$257, DW_AT_TI_call
 
-        LCR       #_Sdfm_enableMFE      ; [CPU_] |929| 
-        ; call occurs [#_Sdfm_enableMFE] ; [] |929| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 937,column 2,is_stmt,isa 0
-        MOVB      AL,#20                ; [CPU_] |937| 
-        MOVB      XAR4,#0               ; [CPU_] |937| 
-        MOVB      AH,#0                 ; [CPU_] |937| 
+        LCR       #_Sdfm_enableMFE      ; [CPU_] |922| 
+        ; call occurs [#_Sdfm_enableMFE] ; [] |922| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 930,column 2,is_stmt,isa 0
+        MOVB      AL,#20                ; [CPU_] |930| 
+        MOVB      XAR4,#0               ; [CPU_] |930| 
+        MOVB      AH,#0                 ; [CPU_] |930| 
 $C$DW$258	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$258, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$258, DW_AT_name("_GPIO_SetupPinOptions")
 	.dwattr $C$DW$258, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinOptions ; [CPU_] |937| 
-        ; call occurs [#_GPIO_SetupPinOptions] ; [] |937| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 938,column 2,is_stmt,isa 0
-        MOVB      AL,#20                ; [CPU_] |938| 
-        MOVB      XAR4,#1               ; [CPU_] |938| 
-        MOVB      AH,#0                 ; [CPU_] |938| 
+        LCR       #_GPIO_SetupPinOptions ; [CPU_] |930| 
+        ; call occurs [#_GPIO_SetupPinOptions] ; [] |930| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 931,column 2,is_stmt,isa 0
+        MOVB      AL,#20                ; [CPU_] |931| 
+        MOVB      XAR4,#1               ; [CPU_] |931| 
+        MOVB      AH,#0                 ; [CPU_] |931| 
 $C$DW$259	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$259, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$259, DW_AT_name("_GPIO_SetupPinMux")
 	.dwattr $C$DW$259, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinMux    ; [CPU_] |938| 
-        ; call occurs [#_GPIO_SetupPinMux] ; [] |938| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 940,column 2,is_stmt,isa 0
-        MOVB      AL,#21                ; [CPU_] |940| 
-        MOVB      XAR4,#0               ; [CPU_] |940| 
-        MOVB      AH,#0                 ; [CPU_] |940| 
+        LCR       #_GPIO_SetupPinMux    ; [CPU_] |931| 
+        ; call occurs [#_GPIO_SetupPinMux] ; [] |931| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 933,column 2,is_stmt,isa 0
+        MOVB      AL,#21                ; [CPU_] |933| 
+        MOVB      XAR4,#0               ; [CPU_] |933| 
+        MOVB      AH,#0                 ; [CPU_] |933| 
 $C$DW$260	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$260, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$260, DW_AT_name("_GPIO_SetupPinOptions")
 	.dwattr $C$DW$260, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinOptions ; [CPU_] |940| 
-        ; call occurs [#_GPIO_SetupPinOptions] ; [] |940| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 941,column 2,is_stmt,isa 0
-        MOVB      AL,#21                ; [CPU_] |941| 
-        MOVB      XAR4,#1               ; [CPU_] |941| 
-        MOVB      AH,#0                 ; [CPU_] |941| 
+        LCR       #_GPIO_SetupPinOptions ; [CPU_] |933| 
+        ; call occurs [#_GPIO_SetupPinOptions] ; [] |933| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 934,column 2,is_stmt,isa 0
+        MOVB      AL,#21                ; [CPU_] |934| 
+        MOVB      XAR4,#1               ; [CPU_] |934| 
+        MOVB      AH,#0                 ; [CPU_] |934| 
 $C$DW$261	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$261, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$261, DW_AT_name("_GPIO_SetupPinMux")
 	.dwattr $C$DW$261, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinMux    ; [CPU_] |941| 
-        ; call occurs [#_GPIO_SetupPinMux] ; [] |941| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 943,column 2,is_stmt,isa 0
-        MOVB      AL,#22                ; [CPU_] |943| 
-        MOVB      XAR4,#0               ; [CPU_] |943| 
-        MOVB      AH,#0                 ; [CPU_] |943| 
+        LCR       #_GPIO_SetupPinMux    ; [CPU_] |934| 
+        ; call occurs [#_GPIO_SetupPinMux] ; [] |934| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 936,column 2,is_stmt,isa 0
+        MOVB      AL,#22                ; [CPU_] |936| 
+        MOVB      XAR4,#0               ; [CPU_] |936| 
+        MOVB      AH,#0                 ; [CPU_] |936| 
 $C$DW$262	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$262, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$262, DW_AT_name("_GPIO_SetupPinOptions")
 	.dwattr $C$DW$262, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinOptions ; [CPU_] |943| 
-        ; call occurs [#_GPIO_SetupPinOptions] ; [] |943| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 944,column 2,is_stmt,isa 0
-        MOVB      AL,#22                ; [CPU_] |944| 
-        MOVB      XAR4,#1               ; [CPU_] |944| 
-        MOVB      AH,#0                 ; [CPU_] |944| 
+        LCR       #_GPIO_SetupPinOptions ; [CPU_] |936| 
+        ; call occurs [#_GPIO_SetupPinOptions] ; [] |936| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 937,column 2,is_stmt,isa 0
+        MOVB      AL,#22                ; [CPU_] |937| 
+        MOVB      XAR4,#1               ; [CPU_] |937| 
+        MOVB      AH,#0                 ; [CPU_] |937| 
 $C$DW$263	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$263, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$263, DW_AT_name("_GPIO_SetupPinMux")
 	.dwattr $C$DW$263, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinMux    ; [CPU_] |944| 
-        ; call occurs [#_GPIO_SetupPinMux] ; [] |944| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 946,column 2,is_stmt,isa 0
-        MOVB      AL,#23                ; [CPU_] |946| 
-        MOVB      XAR4,#0               ; [CPU_] |946| 
-        MOVB      AH,#0                 ; [CPU_] |946| 
+        LCR       #_GPIO_SetupPinMux    ; [CPU_] |937| 
+        ; call occurs [#_GPIO_SetupPinMux] ; [] |937| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 939,column 2,is_stmt,isa 0
+        MOVB      AL,#23                ; [CPU_] |939| 
+        MOVB      XAR4,#0               ; [CPU_] |939| 
+        MOVB      AH,#0                 ; [CPU_] |939| 
 $C$DW$264	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$264, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$264, DW_AT_name("_GPIO_SetupPinOptions")
 	.dwattr $C$DW$264, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinOptions ; [CPU_] |946| 
-        ; call occurs [#_GPIO_SetupPinOptions] ; [] |946| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 947,column 2,is_stmt,isa 0
-        MOVB      AL,#23                ; [CPU_] |947| 
-        MOVB      XAR4,#1               ; [CPU_] |947| 
-        MOVB      AH,#0                 ; [CPU_] |947| 
+        LCR       #_GPIO_SetupPinOptions ; [CPU_] |939| 
+        ; call occurs [#_GPIO_SetupPinOptions] ; [] |939| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 940,column 2,is_stmt,isa 0
+        MOVB      AL,#23                ; [CPU_] |940| 
+        MOVB      XAR4,#1               ; [CPU_] |940| 
+        MOVB      AH,#0                 ; [CPU_] |940| 
 $C$DW$265	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$265, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$265, DW_AT_name("_GPIO_SetupPinMux")
 	.dwattr $C$DW$265, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinMux    ; [CPU_] |947| 
-        ; call occurs [#_GPIO_SetupPinMux] ; [] |947| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 955,column 2,is_stmt,isa 0
-        MOVB      AL,#34                ; [CPU_] |955| 
-        MOVB      XAR4,#48              ; [CPU_] |955| 
-        MOVB      AH,#1                 ; [CPU_] |955| 
+        LCR       #_GPIO_SetupPinMux    ; [CPU_] |940| 
+        ; call occurs [#_GPIO_SetupPinMux] ; [] |940| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 948,column 2,is_stmt,isa 0
+        MOVB      AL,#34                ; [CPU_] |948| 
+        MOVB      XAR4,#48              ; [CPU_] |948| 
+        MOVB      AH,#1                 ; [CPU_] |948| 
 $C$DW$266	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$266, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$266, DW_AT_name("_GPIO_SetupPinOptions")
 	.dwattr $C$DW$266, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinOptions ; [CPU_] |955| 
-        ; call occurs [#_GPIO_SetupPinOptions] ; [] |955| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 956,column 2,is_stmt,isa 0
-        MOVB      AL,#34                ; [CPU_] |956| 
-        MOVB      XAR4,#0               ; [CPU_] |956| 
-        MOVB      AH,#0                 ; [CPU_] |956| 
+        LCR       #_GPIO_SetupPinOptions ; [CPU_] |948| 
+        ; call occurs [#_GPIO_SetupPinOptions] ; [] |948| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 949,column 2,is_stmt,isa 0
+        MOVB      AL,#34                ; [CPU_] |949| 
+        MOVB      XAR4,#0               ; [CPU_] |949| 
+        MOVB      AH,#0                 ; [CPU_] |949| 
 $C$DW$267	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$267, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$267, DW_AT_name("_GPIO_SetupPinMux")
 	.dwattr $C$DW$267, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinMux    ; [CPU_] |956| 
-        ; call occurs [#_GPIO_SetupPinMux] ; [] |956| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 959,column 2,is_stmt,isa 0
-        MOVB      AL,#31                ; [CPU_] |959| 
-        MOVB      XAR4,#48              ; [CPU_] |959| 
-        MOVB      AH,#1                 ; [CPU_] |959| 
+        LCR       #_GPIO_SetupPinMux    ; [CPU_] |949| 
+        ; call occurs [#_GPIO_SetupPinMux] ; [] |949| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 952,column 2,is_stmt,isa 0
+        MOVB      AL,#31                ; [CPU_] |952| 
+        MOVB      XAR4,#48              ; [CPU_] |952| 
+        MOVB      AH,#1                 ; [CPU_] |952| 
 $C$DW$268	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$268, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$268, DW_AT_name("_GPIO_SetupPinOptions")
 	.dwattr $C$DW$268, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinOptions ; [CPU_] |959| 
-        ; call occurs [#_GPIO_SetupPinOptions] ; [] |959| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 960,column 2,is_stmt,isa 0
-        MOVB      AL,#31                ; [CPU_] |960| 
-        MOVB      XAR4,#0               ; [CPU_] |960| 
-        MOVB      AH,#0                 ; [CPU_] |960| 
+        LCR       #_GPIO_SetupPinOptions ; [CPU_] |952| 
+        ; call occurs [#_GPIO_SetupPinOptions] ; [] |952| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 953,column 2,is_stmt,isa 0
+        MOVB      AL,#31                ; [CPU_] |953| 
+        MOVB      XAR4,#0               ; [CPU_] |953| 
+        MOVB      AH,#0                 ; [CPU_] |953| 
 $C$DW$269	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$269, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$269, DW_AT_name("_GPIO_SetupPinMux")
 	.dwattr $C$DW$269, DW_AT_TI_call
 
-        LCR       #_GPIO_SetupPinMux    ; [CPU_] |960| 
-        ; call occurs [#_GPIO_SetupPinMux] ; [] |960| 
+        LCR       #_GPIO_SetupPinMux    ; [CPU_] |953| 
+        ; call occurs [#_GPIO_SetupPinMux] ; [] |953| 
         MOVW      DP,#_qep1+12          ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 975,column 5,is_stmt,isa 0
-        MOV       @_qep1+12,#2500       ; [CPU_] |975| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 976,column 5,is_stmt,isa 0
-        MOVIZ     R1H,#16000            ; [CPU_] |976| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 979,column 5,is_stmt,isa 0
-        MOVB      ACC,#20               ; [CPU_] |979| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 976,column 5,is_stmt,isa 0
-        UI16TOF32 R0H,@_qep1+12         ; [CPU_] |976| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 978,column 5,is_stmt,isa 0
-        MOVB      XAR6,#0               ; [CPU_] |978| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 968,column 5,is_stmt,isa 0
+        MOV       @_qep1+12,#2500       ; [CPU_] |968| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 969,column 5,is_stmt,isa 0
+        MOVIZ     R1H,#16000            ; [CPU_] |969| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 972,column 5,is_stmt,isa 0
+        MOVB      ACC,#20               ; [CPU_] |972| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 969,column 5,is_stmt,isa 0
+        UI16TOF32 R0H,@_qep1+12         ; [CPU_] |969| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 971,column 5,is_stmt,isa 0
+        MOVB      XAR6,#0               ; [CPU_] |971| 
         MOVW      DP,#_eQEP+2           ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 976,column 5,is_stmt,isa 0
-        DIVF32    R0H,R1H,R0H           ; [CPU_] |976| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 979,column 5,is_stmt,isa 0
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |979| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 969,column 5,is_stmt,isa 0
+        DIVF32    R0H,R1H,R0H           ; [CPU_] |969| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 972,column 5,is_stmt,isa 0
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |972| 
         MOVW      DP,#_qep1+10          ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 978,column 5,is_stmt,isa 0
-        MOVL      XAR4,ACC              ; [CPU_] |978| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 979,column 5,is_stmt,isa 0
-        MOVB      ACC,#21               ; [CPU_] |979| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 976,column 5,is_stmt,isa 0
-        MOV32     @_qep1+10,R0H         ; [CPU_] |976| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 977,column 5,is_stmt,isa 0
-        MOVB      @_qep1+13,#4,UNC      ; [CPU_] |977| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 978,column 5,is_stmt,isa 0
-        MOVL      @_qep1+14,XAR6        ; [CPU_] |978| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 971,column 5,is_stmt,isa 0
+        MOVL      XAR4,ACC              ; [CPU_] |971| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 972,column 5,is_stmt,isa 0
+        MOVB      ACC,#21               ; [CPU_] |972| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 969,column 5,is_stmt,isa 0
+        MOV32     @_qep1+10,R0H         ; [CPU_] |969| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 970,column 5,is_stmt,isa 0
+        MOVB      @_qep1+13,#4,UNC      ; [CPU_] |970| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 971,column 5,is_stmt,isa 0
+        MOVL      @_qep1+14,XAR6        ; [CPU_] |971| 
         MOVW      DP,#_eQEP+2           ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 979,column 5,is_stmt,isa 0
-        MOV       *+XAR4[0],#0          ; [CPU_] |979| 
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |979| 
-        MOVL      XAR4,ACC              ; [CPU_] |979| 
-        MOVB      ACC,#23               ; [CPU_] |979| 
-        MOV       *+XAR4[0],#33310      ; [CPU_] |979| 
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |979| 
-        MOVL      XAR4,ACC              ; [CPU_] |979| 
-        MOVB      ACC,#16               ; [CPU_] |979| 
-        MOV       *+XAR4[0],#0          ; [CPU_] |979| 
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |979| 
-        MOVL      XAR4,ACC              ; [CPU_] |979| 
-        MOVL      XAR5,#600000          ; [CPU_U] |979| 
-        MOVB      ACC,#22               ; [CPU_] |979| 
-        MOVL      *+XAR4[0],XAR5        ; [CPU_] |979| 
-        ADDL      ACC,@_eQEP+2          ; [CPU_] |979| 
-        MOVL      XAR4,ACC              ; [CPU_] |979| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 984,column 2,is_stmt,isa 0
-        MOVIZ     R0H,#16256            ; [CPU_] |984| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 983,column 2,is_stmt,isa 0
-        MOVIZ     R1H,#17792            ; [CPU_] |983| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 979,column 5,is_stmt,isa 0
-        MOV       *+XAR4[0],#32885      ; [CPU_] |979| 
-        MOVL      XAR4,@_eQEP+2         ; [CPU_] |979| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 972,column 5,is_stmt,isa 0
+        MOV       *+XAR4[0],#0          ; [CPU_] |972| 
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |972| 
+        MOVL      XAR4,ACC              ; [CPU_] |972| 
+        MOVB      ACC,#23               ; [CPU_] |972| 
+        MOV       *+XAR4[0],#33310      ; [CPU_] |972| 
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |972| 
+        MOVL      XAR4,ACC              ; [CPU_] |972| 
+        MOVB      ACC,#16               ; [CPU_] |972| 
+        MOV       *+XAR4[0],#0          ; [CPU_] |972| 
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |972| 
+        MOVL      XAR4,ACC              ; [CPU_] |972| 
+        MOVL      XAR5,#600000          ; [CPU_U] |972| 
+        MOVB      ACC,#22               ; [CPU_] |972| 
+        MOVL      *+XAR4[0],XAR5        ; [CPU_] |972| 
+        ADDL      ACC,@_eQEP+2          ; [CPU_] |972| 
+        MOVL      XAR4,ACC              ; [CPU_] |972| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 977,column 2,is_stmt,isa 0
+        MOVIZ     R0H,#16256            ; [CPU_] |977| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 976,column 2,is_stmt,isa 0
+        MOVIZ     R1H,#17792            ; [CPU_] |976| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 972,column 5,is_stmt,isa 0
+        MOV       *+XAR4[0],#32885      ; [CPU_] |972| 
+        MOVL      XAR4,@_eQEP+2         ; [CPU_] |972| 
         MOVW      DP,#_qep1+12          ; [CPU_U] 
-        MOV       ACC,@_qep1+12 << #2   ; [CPU_] |979| 
+        MOV       ACC,@_qep1+12 << #2   ; [CPU_] |972| 
         MOVW      DP,#_EQep1Regs+21     ; [CPU_U] 
-        MOVU      ACC,AL                ; [CPU_] |979| 
-        MOVL      *+XAR4[4],ACC         ; [CPU_] |979| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 980,column 5,is_stmt,isa 0
-        AND       @_EQep1Regs+21,#0xfcff ; [CPU_] |980| 
+        MOVU      ACC,AL                ; [CPU_] |972| 
+        MOVL      *+XAR4[4],ACC         ; [CPU_] |972| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 973,column 5,is_stmt,isa 0
+        AND       @_EQep1Regs+21,#0xfcff ; [CPU_] |973| 
         MOVW      DP,#_resolver1+12     ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 983,column 2,is_stmt,isa 0
-        MOV32     @_resolver1+12,R1H    ; [CPU_] |983| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 984,column 2,is_stmt,isa 0
-        MOV32     @_resolver1+10,R0H    ; [CPU_] |984| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 985,column 2,is_stmt,isa 0
-        MOVB      @_resolver1+14,#4,UNC ; [CPU_] |985| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 976,column 2,is_stmt,isa 0
+        MOV32     @_resolver1+12,R1H    ; [CPU_] |976| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 977,column 2,is_stmt,isa 0
+        MOV32     @_resolver1+10,R0H    ; [CPU_] |977| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 978,column 2,is_stmt,isa 0
+        MOVB      @_resolver1+14,#4,UNC ; [CPU_] |978| 
         MOVW      DP,#_biss1+14         ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 988,column 2,is_stmt,isa 0
-        MOVB      @_biss1+14,#4,UNC     ; [CPU_] |988| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 981,column 2,is_stmt,isa 0
+        MOVB      @_biss1+14,#4,UNC     ; [CPU_] |981| 
         MOVW      DP,#_endat1+14        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 990,column 2,is_stmt,isa 0
-        MOVB      @_endat1+14,#4,UNC    ; [CPU_] |990| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 992,column 2,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 983,column 2,is_stmt,isa 0
+        MOVB      @_endat1+14,#4,UNC    ; [CPU_] |983| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 985,column 2,is_stmt,isa 0
 $C$DW$270	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$270, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$270, DW_AT_name("_baseParamsInit")
 	.dwattr $C$DW$270, DW_AT_TI_call
 
-        LCR       #_baseParamsInit      ; [CPU_] |992| 
-        ; call occurs [#_baseParamsInit] ; [] |992| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 993,column 2,is_stmt,isa 0
+        LCR       #_baseParamsInit      ; [CPU_] |985| 
+        ; call occurs [#_baseParamsInit] ; [] |985| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 986,column 2,is_stmt,isa 0
 $C$DW$271	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$271, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$271, DW_AT_name("_derivParamsCal")
 	.dwattr $C$DW$271, DW_AT_TI_call
 
-        LCR       #_derivParamsCal      ; [CPU_] |993| 
-        ; call occurs [#_derivParamsCal] ; [] |993| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 994,column 2,is_stmt,isa 0
+        LCR       #_derivParamsCal      ; [CPU_] |986| 
+        ; call occurs [#_derivParamsCal] ; [] |986| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 987,column 2,is_stmt,isa 0
 $C$DW$272	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$272, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$272, DW_AT_name("_init_resolver_Float")
 	.dwattr $C$DW$272, DW_AT_TI_call
 
-        LCR       #_init_resolver_Float ; [CPU_] |994| 
-        ; call occurs [#_init_resolver_Float] ; [] |994| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 998,column 5,is_stmt,isa 0
-        MOVIZ     R6H,#16457            ; [CPU_] |998| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1015,column 5,is_stmt,isa 0
-        MOVIZ     R7H,#16128            ; [CPU_] |1015| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 998,column 5,is_stmt,isa 0
-        MOVXI     R6H,#4059             ; [CPU_] |998| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1018,column 5,is_stmt,isa 0
-        MOVIZ     R5H,#16256            ; [CPU_] |1018| 
+        LCR       #_init_resolver_Float ; [CPU_] |987| 
+        ; call occurs [#_init_resolver_Float] ; [] |987| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 991,column 5,is_stmt,isa 0
+        MOVIZ     R6H,#16457            ; [CPU_] |991| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1008,column 5,is_stmt,isa 0
+        MOVIZ     R7H,#16128            ; [CPU_] |1008| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 991,column 5,is_stmt,isa 0
+        MOVXI     R6H,#4059             ; [CPU_] |991| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1011,column 5,is_stmt,isa 0
+        MOVIZ     R5H,#16256            ; [CPU_] |1011| 
         MOVW      DP,#_T                ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1012,column 5,is_stmt,isa 0
-        ZERO      R2H                   ; [CPU_] |1012| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1013,column 5,is_stmt,isa 0
-        ZERO      R1H                   ; [CPU_] |1013| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 998,column 5,is_stmt,isa 0
-        MOV32     R4H,@_T               ; [CPU_] |998| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1014,column 5,is_stmt,isa 0
-        MOVIZ     R0H,#48896            ; [CPU_] |1014| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 998,column 5,is_stmt,isa 0
-        MOV32     R3H,@_T               ; [CPU_] |998| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1005,column 5,is_stmt,isa 0
+        ZERO      R2H                   ; [CPU_] |1005| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1006,column 5,is_stmt,isa 0
+        ZERO      R1H                   ; [CPU_] |1006| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 991,column 5,is_stmt,isa 0
+        MOV32     R4H,@_T               ; [CPU_] |991| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1007,column 5,is_stmt,isa 0
+        MOVIZ     R0H,#48896            ; [CPU_] |1007| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 991,column 5,is_stmt,isa 0
+        MOV32     R3H,@_T               ; [CPU_] |991| 
         MOVW      DP,#_pid_pos          ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1005,column 5,is_stmt,isa 0
+        MOV32     @_pid_pos,R2H         ; [CPU_] |1005| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 991,column 5,is_stmt,isa 0
+
+        MOV32     @_pid_pos+2,R1H       ; [CPU_] |1006| 
+||      ADDF32    R3H,R3H,R4H           ; [CPU_] |991| 
+
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1014,column 5,is_stmt,isa 0
+        MOVIZ     R1H,#16230            ; [CPU_] |1014| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1012,column 5,is_stmt,isa 0
-        MOV32     @_pid_pos,R2H         ; [CPU_] |1012| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 998,column 5,is_stmt,isa 0
+        ZERO      R4H                   ; [CPU_] |1012| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 991,column 5,is_stmt,isa 0
 
-        MOV32     @_pid_pos+2,R1H       ; [CPU_] |1013| 
-||      ADDF32    R3H,R3H,R4H           ; [CPU_] |998| 
+        MOV32     @_pid_pos+18,R0H      ; [CPU_] |1007| 
+||      MPYF32    R3H,R6H,R3H           ; [CPU_] |991| 
 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1021,column 5,is_stmt,isa 0
-        MOVIZ     R1H,#16230            ; [CPU_] |1021| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1019,column 5,is_stmt,isa 0
-        ZERO      R4H                   ; [CPU_] |1019| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 998,column 5,is_stmt,isa 0
-
-        MOV32     @_pid_pos+18,R0H      ; [CPU_] |1014| 
-||      MPYF32    R3H,R6H,R3H           ; [CPU_] |998| 
-
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1016,column 5,is_stmt,isa 0
-        ZERO      R6H                   ; [CPU_] |1016| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 998,column 5,is_stmt,isa 0
-        MPYF32    R3H,R3H,#16544        ; [CPU_] |998| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1015,column 5,is_stmt,isa 0
-        MOV32     @_pid_pos+16,R7H      ; [CPU_] |1015| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1009,column 5,is_stmt,isa 0
+        ZERO      R6H                   ; [CPU_] |1009| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 991,column 5,is_stmt,isa 0
+        MPYF32    R3H,R3H,#16544        ; [CPU_] |991| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1008,column 5,is_stmt,isa 0
+        MOV32     @_pid_pos+16,R7H      ; [CPU_] |1008| 
         MOVW      DP,#_T                ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1021,column 5,is_stmt,isa 0
-        MOVXI     R1H,#26214            ; [CPU_] |1021| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 997,column 5,is_stmt,isa 0
-        MOV32     R7H,@_T               ; [CPU_] |997| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 998,column 5,is_stmt,isa 0
-        ADDF32    R3H,R3H,#16256        ; [CPU_] |998| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 997,column 5,is_stmt,isa 0
-        MPYF32    R0H,R7H,#17224        ; [CPU_] |997| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1014,column 5,is_stmt,isa 0
+        MOVXI     R1H,#26214            ; [CPU_] |1014| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 990,column 5,is_stmt,isa 0
+        MOV32     R7H,@_T               ; [CPU_] |990| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 991,column 5,is_stmt,isa 0
+        ADDF32    R3H,R3H,#16256        ; [CPU_] |991| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 990,column 5,is_stmt,isa 0
+        MPYF32    R0H,R7H,#17224        ; [CPU_] |990| 
         MOVW      DP,#_pid_pos+20       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1016,column 5,is_stmt,isa 0
-        MOV32     @_pid_pos+20,R6H      ; [CPU_] |1016| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 997,column 5,is_stmt,isa 0
-        MOVIZ     R6H,#16256            ; [CPU_] |997| 
-        MOV32     XAR0,R0H              ; [CPU_] |997| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1018,column 5,is_stmt,isa 0
-        MOV32     @_pid_pos+6,R5H       ; [CPU_] |1018| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1009,column 5,is_stmt,isa 0
+        MOV32     @_pid_pos+20,R6H      ; [CPU_] |1009| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 990,column 5,is_stmt,isa 0
+        MOVIZ     R6H,#16256            ; [CPU_] |990| 
+        MOV32     XAR0,R0H              ; [CPU_] |990| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1011,column 5,is_stmt,isa 0
+        MOV32     @_pid_pos+6,R5H       ; [CPU_] |1011| 
         MOVW      DP,#_LedCnt1          ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1072,column 2,is_stmt,isa 0
-        MOVIZ     R5H,#14979            ; [CPU_] |1072| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1101,column 2,is_stmt,isa 0
-        MOV       @_LedCnt1,#0          ; [CPU_] |1101| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1102,column 2,is_stmt,isa 0
-        MOVB      @_EnableResolverISR,#1,UNC ; [CPU_] |1102| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1065,column 2,is_stmt,isa 0
+        MOVIZ     R5H,#14979            ; [CPU_] |1065| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1094,column 2,is_stmt,isa 0
+        MOV       @_LedCnt1,#0          ; [CPU_] |1094| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1095,column 2,is_stmt,isa 0
+        MOVB      @_EnableResolverISR,#1,UNC ; [CPU_] |1095| 
         MOVW      DP,#_pid_pos+24       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1019,column 5,is_stmt,isa 0
-        MOV32     @_pid_pos+24,R4H      ; [CPU_] |1019| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1072,column 2,is_stmt,isa 0
-        MOVXI     R5H,#4719             ; [CPU_] |1072| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1024,column 2,is_stmt,isa 0
-        ZERO      R7H                   ; [CPU_] |1024| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 997,column 5,is_stmt,isa 0
-        DIVF32    R4H,R6H,R0H           ; [CPU_] |997| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1020,column 5,is_stmt,isa 0
-        MOV32     @_pid_pos+28,R2H      ; [CPU_] |1020| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 998,column 5,is_stmt,isa 0
-        MOVIZ     R6H,#16256            ; [CPU_] |998| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1012,column 5,is_stmt,isa 0
+        MOV32     @_pid_pos+24,R4H      ; [CPU_] |1012| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1065,column 2,is_stmt,isa 0
+        MOVXI     R5H,#4719             ; [CPU_] |1065| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1017,column 2,is_stmt,isa 0
+        ZERO      R7H                   ; [CPU_] |1017| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 990,column 5,is_stmt,isa 0
+        DIVF32    R4H,R6H,R0H           ; [CPU_] |990| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1013,column 5,is_stmt,isa 0
+        MOV32     @_pid_pos+28,R2H      ; [CPU_] |1013| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 991,column 5,is_stmt,isa 0
+        MOVIZ     R6H,#16256            ; [CPU_] |991| 
         MOVW      DP,#_speed1+10        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1071,column 2,is_stmt,isa 0
-        MOVIZ     R0H,#16256            ; [CPU_] |1071| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 997,column 5,is_stmt,isa 0
-        MOV32     @_speed1+10,R4H       ; [CPU_] |997| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1064,column 2,is_stmt,isa 0
+        MOVIZ     R0H,#16256            ; [CPU_] |1064| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 990,column 5,is_stmt,isa 0
+        MOV32     @_speed1+10,R4H       ; [CPU_] |990| 
         MOVW      DP,#_pid_spd+12       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 998,column 5,is_stmt,isa 0
-        DIVF32    R3H,R6H,R3H           ; [CPU_] |998| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1071,column 2,is_stmt,isa 0
-        MOV32     @_pid_spd+12,R0H      ; [CPU_] |1071| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 991,column 5,is_stmt,isa 0
+        DIVF32    R3H,R6H,R3H           ; [CPU_] |991| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1064,column 2,is_stmt,isa 0
+        MOV32     @_pid_spd+12,R0H      ; [CPU_] |1064| 
         MOVW      DP,#_pid_pos+26       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1007,column 2,is_stmt,isa 0
-        MOVIZ     R0H,#14979            ; [CPU_] |1007| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1006,column 2,is_stmt,isa 0
-        MOVIZ     R4H,#16256            ; [CPU_] |1006| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1007,column 2,is_stmt,isa 0
-        MOV32     XAR6,R0H              ; [CPU_] |1007| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1074,column 2,is_stmt,isa 0
-        MOVIZ     R0H,#16256            ; [CPU_] |1074| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1021,column 5,is_stmt,isa 0
-        MOV32     @_pid_pos+26,R1H      ; [CPU_] |1021| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1000,column 2,is_stmt,isa 0
+        MOVIZ     R0H,#14979            ; [CPU_] |1000| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 999,column 2,is_stmt,isa 0
+        MOVIZ     R4H,#16256            ; [CPU_] |999| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1000,column 2,is_stmt,isa 0
+        MOV32     XAR6,R0H              ; [CPU_] |1000| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1067,column 2,is_stmt,isa 0
+        MOVIZ     R0H,#16256            ; [CPU_] |1067| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1014,column 5,is_stmt,isa 0
+        MOV32     @_pid_pos+26,R1H      ; [CPU_] |1014| 
         MOVW      DP,#_T                ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1067,column 2,is_stmt,isa 0
+        MOV32     XAR7,R0H              ; [CPU_] |1067| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1001,column 2,is_stmt,isa 0
+        MOVIZ     R0H,#16256            ; [CPU_] |1001| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1074,column 2,is_stmt,isa 0
-        MOV32     XAR7,R0H              ; [CPU_] |1074| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1008,column 2,is_stmt,isa 0
-        MOVIZ     R0H,#16256            ; [CPU_] |1008| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1081,column 2,is_stmt,isa 0
-        MOV32     R6H,@_T               ; [CPU_] |1081| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1080,column 2,is_stmt,isa 0
-        MOVIZ     R1H,#16256            ; [CPU_] |1080| 
-        MOVW      DP,#_pid_spd+14       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1008,column 2,is_stmt,isa 0
-        MOV32     XAR4,R0H              ; [CPU_] |1008| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1072,column 2,is_stmt,isa 0
-        MOV32     @_pid_spd+14,R5H      ; [CPU_] |1072| 
-        MOVW      DP,#_pi_pos+6         ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1088,column 2,is_stmt,isa 0
-        MOVIZ     R0H,#16204            ; [CPU_] |1088| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1006,column 2,is_stmt,isa 0
-        MOV32     @_pi_pos+6,R4H        ; [CPU_] |1006| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1081,column 2,is_stmt,isa 0
-        MPYF32    R6H,R6H,#16840        ; [CPU_] |1081| 
-        MOVW      DP,#_pi_id+6          ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1088,column 2,is_stmt,isa 0
-        MOVXI     R0H,#52429            ; [CPU_] |1088| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1086,column 2,is_stmt,isa 0
-        MOVIZ     R5H,#16256            ; [CPU_] |1086| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1080,column 2,is_stmt,isa 0
-        MOV32     @_pi_id+6,R1H         ; [CPU_] |1080| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1076,column 2,is_stmt,isa 0
-        MOVIZ     R4H,#49011            ; [CPU_] |1076| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1026,column 2,is_stmt,isa 0
-        ZERO      R1H                   ; [CPU_] |1026| 
-        MOVW      DP,#_speed1+12        ; [CPU_U] 
-        MOV32     P,R1H                 ; [CPU_] |1026| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 998,column 5,is_stmt,isa 0
-        MOV32     @_speed1+12,R3H       ; [CPU_] |998| 
-        MOVW      DP,#_pid_pos+30       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1097,column 2,is_stmt,isa 0
-        MOVIZ     R1H,#15692            ; [CPU_] |1097| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1088,column 2,is_stmt,isa 0
-        MOV32     ACC,R0H               ; [CPU_] |1088| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1023,column 5,is_stmt,isa 0
-        MOV32     @_pid_pos+30,R2H      ; [CPU_] |1023| 
-        MOVW      DP,#_pi_iq+6          ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1076,column 2,is_stmt,isa 0
-        MOVXI     R4H,#13107            ; [CPU_] |1076| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1025,column 2,is_stmt,isa 0
-        ZERO      R3H                   ; [CPU_] |1025| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1097,column 2,is_stmt,isa 0
-        MOVXI     R1H,#52429            ; [CPU_] |1097| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1086,column 2,is_stmt,isa 0
-        MOV32     @_pi_iq+6,R5H         ; [CPU_] |1086| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1081,column 2,is_stmt,isa 0
-        MOV32     @_pi_id+8,R6H         ; [CPU_] |1081| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1087,column 2,is_stmt,isa 0
-        MOV32     @_pi_iq+8,R6H         ; [CPU_] |1087| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1024,column 2,is_stmt,isa 0
-        MOV32     R5H,XAR6              ; [CPU_] |1024| 
-        MOVW      DP,#_pid_spd+16       ; [CPU_U] 
+        MOV32     R6H,@_T               ; [CPU_] |1074| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1073,column 2,is_stmt,isa 0
-        MOV32     @_pid_spd+16,R2H      ; [CPU_] |1073| 
-        MOVW      DP,#_speed1+12        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1009,column 2,is_stmt,isa 0
-        MOVIZ     R6H,#49024            ; [CPU_] |1009| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1007,column 2,is_stmt,isa 0
-        MOVXI     R5H,#4719             ; [CPU_] |1007| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1092,column 2,is_stmt,isa 0
-        MOVIZ     R2H,#15692            ; [CPU_] |1092| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 999,column 5,is_stmt,isa 0
-        MOVL      XAR5,@_speed1+12      ; [CPU_] |999| 
-        MOVW      DP,#_pid_pos+8        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1007,column 2,is_stmt,isa 0
-        MOV32     XAR6,R5H              ; [CPU_] |1007| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1092,column 2,is_stmt,isa 0
-        MOVXI     R2H,#52429            ; [CPU_] |1092| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1075,column 2,is_stmt,isa 0
-        MOVIZ     R5H,#16243            ; [CPU_] |1075| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1024,column 2,is_stmt,isa 0
-        MOV32     @_pid_pos+8,R7H       ; [CPU_] |1024| 
-        MOVW      DP,#_pid_spd+10       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1082,column 2,is_stmt,isa 0
-        MOVIZ     R7H,#16128            ; [CPU_] |1082| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1075,column 2,is_stmt,isa 0
-        MOVXI     R5H,#13107            ; [CPU_] |1075| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1074,column 2,is_stmt,isa 0
-        MOVL      @_pid_spd+10,XAR7     ; [CPU_] |1074| 
-        MOVW      DP,#_pi_id+10         ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1009,column 2,is_stmt,isa 0
-        MOV32     XAR7,R6H              ; [CPU_] |1009| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1082,column 2,is_stmt,isa 0
-        MOV32     @_pi_id+10,R7H        ; [CPU_] |1082| 
-        MOVW      DP,#_pid_pos+10       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1083,column 2,is_stmt,isa 0
-        MOVIZ     R6H,#48896            ; [CPU_] |1083| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1025,column 2,is_stmt,isa 0
-        MOV32     @_pid_pos+10,R3H      ; [CPU_] |1025| 
-        MOVW      DP,#_pi_pos+8         ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1089,column 2,is_stmt,isa 0
-        MOVIZ     R3H,#48972            ; [CPU_] |1089| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1007,column 2,is_stmt,isa 0
-        MOVL      @_pi_pos+8,XAR6       ; [CPU_] |1007| 
-        MOVW      DP,#_SpeedRef         ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1092,column 2,is_stmt,isa 0
-        MOV32     @_SpeedRef,R2H        ; [CPU_] |1092| 
-        MOVW      DP,#_IqRef            ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1089,column 2,is_stmt,isa 0
-        MOVXI     R3H,#52429            ; [CPU_] |1089| 
+        MOVIZ     R1H,#16256            ; [CPU_] |1073| 
+        MOVW      DP,#_pid_spd+14       ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1001,column 2,is_stmt,isa 0
+        MOV32     XAR4,R0H              ; [CPU_] |1001| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1065,column 2,is_stmt,isa 0
+        MOV32     @_pid_spd+14,R5H      ; [CPU_] |1065| 
+        MOVW      DP,#_pi_pos+6         ; [CPU_U] 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1081,column 2,is_stmt,isa 0
-        MOV32     R2H,XAR5              ; [CPU_] |1081| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1097,column 2,is_stmt,isa 0
-        MOV32     @_IqRef,R1H           ; [CPU_] |1097| 
-        MOVW      DP,#_pi_pos+10        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1008,column 2,is_stmt,isa 0
-        MOVL      @_pi_pos+10,XAR4      ; [CPU_] |1008| 
-        MOVW      DP,#_pi_id+12         ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 999,column 5,is_stmt,isa 0
-        SUBF32    R0H,#16256,R2H        ; [CPU_] |999| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1028,column 2,is_stmt,isa 0
-        ZERO      R1H                   ; [CPU_] |1028| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1083,column 2,is_stmt,isa 0
-        MOV32     @_pi_id+12,R6H        ; [CPU_] |1083| 
-        MOVW      DP,#_pid_spd+20       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 999,column 5,is_stmt,isa 0
-        MOV32     XAR6,R0H              ; [CPU_] |999| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1000,column 5,is_stmt,isa 0
-        MOVL      XAR4,#3000            ; [CPU_U] |1000| 
+        MOVIZ     R0H,#16204            ; [CPU_] |1081| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 999,column 2,is_stmt,isa 0
+        MOV32     @_pi_pos+6,R4H        ; [CPU_] |999| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1074,column 2,is_stmt,isa 0
+        MPYF32    R6H,R6H,#16840        ; [CPU_] |1074| 
+        MOVW      DP,#_pi_id+6          ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1081,column 2,is_stmt,isa 0
+        MOVXI     R0H,#52429            ; [CPU_] |1081| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1079,column 2,is_stmt,isa 0
+        MOVIZ     R5H,#16256            ; [CPU_] |1079| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1073,column 2,is_stmt,isa 0
+        MOV32     @_pi_id+6,R1H         ; [CPU_] |1073| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1069,column 2,is_stmt,isa 0
+        MOVIZ     R4H,#49011            ; [CPU_] |1069| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1019,column 2,is_stmt,isa 0
+        ZERO      R1H                   ; [CPU_] |1019| 
+        MOVW      DP,#_speed1+12        ; [CPU_U] 
+        MOV32     P,R1H                 ; [CPU_] |1019| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 991,column 5,is_stmt,isa 0
+        MOV32     @_speed1+12,R3H       ; [CPU_] |991| 
+        MOVW      DP,#_pid_pos+30       ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1090,column 2,is_stmt,isa 0
+        MOVIZ     R1H,#15692            ; [CPU_] |1090| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1081,column 2,is_stmt,isa 0
+        MOV32     ACC,R0H               ; [CPU_] |1081| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1016,column 5,is_stmt,isa 0
+        MOV32     @_pid_pos+30,R2H      ; [CPU_] |1016| 
+        MOVW      DP,#_pi_iq+6          ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1069,column 2,is_stmt,isa 0
+        MOVXI     R4H,#13107            ; [CPU_] |1069| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1018,column 2,is_stmt,isa 0
+        ZERO      R3H                   ; [CPU_] |1018| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1090,column 2,is_stmt,isa 0
+        MOVXI     R1H,#52429            ; [CPU_] |1090| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1079,column 2,is_stmt,isa 0
+        MOV32     @_pi_iq+6,R5H         ; [CPU_] |1079| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1074,column 2,is_stmt,isa 0
+        MOV32     @_pi_id+8,R6H         ; [CPU_] |1074| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1080,column 2,is_stmt,isa 0
+        MOV32     @_pi_iq+8,R6H         ; [CPU_] |1080| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1017,column 2,is_stmt,isa 0
+        MOV32     R5H,XAR6              ; [CPU_] |1017| 
+        MOVW      DP,#_pid_spd+16       ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1066,column 2,is_stmt,isa 0
+        MOV32     @_pid_spd+16,R2H      ; [CPU_] |1066| 
+        MOVW      DP,#_speed1+12        ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1002,column 2,is_stmt,isa 0
+        MOVIZ     R6H,#49024            ; [CPU_] |1002| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1000,column 2,is_stmt,isa 0
+        MOVXI     R5H,#4719             ; [CPU_] |1000| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1085,column 2,is_stmt,isa 0
+        MOVIZ     R2H,#15692            ; [CPU_] |1085| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 992,column 5,is_stmt,isa 0
+        MOVL      XAR5,@_speed1+12      ; [CPU_] |992| 
+        MOVW      DP,#_pid_pos+8        ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1000,column 2,is_stmt,isa 0
+        MOV32     XAR6,R5H              ; [CPU_] |1000| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1085,column 2,is_stmt,isa 0
+        MOVXI     R2H,#52429            ; [CPU_] |1085| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1068,column 2,is_stmt,isa 0
+        MOVIZ     R5H,#16243            ; [CPU_] |1068| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1017,column 2,is_stmt,isa 0
+        MOV32     @_pid_pos+8,R7H       ; [CPU_] |1017| 
+        MOVW      DP,#_pid_spd+10       ; [CPU_U] 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1075,column 2,is_stmt,isa 0
-        MOV32     @_pid_spd+20,R5H      ; [CPU_] |1075| 
-        MOVW      DP,#_pid_pos+12       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1027,column 2,is_stmt,isa 0
-        ZERO      R0H                   ; [CPU_] |1027| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1026,column 2,is_stmt,isa 0
-        MOVL      @_pid_pos+12,P        ; [CPU_] |1026| 
-        MOVW      DP,#_pi_pos+12        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1009,column 2,is_stmt,isa 0
-        MOVL      @_pi_pos+12,XAR7      ; [CPU_] |1009| 
-        MOVW      DP,#_pi_iq+10         ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1088,column 2,is_stmt,isa 0
-        MOVL      @_pi_iq+10,ACC        ; [CPU_] |1088| 
-        MOVW      DP,#_pid_spd+22       ; [CPU_U] 
+        MOVIZ     R7H,#16128            ; [CPU_] |1075| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1068,column 2,is_stmt,isa 0
+        MOVXI     R5H,#13107            ; [CPU_] |1068| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1067,column 2,is_stmt,isa 0
+        MOVL      @_pid_spd+10,XAR7     ; [CPU_] |1067| 
+        MOVW      DP,#_pi_id+10         ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1002,column 2,is_stmt,isa 0
+        MOV32     XAR7,R6H              ; [CPU_] |1002| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1075,column 2,is_stmt,isa 0
+        MOV32     @_pi_id+10,R7H        ; [CPU_] |1075| 
+        MOVW      DP,#_pid_pos+10       ; [CPU_U] 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1076,column 2,is_stmt,isa 0
-        MOV32     @_pid_spd+22,R4H      ; [CPU_] |1076| 
+        MOVIZ     R6H,#48896            ; [CPU_] |1076| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1018,column 2,is_stmt,isa 0
+        MOV32     @_pid_pos+10,R3H      ; [CPU_] |1018| 
+        MOVW      DP,#_pi_pos+8         ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1082,column 2,is_stmt,isa 0
+        MOVIZ     R3H,#48972            ; [CPU_] |1082| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1000,column 2,is_stmt,isa 0
+        MOVL      @_pi_pos+8,XAR6       ; [CPU_] |1000| 
+        MOVW      DP,#_SpeedRef         ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1085,column 2,is_stmt,isa 0
+        MOV32     @_SpeedRef,R2H        ; [CPU_] |1085| 
+        MOVW      DP,#_IqRef            ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1082,column 2,is_stmt,isa 0
+        MOVXI     R3H,#52429            ; [CPU_] |1082| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1074,column 2,is_stmt,isa 0
+        MOV32     R2H,XAR5              ; [CPU_] |1074| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1090,column 2,is_stmt,isa 0
+        MOV32     @_IqRef,R1H           ; [CPU_] |1090| 
+        MOVW      DP,#_pi_pos+10        ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1001,column 2,is_stmt,isa 0
+        MOVL      @_pi_pos+10,XAR4      ; [CPU_] |1001| 
+        MOVW      DP,#_pi_id+12         ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 992,column 5,is_stmt,isa 0
+        SUBF32    R0H,#16256,R2H        ; [CPU_] |992| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1021,column 2,is_stmt,isa 0
+        ZERO      R1H                   ; [CPU_] |1021| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1076,column 2,is_stmt,isa 0
+        MOV32     @_pi_id+12,R6H        ; [CPU_] |1076| 
+        MOVW      DP,#_pid_spd+20       ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 992,column 5,is_stmt,isa 0
+        MOV32     XAR6,R0H              ; [CPU_] |992| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 993,column 5,is_stmt,isa 0
+        MOVL      XAR4,#3000            ; [CPU_U] |993| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1068,column 2,is_stmt,isa 0
+        MOV32     @_pid_spd+20,R5H      ; [CPU_] |1068| 
+        MOVW      DP,#_pid_pos+12       ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1020,column 2,is_stmt,isa 0
+        ZERO      R0H                   ; [CPU_] |1020| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1019,column 2,is_stmt,isa 0
+        MOVL      @_pid_pos+12,P        ; [CPU_] |1019| 
+        MOVW      DP,#_pi_pos+12        ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1002,column 2,is_stmt,isa 0
+        MOVL      @_pi_pos+12,XAR7      ; [CPU_] |1002| 
+        MOVW      DP,#_pi_iq+10         ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1081,column 2,is_stmt,isa 0
+        MOVL      @_pi_iq+10,ACC        ; [CPU_] |1081| 
+        MOVW      DP,#_pid_spd+22       ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1069,column 2,is_stmt,isa 0
+        MOV32     @_pid_spd+22,R4H      ; [CPU_] |1069| 
         MOVW      DP,#_pi_iq+12         ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1089,column 2,is_stmt,isa 0
-        MOV32     @_pi_iq+12,R3H        ; [CPU_] |1089| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1082,column 2,is_stmt,isa 0
+        MOV32     @_pi_iq+12,R3H        ; [CPU_] |1082| 
         MOVW      DP,#_Run_Delay        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1107,column 2,is_stmt,isa 0
-        MOVB      @_Run_Delay,#100,UNC  ; [CPU_] |1107| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1100,column 2,is_stmt,isa 0
+        MOVB      @_Run_Delay,#100,UNC  ; [CPU_] |1100| 
         MOVW      DP,#_rg1+2            ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1003,column 5,is_stmt,isa 0
-        MOVL      @_rg1+2,XAR0          ; [CPU_] |1003| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 996,column 5,is_stmt,isa 0
+        MOVL      @_rg1+2,XAR0          ; [CPU_] |996| 
         MOVW      DP,#_speed1+14        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 999,column 5,is_stmt,isa 0
-        MOVL      @_speed1+14,XAR6      ; [CPU_] |999| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1000,column 5,is_stmt,isa 0
-        MOVL      @_speed1+8,XAR4       ; [CPU_] |1000| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 992,column 5,is_stmt,isa 0
+        MOVL      @_speed1+14,XAR6      ; [CPU_] |992| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 993,column 5,is_stmt,isa 0
+        MOVL      @_speed1+8,XAR4       ; [CPU_] |993| 
         MOVW      DP,#_pid_pos+22       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1027,column 2,is_stmt,isa 0
-        MOV32     @_pid_pos+22,R0H      ; [CPU_] |1027| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1028,column 2,is_stmt,isa 0
-        MOV32     @_pid_pos+14,R1H      ; [CPU_] |1028| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1126,column 2,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1020,column 2,is_stmt,isa 0
+        MOV32     @_pid_pos+22,R0H      ; [CPU_] |1020| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1021,column 2,is_stmt,isa 0
+        MOV32     @_pid_pos+14,R1H      ; [CPU_] |1021| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1119,column 2,is_stmt,isa 0
 $C$DW$273	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$273, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$273, DW_AT_name("_HVDMC_Protection")
 	.dwattr $C$DW$273, DW_AT_TI_call
 
-        LCR       #_HVDMC_Protection    ; [CPU_] |1126| 
-        ; call occurs [#_HVDMC_Protection] ; [] |1126| 
+        LCR       #_HVDMC_Protection    ; [CPU_] |1119| 
+        ; call occurs [#_HVDMC_Protection] ; [] |1119| 
  EALLOW
         MOVW      DP,#_CpuSysRegs+35    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1135,column 4,is_stmt,isa 0
-        OR        @_CpuSysRegs+35,#0x0004 ; [CPU_] |1135| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1128,column 4,is_stmt,isa 0
+        OR        @_CpuSysRegs+35,#0x0004 ; [CPU_] |1128| 
  EDIS
         MOVW      DP,#_OffsetCalCounter ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1145,column 2,is_stmt,isa 0
-        ZERO      R3H                   ; [CPU_] |1145| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1146,column 2,is_stmt,isa 0
-        ZERO      R2H                   ; [CPU_] |1146| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1147,column 2,is_stmt,isa 0
-        ZERO      R1H                   ; [CPU_] |1147| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1138,column 2,is_stmt,isa 0
+        ZERO      R3H                   ; [CPU_] |1138| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1139,column 2,is_stmt,isa 0
+        ZERO      R2H                   ; [CPU_] |1139| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1140,column 2,is_stmt,isa 0
+        ZERO      R1H                   ; [CPU_] |1140| 
         SETC      SXM                   ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1148,column 2,is_stmt,isa 0
-        ZERO      R0H                   ; [CPU_] |1148| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1141,column 2,is_stmt,isa 0
+        ZERO      R0H                   ; [CPU_] |1141| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1131,column 2,is_stmt,isa 0
+        ZERO      R5H                   ; [CPU_] |1131| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1132,column 2,is_stmt,isa 0
+        ZERO      R4H                   ; [CPU_] |1132| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1143,column 7,is_stmt,isa 0
+        MOV       @_OffsetCalCounter,#0 ; [CPU_] |1143| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1138,column 2,is_stmt,isa 0
-        ZERO      R5H                   ; [CPU_] |1138| 
+        MOV32     @_offset_lemW,R3H     ; [CPU_] |1138| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1139,column 2,is_stmt,isa 0
-        ZERO      R4H                   ; [CPU_] |1139| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1150,column 7,is_stmt,isa 0
-        MOV       @_OffsetCalCounter,#0 ; [CPU_] |1150| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1145,column 2,is_stmt,isa 0
-        MOV32     @_offset_lemW,R3H     ; [CPU_] |1145| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1146,column 2,is_stmt,isa 0
-        MOV32     @_offset_lemV,R2H     ; [CPU_] |1146| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1147,column 2,is_stmt,isa 0
-        MOV32     @_offset_SDFM1,R1H    ; [CPU_] |1147| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1138,column 2,is_stmt,isa 0
-        MOV32     @_offset_Rsin,R5H     ; [CPU_] |1138| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1139,column 2,is_stmt,isa 0
-        MOV32     @_offset_Rcos,R4H     ; [CPU_] |1139| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1148,column 2,is_stmt,isa 0
-        MOV32     @_offset_SDFM2,R0H    ; [CPU_] |1148| 
+        MOV32     @_offset_lemV,R2H     ; [CPU_] |1139| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1140,column 2,is_stmt,isa 0
+        MOV32     @_offset_SDFM1,R1H    ; [CPU_] |1140| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1131,column 2,is_stmt,isa 0
+        MOV32     @_offset_Rsin,R5H     ; [CPU_] |1131| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1132,column 2,is_stmt,isa 0
+        MOV32     @_offset_Rcos,R4H     ; [CPU_] |1132| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1141,column 2,is_stmt,isa 0
+        MOV32     @_offset_SDFM2,R0H    ; [CPU_] |1141| 
 $C$L12:    
         MOVW      DP,#_EPwm11Regs+168   ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1152,column 3,is_stmt,isa 0
-        TBIT      @_EPwm11Regs+168,#0   ; [CPU_] |1152| 
-        B         $C$L14,NTC            ; [CPU_] |1152| 
-        ; branchcc occurs ; [] |1152| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1145,column 3,is_stmt,isa 0
+        TBIT      @_EPwm11Regs+168,#0   ; [CPU_] |1145| 
+        B         $C$L14,NTC            ; [CPU_] |1145| 
+        ; branchcc occurs ; [] |1145| 
         MOVW      DP,#_OffsetCalCounter ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1154,column 4,is_stmt,isa 0
-        CMP       @_OffsetCalCounter,#1000 ; [CPU_] |1154| 
-        B         $C$L13,LEQ            ; [CPU_] |1154| 
-        ; branchcc occurs ; [] |1154| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1156,column 5,is_stmt,isa 0
-        MOV       AL,*(0:0x5e17)        ; [CPU_] |1156| 
-        MOV       ACC,AL                ; [CPU_] |1156| 
-        MOV32     R0H,ACC               ; [CPU_] |1156| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1147,column 4,is_stmt,isa 0
+        CMP       @_OffsetCalCounter,#1000 ; [CPU_] |1147| 
+        B         $C$L13,LEQ            ; [CPU_] |1147| 
+        ; branchcc occurs ; [] |1147| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1149,column 5,is_stmt,isa 0
+        MOV       AL,*(0:0x5e17)        ; [CPU_] |1149| 
+        MOV       ACC,AL                ; [CPU_] |1149| 
+        MOV32     R0H,ACC               ; [CPU_] |1149| 
         NOP       ; [CPU_] 
         NOP       ; [CPU_] 
-        MOV32     R2H,@_K2              ; [CPU_] |1156| 
-        MOV32     R1H,@_K1              ; [CPU_] |1156| 
-        I32TOF32  R3H,R0H               ; [CPU_] |1156| 
-        MOV       *-SP[4],AL            ; [CPU_] |1156| 
+        MOV32     R2H,@_K2              ; [CPU_] |1149| 
+        MOV32     R1H,@_K1              ; [CPU_] |1149| 
+        I32TOF32  R3H,R0H               ; [CPU_] |1149| 
+        MOV       *-SP[4],AL            ; [CPU_] |1149| 
 
-        MPYF32    R2H,R2H,R3H           ; [CPU_] |1156| 
-||      MOV32     R7H,@_offset_SDFM1    ; [CPU_] |1156| 
+        MPYF32    R2H,R2H,R3H           ; [CPU_] |1149| 
+||      MOV32     R7H,@_offset_SDFM1    ; [CPU_] |1149| 
 
-        MPYF32    R0H,R7H,R1H           ; [CPU_] |1156| 
-        MPYF32    R1H,R2H,#14336        ; [CPU_] |1156| 
+        MPYF32    R0H,R7H,R1H           ; [CPU_] |1149| 
+        MPYF32    R1H,R2H,#14336        ; [CPU_] |1149| 
         NOP       ; [CPU_] 
-        ADDF32    R0H,R0H,R1H           ; [CPU_] |1156| 
+        ADDF32    R0H,R0H,R1H           ; [CPU_] |1149| 
         NOP       ; [CPU_] 
-        MOV32     @_offset_SDFM1,R0H    ; [CPU_] |1156| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1157,column 5,is_stmt,isa 0
-        MOV       AL,*(0:0x5e27)        ; [CPU_] |1157| 
-        MOV       ACC,AL                ; [CPU_] |1157| 
-        MOV32     R0H,ACC               ; [CPU_] |1157| 
+        MOV32     @_offset_SDFM1,R0H    ; [CPU_] |1149| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1150,column 5,is_stmt,isa 0
+        MOV       AL,*(0:0x5e27)        ; [CPU_] |1150| 
+        MOV       ACC,AL                ; [CPU_] |1150| 
+        MOV32     R0H,ACC               ; [CPU_] |1150| 
         NOP       ; [CPU_] 
-        MOV32     R6H,@_K2              ; [CPU_] |1157| 
-        MOV32     R5H,@_K1              ; [CPU_] |1157| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1165,column 5,is_stmt,isa 0
-        MOVL      XAR7,@_offset_Rsin    ; [CPU_] |1165| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1157,column 5,is_stmt,isa 0
-        I32TOF32  R3H,R0H               ; [CPU_] |1157| 
-        MOV       *-SP[4],AL            ; [CPU_] |1157| 
+        MOV32     R6H,@_K2              ; [CPU_] |1150| 
+        MOV32     R5H,@_K1              ; [CPU_] |1150| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1158,column 5,is_stmt,isa 0
+        MOVL      XAR7,@_offset_Rsin    ; [CPU_] |1158| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1150,column 5,is_stmt,isa 0
+        I32TOF32  R3H,R0H               ; [CPU_] |1150| 
+        MOV       *-SP[4],AL            ; [CPU_] |1150| 
 
-        MPYF32    R2H,R6H,R3H           ; [CPU_] |1157| 
-||      MOV32     R4H,@_offset_SDFM2    ; [CPU_] |1157| 
+        MPYF32    R2H,R6H,R3H           ; [CPU_] |1150| 
+||      MOV32     R4H,@_offset_SDFM2    ; [CPU_] |1150| 
 
-        MPYF32    R0H,R4H,R5H           ; [CPU_] |1157| 
-        MPYF32    R1H,R2H,#14336        ; [CPU_] |1157| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1165,column 5,is_stmt,isa 0
-        MOVL      XAR6,@_K1             ; [CPU_] |1165| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1157,column 5,is_stmt,isa 0
-        ADDF32    R0H,R0H,R1H           ; [CPU_] |1157| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1162,column 5,is_stmt,isa 0
-        MOV32     R4H,@_K2              ; [CPU_] |1162| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1157,column 5,is_stmt,isa 0
-        MOV32     @_offset_SDFM2,R0H    ; [CPU_] |1157| 
+        MPYF32    R0H,R4H,R5H           ; [CPU_] |1150| 
+        MPYF32    R1H,R2H,#14336        ; [CPU_] |1150| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1158,column 5,is_stmt,isa 0
+        MOVL      XAR6,@_K1             ; [CPU_] |1158| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1150,column 5,is_stmt,isa 0
+        ADDF32    R0H,R0H,R1H           ; [CPU_] |1150| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1155,column 5,is_stmt,isa 0
+        MOV32     R4H,@_K2              ; [CPU_] |1155| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1150,column 5,is_stmt,isa 0
+        MOV32     @_offset_SDFM2,R0H    ; [CPU_] |1150| 
         MOVW      DP,#_AdcaResultRegs+1 ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1162,column 5,is_stmt,isa 0
-        UI16TOF32 R2H,@_AdcaResultRegs+1 ; [CPU_] |1162| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1155,column 5,is_stmt,isa 0
+        UI16TOF32 R2H,@_AdcaResultRegs+1 ; [CPU_] |1155| 
         MOVW      DP,#_AdcbResultRegs+1 ; [CPU_U] 
-        MPYF32    R2H,R4H,R2H           ; [CPU_] |1162| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1163,column 5,is_stmt,isa 0
-        UI16TOF32 R0H,@_AdcbResultRegs+1 ; [CPU_] |1163| 
+        MPYF32    R2H,R4H,R2H           ; [CPU_] |1155| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1156,column 5,is_stmt,isa 0
+        UI16TOF32 R0H,@_AdcbResultRegs+1 ; [CPU_] |1156| 
         MOVW      DP,#_K1               ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1162,column 5,is_stmt,isa 0
-        MPYF32    R2H,R2H,#14720        ; [CPU_] |1162| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1155,column 5,is_stmt,isa 0
+        MPYF32    R2H,R2H,#14720        ; [CPU_] |1155| 
 
-        MPYF32    R3H,R6H,R0H           ; [CPU_] |1163| 
-||      MOV32     R7H,@_K1              ; [CPU_] |1162| 
+        MPYF32    R3H,R6H,R0H           ; [CPU_] |1156| 
+||      MOV32     R7H,@_K1              ; [CPU_] |1155| 
 
-        MOV32     R5H,@_offset_lemV     ; [CPU_] |1162| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1163,column 5,is_stmt,isa 0
-        MPYF32    R3H,R3H,#14720        ; [CPU_] |1163| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1165,column 5,is_stmt,isa 0
-        MOV32     R1H,@_K2              ; [CPU_] |1165| 
+        MOV32     R5H,@_offset_lemV     ; [CPU_] |1155| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1156,column 5,is_stmt,isa 0
+        MPYF32    R3H,R3H,#14720        ; [CPU_] |1156| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1158,column 5,is_stmt,isa 0
+        MOV32     R1H,@_K2              ; [CPU_] |1158| 
         MOVW      DP,#_AdcdResultRegs   ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1162,column 5,is_stmt,isa 0
-        MPYF32    R7H,R5H,R7H           ; [CPU_] |1162| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1163,column 5,is_stmt,isa 0
-        MOV32     XAR4,R3H              ; [CPU_] |1163| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1165,column 5,is_stmt,isa 0
-        UI16TOF32 R5H,@_AdcdResultRegs  ; [CPU_] |1165| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1155,column 5,is_stmt,isa 0
+        MPYF32    R7H,R5H,R7H           ; [CPU_] |1155| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1156,column 5,is_stmt,isa 0
+        MOV32     XAR4,R3H              ; [CPU_] |1156| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1158,column 5,is_stmt,isa 0
+        UI16TOF32 R5H,@_AdcdResultRegs  ; [CPU_] |1158| 
         MOVW      DP,#_AdccResultRegs   ; [CPU_U] 
-        MPYF32    R5H,R1H,R5H           ; [CPU_] |1165| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1166,column 5,is_stmt,isa 0
-        UI16TOF32 R3H,@_AdccResultRegs  ; [CPU_] |1166| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1165,column 5,is_stmt,isa 0
-        MOV32     R1H,XAR7              ; [CPU_] |1165| 
-        MOV32     R0H,XAR6              ; [CPU_] |1165| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1162,column 5,is_stmt,isa 0
-        MOV32     P,R2H                 ; [CPU_] |1162| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1165,column 5,is_stmt,isa 0
-        MOV32     R4H,P                 ; [CPU_] |1165| 
+        MPYF32    R5H,R1H,R5H           ; [CPU_] |1158| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1159,column 5,is_stmt,isa 0
+        UI16TOF32 R3H,@_AdccResultRegs  ; [CPU_] |1159| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1158,column 5,is_stmt,isa 0
+        MOV32     R1H,XAR7              ; [CPU_] |1158| 
+        MOV32     R0H,XAR6              ; [CPU_] |1158| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1155,column 5,is_stmt,isa 0
+        MOV32     P,R2H                 ; [CPU_] |1155| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1158,column 5,is_stmt,isa 0
+        MOV32     R4H,P                 ; [CPU_] |1158| 
         MOVW      DP,#_offset_Rcos      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1166,column 5,is_stmt,isa 0
-        MOVL      ACC,@_offset_Rcos     ; [CPU_] |1166| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1165,column 5,is_stmt,isa 0
-        MPYF32    R1H,R1H,R0H           ; [CPU_] |1165| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1162,column 5,is_stmt,isa 0
-        MOV32     R0H,ACC               ; [CPU_] |1162| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1159,column 5,is_stmt,isa 0
+        MOVL      ACC,@_offset_Rcos     ; [CPU_] |1159| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1158,column 5,is_stmt,isa 0
+        MPYF32    R1H,R1H,R0H           ; [CPU_] |1158| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1155,column 5,is_stmt,isa 0
+        MOV32     R0H,ACC               ; [CPU_] |1155| 
 
-        MOV32     R4H,@_K2              ; [CPU_] |1166| 
-||      ADDF32    R7H,R7H,R4H           ; [CPU_] |1162| 
+        MOV32     R4H,@_K2              ; [CPU_] |1159| 
+||      ADDF32    R7H,R7H,R4H           ; [CPU_] |1155| 
 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1163,column 5,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1156,column 5,is_stmt,isa 0
 
-        MPYF32    R3H,R4H,R3H           ; [CPU_] |1166| 
-||      MOV32     R2H,@_K1              ; [CPU_] |1163| 
+        MPYF32    R3H,R4H,R3H           ; [CPU_] |1159| 
+||      MOV32     R2H,@_K1              ; [CPU_] |1156| 
 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1165,column 5,is_stmt,isa 0
-        MPYF32    R4H,R5H,#14720        ; [CPU_] |1165| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1166,column 5,is_stmt,isa 0
-        MOV32     R5H,XAR4              ; [CPU_] |1166| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1163,column 5,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1158,column 5,is_stmt,isa 0
+        MPYF32    R4H,R5H,#14720        ; [CPU_] |1158| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1159,column 5,is_stmt,isa 0
+        MOV32     R5H,XAR4              ; [CPU_] |1159| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1156,column 5,is_stmt,isa 0
 
-        MPYF32    R0H,R0H,R2H           ; [CPU_] |1166| 
-||      MOV32     R6H,@_offset_lemW     ; [CPU_] |1163| 
+        MPYF32    R0H,R0H,R2H           ; [CPU_] |1159| 
+||      MOV32     R6H,@_offset_lemW     ; [CPU_] |1156| 
 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1166,column 5,is_stmt,isa 0
-        MPYF32    R3H,R3H,#14720        ; [CPU_] |1166| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1163,column 5,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1159,column 5,is_stmt,isa 0
+        MPYF32    R3H,R3H,#14720        ; [CPU_] |1159| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1156,column 5,is_stmt,isa 0
 
-        ADDF32    R1H,R1H,R4H           ; [CPU_] |1165| 
-||      MPYF32    R6H,R6H,R2H           ; [CPU_] |1163| 
+        ADDF32    R1H,R1H,R4H           ; [CPU_] |1158| 
+||      MPYF32    R6H,R6H,R2H           ; [CPU_] |1156| 
 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1162,column 5,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1155,column 5,is_stmt,isa 0
 
-        ADDF32    R0H,R0H,R3H           ; [CPU_] |1166| 
-||      MOV32     @_offset_lemV,R7H     ; [CPU_] |1162| 
+        ADDF32    R0H,R0H,R3H           ; [CPU_] |1159| 
+||      MOV32     @_offset_lemV,R7H     ; [CPU_] |1155| 
 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1163,column 5,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1156,column 5,is_stmt,isa 0
 
-        ADDF32    R2H,R5H,R6H           ; [CPU_] |1163| 
-||      MOV32     @_offset_Rsin,R1H     ; [CPU_] |1165| 
+        ADDF32    R2H,R5H,R6H           ; [CPU_] |1156| 
+||      MOV32     @_offset_Rsin,R1H     ; [CPU_] |1158| 
 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1166,column 5,is_stmt,isa 0
-        MOV32     @_offset_Rcos,R0H     ; [CPU_] |1166| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1163,column 5,is_stmt,isa 0
-        MOV32     @_offset_lemW,R2H     ; [CPU_] |1163| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1159,column 5,is_stmt,isa 0
+        MOV32     @_offset_Rcos,R0H     ; [CPU_] |1159| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1156,column 5,is_stmt,isa 0
+        MOV32     @_offset_lemW,R2H     ; [CPU_] |1156| 
 $C$L13:    
         MOVW      DP,#_EPwm11Regs+170   ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1168,column 4,is_stmt,isa 0
-        OR        @_EPwm11Regs+170,#0x0001 ; [CPU_] |1168| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1161,column 4,is_stmt,isa 0
+        OR        @_EPwm11Regs+170,#0x0001 ; [CPU_] |1161| 
         MOVW      DP,#_OffsetCalCounter ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1169,column 4,is_stmt,isa 0
-        INC       @_OffsetCalCounter    ; [CPU_] |1169| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1162,column 4,is_stmt,isa 0
+        INC       @_OffsetCalCounter    ; [CPU_] |1162| 
 $C$L14:    
         MOVW      DP,#_OffsetCalCounter ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1150,column 27,is_stmt,isa 0
-        CMP       @_OffsetCalCounter,#20000 ; [CPU_] |1150| 
-        B         $C$L12,LT             ; [CPU_] |1150| 
-        ; branchcc occurs ; [] |1150| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1143,column 27,is_stmt,isa 0
+        CMP       @_OffsetCalCounter,#20000 ; [CPU_] |1143| 
+        B         $C$L12,LT             ; [CPU_] |1143| 
+        ; branchcc occurs ; [] |1143| 
  EALLOW
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1182,column 2,is_stmt,isa 0
-        MOV32     R3H,@_offset_Rsin     ; [CPU_] |1182| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1184,column 2,is_stmt,isa 0
-        MOV32     R2H,@_offset_lemV     ; [CPU_] |1184| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1185,column 2,is_stmt,isa 0
-        MOV32     R1H,@_offset_lemW     ; [CPU_] |1185| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1181,column 2,is_stmt,isa 0
-        MPYF32    R0H,R0H,#17792        ; [CPU_] |1181| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1182,column 2,is_stmt,isa 0
-        MPYF32    R3H,R3H,#17792        ; [CPU_] |1182| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1184,column 2,is_stmt,isa 0
-        MPYF32    R2H,R2H,#17792        ; [CPU_] |1184| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1175,column 2,is_stmt,isa 0
+        MOV32     R3H,@_offset_Rsin     ; [CPU_] |1175| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1177,column 2,is_stmt,isa 0
+        MOV32     R2H,@_offset_lemV     ; [CPU_] |1177| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1178,column 2,is_stmt,isa 0
+        MOV32     R1H,@_offset_lemW     ; [CPU_] |1178| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1174,column 2,is_stmt,isa 0
+        MPYF32    R0H,R0H,#17792        ; [CPU_] |1174| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1175,column 2,is_stmt,isa 0
+        MPYF32    R3H,R3H,#17792        ; [CPU_] |1175| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1177,column 2,is_stmt,isa 0
+        MPYF32    R2H,R2H,#17792        ; [CPU_] |1177| 
         SPM       #0                    ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1185,column 2,is_stmt,isa 0
-        MPYF32    R1H,R1H,#17792        ; [CPU_] |1185| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1178,column 2,is_stmt,isa 0
+        MPYF32    R1H,R1H,#17792        ; [CPU_] |1178| 
         MOVW      DP,#_AdccRegs+67      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1181,column 2,is_stmt,isa 0
-        F32TOUI16 R0H,R0H               ; [CPU_] |1181| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1182,column 2,is_stmt,isa 0
-        F32TOUI16 R7H,R3H               ; [CPU_] |1182| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1184,column 2,is_stmt,isa 0
-        F32TOUI16 R6H,R2H               ; [CPU_] |1184| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1185,column 2,is_stmt,isa 0
-        F32TOUI16 R5H,R1H               ; [CPU_] |1185| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1181,column 2,is_stmt,isa 0
-        MOV32     ACC,R0H               ; [CPU_] |1181| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1182,column 2,is_stmt,isa 0
-        MOV32     P,R7H                 ; [CPU_] |1182| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1181,column 2,is_stmt,isa 0
-        MOV       @_AdccRegs+67,AL      ; [CPU_] |1181| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1184,column 2,is_stmt,isa 0
-        MOV32     XAR7,R6H              ; [CPU_] |1184| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1185,column 2,is_stmt,isa 0
-        MOV32     XAR6,R5H              ; [CPU_] |1185| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1174,column 2,is_stmt,isa 0
+        F32TOUI16 R0H,R0H               ; [CPU_] |1174| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1175,column 2,is_stmt,isa 0
+        F32TOUI16 R7H,R3H               ; [CPU_] |1175| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1177,column 2,is_stmt,isa 0
+        F32TOUI16 R6H,R2H               ; [CPU_] |1177| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1178,column 2,is_stmt,isa 0
+        F32TOUI16 R5H,R1H               ; [CPU_] |1178| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1174,column 2,is_stmt,isa 0
+        MOV32     ACC,R0H               ; [CPU_] |1174| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1175,column 2,is_stmt,isa 0
+        MOV32     P,R7H                 ; [CPU_] |1175| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1174,column 2,is_stmt,isa 0
+        MOV       @_AdccRegs+67,AL      ; [CPU_] |1174| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1177,column 2,is_stmt,isa 0
+        MOV32     XAR7,R6H              ; [CPU_] |1177| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1178,column 2,is_stmt,isa 0
+        MOV32     XAR6,R5H              ; [CPU_] |1178| 
         MOVW      DP,#_AdcdRegs+67      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1182,column 2,is_stmt,isa 0
-        MOV       @_AdcdRegs+67,P       ; [CPU_] |1182| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1175,column 2,is_stmt,isa 0
+        MOV       @_AdcdRegs+67,P       ; [CPU_] |1175| 
         MOVW      DP,#_AdcaRegs+75      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1184,column 2,is_stmt,isa 0
-        MOV       @_AdcaRegs+75,AR7     ; [CPU_] |1184| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1177,column 2,is_stmt,isa 0
+        MOV       @_AdcaRegs+75,AR7     ; [CPU_] |1177| 
         MOVW      DP,#_AdcbRegs+75      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1185,column 2,is_stmt,isa 0
-        MOV       @_AdcbRegs+75,AR6     ; [CPU_] |1185| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1178,column 2,is_stmt,isa 0
+        MOV       @_AdcbRegs+75,AR6     ; [CPU_] |1178| 
  EDIS
  EALLOW
         MOVW      DP,#_AdccRegs+7       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1201,column 2,is_stmt,isa 0
-        MOVB      XAR0,#164             ; [CPU_] |1201| 
-        MOVL      XAR4,#_EPwm11Regs     ; [CPU_U] |1201| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1196,column 2,is_stmt,isa 0
-        AND       @_AdccRegs+7,#0xfff0  ; [CPU_] |1196| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1206,column 2,is_stmt,isa 0
-        MOVL      XAR5,#_MotorControlISR ; [CPU_U] |1206| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1205,column 2,is_stmt,isa 0
-        MOVL      XAR6,#_ResolverISR    ; [CPU_U] |1205| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1197,column 2,is_stmt,isa 0
-        OR        @_AdccRegs+7,#0x0040  ; [CPU_] |1197| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1194,column 2,is_stmt,isa 0
+        MOVB      XAR0,#164             ; [CPU_] |1194| 
+        MOVL      XAR4,#_EPwm11Regs     ; [CPU_U] |1194| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1189,column 2,is_stmt,isa 0
+        AND       @_AdccRegs+7,#0xfff0  ; [CPU_] |1189| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1199,column 2,is_stmt,isa 0
+        MOVL      XAR5,#_MotorControlISR ; [CPU_U] |1199| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1198,column 2,is_stmt,isa 0
-        OR        @_AdccRegs+7,#0x0020  ; [CPU_] |1198| 
+        MOVL      XAR6,#_ResolverISR    ; [CPU_U] |1198| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1190,column 2,is_stmt,isa 0
+        OR        @_AdccRegs+7,#0x0040  ; [CPU_] |1190| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1191,column 2,is_stmt,isa 0
+        OR        @_AdccRegs+7,#0x0020  ; [CPU_] |1191| 
         MOVW      DP,#_EPwm11Regs+164   ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1201,column 2,is_stmt,isa 0
-        AND       AL,*+XAR4[AR0],#0xfffc ; [CPU_] |1201| 
-        ORB       AL,#0x04              ; [CPU_] |1201| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1203,column 2,is_stmt,isa 0
-        MOVB      XAR0,#166             ; [CPU_] |1203| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1201,column 2,is_stmt,isa 0
-        MOV       @_EPwm11Regs+164,AL   ; [CPU_] |1201| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1202,column 2,is_stmt,isa 0
-        OR        @_EPwm11Regs+164,#0x0008 ; [CPU_] |1202| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1203,column 2,is_stmt,isa 0
-        AND       AL,*+XAR4[AR0],#0xfffc ; [CPU_] |1203| 
-        ORB       AL,#0x01              ; [CPU_] |1203| 
-        MOV       @_EPwm11Regs+166,AL   ; [CPU_] |1203| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1194,column 2,is_stmt,isa 0
+        AND       AL,*+XAR4[AR0],#0xfffc ; [CPU_] |1194| 
+        ORB       AL,#0x04              ; [CPU_] |1194| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1196,column 2,is_stmt,isa 0
+        MOVB      XAR0,#166             ; [CPU_] |1196| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1194,column 2,is_stmt,isa 0
+        MOV       @_EPwm11Regs+164,AL   ; [CPU_] |1194| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1195,column 2,is_stmt,isa 0
+        OR        @_EPwm11Regs+164,#0x0008 ; [CPU_] |1195| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1196,column 2,is_stmt,isa 0
+        AND       AL,*+XAR4[AR0],#0xfffc ; [CPU_] |1196| 
+        ORB       AL,#0x01              ; [CPU_] |1196| 
+        MOV       @_EPwm11Regs+166,AL   ; [CPU_] |1196| 
         MOVW      DP,#_PieVectTable+68  ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1214,column 2,is_stmt,isa 0
-        MOVL      ACC,XAR4              ; [CPU_] |1214| 
-        ADDB      ACC,#170              ; [CPU_] |1214| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1205,column 2,is_stmt,isa 0
-        MOVL      @_PieVectTable+68,XAR6 ; [CPU_] |1205| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1214,column 2,is_stmt,isa 0
-        MOVL      XAR4,ACC              ; [CPU_] |1214| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1207,column 2,is_stmt,isa 0
+        MOVL      ACC,XAR4              ; [CPU_] |1207| 
+        ADDB      ACC,#170              ; [CPU_] |1207| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1198,column 2,is_stmt,isa 0
+        MOVL      @_PieVectTable+68,XAR6 ; [CPU_] |1198| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1207,column 2,is_stmt,isa 0
+        MOVL      XAR4,ACC              ; [CPU_] |1207| 
         MOVW      DP,#_PieVectTable+292 ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1206,column 2,is_stmt,isa 0
-        MOVL      @_PieVectTable+292,XAR5 ; [CPU_] |1206| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1199,column 2,is_stmt,isa 0
+        MOVL      @_PieVectTable+292,XAR5 ; [CPU_] |1199| 
         MOVW      DP,#_PieCtrlRegs+6    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1208,column 2,is_stmt,isa 0
-        OR        @_PieCtrlRegs+6,#0x0400 ; [CPU_] |1208| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1214,column 2,is_stmt,isa 0
-        OR        *+XAR4[0],#0x0001     ; [CPU_] |1214| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1216,column 2,is_stmt,isa 0
-        OR        IER,#0x0004           ; [CPU_] |1216| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1217,column 2,is_stmt,isa 0
-        OR        IER,#0x0001           ; [CPU_] |1217| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1201,column 2,is_stmt,isa 0
+        OR        @_PieCtrlRegs+6,#0x0400 ; [CPU_] |1201| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1207,column 2,is_stmt,isa 0
+        OR        *+XAR4[0],#0x0001     ; [CPU_] |1207| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1209,column 2,is_stmt,isa 0
+        OR        IER,#0x0004           ; [CPU_] |1209| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1210,column 2,is_stmt,isa 0
+        OR        IER,#0x0001           ; [CPU_] |1210| 
  clrc INTM
  clrc DBGM
  EDIS
 $C$L15:    
         MOVW      DP,#_Alpha_State_Ptr  ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1230,column 3,is_stmt,isa 0
-        MOVL      XAR7,@_Alpha_State_Ptr ; [CPU_] |1230| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1223,column 3,is_stmt,isa 0
+        MOVL      XAR7,@_Alpha_State_Ptr ; [CPU_] |1223| 
         SPM       #0                    ; [CPU_] 
 $C$DW$274	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$274, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$274, DW_AT_TI_call
 	.dwattr $C$DW$274, DW_AT_TI_indirect
 
-        LCR       *XAR7                 ; [CPU_] |1230| 
-        ; call occurs [XAR7] ; [] |1230| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1232,column 2,is_stmt,isa 0
-        B         $C$L15,UNC            ; [CPU_] |1232| 
-        ; branch occurs ; [] |1232| 
+        LCR       *XAR7                 ; [CPU_] |1223| 
+        ; call occurs [XAR7] ; [] |1223| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1225,column 2,is_stmt,isa 0
+        B         $C$L15,UNC            ; [CPU_] |1225| 
+        ; branch occurs ; [] |1225| 
 	.dwattr $C$DW$214, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$214, DW_AT_TI_end_line(0x4d1)
+	.dwattr $C$DW$214, DW_AT_TI_end_line(0x4ca)
 	.dwattr $C$DW$214, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$214
@@ -4296,10 +4296,10 @@ $C$DW$275	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$275, DW_AT_TI_symbol_name("_A0")
 	.dwattr $C$DW$275, DW_AT_external
 	.dwattr $C$DW$275, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$275, DW_AT_TI_begin_line(0x4de)
+	.dwattr $C$DW$275, DW_AT_TI_begin_line(0x4d7)
 	.dwattr $C$DW$275, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$275, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1247,column 1,is_stmt,address _A0,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1240,column 1,is_stmt,address _A0,isa 0
 
 	.dwfde $C$DW$CIE, _A0
 
@@ -4316,35 +4316,35 @@ _A0:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
         MOVW      DP,#_CpuTimer0Regs+4  ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1249,column 2,is_stmt,isa 0
-        TBIT      @_CpuTimer0Regs+4,#15 ; [CPU_] |1249| 
-        B         $C$L16,NTC            ; [CPU_] |1249| 
-        ; branchcc occurs ; [] |1249| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1242,column 2,is_stmt,isa 0
+        TBIT      @_CpuTimer0Regs+4,#15 ; [CPU_] |1242| 
+        B         $C$L16,NTC            ; [CPU_] |1242| 
+        ; branchcc occurs ; [] |1242| 
         MOVW      DP,#_A_Task_Ptr       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1254,column 3,is_stmt,isa 0
-        MOVL      XAR7,@_A_Task_Ptr     ; [CPU_] |1254| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1247,column 3,is_stmt,isa 0
+        MOVL      XAR7,@_A_Task_Ptr     ; [CPU_] |1247| 
         MOVW      DP,#_CpuTimer0Regs+4  ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1251,column 3,is_stmt,isa 0
-        OR        @_CpuTimer0Regs+4,#0x8000 ; [CPU_] |1251| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1254,column 3,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1244,column 3,is_stmt,isa 0
+        OR        @_CpuTimer0Regs+4,#0x8000 ; [CPU_] |1244| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1247,column 3,is_stmt,isa 0
 $C$DW$276	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$276, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$276, DW_AT_TI_call
 	.dwattr $C$DW$276, DW_AT_TI_indirect
 
-        LCR       *XAR7                 ; [CPU_] |1254| 
-        ; call occurs [XAR7] ; [] |1254| 
+        LCR       *XAR7                 ; [CPU_] |1247| 
+        ; call occurs [XAR7] ; [] |1247| 
         MOVW      DP,#_VTimer0          ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1257,column 3,is_stmt,isa 0
-        INC       @_VTimer0             ; [CPU_] |1257| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1250,column 3,is_stmt,isa 0
+        INC       @_VTimer0             ; [CPU_] |1250| 
         MOVW      DP,#_SerialCommsTimer ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1258,column 3,is_stmt,isa 0
-        INC       @_SerialCommsTimer    ; [CPU_] |1258| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1251,column 3,is_stmt,isa 0
+        INC       @_SerialCommsTimer    ; [CPU_] |1251| 
 $C$L16:    
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1261,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_B0             ; [CPU_U] |1261| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1254,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_B0             ; [CPU_U] |1254| 
         MOVW      DP,#_Alpha_State_Ptr  ; [CPU_U] 
-        MOVL      @_Alpha_State_Ptr,XAR4 ; [CPU_] |1261| 
+        MOVL      @_Alpha_State_Ptr,XAR4 ; [CPU_] |1254| 
 $C$DW$277	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$277, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$277, DW_AT_TI_return
@@ -4352,7 +4352,7 @@ $C$DW$277	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$275, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$275, DW_AT_TI_end_line(0x4ee)
+	.dwattr $C$DW$275, DW_AT_TI_end_line(0x4e7)
 	.dwattr $C$DW$275, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$275
@@ -4368,10 +4368,10 @@ $C$DW$278	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$278, DW_AT_TI_symbol_name("_B0")
 	.dwattr $C$DW$278, DW_AT_external
 	.dwattr $C$DW$278, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$278, DW_AT_TI_begin_line(0x4f0)
+	.dwattr $C$DW$278, DW_AT_TI_begin_line(0x4e9)
 	.dwattr $C$DW$278, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$278, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1265,column 1,is_stmt,address _B0,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1258,column 1,is_stmt,address _B0,isa 0
 
 	.dwfde $C$DW$CIE, _B0
 
@@ -4388,32 +4388,32 @@ _B0:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
         MOVW      DP,#_CpuTimer1Regs+4  ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1267,column 2,is_stmt,isa 0
-        TBIT      @_CpuTimer1Regs+4,#15 ; [CPU_] |1267| 
-        B         $C$L17,NTC            ; [CPU_] |1267| 
-        ; branchcc occurs ; [] |1267| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1260,column 2,is_stmt,isa 0
+        TBIT      @_CpuTimer1Regs+4,#15 ; [CPU_] |1260| 
+        B         $C$L17,NTC            ; [CPU_] |1260| 
+        ; branchcc occurs ; [] |1260| 
         MOVW      DP,#_B_Task_Ptr       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1272,column 3,is_stmt,isa 0
-        MOVL      XAR7,@_B_Task_Ptr     ; [CPU_] |1272| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1265,column 3,is_stmt,isa 0
+        MOVL      XAR7,@_B_Task_Ptr     ; [CPU_] |1265| 
         MOVW      DP,#_CpuTimer1Regs+4  ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1269,column 3,is_stmt,isa 0
-        OR        @_CpuTimer1Regs+4,#0x8000 ; [CPU_] |1269| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1272,column 3,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1262,column 3,is_stmt,isa 0
+        OR        @_CpuTimer1Regs+4,#0x8000 ; [CPU_] |1262| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1265,column 3,is_stmt,isa 0
 $C$DW$279	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$279, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$279, DW_AT_TI_call
 	.dwattr $C$DW$279, DW_AT_TI_indirect
 
-        LCR       *XAR7                 ; [CPU_] |1272| 
-        ; call occurs [XAR7] ; [] |1272| 
+        LCR       *XAR7                 ; [CPU_] |1265| 
+        ; call occurs [XAR7] ; [] |1265| 
         MOVW      DP,#_VTimer1          ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1274,column 3,is_stmt,isa 0
-        INC       @_VTimer1             ; [CPU_] |1274| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1267,column 3,is_stmt,isa 0
+        INC       @_VTimer1             ; [CPU_] |1267| 
 $C$L17:    
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1277,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_C0             ; [CPU_U] |1277| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1270,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_C0             ; [CPU_U] |1270| 
         MOVW      DP,#_Alpha_State_Ptr  ; [CPU_U] 
-        MOVL      @_Alpha_State_Ptr,XAR4 ; [CPU_] |1277| 
+        MOVL      @_Alpha_State_Ptr,XAR4 ; [CPU_] |1270| 
 $C$DW$280	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$280, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$280, DW_AT_TI_return
@@ -4421,7 +4421,7 @@ $C$DW$280	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$278, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$278, DW_AT_TI_end_line(0x4fe)
+	.dwattr $C$DW$278, DW_AT_TI_end_line(0x4f7)
 	.dwattr $C$DW$278, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$278
@@ -4437,10 +4437,10 @@ $C$DW$281	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$281, DW_AT_TI_symbol_name("_C0")
 	.dwattr $C$DW$281, DW_AT_external
 	.dwattr $C$DW$281, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$281, DW_AT_TI_begin_line(0x500)
+	.dwattr $C$DW$281, DW_AT_TI_begin_line(0x4f9)
 	.dwattr $C$DW$281, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$281, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1281,column 1,is_stmt,address _C0,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1274,column 1,is_stmt,address _C0,isa 0
 
 	.dwfde $C$DW$CIE, _C0
 
@@ -4457,32 +4457,32 @@ _C0:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
         MOVW      DP,#_CpuTimer2Regs+4  ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1283,column 2,is_stmt,isa 0
-        TBIT      @_CpuTimer2Regs+4,#15 ; [CPU_] |1283| 
-        B         $C$L18,NTC            ; [CPU_] |1283| 
-        ; branchcc occurs ; [] |1283| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1276,column 2,is_stmt,isa 0
+        TBIT      @_CpuTimer2Regs+4,#15 ; [CPU_] |1276| 
+        B         $C$L18,NTC            ; [CPU_] |1276| 
+        ; branchcc occurs ; [] |1276| 
         MOVW      DP,#_C_Task_Ptr       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1288,column 3,is_stmt,isa 0
-        MOVL      XAR7,@_C_Task_Ptr     ; [CPU_] |1288| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1281,column 3,is_stmt,isa 0
+        MOVL      XAR7,@_C_Task_Ptr     ; [CPU_] |1281| 
         MOVW      DP,#_CpuTimer2Regs+4  ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1285,column 3,is_stmt,isa 0
-        OR        @_CpuTimer2Regs+4,#0x8000 ; [CPU_] |1285| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1288,column 3,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1278,column 3,is_stmt,isa 0
+        OR        @_CpuTimer2Regs+4,#0x8000 ; [CPU_] |1278| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1281,column 3,is_stmt,isa 0
 $C$DW$282	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$282, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$282, DW_AT_TI_call
 	.dwattr $C$DW$282, DW_AT_TI_indirect
 
-        LCR       *XAR7                 ; [CPU_] |1288| 
-        ; call occurs [XAR7] ; [] |1288| 
+        LCR       *XAR7                 ; [CPU_] |1281| 
+        ; call occurs [XAR7] ; [] |1281| 
         MOVW      DP,#_VTimer2          ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1290,column 3,is_stmt,isa 0
-        INC       @_VTimer2             ; [CPU_] |1290| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1283,column 3,is_stmt,isa 0
+        INC       @_VTimer2             ; [CPU_] |1283| 
 $C$L18:    
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1293,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_A0             ; [CPU_U] |1293| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1286,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_A0             ; [CPU_U] |1286| 
         MOVW      DP,#_Alpha_State_Ptr  ; [CPU_U] 
-        MOVL      @_Alpha_State_Ptr,XAR4 ; [CPU_] |1293| 
+        MOVL      @_Alpha_State_Ptr,XAR4 ; [CPU_] |1286| 
 $C$DW$283	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$283, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$283, DW_AT_TI_return
@@ -4490,7 +4490,7 @@ $C$DW$283	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$281, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$281, DW_AT_TI_end_line(0x50e)
+	.dwattr $C$DW$281, DW_AT_TI_end_line(0x507)
 	.dwattr $C$DW$281, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$281
@@ -4506,10 +4506,10 @@ $C$DW$284	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$284, DW_AT_TI_symbol_name("_CMPSS_DIG_FILTER")
 	.dwattr $C$DW$284, DW_AT_external
 	.dwattr $C$DW$284, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$284, DW_AT_TI_begin_line(0x516)
+	.dwattr $C$DW$284, DW_AT_TI_begin_line(0x50f)
 	.dwattr $C$DW$284, DW_AT_TI_begin_column(0x07)
 	.dwattr $C$DW$284, DW_AT_TI_max_frame_size(-4)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1303,column 1,is_stmt,address _CMPSS_DIG_FILTER,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1296,column 1,is_stmt,address _CMPSS_DIG_FILTER,isa 0
 
 	.dwfde $C$DW$CIE, _CMPSS_DIG_FILTER
 $C$DW$285	.dwtag  DW_TAG_formal_parameter
@@ -4570,75 +4570,75 @@ $C$DW$290	.dwtag  DW_TAG_variable
         MOVL      *SP++,XAR1            ; [CPU_] 
 	.dwcfi	save_reg_to_mem, 7, 2
 	.dwcfi	cfa_offset, -4
-        MOVZ      AR6,AH                ; [CPU_] |1303| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1305,column 2,is_stmt,isa 0
-        AND       AL,AL,#0x0fff         ; [CPU_] |1305| 
-        AND       AH,*+XAR4[6],#0xf000  ; [CPU_] |1305| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1306,column 2,is_stmt,isa 0
-        MOVB      XAR0,#18              ; [CPU_] |1306| 
-        MOVB      XAR1,#18              ; [CPU_] |1306| 
+        MOVZ      AR6,AH                ; [CPU_] |1296| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1298,column 2,is_stmt,isa 0
+        AND       AL,AL,#0x0fff         ; [CPU_] |1298| 
+        AND       AH,*+XAR4[6],#0xf000  ; [CPU_] |1298| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1299,column 2,is_stmt,isa 0
+        MOVB      XAR0,#18              ; [CPU_] |1299| 
+        MOVB      XAR1,#18              ; [CPU_] |1299| 
         MOVW      DP,#_clkPrescale      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1305,column 2,is_stmt,isa 0
-        OR        AL,AH                 ; [CPU_] |1305| 
-        MOV       *+XAR4[6],AL          ; [CPU_] |1305| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1306,column 2,is_stmt,isa 0
-        AND       AL,AR6,#0x0fff        ; [CPU_] |1306| 
-        AND       AH,*+XAR4[AR0],#0xf000 ; [CPU_] |1306| 
-        OR        AL,AH                 ; [CPU_] |1306| 
-        MOV       *+XAR4[AR1],AL        ; [CPU_] |1306| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1298,column 2,is_stmt,isa 0
+        OR        AL,AH                 ; [CPU_] |1298| 
+        MOV       *+XAR4[6],AL          ; [CPU_] |1298| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1299,column 2,is_stmt,isa 0
+        AND       AL,AR6,#0x0fff        ; [CPU_] |1299| 
+        AND       AH,*+XAR4[AR0],#0xf000 ; [CPU_] |1299| 
+        OR        AL,AH                 ; [CPU_] |1299| 
+        MOV       *+XAR4[AR1],AL        ; [CPU_] |1299| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1302,column 2,is_stmt,isa 0
+        AND       AL,@_clkPrescale,#0x03ff ; [CPU_] |1302| 
+        MOVZ      AR6,AL                ; [CPU_] |1302| 
+        MOVB      XAR0,#25              ; [CPU_] |1302| 
+        AND       AL,*+XAR4[AR0],#0xfc00 ; [CPU_] |1302| 
+        MOVB      XAR0,#25              ; [CPU_] |1302| 
+        OR        AL,AR6                ; [CPU_] |1302| 
+        MOV       *+XAR4[AR0],AL        ; [CPU_] |1302| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1303,column 2,is_stmt,isa 0
+        MOVB      XAR0,#24              ; [CPU_] |1303| 
+        MOV       AL,@_sampwin          ; [CPU_] |1303| 
+        ANDB      AL,#0x1f              ; [CPU_] |1303| 
+        MOV       ACC,AL << #4          ; [CPU_] |1303| 
+        MOVZ      AR7,AL                ; [CPU_] |1303| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1304,column 2,is_stmt,isa 0
+        MOVB      XAR1,#24              ; [CPU_] |1304| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1303,column 2,is_stmt,isa 0
+        AND       AH,*+XAR4[AR0],#0xfe0f ; [CPU_] |1303| 
+        MOVB      XAR0,#24              ; [CPU_] |1303| 
+        OR        AH,AR7                ; [CPU_] |1303| 
+        MOV       *+XAR4[AR0],AH        ; [CPU_] |1303| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1304,column 2,is_stmt,isa 0
+        MOVB      XAR0,#24              ; [CPU_] |1304| 
+        MOV       AH,@_thresh           ; [CPU_] |1304| 
+        ANDB      AH,#0x1f              ; [CPU_] |1304| 
+        MOV       ACC,AH << #9          ; [CPU_] |1304| 
+        AND       AH,*+XAR4[AR0],#0xc1ff ; [CPU_] |1304| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1307,column 2,is_stmt,isa 0
+        MOVB      XAR0,#23              ; [CPU_] |1307| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1304,column 2,is_stmt,isa 0
+        OR        AH,AL                 ; [CPU_] |1304| 
+        MOV       *+XAR4[AR1],AH        ; [CPU_] |1304| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1307,column 2,is_stmt,isa 0
+        MOVB      XAR1,#23              ; [CPU_] |1307| 
+        AND       AH,*+XAR4[AR0],#0xfc00 ; [CPU_] |1307| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1308,column 2,is_stmt,isa 0
+        MOVB      XAR0,#22              ; [CPU_] |1308| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1307,column 2,is_stmt,isa 0
+        OR        AH,AR6                ; [CPU_] |1307| 
+        MOV       *+XAR4[AR1],AH        ; [CPU_] |1307| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1308,column 2,is_stmt,isa 0
+        MOVB      XAR1,#22              ; [CPU_] |1308| 
+        AND       AH,*+XAR4[AR0],#0xfe0f ; [CPU_] |1308| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1309,column 2,is_stmt,isa 0
-        AND       AL,@_clkPrescale,#0x03ff ; [CPU_] |1309| 
-        MOVZ      AR6,AL                ; [CPU_] |1309| 
-        MOVB      XAR0,#25              ; [CPU_] |1309| 
-        AND       AL,*+XAR4[AR0],#0xfc00 ; [CPU_] |1309| 
-        MOVB      XAR0,#25              ; [CPU_] |1309| 
-        OR        AL,AR6                ; [CPU_] |1309| 
-        MOV       *+XAR4[AR0],AL        ; [CPU_] |1309| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1310,column 2,is_stmt,isa 0
-        MOVB      XAR0,#24              ; [CPU_] |1310| 
-        MOV       AL,@_sampwin          ; [CPU_] |1310| 
-        ANDB      AL,#0x1f              ; [CPU_] |1310| 
-        MOV       ACC,AL << #4          ; [CPU_] |1310| 
-        MOVZ      AR7,AL                ; [CPU_] |1310| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1311,column 2,is_stmt,isa 0
-        MOVB      XAR1,#24              ; [CPU_] |1311| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1310,column 2,is_stmt,isa 0
-        AND       AH,*+XAR4[AR0],#0xfe0f ; [CPU_] |1310| 
-        MOVB      XAR0,#24              ; [CPU_] |1310| 
-        OR        AH,AR7                ; [CPU_] |1310| 
-        MOV       *+XAR4[AR0],AH        ; [CPU_] |1310| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1311,column 2,is_stmt,isa 0
-        MOVB      XAR0,#24              ; [CPU_] |1311| 
-        MOV       AH,@_thresh           ; [CPU_] |1311| 
-        ANDB      AH,#0x1f              ; [CPU_] |1311| 
-        MOV       ACC,AH << #9          ; [CPU_] |1311| 
-        AND       AH,*+XAR4[AR0],#0xc1ff ; [CPU_] |1311| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1314,column 2,is_stmt,isa 0
-        MOVB      XAR0,#23              ; [CPU_] |1314| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1311,column 2,is_stmt,isa 0
-        OR        AH,AL                 ; [CPU_] |1311| 
-        MOV       *+XAR4[AR1],AH        ; [CPU_] |1311| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1314,column 2,is_stmt,isa 0
-        MOVB      XAR1,#23              ; [CPU_] |1314| 
-        AND       AH,*+XAR4[AR0],#0xfc00 ; [CPU_] |1314| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1315,column 2,is_stmt,isa 0
-        MOVB      XAR0,#22              ; [CPU_] |1315| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1314,column 2,is_stmt,isa 0
-        OR        AH,AR6                ; [CPU_] |1314| 
-        MOV       *+XAR4[AR1],AH        ; [CPU_] |1314| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1315,column 2,is_stmt,isa 0
-        MOVB      XAR1,#22              ; [CPU_] |1315| 
-        AND       AH,*+XAR4[AR0],#0xfe0f ; [CPU_] |1315| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1316,column 2,is_stmt,isa 0
-        MOVB      XAR0,#22              ; [CPU_] |1316| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1315,column 2,is_stmt,isa 0
-        OR        AH,AR7                ; [CPU_] |1315| 
-        MOV       *+XAR4[AR1],AH        ; [CPU_] |1315| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1316,column 2,is_stmt,isa 0
-        AND       AH,*+XAR4[AR0],#0xc1ff ; [CPU_] |1316| 
-        MOVB      XAR0,#22              ; [CPU_] |1316| 
-        OR        AH,AL                 ; [CPU_] |1316| 
-        MOV       *+XAR4[AR0],AH        ; [CPU_] |1316| 
+        MOVB      XAR0,#22              ; [CPU_] |1309| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1308,column 2,is_stmt,isa 0
+        OR        AH,AR7                ; [CPU_] |1308| 
+        MOV       *+XAR4[AR1],AH        ; [CPU_] |1308| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1309,column 2,is_stmt,isa 0
+        AND       AH,*+XAR4[AR0],#0xc1ff ; [CPU_] |1309| 
+        MOVB      XAR0,#22              ; [CPU_] |1309| 
+        OR        AH,AL                 ; [CPU_] |1309| 
+        MOV       *+XAR4[AR0],AH        ; [CPU_] |1309| 
         MOVL      XAR1,*--SP            ; [CPU_] 
 	.dwcfi	cfa_offset, -2
 	.dwcfi	restore_reg, 7
@@ -4649,7 +4649,7 @@ $C$DW$291	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$284, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$284, DW_AT_TI_end_line(0x527)
+	.dwattr $C$DW$284, DW_AT_TI_end_line(0x520)
 	.dwattr $C$DW$284, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$284
@@ -4665,10 +4665,10 @@ $C$DW$292	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$292, DW_AT_TI_symbol_name("_A1")
 	.dwattr $C$DW$292, DW_AT_external
 	.dwattr $C$DW$292, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$292, DW_AT_TI_begin_line(0x52a)
+	.dwattr $C$DW$292, DW_AT_TI_begin_line(0x523)
 	.dwattr $C$DW$292, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$292, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1324,column 1,is_stmt,address _A1,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1317,column 1,is_stmt,address _A1,isa 0
 
 	.dwfde $C$DW$CIE, _A1
 
@@ -4690,184 +4690,184 @@ _A1:
 	.dwcfi	save_reg_to_mem, 26, 0
  EALLOW
         MOVW      DP,#_curLimit         ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1329,column 4,is_stmt,isa 0
-        MOVIZ     R2H,#15786            ; [CPU_] |1329| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1331,column 4,is_stmt,isa 0
-        MOVIZ     R0H,#15821            ; [CPU_] |1331| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1329,column 4,is_stmt,isa 0
-        MOV32     R1H,@_curLimit        ; [CPU_] |1329| 
-        MOVXI     R2H,#43691            ; [CPU_] |1329| 
-        MPYF32    R1H,R1H,#17664        ; [CPU_] |1329| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1331,column 4,is_stmt,isa 0
-        MOVXI     R0H,#54339            ; [CPU_] |1331| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1329,column 4,is_stmt,isa 0
-        MPYF32    R2H,R2H,R1H           ; [CPU_] |1329| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1331,column 4,is_stmt,isa 0
-        MPYF32    R1H,R0H,R1H           ; [CPU_] |1331| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1329,column 4,is_stmt,isa 0
-        ADDF32    R0H,R2H,#17664        ; [CPU_] |1329| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1322,column 4,is_stmt,isa 0
+        MOVIZ     R2H,#15786            ; [CPU_] |1322| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1324,column 4,is_stmt,isa 0
+        MOVIZ     R0H,#15821            ; [CPU_] |1324| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1322,column 4,is_stmt,isa 0
+        MOV32     R1H,@_curLimit        ; [CPU_] |1322| 
+        MOVXI     R2H,#43691            ; [CPU_] |1322| 
+        MPYF32    R1H,R1H,#17664        ; [CPU_] |1322| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1324,column 4,is_stmt,isa 0
+        MOVXI     R0H,#54339            ; [CPU_] |1324| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1322,column 4,is_stmt,isa 0
+        MPYF32    R2H,R2H,R1H           ; [CPU_] |1322| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1324,column 4,is_stmt,isa 0
+        MPYF32    R1H,R0H,R1H           ; [CPU_] |1324| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1322,column 4,is_stmt,isa 0
+        ADDF32    R0H,R2H,#17664        ; [CPU_] |1322| 
         NOP       ; [CPU_] 
-        F32TOUI16 R0H,R0H               ; [CPU_] |1329| 
+        F32TOUI16 R0H,R0H               ; [CPU_] |1322| 
         NOP       ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1330,column 4,is_stmt,isa 0
-        SUBF32    R3H,#17664,R2H        ; [CPU_] |1330| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1329,column 4,is_stmt,isa 0
-        MOV32     ACC,R0H               ; [CPU_] |1329| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1330,column 4,is_stmt,isa 0
-        F32TOUI16 R0H,R3H               ; [CPU_] |1330| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1323,column 4,is_stmt,isa 0
+        SUBF32    R3H,#17664,R2H        ; [CPU_] |1323| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1322,column 4,is_stmt,isa 0
+        MOV32     ACC,R0H               ; [CPU_] |1322| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1323,column 4,is_stmt,isa 0
+        F32TOUI16 R0H,R3H               ; [CPU_] |1323| 
         SPM       #0                    ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1331,column 4,is_stmt,isa 0
-        ADDF32    R2H,R1H,#17664        ; [CPU_] |1331| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1330,column 4,is_stmt,isa 0
-        MOV32     P,R0H                 ; [CPU_] |1330| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1331,column 4,is_stmt,isa 0
-        F32TOUI16 R0H,R2H               ; [CPU_] |1331| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1324,column 4,is_stmt,isa 0
+        ADDF32    R2H,R1H,#17664        ; [CPU_] |1324| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1323,column 4,is_stmt,isa 0
+        MOV32     P,R0H                 ; [CPU_] |1323| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1324,column 4,is_stmt,isa 0
+        F32TOUI16 R0H,R2H               ; [CPU_] |1324| 
         MOVW      DP,#_LEM_curLo        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1332,column 4,is_stmt,isa 0
-        SUBF32    R1H,#17664,R1H        ; [CPU_] |1332| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1331,column 4,is_stmt,isa 0
-        MOV32     XAR6,R0H              ; [CPU_] |1331| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1332,column 4,is_stmt,isa 0
-        F32TOUI16 R0H,R1H               ; [CPU_] |1332| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1329,column 4,is_stmt,isa 0
-        MOV       @_LEM_curHi,AL        ; [CPU_] |1329| 
-        MOV       AH,PL                 ; [CPU_] |1329| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1332,column 4,is_stmt,isa 0
-        MOV32     XAR7,R0H              ; [CPU_] |1332| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1330,column 4,is_stmt,isa 0
-        MOV       @_LEM_curLo,P         ; [CPU_] |1330| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1331,column 4,is_stmt,isa 0
-        MOV       @_SHUNT_curHi,AR6     ; [CPU_] |1331| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1334,column 4,is_stmt,isa 0
-        MOVL      XAR4,#_Cmpss1Regs     ; [CPU_U] |1334| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1332,column 4,is_stmt,isa 0
-        MOV       @_SHUNT_curLo,AR7     ; [CPU_] |1332| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1334,column 4,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1325,column 4,is_stmt,isa 0
+        SUBF32    R1H,#17664,R1H        ; [CPU_] |1325| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1324,column 4,is_stmt,isa 0
+        MOV32     XAR6,R0H              ; [CPU_] |1324| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1325,column 4,is_stmt,isa 0
+        F32TOUI16 R0H,R1H               ; [CPU_] |1325| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1322,column 4,is_stmt,isa 0
+        MOV       @_LEM_curHi,AL        ; [CPU_] |1322| 
+        MOV       AH,PL                 ; [CPU_] |1322| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1325,column 4,is_stmt,isa 0
+        MOV32     XAR7,R0H              ; [CPU_] |1325| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1323,column 4,is_stmt,isa 0
+        MOV       @_LEM_curLo,P         ; [CPU_] |1323| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1324,column 4,is_stmt,isa 0
+        MOV       @_SHUNT_curHi,AR6     ; [CPU_] |1324| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1327,column 4,is_stmt,isa 0
+        MOVL      XAR4,#_Cmpss1Regs     ; [CPU_U] |1327| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1325,column 4,is_stmt,isa 0
+        MOV       @_SHUNT_curLo,AR7     ; [CPU_] |1325| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1327,column 4,is_stmt,isa 0
 $C$DW$293	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$293, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$293, DW_AT_name("_CMPSS_DIG_FILTER")
 	.dwattr $C$DW$293, DW_AT_TI_call
 
-        LCR       #_CMPSS_DIG_FILTER    ; [CPU_] |1334| 
-        ; call occurs [#_CMPSS_DIG_FILTER] ; [] |1334| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1335,column 4,is_stmt,isa 0
-        MOV       AL,@_LEM_curHi        ; [CPU_] |1335| 
-        MOV       AH,@_LEM_curLo        ; [CPU_] |1335| 
-        MOVL      XAR4,#_Cmpss3Regs     ; [CPU_U] |1335| 
+        LCR       #_CMPSS_DIG_FILTER    ; [CPU_] |1327| 
+        ; call occurs [#_CMPSS_DIG_FILTER] ; [] |1327| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1328,column 4,is_stmt,isa 0
+        MOV       AL,@_LEM_curHi        ; [CPU_] |1328| 
+        MOV       AH,@_LEM_curLo        ; [CPU_] |1328| 
+        MOVL      XAR4,#_Cmpss3Regs     ; [CPU_U] |1328| 
 $C$DW$294	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$294, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$294, DW_AT_name("_CMPSS_DIG_FILTER")
 	.dwattr $C$DW$294, DW_AT_TI_call
 
-        LCR       #_CMPSS_DIG_FILTER    ; [CPU_] |1335| 
-        ; call occurs [#_CMPSS_DIG_FILTER] ; [] |1335| 
+        LCR       #_CMPSS_DIG_FILTER    ; [CPU_] |1328| 
+        ; call occurs [#_CMPSS_DIG_FILTER] ; [] |1328| 
  EDIS
         MOVW      DP,#_EPwm1Regs+147    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1343,column 2,is_stmt,isa 0
-        TBIT      @_EPwm1Regs+147,#2    ; [CPU_] |1343| 
-        B         $C$L19,TC             ; [CPU_] |1343| 
-        ; branchcc occurs ; [] |1343| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1336,column 2,is_stmt,isa 0
+        TBIT      @_EPwm1Regs+147,#2    ; [CPU_] |1336| 
+        B         $C$L19,TC             ; [CPU_] |1336| 
+        ; branchcc occurs ; [] |1336| 
         MOVW      DP,#_EPwm2Regs+147    ; [CPU_U] 
-        TBIT      @_EPwm2Regs+147,#2    ; [CPU_] |1343| 
-        B         $C$L19,TC             ; [CPU_] |1343| 
-        ; branchcc occurs ; [] |1343| 
+        TBIT      @_EPwm2Regs+147,#2    ; [CPU_] |1336| 
+        B         $C$L19,TC             ; [CPU_] |1336| 
+        ; branchcc occurs ; [] |1336| 
         MOVW      DP,#_EPwm3Regs+147    ; [CPU_U] 
-        TBIT      @_EPwm3Regs+147,#2    ; [CPU_] |1343| 
-        B         $C$L20,NTC            ; [CPU_] |1343| 
-        ; branchcc occurs ; [] |1343| 
+        TBIT      @_EPwm3Regs+147,#2    ; [CPU_] |1336| 
+        B         $C$L20,NTC            ; [CPU_] |1336| 
+        ; branchcc occurs ; [] |1336| 
 $C$L19:    
  EALLOW
         MOVW      DP,#_EPwm1Regs+155    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1350,column 5,is_stmt,isa 0
-        OR        @_EPwm1Regs+155,#0x0004 ; [CPU_] |1350| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1343,column 5,is_stmt,isa 0
+        OR        @_EPwm1Regs+155,#0x0004 ; [CPU_] |1343| 
         MOVW      DP,#_EPwm2Regs+155    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1351,column 5,is_stmt,isa 0
-        OR        @_EPwm2Regs+155,#0x0004 ; [CPU_] |1351| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1344,column 5,is_stmt,isa 0
+        OR        @_EPwm2Regs+155,#0x0004 ; [CPU_] |1344| 
         MOVW      DP,#_EPwm3Regs+155    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1352,column 5,is_stmt,isa 0
-        OR        @_EPwm3Regs+155,#0x0004 ; [CPU_] |1352| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1345,column 5,is_stmt,isa 0
+        OR        @_EPwm3Regs+155,#0x0004 ; [CPU_] |1345| 
  EDIS
         MOVW      DP,#_TripFlagDMC      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1354,column 6,is_stmt,isa 0
-        MOVB      @_TripFlagDMC,#1,UNC  ; [CPU_] |1354| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1347,column 6,is_stmt,isa 0
+        MOVB      @_TripFlagDMC,#1,UNC  ; [CPU_] |1347| 
 $C$L20:    
         MOVW      DP,#_clearTripFlagDMC ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1358,column 2,is_stmt,isa 0
-        MOV       AL,@_clearTripFlagDMC ; [CPU_] |1358| 
-        B         $C$L21,EQ             ; [CPU_] |1358| 
-        ; branchcc occurs ; [] |1358| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1351,column 2,is_stmt,isa 0
+        MOV       AL,@_clearTripFlagDMC ; [CPU_] |1351| 
+        B         $C$L21,EQ             ; [CPU_] |1351| 
+        ; branchcc occurs ; [] |1351| 
         MOVW      DP,#_GpioDataRegs+8   ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1360,column 3,is_stmt,isa 0
-        AND       @_GpioDataRegs+8,#0xfdff ; [CPU_] |1360| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1353,column 3,is_stmt,isa 0
+        AND       @_GpioDataRegs+8,#0xfdff ; [CPU_] |1353| 
         MOVW      DP,#_TripFlagDMC      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1366,column 3,is_stmt,isa 0
-        MOVB      ACC,#38               ; [CPU_] |1366| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1359,column 3,is_stmt,isa 0
+        MOVB      ACC,#38               ; [CPU_] |1359| 
         SPM       #0                    ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1361,column 3,is_stmt,isa 0
-        MOV       @_TripFlagDMC,#0      ; [CPU_] |1361| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1362,column 3,is_stmt,isa 0
-        MOV       @_clearTripFlagDMC,#0 ; [CPU_] |1362| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1354,column 3,is_stmt,isa 0
+        MOV       @_TripFlagDMC,#0      ; [CPU_] |1354| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1355,column 3,is_stmt,isa 0
+        MOV       @_clearTripFlagDMC,#0 ; [CPU_] |1355| 
         MOVW      DP,#_GpioDataRegs+8   ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1363,column 3,is_stmt,isa 0
-        OR        @_GpioDataRegs+8,#0x0200 ; [CPU_] |1363| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1366,column 3,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1356,column 3,is_stmt,isa 0
+        OR        @_GpioDataRegs+8,#0x0200 ; [CPU_] |1356| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1359,column 3,is_stmt,isa 0
 $C$DW$295	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$295, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$295, DW_AT_name("_F28x_usDelay")
 	.dwattr $C$DW$295, DW_AT_TI_call
 
-        LCR       #_F28x_usDelay        ; [CPU_] |1366| 
-        ; call occurs [#_F28x_usDelay] ; [] |1366| 
+        LCR       #_F28x_usDelay        ; [CPU_] |1359| 
+        ; call occurs [#_F28x_usDelay] ; [] |1359| 
  EALLOW
         MOVW      DP,#_EPwm1Regs+151    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1369,column 5,is_stmt,isa 0
-        OR        @_EPwm1Regs+151,#0x0004 ; [CPU_] |1369| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1362,column 5,is_stmt,isa 0
+        OR        @_EPwm1Regs+151,#0x0004 ; [CPU_] |1362| 
         MOVW      DP,#_EPwm2Regs+151    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1370,column 5,is_stmt,isa 0
-        OR        @_EPwm2Regs+151,#0x0004 ; [CPU_] |1370| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1363,column 5,is_stmt,isa 0
+        OR        @_EPwm2Regs+151,#0x0004 ; [CPU_] |1363| 
         MOVW      DP,#_EPwm3Regs+151    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1371,column 5,is_stmt,isa 0
-        OR        @_EPwm3Regs+151,#0x0004 ; [CPU_] |1371| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1364,column 5,is_stmt,isa 0
+        OR        @_EPwm3Regs+151,#0x0004 ; [CPU_] |1364| 
         MOVW      DP,#_EPwm1Regs+151    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1374,column 5,is_stmt,isa 0
-        OR        @_EPwm1Regs+151,#0x0008 ; [CPU_] |1374| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1367,column 5,is_stmt,isa 0
+        OR        @_EPwm1Regs+151,#0x0008 ; [CPU_] |1367| 
         MOVW      DP,#_EPwm2Regs+151    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1375,column 5,is_stmt,isa 0
-        OR        @_EPwm2Regs+151,#0x0008 ; [CPU_] |1375| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1368,column 5,is_stmt,isa 0
+        OR        @_EPwm2Regs+151,#0x0008 ; [CPU_] |1368| 
         MOVW      DP,#_EPwm3Regs+151    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1376,column 5,is_stmt,isa 0
-        OR        @_EPwm3Regs+151,#0x0008 ; [CPU_] |1376| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1369,column 5,is_stmt,isa 0
+        OR        @_EPwm3Regs+151,#0x0008 ; [CPU_] |1369| 
         MOVW      DP,#_Cmpss1Regs+3     ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1372,column 5,is_stmt,isa 0
+        OR        @_Cmpss1Regs+3,#0x0002 ; [CPU_] |1372| 
+        MOVW      DP,#_Cmpss3Regs+3     ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1373,column 5,is_stmt,isa 0
+        OR        @_Cmpss3Regs+3,#0x0002 ; [CPU_] |1373| 
+        MOVW      DP,#_Cmpss2Regs+3     ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1374,column 5,is_stmt,isa 0
+        OR        @_Cmpss2Regs+3,#0x0002 ; [CPU_] |1374| 
+        MOVW      DP,#_Cmpss6Regs+3     ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1375,column 5,is_stmt,isa 0
+        OR        @_Cmpss6Regs+3,#0x0002 ; [CPU_] |1375| 
+        MOVW      DP,#_Cmpss1Regs+3     ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1378,column 5,is_stmt,isa 0
+        OR        @_Cmpss1Regs+3,#0x0200 ; [CPU_] |1378| 
+        MOVW      DP,#_Cmpss3Regs+3     ; [CPU_U] 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1379,column 5,is_stmt,isa 0
-        OR        @_Cmpss1Regs+3,#0x0002 ; [CPU_] |1379| 
-        MOVW      DP,#_Cmpss3Regs+3     ; [CPU_U] 
+        OR        @_Cmpss3Regs+3,#0x0200 ; [CPU_] |1379| 
+        MOVW      DP,#_Cmpss2Regs+3     ; [CPU_U] 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1380,column 5,is_stmt,isa 0
-        OR        @_Cmpss3Regs+3,#0x0002 ; [CPU_] |1380| 
-        MOVW      DP,#_Cmpss2Regs+3     ; [CPU_U] 
+        OR        @_Cmpss2Regs+3,#0x0200 ; [CPU_] |1380| 
+        MOVW      DP,#_Cmpss6Regs+3     ; [CPU_U] 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1381,column 5,is_stmt,isa 0
-        OR        @_Cmpss2Regs+3,#0x0002 ; [CPU_] |1381| 
-        MOVW      DP,#_Cmpss6Regs+3     ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1382,column 5,is_stmt,isa 0
-        OR        @_Cmpss6Regs+3,#0x0002 ; [CPU_] |1382| 
-        MOVW      DP,#_Cmpss1Regs+3     ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1385,column 5,is_stmt,isa 0
-        OR        @_Cmpss1Regs+3,#0x0200 ; [CPU_] |1385| 
-        MOVW      DP,#_Cmpss3Regs+3     ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1386,column 5,is_stmt,isa 0
-        OR        @_Cmpss3Regs+3,#0x0200 ; [CPU_] |1386| 
-        MOVW      DP,#_Cmpss2Regs+3     ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1387,column 5,is_stmt,isa 0
-        OR        @_Cmpss2Regs+3,#0x0200 ; [CPU_] |1387| 
-        MOVW      DP,#_Cmpss6Regs+3     ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1388,column 5,is_stmt,isa 0
-        OR        @_Cmpss6Regs+3,#0x0200 ; [CPU_] |1388| 
+        OR        @_Cmpss6Regs+3,#0x0200 ; [CPU_] |1381| 
  EDIS
 $C$L21:    
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1394,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_A2             ; [CPU_U] |1394| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1387,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_A2             ; [CPU_U] |1387| 
         MOVW      DP,#_A_Task_Ptr       ; [CPU_U] 
         SPM       #0                    ; [CPU_] 
-        MOVL      @_A_Task_Ptr,XAR4     ; [CPU_] |1394| 
+        MOVL      @_A_Task_Ptr,XAR4     ; [CPU_] |1387| 
 $C$DW$296	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$296, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$296, DW_AT_TI_return
@@ -4875,7 +4875,7 @@ $C$DW$296	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$292, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$292, DW_AT_TI_end_line(0x574)
+	.dwattr $C$DW$292, DW_AT_TI_end_line(0x56d)
 	.dwattr $C$DW$292, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$292
@@ -4891,10 +4891,10 @@ $C$DW$297	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$297, DW_AT_TI_symbol_name("_A2")
 	.dwattr $C$DW$297, DW_AT_external
 	.dwattr $C$DW$297, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$297, DW_AT_TI_begin_line(0x577)
+	.dwattr $C$DW$297, DW_AT_TI_begin_line(0x570)
 	.dwattr $C$DW$297, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$297, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1401,column 1,is_stmt,address _A2,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1394,column 1,is_stmt,address _A2,isa 0
 
 	.dwfde $C$DW$CIE, _A2
 
@@ -4910,10 +4910,10 @@ $C$DW$297	.dwtag  DW_TAG_subprogram
 _A2:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1405,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_A3             ; [CPU_U] |1405| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1398,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_A3             ; [CPU_U] |1398| 
         MOVW      DP,#_A_Task_Ptr       ; [CPU_U] 
-        MOVL      @_A_Task_Ptr,XAR4     ; [CPU_] |1405| 
+        MOVL      @_A_Task_Ptr,XAR4     ; [CPU_] |1398| 
 $C$DW$298	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$298, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$298, DW_AT_TI_return
@@ -4921,7 +4921,7 @@ $C$DW$298	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$297, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$297, DW_AT_TI_end_line(0x57f)
+	.dwattr $C$DW$297, DW_AT_TI_end_line(0x578)
 	.dwattr $C$DW$297, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$297
@@ -4937,10 +4937,10 @@ $C$DW$299	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$299, DW_AT_TI_symbol_name("_A3")
 	.dwattr $C$DW$299, DW_AT_external
 	.dwattr $C$DW$299, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$299, DW_AT_TI_begin_line(0x582)
+	.dwattr $C$DW$299, DW_AT_TI_begin_line(0x57b)
 	.dwattr $C$DW$299, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$299, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1412,column 1,is_stmt,address _A3,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1405,column 1,is_stmt,address _A3,isa 0
 
 	.dwfde $C$DW$CIE, _A3
 
@@ -4956,10 +4956,10 @@ $C$DW$299	.dwtag  DW_TAG_subprogram
 _A3:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1416,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_A1             ; [CPU_U] |1416| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1409,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_A1             ; [CPU_U] |1409| 
         MOVW      DP,#_A_Task_Ptr       ; [CPU_U] 
-        MOVL      @_A_Task_Ptr,XAR4     ; [CPU_] |1416| 
+        MOVL      @_A_Task_Ptr,XAR4     ; [CPU_] |1409| 
 $C$DW$300	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$300, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$300, DW_AT_TI_return
@@ -4967,7 +4967,7 @@ $C$DW$300	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$299, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$299, DW_AT_TI_end_line(0x58a)
+	.dwattr $C$DW$299, DW_AT_TI_end_line(0x583)
 	.dwattr $C$DW$299, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$299
@@ -4983,10 +4983,10 @@ $C$DW$301	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$301, DW_AT_TI_symbol_name("_B1")
 	.dwattr $C$DW$301, DW_AT_external
 	.dwattr $C$DW$301, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$301, DW_AT_TI_begin_line(0x595)
+	.dwattr $C$DW$301, DW_AT_TI_begin_line(0x58e)
 	.dwattr $C$DW$301, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$301, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1431,column 1,is_stmt,address _B1,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1424,column 1,is_stmt,address _B1,isa 0
 
 	.dwfde $C$DW$CIE, _B1
 
@@ -5002,10 +5002,10 @@ $C$DW$301	.dwtag  DW_TAG_subprogram
 _B1:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1435,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_B2             ; [CPU_U] |1435| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1428,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_B2             ; [CPU_U] |1428| 
         MOVW      DP,#_B_Task_Ptr       ; [CPU_U] 
-        MOVL      @_B_Task_Ptr,XAR4     ; [CPU_] |1435| 
+        MOVL      @_B_Task_Ptr,XAR4     ; [CPU_] |1428| 
 $C$DW$302	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$302, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$302, DW_AT_TI_return
@@ -5013,7 +5013,7 @@ $C$DW$302	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$301, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$301, DW_AT_TI_end_line(0x59d)
+	.dwattr $C$DW$301, DW_AT_TI_end_line(0x596)
 	.dwattr $C$DW$301, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$301
@@ -5029,10 +5029,10 @@ $C$DW$303	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$303, DW_AT_TI_symbol_name("_B2")
 	.dwattr $C$DW$303, DW_AT_external
 	.dwattr $C$DW$303, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$303, DW_AT_TI_begin_line(0x5a0)
+	.dwattr $C$DW$303, DW_AT_TI_begin_line(0x599)
 	.dwattr $C$DW$303, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$303, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1442,column 1,is_stmt,address _B2,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1435,column 1,is_stmt,address _B2,isa 0
 
 	.dwfde $C$DW$CIE, _B2
 
@@ -5048,10 +5048,10 @@ $C$DW$303	.dwtag  DW_TAG_subprogram
 _B2:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1446,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_B3             ; [CPU_U] |1446| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1439,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_B3             ; [CPU_U] |1439| 
         MOVW      DP,#_B_Task_Ptr       ; [CPU_U] 
-        MOVL      @_B_Task_Ptr,XAR4     ; [CPU_] |1446| 
+        MOVL      @_B_Task_Ptr,XAR4     ; [CPU_] |1439| 
 $C$DW$304	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$304, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$304, DW_AT_TI_return
@@ -5059,7 +5059,7 @@ $C$DW$304	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$303, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$303, DW_AT_TI_end_line(0x5a8)
+	.dwattr $C$DW$303, DW_AT_TI_end_line(0x5a1)
 	.dwattr $C$DW$303, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$303
@@ -5075,10 +5075,10 @@ $C$DW$305	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$305, DW_AT_TI_symbol_name("_B3")
 	.dwattr $C$DW$305, DW_AT_external
 	.dwattr $C$DW$305, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$305, DW_AT_TI_begin_line(0x5ab)
+	.dwattr $C$DW$305, DW_AT_TI_begin_line(0x5a4)
 	.dwattr $C$DW$305, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$305, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1453,column 1,is_stmt,address _B3,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1446,column 1,is_stmt,address _B3,isa 0
 
 	.dwfde $C$DW$CIE, _B3
 
@@ -5094,10 +5094,10 @@ $C$DW$305	.dwtag  DW_TAG_subprogram
 _B3:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1457,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_B1             ; [CPU_U] |1457| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1450,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_B1             ; [CPU_U] |1450| 
         MOVW      DP,#_B_Task_Ptr       ; [CPU_U] 
-        MOVL      @_B_Task_Ptr,XAR4     ; [CPU_] |1457| 
+        MOVL      @_B_Task_Ptr,XAR4     ; [CPU_] |1450| 
 $C$DW$306	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$306, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$306, DW_AT_TI_return
@@ -5105,7 +5105,7 @@ $C$DW$306	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$305, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$305, DW_AT_TI_end_line(0x5b3)
+	.dwattr $C$DW$305, DW_AT_TI_end_line(0x5ac)
 	.dwattr $C$DW$305, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$305
@@ -5121,10 +5121,10 @@ $C$DW$307	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$307, DW_AT_TI_symbol_name("_C1")
 	.dwattr $C$DW$307, DW_AT_external
 	.dwattr $C$DW$307, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$307, DW_AT_TI_begin_line(0x5bd)
+	.dwattr $C$DW$307, DW_AT_TI_begin_line(0x5b6)
 	.dwattr $C$DW$307, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$307, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1471,column 1,is_stmt,address _C1,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1464,column 1,is_stmt,address _C1,isa 0
 
 	.dwfde $C$DW$CIE, _C1
 
@@ -5141,26 +5141,26 @@ _C1:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
         MOVW      DP,#_LedCnt1          ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1473,column 2,is_stmt,isa 0
-        MOV       AL,@_LedCnt1          ; [CPU_] |1473| 
-        B         $C$L22,NEQ            ; [CPU_] |1473| 
-        ; branchcc occurs ; [] |1473| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1466,column 2,is_stmt,isa 0
+        MOV       AL,@_LedCnt1          ; [CPU_] |1466| 
+        B         $C$L22,NEQ            ; [CPU_] |1466| 
+        ; branchcc occurs ; [] |1466| 
         MOVW      DP,#_GpioDataRegs+14  ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1475,column 3,is_stmt,isa 0
-        OR        @_GpioDataRegs+14,#0x0004 ; [CPU_] |1475| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1468,column 3,is_stmt,isa 0
+        OR        @_GpioDataRegs+14,#0x0004 ; [CPU_] |1468| 
         MOVW      DP,#_LedCnt1          ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1476,column 3,is_stmt,isa 0
-        MOVB      @_LedCnt1,#200,UNC    ; [CPU_] |1476| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1477,column 2,is_stmt,isa 0
-        B         $C$L23,UNC            ; [CPU_] |1477| 
-        ; branch occurs ; [] |1477| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1469,column 3,is_stmt,isa 0
+        MOVB      @_LedCnt1,#200,UNC    ; [CPU_] |1469| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1470,column 2,is_stmt,isa 0
+        B         $C$L23,UNC            ; [CPU_] |1470| 
+        ; branch occurs ; [] |1470| 
 $C$L22:    
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1479,column 3,is_stmt,isa 0
-        DEC       @_LedCnt1             ; [CPU_] |1479| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1472,column 3,is_stmt,isa 0
+        DEC       @_LedCnt1             ; [CPU_] |1472| 
 $C$L23:    
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1483,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_C2             ; [CPU_U] |1483| 
-        MOVL      @_C_Task_Ptr,XAR4     ; [CPU_] |1483| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1476,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_C2             ; [CPU_U] |1476| 
+        MOVL      @_C_Task_Ptr,XAR4     ; [CPU_] |1476| 
 $C$DW$308	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$308, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$308, DW_AT_TI_return
@@ -5168,7 +5168,7 @@ $C$DW$308	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$307, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$307, DW_AT_TI_end_line(0x5ce)
+	.dwattr $C$DW$307, DW_AT_TI_end_line(0x5c7)
 	.dwattr $C$DW$307, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$307
@@ -5184,10 +5184,10 @@ $C$DW$309	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$309, DW_AT_TI_symbol_name("_C2")
 	.dwattr $C$DW$309, DW_AT_external
 	.dwattr $C$DW$309, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$309, DW_AT_TI_begin_line(0x5d1)
+	.dwattr $C$DW$309, DW_AT_TI_begin_line(0x5ca)
 	.dwattr $C$DW$309, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$309, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1491,column 1,is_stmt,address _C2,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1484,column 1,is_stmt,address _C2,isa 0
 
 	.dwfde $C$DW$CIE, _C2
 
@@ -5203,10 +5203,10 @@ $C$DW$309	.dwtag  DW_TAG_subprogram
 _C2:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1495,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_C3             ; [CPU_U] |1495| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1488,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_C3             ; [CPU_U] |1488| 
         MOVW      DP,#_C_Task_Ptr       ; [CPU_U] 
-        MOVL      @_C_Task_Ptr,XAR4     ; [CPU_] |1495| 
+        MOVL      @_C_Task_Ptr,XAR4     ; [CPU_] |1488| 
 $C$DW$310	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$310, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$310, DW_AT_TI_return
@@ -5214,7 +5214,7 @@ $C$DW$310	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$309, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$309, DW_AT_TI_end_line(0x5d9)
+	.dwattr $C$DW$309, DW_AT_TI_end_line(0x5d2)
 	.dwattr $C$DW$309, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$309
@@ -5230,10 +5230,10 @@ $C$DW$311	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$311, DW_AT_TI_symbol_name("_C3")
 	.dwattr $C$DW$311, DW_AT_external
 	.dwattr $C$DW$311, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$311, DW_AT_TI_begin_line(0x5dd)
+	.dwattr $C$DW$311, DW_AT_TI_begin_line(0x5d6)
 	.dwattr $C$DW$311, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$311, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1503,column 1,is_stmt,address _C3,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1496,column 1,is_stmt,address _C3,isa 0
 
 	.dwfde $C$DW$CIE, _C3
 
@@ -5249,10 +5249,10 @@ $C$DW$311	.dwtag  DW_TAG_subprogram
 _C3:
 	.dwcfi	cfa_offset, -2
 	.dwcfi	save_reg_to_mem, 26, 0
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1507,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_C1             ; [CPU_U] |1507| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1500,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_C1             ; [CPU_U] |1500| 
         MOVW      DP,#_C_Task_Ptr       ; [CPU_U] 
-        MOVL      @_C_Task_Ptr,XAR4     ; [CPU_] |1507| 
+        MOVL      @_C_Task_Ptr,XAR4     ; [CPU_] |1500| 
 $C$DW$312	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$312, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$312, DW_AT_TI_return
@@ -5260,7 +5260,7 @@ $C$DW$312	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$311, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$311, DW_AT_TI_end_line(0x5e5)
+	.dwattr $C$DW$311, DW_AT_TI_end_line(0x5de)
 	.dwattr $C$DW$311, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$311
@@ -5277,11 +5277,11 @@ $C$DW$313	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$313, DW_AT_TI_symbol_name("_MotorControlISR")
 	.dwattr $C$DW$313, DW_AT_external
 	.dwattr $C$DW$313, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$313, DW_AT_TI_begin_line(0x5ec)
+	.dwattr $C$DW$313, DW_AT_TI_begin_line(0x5e5)
 	.dwattr $C$DW$313, DW_AT_TI_begin_column(0x10)
 	.dwattr $C$DW$313, DW_AT_TI_interrupt
 	.dwattr $C$DW$313, DW_AT_TI_max_frame_size(-36)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1517,column 1,is_stmt,address _MotorControlISR,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1510,column 1,is_stmt,address _MotorControlISR,isa 0
 
 	.dwfde $C$DW$CIE, _MotorControlISR
 
@@ -5351,438 +5351,438 @@ _MotorControlISR:
         CLRC      PAGE0,OVM             ; [CPU_] 
         CLRC      AMODE                 ; [CPU_] 
  clrc INTM
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1522,column 5,is_stmt,isa 0
-        MOVB      ACC,#1                ; [CPU_] |1522| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1515,column 5,is_stmt,isa 0
+        MOVB      ACC,#1                ; [CPU_] |1515| 
         MOVW      DP,#_IsrTicker        ; [CPU_U] 
-        ADDL      @_IsrTicker,ACC       ; [CPU_] |1522| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1536,column 5,is_stmt,isa 0
-        MOVL      ACC,@_SpeedRef        ; [CPU_] |1536| 
+        ADDL      @_IsrTicker,ACC       ; [CPU_] |1515| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1529,column 5,is_stmt,isa 0
+        MOVL      ACC,@_SpeedRef        ; [CPU_] |1529| 
         MOVW      DP,#_rc1              ; [CPU_U] 
-        MOVL      @_rc1,ACC             ; [CPU_] |1536| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1537,column 2,is_stmt,isa 0
-        MOV32     R0H,@_rc1+10          ; [CPU_] |1537| 
-        MOV32     R1H,@_rc1             ; [CPU_] |1537| 
-        SUBF32    R0H,R1H,R0H           ; [CPU_] |1537| 
-        MOVIZ     R1H,#14335            ; [CPU_] |1537| 
-        MOV32     @_rc1+14,R0H          ; [CPU_] |1537| 
-        MOVXI     R1H,#55872            ; [CPU_] |1537| 
-        ABSF32    R0H,R0H               ; [CPU_] |1537| 
-        CMPF32    R0H,R1H               ; [CPU_] |1537| 
-        MOVST0    ZF, NF                ; [CPU_] |1537| 
-        B         $C$L26,LT             ; [CPU_] |1537| 
-        ; branchcc occurs ; [] |1537| 
-        MOVB      ACC,#1                ; [CPU_] |1537| 
-        ADDL      @_rc1+8,ACC           ; [CPU_] |1537| 
-        MOVL      ACC,@_rc1+2           ; [CPU_] |1537| 
-        CMPL      ACC,@_rc1+8           ; [CPU_] |1537| 
-        B         $C$L27,HI             ; [CPU_] |1537| 
-        ; branchcc occurs ; [] |1537| 
-        MOV32     R1H,@_rc1+10          ; [CPU_] |1537| 
-        MOV32     R0H,@_rc1             ; [CPU_] |1537| 
-        CMPF32    R0H,R1H               ; [CPU_] |1537| 
-        MOVST0    ZF, NF                ; [CPU_] |1537| 
-        B         $C$L24,GEQ            ; [CPU_] |1537| 
-        ; branchcc occurs ; [] |1537| 
-        MOVIZ     R0H,#14335            ; [CPU_] |1537| 
-        MOVXI     R0H,#55872            ; [CPU_] |1537| 
-        SUBF32    R0H,R1H,R0H           ; [CPU_] |1537| 
+        MOVL      @_rc1,ACC             ; [CPU_] |1529| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1530,column 2,is_stmt,isa 0
+        MOV32     R0H,@_rc1+10          ; [CPU_] |1530| 
+        MOV32     R1H,@_rc1             ; [CPU_] |1530| 
+        SUBF32    R0H,R1H,R0H           ; [CPU_] |1530| 
+        MOVIZ     R1H,#14335            ; [CPU_] |1530| 
+        MOV32     @_rc1+14,R0H          ; [CPU_] |1530| 
+        MOVXI     R1H,#55872            ; [CPU_] |1530| 
+        ABSF32    R0H,R0H               ; [CPU_] |1530| 
+        CMPF32    R0H,R1H               ; [CPU_] |1530| 
+        MOVST0    ZF, NF                ; [CPU_] |1530| 
+        B         $C$L26,LT             ; [CPU_] |1530| 
+        ; branchcc occurs ; [] |1530| 
+        MOVB      ACC,#1                ; [CPU_] |1530| 
+        ADDL      @_rc1+8,ACC           ; [CPU_] |1530| 
+        MOVL      ACC,@_rc1+2           ; [CPU_] |1530| 
+        CMPL      ACC,@_rc1+8           ; [CPU_] |1530| 
+        B         $C$L27,HI             ; [CPU_] |1530| 
+        ; branchcc occurs ; [] |1530| 
+        MOV32     R1H,@_rc1+10          ; [CPU_] |1530| 
+        MOV32     R0H,@_rc1             ; [CPU_] |1530| 
+        CMPF32    R0H,R1H               ; [CPU_] |1530| 
+        MOVST0    ZF, NF                ; [CPU_] |1530| 
+        B         $C$L24,GEQ            ; [CPU_] |1530| 
+        ; branchcc occurs ; [] |1530| 
+        MOVIZ     R0H,#14335            ; [CPU_] |1530| 
+        MOVXI     R0H,#55872            ; [CPU_] |1530| 
+        SUBF32    R0H,R1H,R0H           ; [CPU_] |1530| 
         NOP       ; [CPU_] 
-        MOV32     @_rc1+10,R0H          ; [CPU_] |1537| 
-        B         $C$L25,UNC            ; [CPU_] |1537| 
-        ; branch occurs ; [] |1537| 
+        MOV32     @_rc1+10,R0H          ; [CPU_] |1530| 
+        B         $C$L25,UNC            ; [CPU_] |1530| 
+        ; branch occurs ; [] |1530| 
 $C$L24:    
-        MOVIZ     R0H,#14335            ; [CPU_] |1537| 
-        MOVXI     R0H,#55872            ; [CPU_] |1537| 
-        ADDF32    R0H,R0H,R1H           ; [CPU_] |1537| 
+        MOVIZ     R0H,#14335            ; [CPU_] |1530| 
+        MOVXI     R0H,#55872            ; [CPU_] |1530| 
+        ADDF32    R0H,R0H,R1H           ; [CPU_] |1530| 
         NOP       ; [CPU_] 
-        MOV32     @_rc1+10,R0H          ; [CPU_] |1537| 
+        MOV32     @_rc1+10,R0H          ; [CPU_] |1530| 
 $C$L25:    
-        MOV32     R2H,@_rc1+6           ; [CPU_] |1537| 
-        MOV32     R1H,@_rc1+4           ; [CPU_] |1537| 
-        MOVB      ACC,#0                ; [CPU_] |1537| 
-        MINF32    R0H,R2H               ; [CPU_] |1537| 
-        MAXF32    R0H,R1H               ; [CPU_] |1537| 
-        MOV32     @_rc1+10,R0H          ; [CPU_] |1537| 
-        MOVL      @_rc1+8,ACC           ; [CPU_] |1537| 
-        B         $C$L27,UNC            ; [CPU_] |1537| 
-        ; branch occurs ; [] |1537| 
+        MOV32     R2H,@_rc1+6           ; [CPU_] |1530| 
+        MOV32     R1H,@_rc1+4           ; [CPU_] |1530| 
+        MOVB      ACC,#0                ; [CPU_] |1530| 
+        MINF32    R0H,R2H               ; [CPU_] |1530| 
+        MAXF32    R0H,R1H               ; [CPU_] |1530| 
+        MOV32     @_rc1+10,R0H          ; [CPU_] |1530| 
+        MOVL      @_rc1+8,ACC           ; [CPU_] |1530| 
+        B         $C$L27,UNC            ; [CPU_] |1530| 
+        ; branch occurs ; [] |1530| 
 $C$L26:    
-        MOV       AL,#65535             ; [CPU_] |1537| 
-        MOV       AH,#32767             ; [CPU_] |1537| 
-        MOVL      @_rc1+12,ACC          ; [CPU_] |1537| 
+        MOV       AL,#65535             ; [CPU_] |1530| 
+        MOV       AH,#32767             ; [CPU_] |1530| 
+        MOVL      @_rc1+12,ACC          ; [CPU_] |1530| 
 $C$L27:    
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1542,column 5,is_stmt,isa 0
-        MOVL      ACC,@_rc1+10          ; [CPU_] |1542| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1535,column 5,is_stmt,isa 0
+        MOVL      ACC,@_rc1+10          ; [CPU_] |1535| 
         MOVW      DP,#_rg1              ; [CPU_U] 
-        MOVL      @_rg1,ACC             ; [CPU_] |1542| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1543,column 2,is_stmt,isa 0
-        MOV32     R0H,@_rg1+2           ; [CPU_] |1543| 
-        MOV32     R1H,@_rg1             ; [CPU_] |1543| 
-        MPYF32    R1H,R1H,R0H           ; [CPU_] |1543| 
-        MOV32     R0H,@_rg1+4           ; [CPU_] |1543| 
-        ADDF32    R0H,R0H,R1H           ; [CPU_] |1543| 
+        MOVL      @_rg1,ACC             ; [CPU_] |1535| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1536,column 2,is_stmt,isa 0
+        MOV32     R0H,@_rg1+2           ; [CPU_] |1536| 
+        MOV32     R1H,@_rg1             ; [CPU_] |1536| 
+        MPYF32    R1H,R1H,R0H           ; [CPU_] |1536| 
+        MOV32     R0H,@_rg1+4           ; [CPU_] |1536| 
+        ADDF32    R0H,R0H,R1H           ; [CPU_] |1536| 
         NOP       ; [CPU_] 
-        MOV32     @_rg1+4,R0H           ; [CPU_] |1543| 
-        CMPF32    R0H,#16256            ; [CPU_] |1543| 
-        MOVST0    ZF, NF                ; [CPU_] |1543| 
-        B         $C$L28,GT             ; [CPU_] |1543| 
-        ; branchcc occurs ; [] |1543| 
-        CMPF32    R0H,#49024            ; [CPU_] |1543| 
-        MOVST0    ZF, NF                ; [CPU_] |1543| 
-        B         $C$L29,GEQ            ; [CPU_] |1543| 
-        ; branchcc occurs ; [] |1543| 
-        ADDF32    R0H,R0H,#16256        ; [CPU_] |1543| 
+        MOV32     @_rg1+4,R0H           ; [CPU_] |1536| 
+        CMPF32    R0H,#16256            ; [CPU_] |1536| 
+        MOVST0    ZF, NF                ; [CPU_] |1536| 
+        B         $C$L28,GT             ; [CPU_] |1536| 
+        ; branchcc occurs ; [] |1536| 
+        CMPF32    R0H,#49024            ; [CPU_] |1536| 
+        MOVST0    ZF, NF                ; [CPU_] |1536| 
+        B         $C$L29,GEQ            ; [CPU_] |1536| 
+        ; branchcc occurs ; [] |1536| 
+        ADDF32    R0H,R0H,#16256        ; [CPU_] |1536| 
         NOP       ; [CPU_] 
-        MOV32     @_rg1+4,R0H           ; [CPU_] |1543| 
-        B         $C$L29,UNC            ; [CPU_] |1543| 
-        ; branch occurs ; [] |1543| 
+        MOV32     @_rg1+4,R0H           ; [CPU_] |1536| 
+        B         $C$L29,UNC            ; [CPU_] |1536| 
+        ; branch occurs ; [] |1536| 
 $C$L28:    
-        ADDF32    R0H,R0H,#49024        ; [CPU_] |1543| 
+        ADDF32    R0H,R0H,#49024        ; [CPU_] |1536| 
         NOP       ; [CPU_] 
-        MOV32     @_rg1+4,R0H           ; [CPU_] |1543| 
+        MOV32     @_rg1+4,R0H           ; [CPU_] |1536| 
 $C$L29:    
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1555,column 2,is_stmt,isa 0
-        SINPUF32  R0H,R0H               ; [CPU_] |1555| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1543,column 2,is_stmt,isa 0
-        MOVL      ACC,@_rg1+4           ; [CPU_] |1543| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1554,column 5,is_stmt,isa 0
-        MOVL      @_park1+4,ACC         ; [CPU_] |1554| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1543,column 2,is_stmt,isa 0
-        MOVL      @_rg1+8,ACC           ; [CPU_] |1543| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1555,column 2,is_stmt,isa 0
-        MOV32     @_park1+10,R0H        ; [CPU_] |1555| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1556,column 2,is_stmt,isa 0
-        MOV32     R0H,@_park1+4         ; [CPU_] |1556| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1548,column 2,is_stmt,isa 0
+        SINPUF32  R0H,R0H               ; [CPU_] |1548| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1536,column 2,is_stmt,isa 0
+        MOVL      ACC,@_rg1+4           ; [CPU_] |1536| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1547,column 5,is_stmt,isa 0
+        MOVL      @_park1+4,ACC         ; [CPU_] |1547| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1536,column 2,is_stmt,isa 0
+        MOVL      @_rg1+8,ACC           ; [CPU_] |1536| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1548,column 2,is_stmt,isa 0
+        MOV32     @_park1+10,R0H        ; [CPU_] |1548| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1549,column 2,is_stmt,isa 0
+        MOV32     R0H,@_park1+4         ; [CPU_] |1549| 
         MOVW      DP,#_VdTesting        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1551,column 5,is_stmt,isa 0
-        MOVL      XAR6,@_VdTesting      ; [CPU_] |1551| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1556,column 2,is_stmt,isa 0
-        COSPUF32  R0H,R0H               ; [CPU_] |1556| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1552,column 5,is_stmt,isa 0
-        MOVL      ACC,@_VqTesting       ; [CPU_] |1552| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1544,column 5,is_stmt,isa 0
+        MOVL      XAR6,@_VdTesting      ; [CPU_] |1544| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1549,column 2,is_stmt,isa 0
+        COSPUF32  R0H,R0H               ; [CPU_] |1549| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1545,column 5,is_stmt,isa 0
+        MOVL      ACC,@_VqTesting       ; [CPU_] |1545| 
         MOVW      DP,#_park1+12         ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1551,column 5,is_stmt,isa 0
-        MOVL      @_ipark1+6,XAR6       ; [CPU_] |1551| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1556,column 2,is_stmt,isa 0
-        MOV32     @_park1+12,R0H        ; [CPU_] |1556| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1559,column 5,is_stmt,isa 0
-        MOVL      XAR7,@_park1+12       ; [CPU_] |1559| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1544,column 5,is_stmt,isa 0
+        MOVL      @_ipark1+6,XAR6       ; [CPU_] |1544| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1549,column 2,is_stmt,isa 0
+        MOV32     @_park1+12,R0H        ; [CPU_] |1549| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1552,column 5,is_stmt,isa 0
-        MOVL      @_ipark1+8,ACC        ; [CPU_] |1552| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1558,column 2,is_stmt,isa 0
-        MOVL      P,@_park1+10          ; [CPU_] |1558| 
-        MOVL      @_ipark1+10,P         ; [CPU_] |1558| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1559,column 5,is_stmt,isa 0
-        MOVL      @_ipark1+12,XAR7      ; [CPU_] |1559| 
+        MOVL      XAR7,@_park1+12       ; [CPU_] |1552| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1545,column 5,is_stmt,isa 0
+        MOVL      @_ipark1+8,ACC        ; [CPU_] |1545| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1551,column 2,is_stmt,isa 0
+        MOVL      P,@_park1+10          ; [CPU_] |1551| 
+        MOVL      @_ipark1+10,P         ; [CPU_] |1551| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1552,column 5,is_stmt,isa 0
+        MOVL      @_ipark1+12,XAR7      ; [CPU_] |1552| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1553,column 2,is_stmt,isa 0
+        MOV32     R1H,@_ipark1+10       ; [CPU_] |1553| 
+        MOV32     R2H,@_ipark1+6        ; [CPU_] |1553| 
+        MOV32     R0H,@_ipark1+8        ; [CPU_] |1553| 
+
+        MPYF32    R0H,R1H,R0H           ; [CPU_] |1553| 
+||      MOV32     R3H,@_ipark1+12       ; [CPU_] |1553| 
+
+        MPYF32    R1H,R3H,R2H           ; [CPU_] |1553| 
+        NOP       ; [CPU_] 
+        SUBF32    R0H,R1H,R0H           ; [CPU_] |1553| 
+        NOP       ; [CPU_] 
+        MOV32     @_ipark1,R0H          ; [CPU_] |1553| 
+        MOV32     R2H,@_ipark1+6        ; [CPU_] |1553| 
+        MOV32     R0H,@_ipark1+8        ; [CPU_] |1553| 
+        MOV32     R1H,@_ipark1+12       ; [CPU_] |1553| 
+
+        MPYF32    R0H,R1H,R0H           ; [CPU_] |1553| 
+||      MOV32     R3H,@_ipark1+10       ; [CPU_] |1553| 
+
+        MPYF32    R1H,R3H,R2H           ; [CPU_] |1553| 
+        NOP       ; [CPU_] 
+        ADDF32    R0H,R0H,R1H           ; [CPU_] |1553| 
+        NOP       ; [CPU_] 
+        MOV32     @_ipark1+2,R0H        ; [CPU_] |1553| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1560,column 2,is_stmt,isa 0
-        MOV32     R1H,@_ipark1+10       ; [CPU_] |1560| 
-        MOV32     R2H,@_ipark1+6        ; [CPU_] |1560| 
-        MOV32     R0H,@_ipark1+8        ; [CPU_] |1560| 
-
-        MPYF32    R0H,R1H,R0H           ; [CPU_] |1560| 
-||      MOV32     R3H,@_ipark1+12       ; [CPU_] |1560| 
-
-        MPYF32    R1H,R3H,R2H           ; [CPU_] |1560| 
-        NOP       ; [CPU_] 
-        SUBF32    R0H,R1H,R0H           ; [CPU_] |1560| 
-        NOP       ; [CPU_] 
-        MOV32     @_ipark1,R0H          ; [CPU_] |1560| 
-        MOV32     R2H,@_ipark1+6        ; [CPU_] |1560| 
-        MOV32     R0H,@_ipark1+8        ; [CPU_] |1560| 
-        MOV32     R1H,@_ipark1+12       ; [CPU_] |1560| 
-
-        MPYF32    R0H,R1H,R0H           ; [CPU_] |1560| 
-||      MOV32     R3H,@_ipark1+10       ; [CPU_] |1560| 
-
-        MPYF32    R1H,R3H,R2H           ; [CPU_] |1560| 
+        MOVIZ     R0H,#16221            ; [CPU_] |1560| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1558,column 4,is_stmt,isa 0
+        MOVL      XAR6,@_ipark1         ; [CPU_] |1558| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1559,column 3,is_stmt,isa 0
+        MOVL      ACC,@_ipark1+2        ; [CPU_] |1559| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1560,column 2,is_stmt,isa 0
+        MOVXI     R0H,#45613            ; [CPU_] |1560| 
+        MOVW      DP,#_svgen1           ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1558,column 4,is_stmt,isa 0
+        MOVL      @_svgen1,XAR6         ; [CPU_] |1558| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1559,column 3,is_stmt,isa 0
+        MOVL      @_svgen1+2,ACC        ; [CPU_] |1559| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1560,column 2,is_stmt,isa 0
+        MOVL      @_svgen1+10,ACC       ; [CPU_] |1560| 
+        MOV32     R2H,@_svgen1          ; [CPU_] |1560| 
+        MOV32     R1H,@_svgen1+2        ; [CPU_] |1560| 
+        MPYF32    R1H,R1H,#16128        ; [CPU_] |1560| 
+        MPYF32    R0H,R0H,R2H           ; [CPU_] |1560| 
         NOP       ; [CPU_] 
         ADDF32    R0H,R0H,R1H           ; [CPU_] |1560| 
         NOP       ; [CPU_] 
-        MOV32     @_ipark1+2,R0H        ; [CPU_] |1560| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1567,column 2,is_stmt,isa 0
-        MOVIZ     R0H,#16221            ; [CPU_] |1567| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1565,column 4,is_stmt,isa 0
-        MOVL      XAR6,@_ipark1         ; [CPU_] |1565| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1566,column 3,is_stmt,isa 0
-        MOVL      ACC,@_ipark1+2        ; [CPU_] |1566| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1567,column 2,is_stmt,isa 0
-        MOVXI     R0H,#45613            ; [CPU_] |1567| 
-        MOVW      DP,#_svgen1           ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1565,column 4,is_stmt,isa 0
-        MOVL      @_svgen1,XAR6         ; [CPU_] |1565| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1566,column 3,is_stmt,isa 0
-        MOVL      @_svgen1+2,ACC        ; [CPU_] |1566| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1567,column 2,is_stmt,isa 0
-        MOVL      @_svgen1+10,ACC       ; [CPU_] |1567| 
-        MOV32     R2H,@_svgen1          ; [CPU_] |1567| 
-        MOV32     R1H,@_svgen1+2        ; [CPU_] |1567| 
-        MPYF32    R1H,R1H,#16128        ; [CPU_] |1567| 
-        MPYF32    R0H,R0H,R2H           ; [CPU_] |1567| 
+        MOV32     @_svgen1+12,R0H       ; [CPU_] |1560| 
+        MOV32     R0H,@_svgen1+10       ; [CPU_] |1560| 
+        MOV32     R1H,@_svgen1+12       ; [CPU_] |1560| 
+        SUBF32    R0H,R1H,R0H           ; [CPU_] |1560| 
         NOP       ; [CPU_] 
-        ADDF32    R0H,R0H,R1H           ; [CPU_] |1567| 
-        NOP       ; [CPU_] 
-        MOV32     @_svgen1+12,R0H       ; [CPU_] |1567| 
-        MOV32     R0H,@_svgen1+10       ; [CPU_] |1567| 
-        MOV32     R1H,@_svgen1+12       ; [CPU_] |1567| 
-        SUBF32    R0H,R1H,R0H           ; [CPU_] |1567| 
-        NOP       ; [CPU_] 
-        MOV32     @_svgen1+14,R0H       ; [CPU_] |1567| 
-        MOVB      @_svgen1+16,#3,UNC    ; [CPU_] |1567| 
-        MOV32     R0H,@_svgen1+12       ; [CPU_] |1567| 
-        CMPF32    R0H,#0                ; [CPU_] |1567| 
-        MOVST0    ZF, NF                ; [CPU_] |1567| 
-        B         $C$L30,LEQ            ; [CPU_] |1567| 
-        ; branchcc occurs ; [] |1567| 
-        DEC       @_svgen1+16           ; [CPU_] |1567| 
+        MOV32     @_svgen1+14,R0H       ; [CPU_] |1560| 
+        MOVB      @_svgen1+16,#3,UNC    ; [CPU_] |1560| 
+        MOV32     R0H,@_svgen1+12       ; [CPU_] |1560| 
+        CMPF32    R0H,#0                ; [CPU_] |1560| 
+        MOVST0    ZF, NF                ; [CPU_] |1560| 
+        B         $C$L30,LEQ            ; [CPU_] |1560| 
+        ; branchcc occurs ; [] |1560| 
+        DEC       @_svgen1+16           ; [CPU_] |1560| 
 $C$L30:    
-        MOV32     R0H,@_svgen1+14       ; [CPU_] |1567| 
-        CMPF32    R0H,#0                ; [CPU_] |1567| 
-        MOVST0    ZF, NF                ; [CPU_] |1567| 
-        B         $C$L31,LEQ            ; [CPU_] |1567| 
-        ; branchcc occurs ; [] |1567| 
-        DEC       @_svgen1+16           ; [CPU_] |1567| 
+        MOV32     R0H,@_svgen1+14       ; [CPU_] |1560| 
+        CMPF32    R0H,#0                ; [CPU_] |1560| 
+        MOVST0    ZF, NF                ; [CPU_] |1560| 
+        B         $C$L31,LEQ            ; [CPU_] |1560| 
+        ; branchcc occurs ; [] |1560| 
+        DEC       @_svgen1+16           ; [CPU_] |1560| 
 $C$L31:    
-        MOV32     R0H,@_svgen1+10       ; [CPU_] |1567| 
-        CMPF32    R0H,#0                ; [CPU_] |1567| 
-        MOVST0    ZF, NF                ; [CPU_] |1567| 
-        B         $C$L32,GEQ            ; [CPU_] |1567| 
-        ; branchcc occurs ; [] |1567| 
-        MOVB      AL,#7                 ; [CPU_] |1567| 
-        SUBR      @_svgen1+16,AL        ; [CPU_] |1567| 
+        MOV32     R0H,@_svgen1+10       ; [CPU_] |1560| 
+        CMPF32    R0H,#0                ; [CPU_] |1560| 
+        MOVST0    ZF, NF                ; [CPU_] |1560| 
+        B         $C$L32,GEQ            ; [CPU_] |1560| 
+        ; branchcc occurs ; [] |1560| 
+        MOVB      AL,#7                 ; [CPU_] |1560| 
+        SUBR      @_svgen1+16,AL        ; [CPU_] |1560| 
 $C$L32:    
-        MOV       AL,@_svgen1+16        ; [CPU_] |1567| 
-        CMPB      AL,#1                 ; [CPU_] |1567| 
-        B         $C$L34,EQ             ; [CPU_] |1567| 
-        ; branchcc occurs ; [] |1567| 
-        CMPB      AL,#4                 ; [CPU_] |1567| 
-        B         $C$L34,EQ             ; [CPU_] |1567| 
-        ; branchcc occurs ; [] |1567| 
-        CMPB      AL,#2                 ; [CPU_] |1567| 
-        B         $C$L33,EQ             ; [CPU_] |1567| 
-        ; branchcc occurs ; [] |1567| 
-        CMPB      AL,#5                 ; [CPU_] |1567| 
-        B         $C$L33,EQ             ; [CPU_] |1567| 
-        ; branchcc occurs ; [] |1567| 
-        MOVL      ACC,@_svgen1+14       ; [CPU_] |1567| 
-        MOVL      @_svgen1+4,ACC        ; [CPU_] |1567| 
-        MOV32     R0H,@_svgen1+14       ; [CPU_] |1567| 
-        NEGF32    R0H,R0H               ; [CPU_] |1567| 
-        MOV32     @_svgen1+6,R0H        ; [CPU_] |1567| 
-        MOV32     R1H,@_svgen1+12       ; [CPU_] |1567| 
-        MOV32     R0H,@_svgen1+10       ; [CPU_] |1567| 
-        ADDF32    R0H,R0H,R1H           ; [CPU_] |1567| 
+        MOV       AL,@_svgen1+16        ; [CPU_] |1560| 
+        CMPB      AL,#1                 ; [CPU_] |1560| 
+        B         $C$L34,EQ             ; [CPU_] |1560| 
+        ; branchcc occurs ; [] |1560| 
+        CMPB      AL,#4                 ; [CPU_] |1560| 
+        B         $C$L34,EQ             ; [CPU_] |1560| 
+        ; branchcc occurs ; [] |1560| 
+        CMPB      AL,#2                 ; [CPU_] |1560| 
+        B         $C$L33,EQ             ; [CPU_] |1560| 
+        ; branchcc occurs ; [] |1560| 
+        CMPB      AL,#5                 ; [CPU_] |1560| 
+        B         $C$L33,EQ             ; [CPU_] |1560| 
+        ; branchcc occurs ; [] |1560| 
+        MOVL      ACC,@_svgen1+14       ; [CPU_] |1560| 
+        MOVL      @_svgen1+4,ACC        ; [CPU_] |1560| 
+        MOV32     R0H,@_svgen1+14       ; [CPU_] |1560| 
+        NEGF32    R0H,R0H               ; [CPU_] |1560| 
+        MOV32     @_svgen1+6,R0H        ; [CPU_] |1560| 
+        MOV32     R1H,@_svgen1+12       ; [CPU_] |1560| 
+        MOV32     R0H,@_svgen1+10       ; [CPU_] |1560| 
+        ADDF32    R0H,R0H,R1H           ; [CPU_] |1560| 
         NOP       ; [CPU_] 
-        NEGF32    R0H,R0H               ; [CPU_] |1567| 
-        MOV32     @_svgen1+8,R0H        ; [CPU_] |1567| 
-        B         $C$L35,UNC            ; [CPU_] |1567| 
-        ; branch occurs ; [] |1567| 
+        NEGF32    R0H,R0H               ; [CPU_] |1560| 
+        MOV32     @_svgen1+8,R0H        ; [CPU_] |1560| 
+        B         $C$L35,UNC            ; [CPU_] |1560| 
+        ; branch occurs ; [] |1560| 
 $C$L33:    
-        MOV32     R0H,@_svgen1+14       ; [CPU_] |1567| 
-        MOV32     R1H,@_svgen1+12       ; [CPU_] |1567| 
-        ADDF32    R0H,R0H,R1H           ; [CPU_] |1567| 
+        MOV32     R0H,@_svgen1+14       ; [CPU_] |1560| 
+        MOV32     R1H,@_svgen1+12       ; [CPU_] |1560| 
+        ADDF32    R0H,R0H,R1H           ; [CPU_] |1560| 
         NOP       ; [CPU_] 
-        MOV32     @_svgen1+4,R0H        ; [CPU_] |1567| 
-        MOVL      ACC,@_svgen1+10       ; [CPU_] |1567| 
-        MOVL      @_svgen1+6,ACC        ; [CPU_] |1567| 
-        MOV32     R0H,@_svgen1+10       ; [CPU_] |1567| 
-        NEGF32    R0H,R0H               ; [CPU_] |1567| 
-        MOV32     @_svgen1+8,R0H        ; [CPU_] |1567| 
-        B         $C$L35,UNC            ; [CPU_] |1567| 
-        ; branch occurs ; [] |1567| 
+        MOV32     @_svgen1+4,R0H        ; [CPU_] |1560| 
+        MOVL      ACC,@_svgen1+10       ; [CPU_] |1560| 
+        MOVL      @_svgen1+6,ACC        ; [CPU_] |1560| 
+        MOV32     R0H,@_svgen1+10       ; [CPU_] |1560| 
+        NEGF32    R0H,R0H               ; [CPU_] |1560| 
+        MOV32     @_svgen1+8,R0H        ; [CPU_] |1560| 
+        B         $C$L35,UNC            ; [CPU_] |1560| 
+        ; branch occurs ; [] |1560| 
 $C$L34:    
-        MOVL      ACC,@_svgen1+12       ; [CPU_] |1567| 
-        MOVL      @_svgen1+4,ACC        ; [CPU_] |1567| 
-        MOV32     R0H,@_svgen1+14       ; [CPU_] |1567| 
-        MOV32     R1H,@_svgen1+10       ; [CPU_] |1567| 
-        SUBF32    R0H,R1H,R0H           ; [CPU_] |1567| 
+        MOVL      ACC,@_svgen1+12       ; [CPU_] |1560| 
+        MOVL      @_svgen1+4,ACC        ; [CPU_] |1560| 
+        MOV32     R0H,@_svgen1+14       ; [CPU_] |1560| 
+        MOV32     R1H,@_svgen1+10       ; [CPU_] |1560| 
+        SUBF32    R0H,R1H,R0H           ; [CPU_] |1560| 
         NOP       ; [CPU_] 
-        MOV32     @_svgen1+6,R0H        ; [CPU_] |1567| 
-        MOV32     R0H,@_svgen1+12       ; [CPU_] |1567| 
-        NEGF32    R0H,R0H               ; [CPU_] |1567| 
-        MOV32     @_svgen1+8,R0H        ; [CPU_] |1567| 
+        MOV32     @_svgen1+6,R0H        ; [CPU_] |1560| 
+        MOV32     R0H,@_svgen1+12       ; [CPU_] |1560| 
+        NEGF32    R0H,R0H               ; [CPU_] |1560| 
+        MOV32     @_svgen1+8,R0H        ; [CPU_] |1560| 
 $C$L35:    
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1570,column 3,is_stmt,isa 0
-        MOVB      ACC,#1                ; [CPU_] |1570| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1563,column 3,is_stmt,isa 0
+        MOVB      ACC,#1                ; [CPU_] |1563| 
         MOVW      DP,#_SVGenMacroCount_LEVEL1 ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1575,column 3,is_stmt,isa 0
-        MOVIZ     R0H,#17692            ; [CPU_] |1575| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1576,column 2,is_stmt,isa 0
-        MOVIZ     R6H,#17692            ; [CPU_] |1576| 
-        MOVIZ     R7H,#17692            ; [CPU_] |1576| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1577,column 2,is_stmt,isa 0
-        MOVIZ     R5H,#17692            ; [CPU_] |1577| 
-        MOVIZ     R4H,#17692            ; [CPU_] |1577| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1570,column 3,is_stmt,isa 0
-        ADDL      @_SVGenMacroCount_LEVEL1,ACC ; [CPU_] |1570| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1575,column 3,is_stmt,isa 0
-        MOVIZ     R1H,#17692            ; [CPU_] |1575| 
-        MOVXI     R1H,#16384            ; [CPU_] |1575| 
-        MOVXI     R0H,#16384            ; [CPU_] |1575| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1568,column 3,is_stmt,isa 0
+        MOVIZ     R0H,#17692            ; [CPU_] |1568| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1569,column 2,is_stmt,isa 0
+        MOVIZ     R6H,#17692            ; [CPU_] |1569| 
+        MOVIZ     R7H,#17692            ; [CPU_] |1569| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1570,column 2,is_stmt,isa 0
+        MOVIZ     R5H,#17692            ; [CPU_] |1570| 
+        MOVIZ     R4H,#17692            ; [CPU_] |1570| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1563,column 3,is_stmt,isa 0
+        ADDL      @_SVGenMacroCount_LEVEL1,ACC ; [CPU_] |1563| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1568,column 3,is_stmt,isa 0
+        MOVIZ     R1H,#17692            ; [CPU_] |1568| 
+        MOVXI     R1H,#16384            ; [CPU_] |1568| 
+        MOVXI     R0H,#16384            ; [CPU_] |1568| 
         MOVW      DP,#_svgen1+4         ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1576,column 2,is_stmt,isa 0
-        MOVXI     R6H,#16384            ; [CPU_] |1576| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1575,column 3,is_stmt,isa 0
-        MOV32     R3H,@_svgen1+4        ; [CPU_] |1575| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1576,column 2,is_stmt,isa 0
-        MOVXI     R7H,#16384            ; [CPU_] |1576| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1577,column 2,is_stmt,isa 0
-        MOVXI     R5H,#16384            ; [CPU_] |1577| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1575,column 3,is_stmt,isa 0
-        MPYF32    R2H,R1H,R3H           ; [CPU_] |1575| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1577,column 2,is_stmt,isa 0
-        MOVXI     R4H,#16384            ; [CPU_] |1577| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1575,column 3,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1569,column 2,is_stmt,isa 0
+        MOVXI     R6H,#16384            ; [CPU_] |1569| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1568,column 3,is_stmt,isa 0
+        MOV32     R3H,@_svgen1+4        ; [CPU_] |1568| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1569,column 2,is_stmt,isa 0
+        MOVXI     R7H,#16384            ; [CPU_] |1569| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1570,column 2,is_stmt,isa 0
+        MOVXI     R5H,#16384            ; [CPU_] |1570| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1568,column 3,is_stmt,isa 0
+        MPYF32    R2H,R1H,R3H           ; [CPU_] |1568| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1570,column 2,is_stmt,isa 0
+        MOVXI     R4H,#16384            ; [CPU_] |1570| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1568,column 3,is_stmt,isa 0
 
-        ADDF32    R0H,R0H,R2H           ; [CPU_] |1575| 
-||      MOV32     R1H,@_svgen1+6        ; [CPU_] |1576| 
+        ADDF32    R0H,R0H,R2H           ; [CPU_] |1568| 
+||      MOV32     R1H,@_svgen1+6        ; [CPU_] |1569| 
 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1576,column 2,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1569,column 2,is_stmt,isa 0
 
-        MPYF32    R6H,R6H,R1H           ; [CPU_] |1576| 
-||      MOV32     R2H,@_svgen1+8        ; [CPU_] |1577| 
+        MPYF32    R6H,R6H,R1H           ; [CPU_] |1569| 
+||      MOV32     R2H,@_svgen1+8        ; [CPU_] |1570| 
 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1575,column 3,is_stmt,isa 0
-        F32TOUI16 R0H,R0H               ; [CPU_] |1575| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1568,column 3,is_stmt,isa 0
+        F32TOUI16 R0H,R0H               ; [CPU_] |1568| 
         MOVW      DP,#_EPwm1Regs+107    ; [CPU_U] 
-        MOV       AL,@_EPwm1Regs+107    ; [CPU_] |1575| 
-        MOV32     XAR6,R0H              ; [CPU_] |1575| 
+        MOV       AL,@_EPwm1Regs+107    ; [CPU_] |1568| 
+        MOV32     XAR6,R0H              ; [CPU_] |1568| 
         MOVW      DP,#_rg1+8            ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1569,column 2,is_stmt,isa 0
+
+        MPYF32    R5H,R5H,R2H           ; [CPU_] |1570| 
+||      ADDF32    R6H,R6H,R7H           ; [CPU_] |1569| 
+
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1576,column 2,is_stmt,isa 0
-
-        MPYF32    R5H,R5H,R2H           ; [CPU_] |1577| 
-||      ADDF32    R6H,R6H,R7H           ; [CPU_] |1576| 
-
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1583,column 2,is_stmt,isa 0
-        MOVL      XAR7,@_rg1+8          ; [CPU_] |1583| 
+        MOVL      XAR7,@_rg1+8          ; [CPU_] |1576| 
         MOVW      DP,#_EPwm1Regs+107    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1576,column 2,is_stmt,isa 0
-        F32TOUI16 R0H,R6H               ; [CPU_] |1576| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1575,column 3,is_stmt,isa 0
-        MOV       @_EPwm1Regs+107,AR6   ; [CPU_] |1575| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1577,column 2,is_stmt,isa 0
-        ADDF32    R4H,R4H,R5H           ; [CPU_] |1577| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1569,column 2,is_stmt,isa 0
+        F32TOUI16 R0H,R6H               ; [CPU_] |1569| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1568,column 3,is_stmt,isa 0
+        MOV       @_EPwm1Regs+107,AR6   ; [CPU_] |1568| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1570,column 2,is_stmt,isa 0
+        ADDF32    R4H,R4H,R5H           ; [CPU_] |1570| 
         MOVW      DP,#_EPwm2Regs+107    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1576,column 2,is_stmt,isa 0
-        MOV32     ACC,R0H               ; [CPU_] |1576| 
-        MOV       AH,@_EPwm2Regs+107    ; [CPU_] |1576| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1577,column 2,is_stmt,isa 0
-        F32TOUI16 R0H,R4H               ; [CPU_] |1577| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1576,column 2,is_stmt,isa 0
-        MOV       @_EPwm2Regs+107,AL    ; [CPU_] |1576| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1569,column 2,is_stmt,isa 0
+        MOV32     ACC,R0H               ; [CPU_] |1569| 
+        MOV       AH,@_EPwm2Regs+107    ; [CPU_] |1569| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1570,column 2,is_stmt,isa 0
+        F32TOUI16 R0H,R4H               ; [CPU_] |1570| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1569,column 2,is_stmt,isa 0
+        MOV       @_EPwm2Regs+107,AL    ; [CPU_] |1569| 
         MOVW      DP,#_rslvrIn+2        ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1591,column 2,is_stmt,isa 0
-        MOV       AL,@_rslvrIn+2        ; [CPU_] |1591| 
-        MOVW      DP,#_EPwm3Regs+107    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1577,column 2,is_stmt,isa 0
-        MOV32     XAR6,R0H              ; [CPU_] |1577| 
-        MOV       AH,@_EPwm3Regs+107    ; [CPU_] |1577| 
-        MOVW      DP,#_DlogCh1          ; [CPU_U] 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1584,column 2,is_stmt,isa 0
-        MOV32     @_DlogCh2,R3H         ; [CPU_] |1584| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1585,column 2,is_stmt,isa 0
-        MOV32     @_DlogCh3,R1H         ; [CPU_] |1585| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1586,column 2,is_stmt,isa 0
-        MOV32     @_DlogCh4,R2H         ; [CPU_] |1586| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1583,column 2,is_stmt,isa 0
-        MOVL      @_DlogCh1,XAR7        ; [CPU_] |1583| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1591,column 2,is_stmt,isa 0
-        CMPB      AL,#0                 ; [CPU_] |1591| 
+        MOV       AL,@_rslvrIn+2        ; [CPU_] |1584| 
         MOVW      DP,#_EPwm3Regs+107    ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1570,column 2,is_stmt,isa 0
+        MOV32     XAR6,R0H              ; [CPU_] |1570| 
+        MOV       AH,@_EPwm3Regs+107    ; [CPU_] |1570| 
+        MOVW      DP,#_DlogCh1          ; [CPU_U] 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1577,column 2,is_stmt,isa 0
-        MOV       @_EPwm3Regs+107,AR6   ; [CPU_] |1577| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1591,column 2,is_stmt,isa 0
-        B         $C$L36,NEQ            ; [CPU_] |1591| 
-        ; branchcc occurs ; [] |1591| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1598,column 3,is_stmt,isa 0
-        MPYF32    R0H,R1H,#16128        ; [CPU_] |1598| 
+        MOV32     @_DlogCh2,R3H         ; [CPU_] |1577| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1578,column 2,is_stmt,isa 0
+        MOV32     @_DlogCh3,R1H         ; [CPU_] |1578| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1579,column 2,is_stmt,isa 0
+        MOV32     @_DlogCh4,R2H         ; [CPU_] |1579| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1576,column 2,is_stmt,isa 0
+        MOVL      @_DlogCh1,XAR7        ; [CPU_] |1576| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1584,column 2,is_stmt,isa 0
+        CMPB      AL,#0                 ; [CPU_] |1584| 
+        MOVW      DP,#_EPwm3Regs+107    ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1570,column 2,is_stmt,isa 0
+        MOV       @_EPwm3Regs+107,AR6   ; [CPU_] |1570| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1584,column 2,is_stmt,isa 0
+        B         $C$L36,NEQ            ; [CPU_] |1584| 
+        ; branchcc occurs ; [] |1584| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1591,column 3,is_stmt,isa 0
+        MPYF32    R0H,R1H,#16128        ; [CPU_] |1591| 
         NOP       ; [CPU_] 
-        ADDF32    R0H,R0H,#16128        ; [CPU_] |1598| 
+        ADDF32    R0H,R0H,#16128        ; [CPU_] |1591| 
         NOP       ; [CPU_] 
-        MPYF32    R0H,R0H,#17792        ; [CPU_] |1598| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1599,column 3,is_stmt,isa 0
-        MPYF32    R1H,R2H,#16128        ; [CPU_] |1599| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1598,column 3,is_stmt,isa 0
-        F32TOUI16 R0H,R0H               ; [CPU_] |1598| 
+        MPYF32    R0H,R0H,#17792        ; [CPU_] |1591| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1592,column 3,is_stmt,isa 0
+        MPYF32    R1H,R2H,#16128        ; [CPU_] |1592| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1591,column 3,is_stmt,isa 0
+        F32TOUI16 R0H,R0H               ; [CPU_] |1591| 
         NOP       ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1599,column 3,is_stmt,isa 0
-        ADDF32    R1H,R1H,#16128        ; [CPU_] |1599| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1598,column 3,is_stmt,isa 0
-        MOV32     XAR6,R0H              ; [CPU_] |1598| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1599,column 3,is_stmt,isa 0
-        MPYF32    R1H,R1H,#17792        ; [CPU_] |1599| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1598,column 3,is_stmt,isa 0
-        AND       AR6,#0x0fff           ; [CPU_] |1598| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1592,column 3,is_stmt,isa 0
+        ADDF32    R1H,R1H,#16128        ; [CPU_] |1592| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1591,column 3,is_stmt,isa 0
+        MOV32     XAR6,R0H              ; [CPU_] |1591| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1592,column 3,is_stmt,isa 0
+        MPYF32    R1H,R1H,#17792        ; [CPU_] |1592| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1591,column 3,is_stmt,isa 0
+        AND       AR6,#0x0fff           ; [CPU_] |1591| 
         MOVW      DP,#_DacbRegs+3       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1599,column 3,is_stmt,isa 0
-        F32TOUI16 R0H,R1H               ; [CPU_] |1599| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1598,column 3,is_stmt,isa 0
-        AND       AL,@_DacbRegs+3,#0xf000 ; [CPU_] |1598| 
-        OR        AR6,AL                ; [CPU_] |1598| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1599,column 3,is_stmt,isa 0
-        MOV32     XAR7,R0H              ; [CPU_] |1599| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1598,column 3,is_stmt,isa 0
-        MOV       @_DacbRegs+3,AR6      ; [CPU_] |1598| 
-        MOV       AH,AR7                ; [CPU_] |1598| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1592,column 3,is_stmt,isa 0
+        F32TOUI16 R0H,R1H               ; [CPU_] |1592| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1591,column 3,is_stmt,isa 0
+        AND       AL,@_DacbRegs+3,#0xf000 ; [CPU_] |1591| 
+        OR        AR6,AL                ; [CPU_] |1591| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1592,column 3,is_stmt,isa 0
+        MOV32     XAR7,R0H              ; [CPU_] |1592| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1591,column 3,is_stmt,isa 0
+        MOV       @_DacbRegs+3,AR6      ; [CPU_] |1591| 
+        MOV       AH,AR7                ; [CPU_] |1591| 
         MOVW      DP,#_DacaRegs+3       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1599,column 3,is_stmt,isa 0
-        AND       AH,#0x0fff            ; [CPU_] |1599| 
-        AND       AL,@_DacaRegs+3,#0xf000 ; [CPU_] |1599| 
-        OR        AH,AL                 ; [CPU_] |1599| 
-        MOV       @_DacaRegs+3,AH       ; [CPU_] |1599| 
-        B         $C$L37,UNC            ; [CPU_] |1599| 
-        ; branch occurs ; [] |1599| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1592,column 3,is_stmt,isa 0
+        AND       AH,#0x0fff            ; [CPU_] |1592| 
+        AND       AL,@_DacaRegs+3,#0xf000 ; [CPU_] |1592| 
+        OR        AH,AL                 ; [CPU_] |1592| 
+        MOV       @_DacaRegs+3,AH       ; [CPU_] |1592| 
+        B         $C$L37,UNC            ; [CPU_] |1592| 
+        ; branch occurs ; [] |1592| 
 $C$L36:    
         MOVW      DP,#_rslvrOut         ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1593,column 3,is_stmt,isa 0
-        MOV32     R0H,@_rslvrOut        ; [CPU_] |1593| 
-        MPYF32    R0H,R0H,#17792        ; [CPU_] |1593| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1586,column 3,is_stmt,isa 0
+        MOV32     R0H,@_rslvrOut        ; [CPU_] |1586| 
+        MPYF32    R0H,R0H,#17792        ; [CPU_] |1586| 
         NOP       ; [CPU_] 
-        F32TOUI16 R0H,R0H               ; [CPU_] |1593| 
+        F32TOUI16 R0H,R0H               ; [CPU_] |1586| 
         NOP       ; [CPU_] 
         NOP       ; [CPU_] 
-        MOV32     XAR6,R0H              ; [CPU_] |1593| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1594,column 3,is_stmt,isa 0
-        MOV32     R1H,@_rslvrOut+4      ; [CPU_] |1594| 
-        MPYF32    R1H,R1H,#17792        ; [CPU_] |1594| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1593,column 3,is_stmt,isa 0
-        AND       AR6,#0x0fff           ; [CPU_] |1593| 
+        MOV32     XAR6,R0H              ; [CPU_] |1586| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1587,column 3,is_stmt,isa 0
+        MOV32     R1H,@_rslvrOut+4      ; [CPU_] |1587| 
+        MPYF32    R1H,R1H,#17792        ; [CPU_] |1587| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1586,column 3,is_stmt,isa 0
+        AND       AR6,#0x0fff           ; [CPU_] |1586| 
         MOVW      DP,#_DacbRegs+3       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1594,column 3,is_stmt,isa 0
-        F32TOUI16 R0H,R1H               ; [CPU_] |1594| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1593,column 3,is_stmt,isa 0
-        AND       AL,@_DacbRegs+3,#0xf000 ; [CPU_] |1593| 
-        OR        AR6,AL                ; [CPU_] |1593| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1594,column 3,is_stmt,isa 0
-        MOV32     XAR7,R0H              ; [CPU_] |1594| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1593,column 3,is_stmt,isa 0
-        MOV       @_DacbRegs+3,AR6      ; [CPU_] |1593| 
-        MOV       AH,AR7                ; [CPU_] |1593| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1587,column 3,is_stmt,isa 0
+        F32TOUI16 R0H,R1H               ; [CPU_] |1587| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1586,column 3,is_stmt,isa 0
+        AND       AL,@_DacbRegs+3,#0xf000 ; [CPU_] |1586| 
+        OR        AR6,AL                ; [CPU_] |1586| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1587,column 3,is_stmt,isa 0
+        MOV32     XAR7,R0H              ; [CPU_] |1587| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1586,column 3,is_stmt,isa 0
+        MOV       @_DacbRegs+3,AR6      ; [CPU_] |1586| 
+        MOV       AH,AR7                ; [CPU_] |1586| 
         MOVW      DP,#_DacaRegs+3       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1594,column 3,is_stmt,isa 0
-        AND       AH,#0x0fff            ; [CPU_] |1594| 
-        AND       AL,@_DacaRegs+3,#0xf000 ; [CPU_] |1594| 
-        OR        AH,AL                 ; [CPU_] |1594| 
-        MOV       @_DacaRegs+3,AH       ; [CPU_] |1594| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1587,column 3,is_stmt,isa 0
+        AND       AH,#0x0fff            ; [CPU_] |1587| 
+        AND       AL,@_DacaRegs+3,#0xf000 ; [CPU_] |1587| 
+        OR        AH,AL                 ; [CPU_] |1587| 
+        MOV       @_DacaRegs+3,AH       ; [CPU_] |1587| 
 $C$L37:    
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2241,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_dlog_4ch1      ; [CPU_U] |2241| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2235,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_dlog_4ch1      ; [CPU_U] |2235| 
         SPM       #0                    ; [CPU_] 
 $C$DW$314	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$314, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$314, DW_AT_name("_DLOG_4CH_F_FUNC")
 	.dwattr $C$DW$314, DW_AT_TI_call
 
-        LCR       #_DLOG_4CH_F_FUNC     ; [CPU_] |2241| 
-        ; call occurs [#_DLOG_4CH_F_FUNC] ; [] |2241| 
+        LCR       #_DLOG_4CH_F_FUNC     ; [CPU_] |2235| 
+        ; call occurs [#_DLOG_4CH_F_FUNC] ; [] |2235| 
         MOVW      DP,#_EPwm11Regs+170   ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2243,column 5,is_stmt,isa 0
-        OR        @_EPwm11Regs+170,#0x0001 ; [CPU_] |2243| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2237,column 5,is_stmt,isa 0
+        OR        @_EPwm11Regs+170,#0x0001 ; [CPU_] |2237| 
         MOVW      DP,#_PieCtrlRegs+1    ; [CPU_U] 
         SUBB      SP,#2                 ; [CPU_U] 
 	.dwcfi	cfa_offset, -34
         MOV32     R7H,*--SP             ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2244,column 5,is_stmt,isa 0
-        MOVB      @_PieCtrlRegs+1,#4,UNC ; [CPU_] |2244| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2238,column 5,is_stmt,isa 0
+        MOVB      @_PieCtrlRegs+1,#4,UNC ; [CPU_] |2238| 
         MOV32     R6H,*--SP             ; [CPU_] 
         MOV32     R5H,*--SP             ; [CPU_] 
         MOV32     R4H,*--SP             ; [CPU_] 
@@ -5826,7 +5826,7 @@ $C$DW$315	.dwtag  DW_TAG_TI_branch
         IRET      ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$313, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$313, DW_AT_TI_end_line(0x8c6)
+	.dwattr $C$DW$313, DW_AT_TI_end_line(0x8c0)
 	.dwattr $C$DW$313, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$313
@@ -5842,10 +5842,10 @@ $C$DW$316	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$316, DW_AT_TI_symbol_name("_cmpssConfig")
 	.dwattr $C$DW$316, DW_AT_external
 	.dwattr $C$DW$316, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$316, DW_AT_TI_begin_line(0x8dc)
+	.dwattr $C$DW$316, DW_AT_TI_begin_line(0x8d6)
 	.dwattr $C$DW$316, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$316, DW_AT_TI_max_frame_size(-4)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2269,column 1,is_stmt,address _cmpssConfig,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2263,column 1,is_stmt,address _cmpssConfig,isa 0
 
 	.dwfde $C$DW$CIE, _cmpssConfig
 $C$DW$317	.dwtag  DW_TAG_formal_parameter
@@ -5906,136 +5906,136 @@ $C$DW$322	.dwtag  DW_TAG_variable
         MOVL      *SP++,XAR1            ; [CPU_] 
 	.dwcfi	save_reg_to_mem, 7, 2
 	.dwcfi	cfa_offset, -4
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2271,column 2,is_stmt,isa 0
-        OR        *+XAR4[0],#0x8000     ; [CPU_] |2271| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2272,column 2,is_stmt,isa 0
-        AND       *+XAR4[0],#0xfeff     ; [CPU_] |2272| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2269,column 1,is_stmt,isa 0
-        MOVZ      AR7,AL                ; [CPU_] |2269| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2273,column 2,is_stmt,isa 0
-        AND       *+XAR4[0],#0xfffe     ; [CPU_] |2273| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2274,column 2,is_stmt,isa 0
-        AND       *+XAR4[0],#0xfffd     ; [CPU_] |2274| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2269,column 1,is_stmt,isa 0
-        MOVZ      AR6,AH                ; [CPU_] |2269| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2293,column 2,is_stmt,isa 0
-        MOVB      XAR0,#18              ; [CPU_] |2293| 
-        MOVB      XAR1,#18              ; [CPU_] |2293| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2265,column 2,is_stmt,isa 0
+        OR        *+XAR4[0],#0x8000     ; [CPU_] |2265| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2266,column 2,is_stmt,isa 0
+        AND       *+XAR4[0],#0xfeff     ; [CPU_] |2266| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2263,column 1,is_stmt,isa 0
+        MOVZ      AR7,AL                ; [CPU_] |2263| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2267,column 2,is_stmt,isa 0
+        AND       *+XAR4[0],#0xfffe     ; [CPU_] |2267| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2268,column 2,is_stmt,isa 0
+        AND       *+XAR4[0],#0xfffd     ; [CPU_] |2268| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2263,column 1,is_stmt,isa 0
+        MOVZ      AR6,AH                ; [CPU_] |2263| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2287,column 2,is_stmt,isa 0
+        MOVB      XAR0,#18              ; [CPU_] |2287| 
+        MOVB      XAR1,#18              ; [CPU_] |2287| 
         MOVW      DP,#_clkPrescale      ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2269,column 2,is_stmt,isa 0
+        OR        *+XAR4[0],#0x0200     ; [CPU_] |2269| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2293,column 2,is_stmt,isa 0
+        MOVL      XAR5,XAR4             ; [CPU_] |2293| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2270,column 2,is_stmt,isa 0
+        AND       *+XAR4[0],#0xffbf     ; [CPU_] |2270| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2271,column 2,is_stmt,isa 0
+        AND       *+XAR4[0],#0xbfff     ; [CPU_] |2271| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2272,column 2,is_stmt,isa 0
+        AND       AL,*+XAR4[0],#0xfffb  ; [CPU_] |2272| 
+        ORB       AL,#0x08              ; [CPU_] |2272| 
+        MOV       *+XAR4[0],AL          ; [CPU_] |2272| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2273,column 2,is_stmt,isa 0
+        AND       AL,*+XAR4[0],#0xffef  ; [CPU_] |2273| 
+        ORB       AL,#0x20              ; [CPU_] |2273| 
+        MOV       *+XAR4[0],AL          ; [CPU_] |2273| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2274,column 2,is_stmt,isa 0
+        AND       AL,*+XAR4[0],#0xfbff  ; [CPU_] |2274| 
+        OR        AL,#0x0800            ; [CPU_] |2274| 
+        MOV       *+XAR4[0],AL          ; [CPU_] |2274| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2275,column 2,is_stmt,isa 0
-        OR        *+XAR4[0],#0x0200     ; [CPU_] |2275| 
+        AND       AL,*+XAR4[0],#0xefff  ; [CPU_] |2275| 
+        OR        AL,#0x2000            ; [CPU_] |2275| 
+        MOV       *+XAR4[0],AL          ; [CPU_] |2275| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2278,column 2,is_stmt,isa 0
+        AND       AL,*+XAR4[1],#0xfff8  ; [CPU_] |2278| 
+        ORB       AL,#0x02              ; [CPU_] |2278| 
+        MOV       *+XAR4[1],AL          ; [CPU_] |2278| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2286,column 2,is_stmt,isa 0
+        AND       AL,AR7,#0x0fff        ; [CPU_] |2286| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2281,column 2,is_stmt,isa 0
+        AND       *+XAR4[4],#0xffdf     ; [CPU_] |2281| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2282,column 2,is_stmt,isa 0
+        AND       *+XAR4[4],#0xff7f     ; [CPU_] |2282| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2283,column 2,is_stmt,isa 0
+        AND       *+XAR4[4],#0xfffe     ; [CPU_] |2283| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2286,column 2,is_stmt,isa 0
+        AND       AH,*+XAR4[6],#0xf000  ; [CPU_] |2286| 
+        OR        AL,AH                 ; [CPU_] |2286| 
+        MOV       *+XAR4[6],AL          ; [CPU_] |2286| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2287,column 2,is_stmt,isa 0
+        AND       AL,AR6,#0x0fff        ; [CPU_] |2287| 
+        AND       AH,*+XAR4[AR0],#0xf000 ; [CPU_] |2287| 
+        OR        AL,AH                 ; [CPU_] |2287| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2290,column 2,is_stmt,isa 0
+        MOVB      XAR0,#25              ; [CPU_] |2290| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2287,column 2,is_stmt,isa 0
+        MOV       *+XAR4[AR1],AL        ; [CPU_] |2287| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2290,column 2,is_stmt,isa 0
+        AND       AL,@_clkPrescale,#0x03ff ; [CPU_] |2290| 
+        MOVZ      AR6,AL                ; [CPU_] |2290| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2292,column 2,is_stmt,isa 0
+        MOVB      XAR1,#24              ; [CPU_] |2292| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2290,column 2,is_stmt,isa 0
+        AND       AL,*+XAR4[AR0],#0xfc00 ; [CPU_] |2290| 
+        MOVB      XAR0,#25              ; [CPU_] |2290| 
+        OR        AL,AR6                ; [CPU_] |2290| 
+        MOV       *+XAR4[AR0],AL        ; [CPU_] |2290| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2291,column 2,is_stmt,isa 0
+        MOVB      XAR0,#24              ; [CPU_] |2291| 
+        MOV       AL,@_sampwin          ; [CPU_] |2291| 
+        ANDB      AL,#0x1f              ; [CPU_] |2291| 
+        MOV       ACC,AL << #4          ; [CPU_] |2291| 
+        MOVZ      AR7,AL                ; [CPU_] |2291| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2293,column 2,is_stmt,isa 0
+        ADDB      XAR5,#24              ; [CPU_] |2293| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2291,column 2,is_stmt,isa 0
+        AND       AH,*+XAR4[AR0],#0xfe0f ; [CPU_] |2291| 
+        MOVB      XAR0,#24              ; [CPU_] |2291| 
+        OR        AH,AR7                ; [CPU_] |2291| 
+        MOV       *+XAR4[AR0],AH        ; [CPU_] |2291| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2292,column 2,is_stmt,isa 0
+        MOVB      XAR0,#24              ; [CPU_] |2292| 
+        MOV       AH,@_thresh           ; [CPU_] |2292| 
+        ANDB      AH,#0x1f              ; [CPU_] |2292| 
+        MOV       ACC,AH << #9          ; [CPU_] |2292| 
+        AND       AH,*+XAR4[AR0],#0xc1ff ; [CPU_] |2292| 
+        OR        AH,AL                 ; [CPU_] |2292| 
+        MOV       *+XAR4[AR1],AH        ; [CPU_] |2292| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2293,column 2,is_stmt,isa 0
+        OR        *+XAR5[0],#0x8000     ; [CPU_] |2293| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2299,column 2,is_stmt,isa 0
         MOVL      XAR5,XAR4             ; [CPU_] |2299| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2276,column 2,is_stmt,isa 0
-        AND       *+XAR4[0],#0xffbf     ; [CPU_] |2276| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2277,column 2,is_stmt,isa 0
-        AND       *+XAR4[0],#0xbfff     ; [CPU_] |2277| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2278,column 2,is_stmt,isa 0
-        AND       AL,*+XAR4[0],#0xfffb  ; [CPU_] |2278| 
-        ORB       AL,#0x08              ; [CPU_] |2278| 
-        MOV       *+XAR4[0],AL          ; [CPU_] |2278| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2279,column 2,is_stmt,isa 0
-        AND       AL,*+XAR4[0],#0xffef  ; [CPU_] |2279| 
-        ORB       AL,#0x20              ; [CPU_] |2279| 
-        MOV       *+XAR4[0],AL          ; [CPU_] |2279| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2280,column 2,is_stmt,isa 0
-        AND       AL,*+XAR4[0],#0xfbff  ; [CPU_] |2280| 
-        OR        AL,#0x0800            ; [CPU_] |2280| 
-        MOV       *+XAR4[0],AL          ; [CPU_] |2280| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2281,column 2,is_stmt,isa 0
-        AND       AL,*+XAR4[0],#0xefff  ; [CPU_] |2281| 
-        OR        AL,#0x2000            ; [CPU_] |2281| 
-        MOV       *+XAR4[0],AL          ; [CPU_] |2281| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2284,column 2,is_stmt,isa 0
-        AND       AL,*+XAR4[1],#0xfff8  ; [CPU_] |2284| 
-        ORB       AL,#0x02              ; [CPU_] |2284| 
-        MOV       *+XAR4[1],AL          ; [CPU_] |2284| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2292,column 2,is_stmt,isa 0
-        AND       AL,AR7,#0x0fff        ; [CPU_] |2292| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2287,column 2,is_stmt,isa 0
-        AND       *+XAR4[4],#0xffdf     ; [CPU_] |2287| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2288,column 2,is_stmt,isa 0
-        AND       *+XAR4[4],#0xff7f     ; [CPU_] |2288| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2289,column 2,is_stmt,isa 0
-        AND       *+XAR4[4],#0xfffe     ; [CPU_] |2289| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2292,column 2,is_stmt,isa 0
-        AND       AH,*+XAR4[6],#0xf000  ; [CPU_] |2292| 
-        OR        AL,AH                 ; [CPU_] |2292| 
-        MOV       *+XAR4[6],AL          ; [CPU_] |2292| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2293,column 2,is_stmt,isa 0
-        AND       AL,AR6,#0x0fff        ; [CPU_] |2293| 
-        AND       AH,*+XAR4[AR0],#0xf000 ; [CPU_] |2293| 
-        OR        AL,AH                 ; [CPU_] |2293| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2296,column 2,is_stmt,isa 0
-        MOVB      XAR0,#25              ; [CPU_] |2296| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2293,column 2,is_stmt,isa 0
-        MOV       *+XAR4[AR1],AL        ; [CPU_] |2293| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2296,column 2,is_stmt,isa 0
-        AND       AL,@_clkPrescale,#0x03ff ; [CPU_] |2296| 
-        MOVZ      AR6,AL                ; [CPU_] |2296| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2298,column 2,is_stmt,isa 0
-        MOVB      XAR1,#24              ; [CPU_] |2298| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2296,column 2,is_stmt,isa 0
-        AND       AL,*+XAR4[AR0],#0xfc00 ; [CPU_] |2296| 
-        MOVB      XAR0,#25              ; [CPU_] |2296| 
-        OR        AL,AR6                ; [CPU_] |2296| 
-        MOV       *+XAR4[AR0],AL        ; [CPU_] |2296| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2297,column 2,is_stmt,isa 0
-        MOVB      XAR0,#24              ; [CPU_] |2297| 
-        MOV       AL,@_sampwin          ; [CPU_] |2297| 
-        ANDB      AL,#0x1f              ; [CPU_] |2297| 
-        MOV       ACC,AL << #4          ; [CPU_] |2297| 
-        MOVZ      AR7,AL                ; [CPU_] |2297| 
+        MOVB      XAR0,#23              ; [CPU_] |2296| 
+        MOVB      XAR1,#23              ; [CPU_] |2296| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2299,column 2,is_stmt,isa 0
-        ADDB      XAR5,#24              ; [CPU_] |2299| 
+        ADDB      XAR5,#22              ; [CPU_] |2299| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2296,column 2,is_stmt,isa 0
+        AND       AH,*+XAR4[AR0],#0xfc00 ; [CPU_] |2296| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2297,column 2,is_stmt,isa 0
+        MOVB      XAR0,#22              ; [CPU_] |2297| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2296,column 2,is_stmt,isa 0
+        OR        AH,AR6                ; [CPU_] |2296| 
+        MOV       *+XAR4[AR1],AH        ; [CPU_] |2296| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2297,column 2,is_stmt,isa 0
+        MOVB      XAR1,#22              ; [CPU_] |2297| 
         AND       AH,*+XAR4[AR0],#0xfe0f ; [CPU_] |2297| 
-        MOVB      XAR0,#24              ; [CPU_] |2297| 
-        OR        AH,AR7                ; [CPU_] |2297| 
-        MOV       *+XAR4[AR0],AH        ; [CPU_] |2297| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2298,column 2,is_stmt,isa 0
-        MOVB      XAR0,#24              ; [CPU_] |2298| 
-        MOV       AH,@_thresh           ; [CPU_] |2298| 
-        ANDB      AH,#0x1f              ; [CPU_] |2298| 
-        MOV       ACC,AH << #9          ; [CPU_] |2298| 
+        MOVB      XAR0,#22              ; [CPU_] |2298| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2297,column 2,is_stmt,isa 0
+        OR        AH,AR7                ; [CPU_] |2297| 
+        MOV       *+XAR4[AR1],AH        ; [CPU_] |2297| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2298,column 2,is_stmt,isa 0
         AND       AH,*+XAR4[AR0],#0xc1ff ; [CPU_] |2298| 
+        MOVB      XAR0,#22              ; [CPU_] |2298| 
         OR        AH,AL                 ; [CPU_] |2298| 
-        MOV       *+XAR4[AR1],AH        ; [CPU_] |2298| 
+        MOV       *+XAR4[AR0],AH        ; [CPU_] |2298| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2299,column 2,is_stmt,isa 0
         OR        *+XAR5[0],#0x8000     ; [CPU_] |2299| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2305,column 2,is_stmt,isa 0
-        MOVL      XAR5,XAR4             ; [CPU_] |2305| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2302,column 2,is_stmt,isa 0
-        MOVB      XAR0,#23              ; [CPU_] |2302| 
-        MOVB      XAR1,#23              ; [CPU_] |2302| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2305,column 2,is_stmt,isa 0
-        ADDB      XAR5,#22              ; [CPU_] |2305| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2302,column 2,is_stmt,isa 0
-        AND       AH,*+XAR4[AR0],#0xfc00 ; [CPU_] |2302| 
+        OR        *+XAR4[3],#0x0002     ; [CPU_] |2302| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2303,column 2,is_stmt,isa 0
-        MOVB      XAR0,#22              ; [CPU_] |2303| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2302,column 2,is_stmt,isa 0
-        OR        AH,AR6                ; [CPU_] |2302| 
-        MOV       *+XAR4[AR1],AH        ; [CPU_] |2302| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2303,column 2,is_stmt,isa 0
-        MOVB      XAR1,#22              ; [CPU_] |2303| 
-        AND       AH,*+XAR4[AR0],#0xfe0f ; [CPU_] |2303| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2304,column 2,is_stmt,isa 0
-        MOVB      XAR0,#22              ; [CPU_] |2304| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2303,column 2,is_stmt,isa 0
-        OR        AH,AR7                ; [CPU_] |2303| 
-        MOV       *+XAR4[AR1],AH        ; [CPU_] |2303| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2304,column 2,is_stmt,isa 0
-        AND       AH,*+XAR4[AR0],#0xc1ff ; [CPU_] |2304| 
-        MOVB      XAR0,#22              ; [CPU_] |2304| 
-        OR        AH,AL                 ; [CPU_] |2304| 
-        MOV       *+XAR4[AR0],AH        ; [CPU_] |2304| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2305,column 2,is_stmt,isa 0
-        OR        *+XAR5[0],#0x8000     ; [CPU_] |2305| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2308,column 2,is_stmt,isa 0
-        OR        *+XAR4[3],#0x0002     ; [CPU_] |2308| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2309,column 2,is_stmt,isa 0
-        OR        *+XAR4[3],#0x0200     ; [CPU_] |2309| 
+        OR        *+XAR4[3],#0x0200     ; [CPU_] |2303| 
         MOVL      XAR1,*--SP            ; [CPU_] 
 	.dwcfi	cfa_offset, -2
 	.dwcfi	restore_reg, 7
@@ -6046,7 +6046,7 @@ $C$DW$323	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$316, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$316, DW_AT_TI_end_line(0x908)
+	.dwattr $C$DW$316, DW_AT_TI_end_line(0x902)
 	.dwattr $C$DW$316, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$316
@@ -6062,10 +6062,10 @@ $C$DW$324	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$324, DW_AT_TI_symbol_name("_HVDMC_Protection")
 	.dwattr $C$DW$324, DW_AT_external
 	.dwattr $C$DW$324, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$324, DW_AT_TI_begin_line(0x90b)
+	.dwattr $C$DW$324, DW_AT_TI_begin_line(0x905)
 	.dwattr $C$DW$324, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$324, DW_AT_TI_max_frame_size(-8)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2316,column 1,is_stmt,address _HVDMC_Protection,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2310,column 1,is_stmt,address _HVDMC_Protection,isa 0
 
 	.dwfde $C$DW$CIE, _HVDMC_Protection
 
@@ -6099,331 +6099,331 @@ _HVDMC_Protection:
 	.dwcfi	save_reg_to_mem, 11, 6
 	.dwcfi	cfa_offset, -8
  EALLOW
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2324,column 2,is_stmt,isa 0
-        MOVL      XAR5,#_GpioCtrlRegs   ; [CPU_U] |2324| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2336,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_GpioDataRegs   ; [CPU_U] |2336| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2324,column 2,is_stmt,isa 0
-        MOVL      XAR0,XAR5             ; [CPU_] |2324| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2325,column 2,is_stmt,isa 0
-        MOVL      XAR7,XAR5             ; [CPU_] |2325| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2326,column 2,is_stmt,isa 0
-        MOVL      XAR6,XAR5             ; [CPU_] |2326| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2327,column 2,is_stmt,isa 0
-        MOVL      XAR1,XAR5             ; [CPU_] |2327| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2318,column 2,is_stmt,isa 0
+        MOVL      XAR5,#_GpioCtrlRegs   ; [CPU_U] |2318| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2330,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_GpioDataRegs   ; [CPU_U] |2330| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2318,column 2,is_stmt,isa 0
+        MOVL      XAR0,XAR5             ; [CPU_] |2318| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2319,column 2,is_stmt,isa 0
+        MOVL      XAR7,XAR5             ; [CPU_] |2319| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2320,column 2,is_stmt,isa 0
+        MOVL      XAR6,XAR5             ; [CPU_] |2320| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2321,column 2,is_stmt,isa 0
+        MOVL      XAR1,XAR5             ; [CPU_] |2321| 
         MOVW      DP,#_InputXbarRegs+1  ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2346,column 2,is_stmt,isa 0
-        MOVIZ     R0H,#15786            ; [CPU_] |2346| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2324,column 2,is_stmt,isa 0
-        ADDB      XAR0,#76              ; [CPU_] |2324| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2325,column 2,is_stmt,isa 0
-        ADDB      XAR7,#71              ; [CPU_] |2325| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2326,column 2,is_stmt,isa 0
-        ADDB      XAR6,#74              ; [CPU_] |2326| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2327,column 2,is_stmt,isa 0
-        ADDB      XAR1,#80              ; [CPU_] |2327| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2324,column 2,is_stmt,isa 0
-        OR        *+XAR0[0],#0x0100     ; [CPU_] |2324| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2336,column 2,is_stmt,isa 0
-        MOVL      XAR0,XAR4             ; [CPU_] |2336| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2325,column 2,is_stmt,isa 0
-        AND       *+XAR7[0],#0xfffc     ; [CPU_] |2325| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2340,column 2,is_stmt,isa 0
-        MOVL      XAR7,XAR5             ; [CPU_] |2340| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2326,column 2,is_stmt,isa 0
-        AND       *+XAR6[0],#0xfeff     ; [CPU_] |2326| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2343,column 2,is_stmt,isa 0
-        ADDB      XAR4,#13              ; [CPU_] |2343| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2336,column 2,is_stmt,isa 0
-        ADDB      XAR0,#10              ; [CPU_] |2336| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2341,column 2,is_stmt,isa 0
-        MOVL      XAR6,XAR5             ; [CPU_] |2341| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2327,column 2,is_stmt,isa 0
-        OR        *+XAR1[0],#0x0100     ; [CPU_] |2327| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2340,column 2,is_stmt,isa 0
-        ADDB      XAR7,#77              ; [CPU_] |2340| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2329,column 2,is_stmt,isa 0
-        MOVB      @_InputXbarRegs+1,#40,UNC ; [CPU_] |2329| 
-        MOVW      DP,#_GpioCtrlRegs+76  ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2341,column 2,is_stmt,isa 0
-        ADDB      XAR6,#73              ; [CPU_] |2341| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2342,column 2,is_stmt,isa 0
-        ADDB      XAR5,#75              ; [CPU_] |2342| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2333,column 2,is_stmt,isa 0
-        OR        @_GpioCtrlRegs+76,#0x0200 ; [CPU_] |2333| 
+        MOVIZ     R0H,#15786            ; [CPU_] |2340| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2318,column 2,is_stmt,isa 0
+        ADDB      XAR0,#76              ; [CPU_] |2318| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2319,column 2,is_stmt,isa 0
+        ADDB      XAR7,#71              ; [CPU_] |2319| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2320,column 2,is_stmt,isa 0
+        ADDB      XAR6,#74              ; [CPU_] |2320| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2321,column 2,is_stmt,isa 0
+        ADDB      XAR1,#80              ; [CPU_] |2321| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2318,column 2,is_stmt,isa 0
+        OR        *+XAR0[0],#0x0100     ; [CPU_] |2318| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2330,column 2,is_stmt,isa 0
+        MOVL      XAR0,XAR4             ; [CPU_] |2330| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2319,column 2,is_stmt,isa 0
+        AND       *+XAR7[0],#0xfffc     ; [CPU_] |2319| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2334,column 2,is_stmt,isa 0
-        AND       @_GpioCtrlRegs+71,#0xfff3 ; [CPU_] |2334| 
+        MOVL      XAR7,XAR5             ; [CPU_] |2334| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2320,column 2,is_stmt,isa 0
+        AND       *+XAR6[0],#0xfeff     ; [CPU_] |2320| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2337,column 2,is_stmt,isa 0
+        ADDB      XAR4,#13              ; [CPU_] |2337| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2330,column 2,is_stmt,isa 0
+        ADDB      XAR0,#10              ; [CPU_] |2330| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2335,column 2,is_stmt,isa 0
-        OR        @_GpioCtrlRegs+74,#0x0200 ; [CPU_] |2335| 
-        MOVW      DP,#_curLimit         ; [CPU_U] 
+        MOVL      XAR6,XAR5             ; [CPU_] |2335| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2321,column 2,is_stmt,isa 0
+        OR        *+XAR1[0],#0x0100     ; [CPU_] |2321| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2334,column 2,is_stmt,isa 0
+        ADDB      XAR7,#77              ; [CPU_] |2334| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2323,column 2,is_stmt,isa 0
+        MOVB      @_InputXbarRegs+1,#40,UNC ; [CPU_] |2323| 
+        MOVW      DP,#_GpioCtrlRegs+76  ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2335,column 2,is_stmt,isa 0
+        ADDB      XAR6,#73              ; [CPU_] |2335| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2336,column 2,is_stmt,isa 0
-        OR        *+XAR0[0],#0x0200     ; [CPU_] |2336| 
+        ADDB      XAR5,#75              ; [CPU_] |2336| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2327,column 2,is_stmt,isa 0
+        OR        @_GpioCtrlRegs+76,#0x0200 ; [CPU_] |2327| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2328,column 2,is_stmt,isa 0
+        AND       @_GpioCtrlRegs+71,#0xfff3 ; [CPU_] |2328| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2329,column 2,is_stmt,isa 0
+        OR        @_GpioCtrlRegs+74,#0x0200 ; [CPU_] |2329| 
+        MOVW      DP,#_curLimit         ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2330,column 2,is_stmt,isa 0
+        OR        *+XAR0[0],#0x0200     ; [CPU_] |2330| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2334,column 2,is_stmt,isa 0
+        OR        *+XAR7[0],#0x0400     ; [CPU_] |2334| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2335,column 2,is_stmt,isa 0
+        AND       *+XAR6[0],#0xffcf     ; [CPU_] |2335| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2336,column 2,is_stmt,isa 0
+        OR        *+XAR5[0],#0x0400     ; [CPU_] |2336| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2337,column 2,is_stmt,isa 0
+        OR        *+XAR4[0],#0x0400     ; [CPU_] |2337| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2340,column 2,is_stmt,isa 0
-        OR        *+XAR7[0],#0x0400     ; [CPU_] |2340| 
+        MOV32     R1H,@_curLimit        ; [CPU_] |2340| 
+        MPYF32    R1H,R1H,#17664        ; [CPU_] |2340| 
+        MOVXI     R0H,#43691            ; [CPU_] |2340| 
+        MPYF32    R1H,R0H,R1H           ; [CPU_] |2340| 
+        NOP       ; [CPU_] 
+        ADDF32    R0H,R1H,#17664        ; [CPU_] |2340| 
+        NOP       ; [CPU_] 
+        F32TOUI16 R0H,R0H               ; [CPU_] |2340| 
+        NOP       ; [CPU_] 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2341,column 2,is_stmt,isa 0
-        AND       *+XAR6[0],#0xffcf     ; [CPU_] |2341| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2342,column 2,is_stmt,isa 0
-        OR        *+XAR5[0],#0x0400     ; [CPU_] |2342| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2343,column 2,is_stmt,isa 0
-        OR        *+XAR4[0],#0x0400     ; [CPU_] |2343| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2346,column 2,is_stmt,isa 0
-        MOV32     R1H,@_curLimit        ; [CPU_] |2346| 
-        MPYF32    R1H,R1H,#17664        ; [CPU_] |2346| 
-        MOVXI     R0H,#43691            ; [CPU_] |2346| 
-        MPYF32    R1H,R0H,R1H           ; [CPU_] |2346| 
-        NOP       ; [CPU_] 
-        ADDF32    R0H,R1H,#17664        ; [CPU_] |2346| 
-        NOP       ; [CPU_] 
-        F32TOUI16 R0H,R0H               ; [CPU_] |2346| 
-        NOP       ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2347,column 2,is_stmt,isa 0
-        SUBF32    R1H,#17664,R1H        ; [CPU_] |2347| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2346,column 2,is_stmt,isa 0
-        MOV32     ACC,R0H               ; [CPU_] |2346| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2347,column 2,is_stmt,isa 0
-        F32TOUI16 R0H,R1H               ; [CPU_] |2347| 
+        SUBF32    R1H,#17664,R1H        ; [CPU_] |2341| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2340,column 2,is_stmt,isa 0
+        MOV32     ACC,R0H               ; [CPU_] |2340| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2341,column 2,is_stmt,isa 0
+        F32TOUI16 R0H,R1H               ; [CPU_] |2341| 
         NOP       ; [CPU_] 
         MOVW      DP,#_LEM_curLo        ; [CPU_U] 
-        MOV32     XAR6,R0H              ; [CPU_] |2347| 
+        MOV32     XAR6,R0H              ; [CPU_] |2341| 
         SPM       #0                    ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2348,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_Cmpss1Regs     ; [CPU_U] |2348| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2346,column 2,is_stmt,isa 0
-        MOV       @_LEM_curHi,AL        ; [CPU_] |2346| 
-        MOV       AH,AR6                ; [CPU_] |2346| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2347,column 2,is_stmt,isa 0
-        MOV       @_LEM_curLo,AR6       ; [CPU_] |2347| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2348,column 2,is_stmt,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2342,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_Cmpss1Regs     ; [CPU_U] |2342| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2340,column 2,is_stmt,isa 0
+        MOV       @_LEM_curHi,AL        ; [CPU_] |2340| 
+        MOV       AH,AR6                ; [CPU_] |2340| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2341,column 2,is_stmt,isa 0
+        MOV       @_LEM_curLo,AR6       ; [CPU_] |2341| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2342,column 2,is_stmt,isa 0
 $C$DW$325	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$325, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$325, DW_AT_name("_cmpssConfig")
 	.dwattr $C$DW$325, DW_AT_TI_call
 
-        LCR       #_cmpssConfig         ; [CPU_] |2348| 
-        ; call occurs [#_cmpssConfig] ; [] |2348| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2349,column 2,is_stmt,isa 0
-        MOV       AL,@_LEM_curHi        ; [CPU_] |2349| 
-        MOV       AH,@_LEM_curLo        ; [CPU_] |2349| 
-        MOVL      XAR4,#_Cmpss3Regs     ; [CPU_U] |2349| 
+        LCR       #_cmpssConfig         ; [CPU_] |2342| 
+        ; call occurs [#_cmpssConfig] ; [] |2342| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2343,column 2,is_stmt,isa 0
+        MOV       AL,@_LEM_curHi        ; [CPU_] |2343| 
+        MOV       AH,@_LEM_curLo        ; [CPU_] |2343| 
+        MOVL      XAR4,#_Cmpss3Regs     ; [CPU_U] |2343| 
 $C$DW$326	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$326, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$326, DW_AT_name("_cmpssConfig")
 	.dwattr $C$DW$326, DW_AT_TI_call
 
-        LCR       #_cmpssConfig         ; [CPU_] |2349| 
-        ; call occurs [#_cmpssConfig] ; [] |2349| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2364,column 2,is_stmt,isa 0
-        MOVL      XAR5,#_EPwmXbarRegs   ; [CPU_U] |2364| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2361,column 2,is_stmt,isa 0
-        MOVB      XAR6,#0               ; [CPU_] |2361| 
+        LCR       #_cmpssConfig         ; [CPU_] |2343| 
+        ; call occurs [#_cmpssConfig] ; [] |2343| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2358,column 2,is_stmt,isa 0
+        MOVL      XAR5,#_EPwmXbarRegs   ; [CPU_U] |2358| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2355,column 2,is_stmt,isa 0
+        MOVB      XAR6,#0               ; [CPU_] |2355| 
         MOVW      DP,#_EPwmXbarRegs     ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2362,column 2,is_stmt,isa 0
-        MOVB      ACC,#0                ; [CPU_] |2362| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2373,column 2,is_stmt,isa 0
-        MOVL      XAR4,XAR5             ; [CPU_] |2373| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2361,column 2,is_stmt,isa 0
-        MOVL      @_EPwmXbarRegs,XAR6   ; [CPU_] |2361| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2379,column 2,is_stmt,isa 0
-        MOVB      XAR0,#192             ; [CPU_] |2379| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2362,column 2,is_stmt,isa 0
-        MOVL      @_EPwmXbarRegs+2,ACC  ; [CPU_] |2362| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2364,column 2,is_stmt,isa 0
-        AND       AL,*+XAR5[0],#0xfffc  ; [CPU_] |2364| 
-        ORB       AL,#0x01              ; [CPU_] |2364| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2373,column 2,is_stmt,isa 0
-        ADDB      XAR4,#32              ; [CPU_] |2373| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2364,column 2,is_stmt,isa 0
-        MOV       *+XAR5[0],AL          ; [CPU_] |2364| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2365,column 2,is_stmt,isa 0
-        AND       AL,*+XAR5[0],#0xfdff  ; [CPU_] |2365| 
-        OR        AL,#0x0100            ; [CPU_] |2365| 
-        MOV       *+XAR5[0],AL          ; [CPU_] |2365| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2366,column 2,is_stmt,isa 0
-        AND       AL,*+XAR5[0],#0xffdf  ; [CPU_] |2366| 
-        ORB       AL,#0x10              ; [CPU_] |2366| 
-        MOV       *+XAR5[0],AL          ; [CPU_] |2366| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2356,column 2,is_stmt,isa 0
+        MOVB      ACC,#0                ; [CPU_] |2356| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2367,column 2,is_stmt,isa 0
-        AND       AL,*+XAR5[1],#0xffdf  ; [CPU_] |2367| 
-        ORB       AL,#0x10              ; [CPU_] |2367| 
-        MOV       @_EPwmXbarRegs+1,AL   ; [CPU_] |2367| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2368,column 2,is_stmt,isa 0
-        AND       AL,*+XAR5[0],#0xff7f  ; [CPU_] |2368| 
-        ORB       AL,#0x40              ; [CPU_] |2368| 
-        MOV       *+XAR5[0],AL          ; [CPU_] |2368| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2371,column 2,is_stmt,isa 0
-        MOVL      @_EPwmXbarRegs+32,XAR6 ; [CPU_] |2371| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2387,column 2,is_stmt,isa 0
-        MOVL      XAR5,#_EPwm2Regs      ; [CPU_U] |2387| 
+        MOVL      XAR4,XAR5             ; [CPU_] |2367| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2355,column 2,is_stmt,isa 0
+        MOVL      @_EPwmXbarRegs,XAR6   ; [CPU_] |2355| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2373,column 2,is_stmt,isa 0
-        OR        *+XAR4[0],#0x0001     ; [CPU_] |2373| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2379,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_EPwm1Regs      ; [CPU_U] |2379| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2374,column 2,is_stmt,isa 0
-        OR        @_EPwmXbarRegs+32,#0x0010 ; [CPU_] |2374| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2375,column 2,is_stmt,isa 0
-        OR        @_EPwmXbarRegs+32,#0x0004 ; [CPU_] |2375| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2376,column 2,is_stmt,isa 0
-        OR        @_EPwmXbarRegs+32,#0x0400 ; [CPU_] |2376| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2377,column 2,is_stmt,isa 0
-        OR        @_EPwmXbarRegs+32,#0x0002 ; [CPU_] |2377| 
+        MOVB      XAR0,#192             ; [CPU_] |2373| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2356,column 2,is_stmt,isa 0
+        MOVL      @_EPwmXbarRegs+2,ACC  ; [CPU_] |2356| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2358,column 2,is_stmt,isa 0
+        AND       AL,*+XAR5[0],#0xfffc  ; [CPU_] |2358| 
+        ORB       AL,#0x01              ; [CPU_] |2358| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2367,column 2,is_stmt,isa 0
+        ADDB      XAR4,#32              ; [CPU_] |2367| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2358,column 2,is_stmt,isa 0
+        MOV       *+XAR5[0],AL          ; [CPU_] |2358| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2359,column 2,is_stmt,isa 0
+        AND       AL,*+XAR5[0],#0xfdff  ; [CPU_] |2359| 
+        OR        AL,#0x0100            ; [CPU_] |2359| 
+        MOV       *+XAR5[0],AL          ; [CPU_] |2359| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2360,column 2,is_stmt,isa 0
+        AND       AL,*+XAR5[0],#0xffdf  ; [CPU_] |2360| 
+        ORB       AL,#0x10              ; [CPU_] |2360| 
+        MOV       *+XAR5[0],AL          ; [CPU_] |2360| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2361,column 2,is_stmt,isa 0
+        AND       AL,*+XAR5[1],#0xffdf  ; [CPU_] |2361| 
+        ORB       AL,#0x10              ; [CPU_] |2361| 
+        MOV       @_EPwmXbarRegs+1,AL   ; [CPU_] |2361| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2362,column 2,is_stmt,isa 0
+        AND       AL,*+XAR5[0],#0xff7f  ; [CPU_] |2362| 
+        ORB       AL,#0x40              ; [CPU_] |2362| 
+        MOV       *+XAR5[0],AL          ; [CPU_] |2362| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2365,column 2,is_stmt,isa 0
+        MOVL      @_EPwmXbarRegs+32,XAR6 ; [CPU_] |2365| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2381,column 2,is_stmt,isa 0
+        MOVL      XAR5,#_EPwm2Regs      ; [CPU_U] |2381| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2367,column 2,is_stmt,isa 0
+        OR        *+XAR4[0],#0x0001     ; [CPU_] |2367| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2373,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_EPwm1Regs      ; [CPU_U] |2373| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2368,column 2,is_stmt,isa 0
+        OR        @_EPwmXbarRegs+32,#0x0010 ; [CPU_] |2368| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2369,column 2,is_stmt,isa 0
+        OR        @_EPwmXbarRegs+32,#0x0004 ; [CPU_] |2369| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2370,column 2,is_stmt,isa 0
+        OR        @_EPwmXbarRegs+32,#0x0400 ; [CPU_] |2370| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2371,column 2,is_stmt,isa 0
+        OR        @_EPwmXbarRegs+32,#0x0002 ; [CPU_] |2371| 
         MOVW      DP,#_EPwm1Regs+192    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2379,column 2,is_stmt,isa 0
-        AND       AL,*+XAR4[AR0],#0xfff0 ; [CPU_] |2379| 
-        ORB       AL,#0x03              ; [CPU_] |2379| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2380,column 2,is_stmt,isa 0
-        MOVB      XAR0,#130             ; [CPU_] |2380| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2379,column 2,is_stmt,isa 0
-        MOV       @_EPwm1Regs+192,AL    ; [CPU_] |2379| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2373,column 2,is_stmt,isa 0
+        AND       AL,*+XAR4[AR0],#0xfff0 ; [CPU_] |2373| 
+        ORB       AL,#0x03              ; [CPU_] |2373| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2374,column 2,is_stmt,isa 0
+        MOVB      XAR0,#130             ; [CPU_] |2374| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2373,column 2,is_stmt,isa 0
+        MOV       @_EPwm1Regs+192,AL    ; [CPU_] |2373| 
         MOVW      DP,#_EPwm1Regs+130    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2380,column 2,is_stmt,isa 0
-        AND       AL,*+XAR4[AR0],#0xfff8 ; [CPU_] |2380| 
-        ORB       AL,#0x02              ; [CPU_] |2380| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2374,column 2,is_stmt,isa 0
+        AND       AL,*+XAR4[AR0],#0xfff8 ; [CPU_] |2374| 
+        ORB       AL,#0x02              ; [CPU_] |2374| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2381,column 2,is_stmt,isa 0
+        MOVB      XAR0,#192             ; [CPU_] |2381| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2374,column 2,is_stmt,isa 0
+        MOV       @_EPwm1Regs+130,AL    ; [CPU_] |2374| 
+        MOVW      DP,#_EPwm1Regs+195    ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2376,column 2,is_stmt,isa 0
+        MOVL      ACC,XAR4              ; [CPU_] |2376| 
+        ADDB      ACC,#195              ; [CPU_] |2376| 
+        MOVL      XAR7,ACC              ; [CPU_] |2376| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2378,column 2,is_stmt,isa 0
+        MOVL      ACC,XAR4              ; [CPU_] |2378| 
+        ADDB      ACC,#128              ; [CPU_] |2378| 
+        MOVL      XAR6,ACC              ; [CPU_] |2378| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2376,column 2,is_stmt,isa 0
+        AND       *+XAR7[0],#0xfffe     ; [CPU_] |2376| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2377,column 2,is_stmt,isa 0
+        OR        @_EPwm1Regs+195,#0x0002 ; [CPU_] |2377| 
+        MOVW      DP,#_EPwm2Regs+192    ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2378,column 2,is_stmt,isa 0
+        OR        *+XAR6[0],#0x4000     ; [CPU_] |2378| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2387,column 2,is_stmt,isa 0
+        MOVL      XAR6,#_EPwm3Regs      ; [CPU_U] |2387| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2381,column 2,is_stmt,isa 0
+        AND       AL,*+XAR5[AR0],#0xfff0 ; [CPU_] |2381| 
+        ORB       AL,#0x03              ; [CPU_] |2381| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2382,column 2,is_stmt,isa 0
+        MOVB      XAR0,#130             ; [CPU_] |2382| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2381,column 2,is_stmt,isa 0
+        MOV       @_EPwm2Regs+192,AL    ; [CPU_] |2381| 
+        MOVW      DP,#_EPwm2Regs+130    ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2382,column 2,is_stmt,isa 0
+        AND       AL,*+XAR5[AR0],#0xfff8 ; [CPU_] |2382| 
+        ORB       AL,#0x02              ; [CPU_] |2382| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2387,column 2,is_stmt,isa 0
         MOVB      XAR0,#192             ; [CPU_] |2387| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2380,column 2,is_stmt,isa 0
-        MOV       @_EPwm1Regs+130,AL    ; [CPU_] |2380| 
-        MOVW      DP,#_EPwm1Regs+195    ; [CPU_U] 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2382,column 2,is_stmt,isa 0
-        MOVL      ACC,XAR4              ; [CPU_] |2382| 
-        ADDB      ACC,#195              ; [CPU_] |2382| 
-        MOVL      XAR7,ACC              ; [CPU_] |2382| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2384,column 2,is_stmt,isa 0
-        MOVL      ACC,XAR4              ; [CPU_] |2384| 
-        ADDB      ACC,#128              ; [CPU_] |2384| 
-        MOVL      XAR6,ACC              ; [CPU_] |2384| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2382,column 2,is_stmt,isa 0
-        AND       *+XAR7[0],#0xfffe     ; [CPU_] |2382| 
+        MOV       @_EPwm2Regs+130,AL    ; [CPU_] |2382| 
+        MOVW      DP,#_EPwm2Regs+195    ; [CPU_U] 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2383,column 2,is_stmt,isa 0
-        OR        @_EPwm1Regs+195,#0x0002 ; [CPU_] |2383| 
-        MOVW      DP,#_EPwm2Regs+192    ; [CPU_U] 
+        MOVL      ACC,XAR5              ; [CPU_] |2383| 
+        ADDB      ACC,#195              ; [CPU_] |2383| 
+        MOVL      XAR1,ACC              ; [CPU_] |2383| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2385,column 2,is_stmt,isa 0
+        MOVL      ACC,XAR5              ; [CPU_] |2385| 
+        ADDB      ACC,#128              ; [CPU_] |2385| 
+        MOVL      XAR7,ACC              ; [CPU_] |2385| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2383,column 2,is_stmt,isa 0
+        AND       *+XAR1[0],#0xfffe     ; [CPU_] |2383| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2384,column 2,is_stmt,isa 0
-        OR        *+XAR6[0],#0x4000     ; [CPU_] |2384| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2393,column 2,is_stmt,isa 0
-        MOVL      XAR6,#_EPwm3Regs      ; [CPU_U] |2393| 
+        OR        @_EPwm2Regs+195,#0x0002 ; [CPU_] |2384| 
+        MOVW      DP,#_EPwm3Regs+192    ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2385,column 2,is_stmt,isa 0
+        OR        *+XAR7[0],#0x4000     ; [CPU_] |2385| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2387,column 2,is_stmt,isa 0
-        AND       AL,*+XAR5[AR0],#0xfff0 ; [CPU_] |2387| 
+        AND       AL,*+XAR6[AR0],#0xfff0 ; [CPU_] |2387| 
         ORB       AL,#0x03              ; [CPU_] |2387| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2388,column 2,is_stmt,isa 0
         MOVB      XAR0,#130             ; [CPU_] |2388| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2387,column 2,is_stmt,isa 0
-        MOV       @_EPwm2Regs+192,AL    ; [CPU_] |2387| 
-        MOVW      DP,#_EPwm2Regs+130    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2388,column 2,is_stmt,isa 0
-        AND       AL,*+XAR5[AR0],#0xfff8 ; [CPU_] |2388| 
-        ORB       AL,#0x02              ; [CPU_] |2388| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2393,column 2,is_stmt,isa 0
-        MOVB      XAR0,#192             ; [CPU_] |2393| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2388,column 2,is_stmt,isa 0
-        MOV       @_EPwm2Regs+130,AL    ; [CPU_] |2388| 
-        MOVW      DP,#_EPwm2Regs+195    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2389,column 2,is_stmt,isa 0
-        MOVL      ACC,XAR5              ; [CPU_] |2389| 
-        ADDB      ACC,#195              ; [CPU_] |2389| 
-        MOVL      XAR1,ACC              ; [CPU_] |2389| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2391,column 2,is_stmt,isa 0
-        MOVL      ACC,XAR5              ; [CPU_] |2391| 
-        ADDB      ACC,#128              ; [CPU_] |2391| 
-        MOVL      XAR7,ACC              ; [CPU_] |2391| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2389,column 2,is_stmt,isa 0
-        AND       *+XAR1[0],#0xfffe     ; [CPU_] |2389| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2390,column 2,is_stmt,isa 0
-        OR        @_EPwm2Regs+195,#0x0002 ; [CPU_] |2390| 
-        MOVW      DP,#_EPwm3Regs+192    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2391,column 2,is_stmt,isa 0
-        OR        *+XAR7[0],#0x4000     ; [CPU_] |2391| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2393,column 2,is_stmt,isa 0
-        AND       AL,*+XAR6[AR0],#0xfff0 ; [CPU_] |2393| 
-        ORB       AL,#0x03              ; [CPU_] |2393| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2394,column 2,is_stmt,isa 0
-        MOVB      XAR0,#130             ; [CPU_] |2394| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2393,column 2,is_stmt,isa 0
-        MOV       @_EPwm3Regs+192,AL    ; [CPU_] |2393| 
+        MOV       @_EPwm3Regs+192,AL    ; [CPU_] |2387| 
         MOVW      DP,#_EPwm3Regs+130    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2394,column 2,is_stmt,isa 0
-        AND       AL,*+XAR6[AR0],#0xfff8 ; [CPU_] |2394| 
-        ORB       AL,#0x02              ; [CPU_] |2394| 
-        MOV       @_EPwm3Regs+130,AL    ; [CPU_] |2394| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2395,column 2,is_stmt,isa 0
-        MOVL      ACC,XAR6              ; [CPU_] |2395| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2388,column 2,is_stmt,isa 0
+        AND       AL,*+XAR6[AR0],#0xfff8 ; [CPU_] |2388| 
+        ORB       AL,#0x02              ; [CPU_] |2388| 
+        MOV       @_EPwm3Regs+130,AL    ; [CPU_] |2388| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2389,column 2,is_stmt,isa 0
+        MOVL      ACC,XAR6              ; [CPU_] |2389| 
         MOVW      DP,#_EPwm3Regs+195    ; [CPU_U] 
-        ADDB      ACC,#195              ; [CPU_] |2395| 
-        MOVL      XAR3,ACC              ; [CPU_] |2395| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2397,column 2,is_stmt,isa 0
-        MOVL      ACC,XAR6              ; [CPU_] |2397| 
-        ADDB      ACC,#128              ; [CPU_] |2397| 
-        MOVL      XAR2,ACC              ; [CPU_] |2397| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2413,column 2,is_stmt,isa 0
-        MOVL      ACC,XAR4              ; [CPU_] |2413| 
-        ADDB      ACC,#132              ; [CPU_] |2413| 
-        MOVL      XAR1,ACC              ; [CPU_] |2413| 
+        ADDB      ACC,#195              ; [CPU_] |2389| 
+        MOVL      XAR3,ACC              ; [CPU_] |2389| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2391,column 2,is_stmt,isa 0
+        MOVL      ACC,XAR6              ; [CPU_] |2391| 
+        ADDB      ACC,#128              ; [CPU_] |2391| 
+        MOVL      XAR2,ACC              ; [CPU_] |2391| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2407,column 2,is_stmt,isa 0
+        MOVL      ACC,XAR4              ; [CPU_] |2407| 
+        ADDB      ACC,#132              ; [CPU_] |2407| 
+        MOVL      XAR1,ACC              ; [CPU_] |2407| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2409,column 2,is_stmt,isa 0
+        MOVL      ACC,XAR5              ; [CPU_] |2409| 
+        ADDB      ACC,#132              ; [CPU_] |2409| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2389,column 2,is_stmt,isa 0
+        AND       *+XAR3[0],#0xfffe     ; [CPU_] |2389| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2409,column 2,is_stmt,isa 0
+        MOVL      XAR0,ACC              ; [CPU_] |2409| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2411,column 2,is_stmt,isa 0
+        MOVL      ACC,XAR6              ; [CPU_] |2411| 
+        ADDB      ACC,#132              ; [CPU_] |2411| 
+        MOVL      XAR7,ACC              ; [CPU_] |2411| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2415,column 2,is_stmt,isa 0
-        MOVL      ACC,XAR5              ; [CPU_] |2415| 
-        ADDB      ACC,#132              ; [CPU_] |2415| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2395,column 2,is_stmt,isa 0
-        AND       *+XAR3[0],#0xfffe     ; [CPU_] |2395| 
+        MOVL      ACC,XAR4              ; [CPU_] |2415| 
+        ADDB      ACC,#151              ; [CPU_] |2415| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2390,column 2,is_stmt,isa 0
+        OR        @_EPwm3Regs+195,#0x0002 ; [CPU_] |2390| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2415,column 2,is_stmt,isa 0
-        MOVL      XAR0,ACC              ; [CPU_] |2415| 
+        MOVL      XAR4,ACC              ; [CPU_] |2415| 
+        MOVW      DP,#_EPwm1Regs+128    ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2416,column 2,is_stmt,isa 0
+        MOVL      ACC,XAR5              ; [CPU_] |2416| 
+        ADDB      ACC,#151              ; [CPU_] |2416| 
+        MOVL      XAR5,ACC              ; [CPU_] |2416| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2417,column 2,is_stmt,isa 0
         MOVL      ACC,XAR6              ; [CPU_] |2417| 
-        ADDB      ACC,#132              ; [CPU_] |2417| 
-        MOVL      XAR7,ACC              ; [CPU_] |2417| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2421,column 2,is_stmt,isa 0
-        MOVL      ACC,XAR4              ; [CPU_] |2421| 
-        ADDB      ACC,#151              ; [CPU_] |2421| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2396,column 2,is_stmt,isa 0
-        OR        @_EPwm3Regs+195,#0x0002 ; [CPU_] |2396| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2421,column 2,is_stmt,isa 0
-        MOVL      XAR4,ACC              ; [CPU_] |2421| 
-        MOVW      DP,#_EPwm1Regs+128    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2422,column 2,is_stmt,isa 0
-        MOVL      ACC,XAR5              ; [CPU_] |2422| 
-        ADDB      ACC,#151              ; [CPU_] |2422| 
-        MOVL      XAR5,ACC              ; [CPU_] |2422| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2423,column 2,is_stmt,isa 0
-        MOVL      ACC,XAR6              ; [CPU_] |2423| 
-        ADDB      ACC,#151              ; [CPU_] |2423| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2397,column 2,is_stmt,isa 0
-        OR        *+XAR2[0],#0x4000     ; [CPU_] |2397| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2423,column 2,is_stmt,isa 0
-        MOVL      XAR6,ACC              ; [CPU_] |2423| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2399,column 2,is_stmt,isa 0
-        OR        @_EPwm1Regs+128,#0x0020 ; [CPU_] |2399| 
-        MOVW      DP,#_EPwm2Regs+128    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2400,column 2,is_stmt,isa 0
-        OR        @_EPwm2Regs+128,#0x0020 ; [CPU_] |2400| 
-        MOVW      DP,#_EPwm3Regs+128    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2401,column 2,is_stmt,isa 0
-        OR        @_EPwm3Regs+128,#0x0020 ; [CPU_] |2401| 
-        MOVW      DP,#_EPwm1Regs+132    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2413,column 2,is_stmt,isa 0
-        OR        *+XAR1[0],#0x0003     ; [CPU_] |2413| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2414,column 2,is_stmt,isa 0
-        OR        @_EPwm1Regs+132,#0x000c ; [CPU_] |2414| 
-        MOVW      DP,#_EPwm2Regs+132    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2415,column 2,is_stmt,isa 0
-        OR        *+XAR0[0],#0x0003     ; [CPU_] |2415| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2416,column 2,is_stmt,isa 0
-        OR        @_EPwm2Regs+132,#0x000c ; [CPU_] |2416| 
-        MOVW      DP,#_EPwm3Regs+132    ; [CPU_U] 
+        ADDB      ACC,#151              ; [CPU_] |2417| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2391,column 2,is_stmt,isa 0
+        OR        *+XAR2[0],#0x4000     ; [CPU_] |2391| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2417,column 2,is_stmt,isa 0
-        OR        *+XAR7[0],#0x0003     ; [CPU_] |2417| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2418,column 2,is_stmt,isa 0
-        OR        @_EPwm3Regs+132,#0x000c ; [CPU_] |2418| 
+        MOVL      XAR6,ACC              ; [CPU_] |2417| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2393,column 2,is_stmt,isa 0
+        OR        @_EPwm1Regs+128,#0x0020 ; [CPU_] |2393| 
+        MOVW      DP,#_EPwm2Regs+128    ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2394,column 2,is_stmt,isa 0
+        OR        @_EPwm2Regs+128,#0x0020 ; [CPU_] |2394| 
+        MOVW      DP,#_EPwm3Regs+128    ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2395,column 2,is_stmt,isa 0
+        OR        @_EPwm3Regs+128,#0x0020 ; [CPU_] |2395| 
+        MOVW      DP,#_EPwm1Regs+132    ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2407,column 2,is_stmt,isa 0
+        OR        *+XAR1[0],#0x0003     ; [CPU_] |2407| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2408,column 2,is_stmt,isa 0
+        OR        @_EPwm1Regs+132,#0x000c ; [CPU_] |2408| 
+        MOVW      DP,#_EPwm2Regs+132    ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2409,column 2,is_stmt,isa 0
+        OR        *+XAR0[0],#0x0003     ; [CPU_] |2409| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2410,column 2,is_stmt,isa 0
+        OR        @_EPwm2Regs+132,#0x000c ; [CPU_] |2410| 
+        MOVW      DP,#_EPwm3Regs+132    ; [CPU_U] 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2411,column 2,is_stmt,isa 0
+        OR        *+XAR7[0],#0x0003     ; [CPU_] |2411| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2412,column 2,is_stmt,isa 0
+        OR        @_EPwm3Regs+132,#0x000c ; [CPU_] |2412| 
         MOVW      DP,#_EPwm1Regs+151    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2421,column 2,is_stmt,isa 0
-        OR        *+XAR4[0],#0x0008     ; [CPU_] |2421| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2422,column 2,is_stmt,isa 0
-        OR        *+XAR5[0],#0x0008     ; [CPU_] |2422| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2423,column 2,is_stmt,isa 0
-        OR        *+XAR6[0],#0x0008     ; [CPU_] |2423| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2425,column 2,is_stmt,isa 0
-        OR        @_EPwm1Regs+151,#0x0004 ; [CPU_] |2425| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2415,column 2,is_stmt,isa 0
+        OR        *+XAR4[0],#0x0008     ; [CPU_] |2415| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2416,column 2,is_stmt,isa 0
+        OR        *+XAR5[0],#0x0008     ; [CPU_] |2416| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2417,column 2,is_stmt,isa 0
+        OR        *+XAR6[0],#0x0008     ; [CPU_] |2417| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2419,column 2,is_stmt,isa 0
+        OR        @_EPwm1Regs+151,#0x0004 ; [CPU_] |2419| 
         MOVW      DP,#_EPwm2Regs+151    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2426,column 2,is_stmt,isa 0
-        OR        @_EPwm2Regs+151,#0x0004 ; [CPU_] |2426| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2420,column 2,is_stmt,isa 0
+        OR        @_EPwm2Regs+151,#0x0004 ; [CPU_] |2420| 
         MOVW      DP,#_EPwm3Regs+151    ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2427,column 2,is_stmt,isa 0
-        OR        @_EPwm3Regs+151,#0x0004 ; [CPU_] |2427| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2421,column 2,is_stmt,isa 0
+        OR        @_EPwm3Regs+151,#0x0004 ; [CPU_] |2421| 
  EDIS
         SPM       #0                    ; [CPU_] 
         MOVL      XAR3,*--SP            ; [CPU_] 
@@ -6442,7 +6442,7 @@ $C$DW$327	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$324, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$324, DW_AT_TI_end_line(0x980)
+	.dwattr $C$DW$324, DW_AT_TI_end_line(0x97a)
 	.dwattr $C$DW$324, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$324
@@ -6458,10 +6458,10 @@ $C$DW$328	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$328, DW_AT_TI_symbol_name("_PWM_1ch_UpDwnCnt_CNF")
 	.dwattr $C$DW$328, DW_AT_external
 	.dwattr $C$DW$328, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$328, DW_AT_TI_begin_line(0x987)
+	.dwattr $C$DW$328, DW_AT_TI_begin_line(0x981)
 	.dwattr $C$DW$328, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$328, DW_AT_TI_max_frame_size(-4)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2439,column 61,is_stmt,address _PWM_1ch_UpDwnCnt_CNF,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2433,column 61,is_stmt,address _PWM_1ch_UpDwnCnt_CNF,isa 0
 
 	.dwfde $C$DW$CIE, _PWM_1ch_UpDwnCnt_CNF
 $C$DW$329	.dwtag  DW_TAG_formal_parameter
@@ -6520,107 +6520,107 @@ $C$DW$334	.dwtag  DW_TAG_variable
         MOVL      *SP++,XAR1            ; [CPU_] 
 	.dwcfi	save_reg_to_mem, 7, 2
 	.dwcfi	cfa_offset, -4
-        MOVZ      AR6,AH                ; [CPU_] |2439| 
+        MOVZ      AR6,AH                ; [CPU_] |2433| 
  EALLOW
         SETC      SXM                   ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2442,column 2,is_stmt,isa 0
-        MOVL      XAR5,#_ePWM           ; [CPU_U] |2442| 
-        MOV       ACC,AL << 1           ; [CPU_] |2442| 
-        ADDL      XAR5,ACC              ; [CPU_] |2442| 
-        MOVL      XAR7,*+XAR5[0]        ; [CPU_] |2442| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2443,column 2,is_stmt,isa 0
-        MOV       AL,AR6                ; [CPU_] |2443| 
-        MOVB      XAR0,#99              ; [CPU_] |2443| 
-        LSR       AL,1                  ; [CPU_] |2443| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2442,column 2,is_stmt,isa 0
-        OR        *+XAR7[0],#0x0008     ; [CPU_] |2442| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2444,column 2,is_stmt,isa 0
-        MOVL      XAR5,XAR7             ; [CPU_] |2444| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2455,column 2,is_stmt,isa 0
-        MOVL      XAR1,XAR7             ; [CPU_] |2455| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2456,column 2,is_stmt,isa 0
-        MOVL      XAR6,XAR7             ; [CPU_] |2456| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2443,column 2,is_stmt,isa 0
-        MOV       *+XAR7[AR0],AL        ; [CPU_] |2443| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2444,column 2,is_stmt,isa 0
-        ADDB      XAR5,#97              ; [CPU_] |2444| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2455,column 2,is_stmt,isa 0
-        ADDB      XAR1,#8               ; [CPU_] |2455| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2444,column 2,is_stmt,isa 0
-        MOV       AL,*+XAR5[0]          ; [CPU_] |2444| 
-        MOV       *+XAR5[0],#0          ; [CPU_] |2444| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2454,column 2,is_stmt,isa 0
-        MOVL      XAR5,XAR7             ; [CPU_] |2454| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2456,column 2,is_stmt,isa 0
-        ADDB      XAR6,#8               ; [CPU_] |2456| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2445,column 2,is_stmt,isa 0
-        MOV       *+XAR7[4],#0          ; [CPU_] |2445| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2446,column 2,is_stmt,isa 0
-        AND       AL,*+XAR7[0],#0xfffe  ; [CPU_] |2446| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2454,column 2,is_stmt,isa 0
-        ADDB      XAR5,#107             ; [CPU_] |2454| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2446,column 2,is_stmt,isa 0
-        ORB       AL,#0x02              ; [CPU_] |2446| 
-        MOV       *+XAR7[0],AL          ; [CPU_] |2446| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2447,column 2,is_stmt,isa 0
-        AND       *+XAR7[0],#0xfc7f     ; [CPU_] |2447| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2448,column 2,is_stmt,isa 0
-        AND       *+XAR7[0],#0xe3ff     ; [CPU_] |2448| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2436,column 2,is_stmt,isa 0
+        MOVL      XAR5,#_ePWM           ; [CPU_U] |2436| 
+        MOV       ACC,AL << 1           ; [CPU_] |2436| 
+        ADDL      XAR5,ACC              ; [CPU_] |2436| 
+        MOVL      XAR7,*+XAR5[0]        ; [CPU_] |2436| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2437,column 2,is_stmt,isa 0
+        MOV       AL,AR6                ; [CPU_] |2437| 
+        MOVB      XAR0,#99              ; [CPU_] |2437| 
+        LSR       AL,1                  ; [CPU_] |2437| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2436,column 2,is_stmt,isa 0
+        OR        *+XAR7[0],#0x0008     ; [CPU_] |2436| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2438,column 2,is_stmt,isa 0
+        MOVL      XAR5,XAR7             ; [CPU_] |2438| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2449,column 2,is_stmt,isa 0
+        MOVL      XAR1,XAR7             ; [CPU_] |2449| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2450,column 2,is_stmt,isa 0
-        AND       *+XAR7[0],#0xfffb     ; [CPU_] |2450| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2451,column 2,is_stmt,isa 0
-        AND       AL,*+XAR7[0],#0xffdf  ; [CPU_] |2451| 
-        ORB       AL,#0x10              ; [CPU_] |2451| 
-        MOV       *+XAR7[0],AL          ; [CPU_] |2451| 
+        MOVL      XAR6,XAR7             ; [CPU_] |2450| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2437,column 2,is_stmt,isa 0
+        MOV       *+XAR7[AR0],AL        ; [CPU_] |2437| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2438,column 2,is_stmt,isa 0
+        ADDB      XAR5,#97              ; [CPU_] |2438| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2449,column 2,is_stmt,isa 0
+        ADDB      XAR1,#8               ; [CPU_] |2449| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2438,column 2,is_stmt,isa 0
+        MOV       AL,*+XAR5[0]          ; [CPU_] |2438| 
+        MOV       *+XAR5[0],#0          ; [CPU_] |2438| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2448,column 2,is_stmt,isa 0
+        MOVL      XAR5,XAR7             ; [CPU_] |2448| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2450,column 2,is_stmt,isa 0
+        ADDB      XAR6,#8               ; [CPU_] |2450| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2439,column 2,is_stmt,isa 0
+        MOV       *+XAR7[4],#0          ; [CPU_] |2439| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2440,column 2,is_stmt,isa 0
+        AND       AL,*+XAR7[0],#0xfffe  ; [CPU_] |2440| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2448,column 2,is_stmt,isa 0
+        ADDB      XAR5,#107             ; [CPU_] |2448| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2440,column 2,is_stmt,isa 0
+        ORB       AL,#0x02              ; [CPU_] |2440| 
+        MOV       *+XAR7[0],AL          ; [CPU_] |2440| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2441,column 2,is_stmt,isa 0
+        AND       *+XAR7[0],#0xfc7f     ; [CPU_] |2441| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2442,column 2,is_stmt,isa 0
+        AND       *+XAR7[0],#0xe3ff     ; [CPU_] |2442| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2444,column 2,is_stmt,isa 0
+        AND       *+XAR7[0],#0xfffb     ; [CPU_] |2444| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2445,column 2,is_stmt,isa 0
+        AND       AL,*+XAR7[0],#0xffdf  ; [CPU_] |2445| 
+        ORB       AL,#0x10              ; [CPU_] |2445| 
+        MOV       *+XAR7[0],AL          ; [CPU_] |2445| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2448,column 2,is_stmt,isa 0
+        MOV       AL,*+XAR5[0]          ; [CPU_] |2448| 
+        MOV       *+XAR5[0],#0          ; [CPU_] |2448| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2458,column 2,is_stmt,isa 0
+        MOVL      XAR5,XAR7             ; [CPU_] |2458| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2449,column 2,is_stmt,isa 0
+        AND       *+XAR1[0],#0xffef     ; [CPU_] |2449| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2450,column 2,is_stmt,isa 0
+        AND       *+XAR6[0],#0xfffc     ; [CPU_] |2450| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2457,column 2,is_stmt,isa 0
+        MOVL      XAR6,XAR7             ; [CPU_] |2457| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2453,column 2,is_stmt,isa 0
+        MOVB      XAR0,#64              ; [CPU_] |2453| 
+        MOVB      XAR1,#64              ; [CPU_] |2453| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2458,column 2,is_stmt,isa 0
+        ADDB      XAR5,#12              ; [CPU_] |2458| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2457,column 2,is_stmt,isa 0
+        ADDB      XAR6,#12              ; [CPU_] |2457| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2453,column 2,is_stmt,isa 0
+        AND       AL,*+XAR7[AR0],#0xffdf ; [CPU_] |2453| 
+        ORB       AL,#0x10              ; [CPU_] |2453| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2454,column 2,is_stmt,isa 0
-        MOV       AL,*+XAR5[0]          ; [CPU_] |2454| 
-        MOV       *+XAR5[0],#0          ; [CPU_] |2454| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2464,column 2,is_stmt,isa 0
-        MOVL      XAR5,XAR7             ; [CPU_] |2464| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2455,column 2,is_stmt,isa 0
-        AND       *+XAR1[0],#0xffef     ; [CPU_] |2455| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2456,column 2,is_stmt,isa 0
-        AND       *+XAR6[0],#0xfffc     ; [CPU_] |2456| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2463,column 2,is_stmt,isa 0
-        MOVL      XAR6,XAR7             ; [CPU_] |2463| 
+        MOVB      XAR0,#64              ; [CPU_] |2454| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2453,column 2,is_stmt,isa 0
+        MOV       *+XAR7[AR1],AL        ; [CPU_] |2453| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2454,column 2,is_stmt,isa 0
+        MOVB      XAR1,#64              ; [CPU_] |2454| 
+        AND       AL,*+XAR7[AR0],#0xffbf ; [CPU_] |2454| 
+        ORB       AL,#0x80              ; [CPU_] |2454| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2459,column 2,is_stmt,isa 0
-        MOVB      XAR0,#64              ; [CPU_] |2459| 
-        MOVB      XAR1,#64              ; [CPU_] |2459| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2464,column 2,is_stmt,isa 0
-        ADDB      XAR5,#12              ; [CPU_] |2464| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2463,column 2,is_stmt,isa 0
-        ADDB      XAR6,#12              ; [CPU_] |2463| 
+        MOVB      XAR0,#12              ; [CPU_] |2459| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2454,column 2,is_stmt,isa 0
+        MOV       *+XAR7[AR1],AL        ; [CPU_] |2454| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2461,column 2,is_stmt,isa 0
+        MOVB      XAR1,#83              ; [CPU_] |2461| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2457,column 2,is_stmt,isa 0
+        AND       *+XAR6[0],#0xffcf     ; [CPU_] |2457| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2458,column 2,is_stmt,isa 0
+        OR        *+XAR5[0],#0x0003     ; [CPU_] |2458| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2459,column 2,is_stmt,isa 0
-        AND       AL,*+XAR7[AR0],#0xffdf ; [CPU_] |2459| 
-        ORB       AL,#0x10              ; [CPU_] |2459| 
+        AND       AL,*+XAR7[AR0],#0xfffb ; [CPU_] |2459| 
+        MOVB      XAR0,#12              ; [CPU_] |2459| 
+        ORB       AL,#0x08              ; [CPU_] |2459| 
+        MOV       *+XAR7[AR0],AL        ; [CPU_] |2459| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2460,column 2,is_stmt,isa 0
-        MOVB      XAR0,#64              ; [CPU_] |2460| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2459,column 2,is_stmt,isa 0
-        MOV       *+XAR7[AR1],AL        ; [CPU_] |2459| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2460,column 2,is_stmt,isa 0
-        MOVB      XAR1,#64              ; [CPU_] |2460| 
-        AND       AL,*+XAR7[AR0],#0xffbf ; [CPU_] |2460| 
-        ORB       AL,#0x80              ; [CPU_] |2460| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2465,column 2,is_stmt,isa 0
-        MOVB      XAR0,#12              ; [CPU_] |2465| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2460,column 2,is_stmt,isa 0
-        MOV       *+XAR7[AR1],AL        ; [CPU_] |2460| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2467,column 2,is_stmt,isa 0
-        MOVB      XAR1,#83              ; [CPU_] |2467| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2463,column 2,is_stmt,isa 0
-        AND       *+XAR6[0],#0xffcf     ; [CPU_] |2463| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2464,column 2,is_stmt,isa 0
-        OR        *+XAR5[0],#0x0003     ; [CPU_] |2464| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2465,column 2,is_stmt,isa 0
-        AND       AL,*+XAR7[AR0],#0xfffb ; [CPU_] |2465| 
-        MOVB      XAR0,#12              ; [CPU_] |2465| 
-        ORB       AL,#0x08              ; [CPU_] |2465| 
-        MOV       *+XAR7[AR0],AL        ; [CPU_] |2465| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2466,column 2,is_stmt,isa 0
-        MOVB      XAR0,#81              ; [CPU_] |2466| 
-        MOV       *+XAR7[AR0],AR4       ; [CPU_] |2466| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2467,column 2,is_stmt,isa 0
-        MOV       *+XAR7[AR1],AR4       ; [CPU_] |2467| 
+        MOVB      XAR0,#81              ; [CPU_] |2460| 
+        MOV       *+XAR7[AR0],AR4       ; [CPU_] |2460| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2461,column 2,is_stmt,isa 0
+        MOV       *+XAR7[AR1],AR4       ; [CPU_] |2461| 
  EDIS
         SPM       #0                    ; [CPU_] 
         MOVL      XAR1,*--SP            ; [CPU_] 
@@ -6633,7 +6633,7 @@ $C$DW$335	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$328, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$328, DW_AT_TI_end_line(0x9a5)
+	.dwattr $C$DW$328, DW_AT_TI_end_line(0x99f)
 	.dwattr $C$DW$328, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$328
@@ -6649,10 +6649,10 @@ $C$DW$336	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$336, DW_AT_TI_symbol_name("_PWM_1ch_UpCnt_CNF")
 	.dwattr $C$DW$336, DW_AT_external
 	.dwattr $C$DW$336, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$336, DW_AT_TI_begin_line(0x9a7)
+	.dwattr $C$DW$336, DW_AT_TI_begin_line(0x9a1)
 	.dwattr $C$DW$336, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$336, DW_AT_TI_max_frame_size(-4)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2471,column 48,is_stmt,address _PWM_1ch_UpCnt_CNF,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2465,column 48,is_stmt,address _PWM_1ch_UpCnt_CNF,isa 0
 
 	.dwfde $C$DW$CIE, _PWM_1ch_UpCnt_CNF
 $C$DW$337	.dwtag  DW_TAG_formal_parameter
@@ -6698,103 +6698,103 @@ $C$DW$340	.dwtag  DW_TAG_variable
         MOVL      *SP++,XAR1            ; [CPU_] 
 	.dwcfi	save_reg_to_mem, 7, 2
 	.dwcfi	cfa_offset, -4
-        MOVZ      AR7,AH                ; [CPU_] |2471| 
+        MOVZ      AR7,AH                ; [CPU_] |2465| 
  EALLOW
         SETC      SXM                   ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2474,column 2,is_stmt,isa 0
-        MOVL      XAR4,#_ePWM           ; [CPU_U] |2474| 
-        MOV       ACC,AL << 1           ; [CPU_] |2474| 
-        ADDL      XAR4,ACC              ; [CPU_] |2474| 
-        MOVL      XAR6,*+XAR4[0]        ; [CPU_] |2474| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2475,column 2,is_stmt,isa 0
-        MOV       AL,AR7                ; [CPU_] |2475| 
-        MOVB      XAR0,#99              ; [CPU_] |2475| 
-        ADDB      AL,#-1                ; [CPU_] |2475| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2474,column 2,is_stmt,isa 0
-        OR        *+XAR6[0],#0x0008     ; [CPU_] |2474| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2476,column 2,is_stmt,isa 0
-        MOVL      XAR4,XAR6             ; [CPU_] |2476| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2488,column 2,is_stmt,isa 0
-        MOVL      XAR5,XAR6             ; [CPU_] |2488| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2487,column 2,is_stmt,isa 0
-        MOVL      XAR7,XAR6             ; [CPU_] |2487| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2475,column 2,is_stmt,isa 0
-        MOV       *+XAR6[AR0],AL        ; [CPU_] |2475| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2476,column 2,is_stmt,isa 0
-        ADDB      XAR4,#97              ; [CPU_] |2476| 
-        MOV       AL,*+XAR4[0]          ; [CPU_] |2476| 
-        MOV       *+XAR4[0],#0          ; [CPU_] |2476| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2486,column 2,is_stmt,isa 0
-        MOVL      XAR4,XAR6             ; [CPU_] |2486| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2487,column 2,is_stmt,isa 0
-        ADDB      XAR7,#8               ; [CPU_] |2487| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2488,column 2,is_stmt,isa 0
-        ADDB      XAR5,#8               ; [CPU_] |2488| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2477,column 2,is_stmt,isa 0
-        MOV       *+XAR6[4],#0          ; [CPU_] |2477| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2486,column 2,is_stmt,isa 0
-        ADDB      XAR4,#107             ; [CPU_] |2486| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2478,column 2,is_stmt,isa 0
-        AND       *+XAR6[0],#0xfffc     ; [CPU_] |2478| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2479,column 2,is_stmt,isa 0
-        AND       *+XAR6[0],#0xfc7f     ; [CPU_] |2479| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2480,column 2,is_stmt,isa 0
-        AND       *+XAR6[0],#0xe3ff     ; [CPU_] |2480| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2468,column 2,is_stmt,isa 0
+        MOVL      XAR4,#_ePWM           ; [CPU_U] |2468| 
+        MOV       ACC,AL << 1           ; [CPU_] |2468| 
+        ADDL      XAR4,ACC              ; [CPU_] |2468| 
+        MOVL      XAR6,*+XAR4[0]        ; [CPU_] |2468| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2469,column 2,is_stmt,isa 0
+        MOV       AL,AR7                ; [CPU_] |2469| 
+        MOVB      XAR0,#99              ; [CPU_] |2469| 
+        ADDB      AL,#-1                ; [CPU_] |2469| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2468,column 2,is_stmt,isa 0
+        OR        *+XAR6[0],#0x0008     ; [CPU_] |2468| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2470,column 2,is_stmt,isa 0
+        MOVL      XAR4,XAR6             ; [CPU_] |2470| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2482,column 2,is_stmt,isa 0
-        AND       *+XAR6[0],#0xfffb     ; [CPU_] |2482| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2483,column 2,is_stmt,isa 0
-        AND       AL,*+XAR6[0],#0xffdf  ; [CPU_] |2483| 
-        ORB       AL,#0x10              ; [CPU_] |2483| 
-        MOV       *+XAR6[0],AL          ; [CPU_] |2483| 
+        MOVL      XAR5,XAR6             ; [CPU_] |2482| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2481,column 2,is_stmt,isa 0
+        MOVL      XAR7,XAR6             ; [CPU_] |2481| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2469,column 2,is_stmt,isa 0
+        MOV       *+XAR6[AR0],AL        ; [CPU_] |2469| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2470,column 2,is_stmt,isa 0
+        ADDB      XAR4,#97              ; [CPU_] |2470| 
+        MOV       AL,*+XAR4[0]          ; [CPU_] |2470| 
+        MOV       *+XAR4[0],#0          ; [CPU_] |2470| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2480,column 2,is_stmt,isa 0
+        MOVL      XAR4,XAR6             ; [CPU_] |2480| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2481,column 2,is_stmt,isa 0
+        ADDB      XAR7,#8               ; [CPU_] |2481| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2482,column 2,is_stmt,isa 0
+        ADDB      XAR5,#8               ; [CPU_] |2482| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2471,column 2,is_stmt,isa 0
+        MOV       *+XAR6[4],#0          ; [CPU_] |2471| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2480,column 2,is_stmt,isa 0
+        ADDB      XAR4,#107             ; [CPU_] |2480| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2472,column 2,is_stmt,isa 0
+        AND       *+XAR6[0],#0xfffc     ; [CPU_] |2472| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2473,column 2,is_stmt,isa 0
+        AND       *+XAR6[0],#0xfc7f     ; [CPU_] |2473| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2474,column 2,is_stmt,isa 0
+        AND       *+XAR6[0],#0xe3ff     ; [CPU_] |2474| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2476,column 2,is_stmt,isa 0
+        AND       *+XAR6[0],#0xfffb     ; [CPU_] |2476| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2477,column 2,is_stmt,isa 0
+        AND       AL,*+XAR6[0],#0xffdf  ; [CPU_] |2477| 
+        ORB       AL,#0x10              ; [CPU_] |2477| 
+        MOV       *+XAR6[0],AL          ; [CPU_] |2477| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2480,column 2,is_stmt,isa 0
+        MOV       AL,*+XAR4[0]          ; [CPU_] |2480| 
+        MOV       *+XAR4[0],#0          ; [CPU_] |2480| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2490,column 2,is_stmt,isa 0
+        MOVL      XAR4,XAR6             ; [CPU_] |2490| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2481,column 2,is_stmt,isa 0
+        AND       *+XAR7[0],#0xffef     ; [CPU_] |2481| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2482,column 2,is_stmt,isa 0
+        AND       *+XAR5[0],#0xfffc     ; [CPU_] |2482| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2489,column 2,is_stmt,isa 0
+        MOVL      XAR5,XAR6             ; [CPU_] |2489| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2485,column 2,is_stmt,isa 0
+        MOVB      XAR0,#64              ; [CPU_] |2485| 
+        MOVB      XAR1,#64              ; [CPU_] |2485| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2490,column 2,is_stmt,isa 0
+        ADDB      XAR4,#12              ; [CPU_] |2490| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2489,column 2,is_stmt,isa 0
+        ADDB      XAR5,#12              ; [CPU_] |2489| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2485,column 2,is_stmt,isa 0
+        AND       AL,*+XAR6[AR0],#0xffdf ; [CPU_] |2485| 
+        ORB       AL,#0x10              ; [CPU_] |2485| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2486,column 2,is_stmt,isa 0
-        MOV       AL,*+XAR4[0]          ; [CPU_] |2486| 
-        MOV       *+XAR4[0],#0          ; [CPU_] |2486| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2496,column 2,is_stmt,isa 0
-        MOVL      XAR4,XAR6             ; [CPU_] |2496| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2487,column 2,is_stmt,isa 0
-        AND       *+XAR7[0],#0xffef     ; [CPU_] |2487| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2488,column 2,is_stmt,isa 0
-        AND       *+XAR5[0],#0xfffc     ; [CPU_] |2488| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2495,column 2,is_stmt,isa 0
-        MOVL      XAR5,XAR6             ; [CPU_] |2495| 
+        MOVB      XAR0,#64              ; [CPU_] |2486| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2485,column 2,is_stmt,isa 0
+        MOV       *+XAR6[AR1],AL        ; [CPU_] |2485| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2486,column 2,is_stmt,isa 0
+        MOVB      XAR1,#64              ; [CPU_] |2486| 
+        AND       AL,*+XAR6[AR0],#0xfffe ; [CPU_] |2486| 
+        ORB       AL,#0x02              ; [CPU_] |2486| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2491,column 2,is_stmt,isa 0
-        MOVB      XAR0,#64              ; [CPU_] |2491| 
-        MOVB      XAR1,#64              ; [CPU_] |2491| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2496,column 2,is_stmt,isa 0
-        ADDB      XAR4,#12              ; [CPU_] |2496| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2495,column 2,is_stmt,isa 0
-        ADDB      XAR5,#12              ; [CPU_] |2495| 
+        MOVB      XAR0,#12              ; [CPU_] |2491| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2486,column 2,is_stmt,isa 0
+        MOV       *+XAR6[AR1],AL        ; [CPU_] |2486| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2493,column 2,is_stmt,isa 0
+        MOVB      XAR1,#83              ; [CPU_] |2493| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2489,column 2,is_stmt,isa 0
+        AND       *+XAR5[0],#0xffcf     ; [CPU_] |2489| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2490,column 2,is_stmt,isa 0
+        OR        *+XAR4[0],#0x0003     ; [CPU_] |2490| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2491,column 2,is_stmt,isa 0
-        AND       AL,*+XAR6[AR0],#0xffdf ; [CPU_] |2491| 
-        ORB       AL,#0x10              ; [CPU_] |2491| 
+        AND       AL,*+XAR6[AR0],#0xfffb ; [CPU_] |2491| 
+        MOVB      XAR0,#12              ; [CPU_] |2491| 
+        ORB       AL,#0x08              ; [CPU_] |2491| 
+        MOV       *+XAR6[AR0],AL        ; [CPU_] |2491| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2492,column 2,is_stmt,isa 0
-        MOVB      XAR0,#64              ; [CPU_] |2492| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2491,column 2,is_stmt,isa 0
-        MOV       *+XAR6[AR1],AL        ; [CPU_] |2491| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2492,column 2,is_stmt,isa 0
-        MOVB      XAR1,#64              ; [CPU_] |2492| 
-        AND       AL,*+XAR6[AR0],#0xfffe ; [CPU_] |2492| 
-        ORB       AL,#0x02              ; [CPU_] |2492| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2497,column 2,is_stmt,isa 0
-        MOVB      XAR0,#12              ; [CPU_] |2497| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2492,column 2,is_stmt,isa 0
-        MOV       *+XAR6[AR1],AL        ; [CPU_] |2492| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2499,column 2,is_stmt,isa 0
-        MOVB      XAR1,#83              ; [CPU_] |2499| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2495,column 2,is_stmt,isa 0
-        AND       *+XAR5[0],#0xffcf     ; [CPU_] |2495| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2496,column 2,is_stmt,isa 0
-        OR        *+XAR4[0],#0x0003     ; [CPU_] |2496| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2497,column 2,is_stmt,isa 0
-        AND       AL,*+XAR6[AR0],#0xfffb ; [CPU_] |2497| 
-        MOVB      XAR0,#12              ; [CPU_] |2497| 
-        ORB       AL,#0x08              ; [CPU_] |2497| 
-        MOV       *+XAR6[AR0],AL        ; [CPU_] |2497| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2498,column 2,is_stmt,isa 0
-        MOVB      XAR0,#81              ; [CPU_] |2498| 
-        MOV       *+XAR6[AR0],#0        ; [CPU_] |2498| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2499,column 2,is_stmt,isa 0
-        MOV       *+XAR6[AR1],#0        ; [CPU_] |2499| 
+        MOVB      XAR0,#81              ; [CPU_] |2492| 
+        MOV       *+XAR6[AR0],#0        ; [CPU_] |2492| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2493,column 2,is_stmt,isa 0
+        MOV       *+XAR6[AR1],#0        ; [CPU_] |2493| 
  EDIS
         SPM       #0                    ; [CPU_] 
         MOVL      XAR1,*--SP            ; [CPU_] 
@@ -6807,7 +6807,7 @@ $C$DW$341	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$336, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$336, DW_AT_TI_end_line(0x9c5)
+	.dwattr $C$DW$336, DW_AT_TI_end_line(0x9bf)
 	.dwattr $C$DW$336, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$336
@@ -6823,10 +6823,10 @@ $C$DW$342	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$342, DW_AT_TI_symbol_name("_ConfigureADC")
 	.dwattr $C$DW$342, DW_AT_external
 	.dwattr $C$DW$342, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$342, DW_AT_TI_begin_line(0x9cc)
+	.dwattr $C$DW$342, DW_AT_TI_begin_line(0x9c6)
 	.dwattr $C$DW$342, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$342, DW_AT_TI_max_frame_size(-2)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2509,column 1,is_stmt,address _ConfigureADC,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2503,column 1,is_stmt,address _ConfigureADC,isa 0
 
 	.dwfde $C$DW$CIE, _ConfigureADC
 
@@ -6851,66 +6851,66 @@ $C$DW$343	.dwtag  DW_TAG_variable
 	.dwcfi	save_reg_to_mem, 26, 0
  EALLOW
         MOVW      DP,#_AdcaRegs+1       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2517,column 2,is_stmt,isa 0
-        AND       AL,@_AdcaRegs+1,#0xfff0 ; [CPU_] |2517| 
-        ORB       AL,#0x06              ; [CPU_] |2517| 
-        MOV       @_AdcaRegs+1,AL       ; [CPU_] |2517| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2518,column 2,is_stmt,isa 0
-        AND       @_AdcaRegs+1,#0xffbf  ; [CPU_] |2518| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2511,column 2,is_stmt,isa 0
+        AND       AL,@_AdcaRegs+1,#0xfff0 ; [CPU_] |2511| 
+        ORB       AL,#0x06              ; [CPU_] |2511| 
+        MOV       @_AdcaRegs+1,AL       ; [CPU_] |2511| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2512,column 2,is_stmt,isa 0
+        AND       @_AdcaRegs+1,#0xffbf  ; [CPU_] |2512| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2513,column 2,is_stmt,isa 0
+        AND       @_AdcaRegs+1,#0xff7f  ; [CPU_] |2513| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2516,column 2,is_stmt,isa 0
+        OR        @_AdcaRegs,#0x0004    ; [CPU_] |2516| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2519,column 2,is_stmt,isa 0
-        AND       @_AdcaRegs+1,#0xff7f  ; [CPU_] |2519| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2522,column 2,is_stmt,isa 0
-        OR        @_AdcaRegs,#0x0004    ; [CPU_] |2522| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2525,column 2,is_stmt,isa 0
-        OR        @_AdcaRegs,#0x0080    ; [CPU_] |2525| 
+        OR        @_AdcaRegs,#0x0080    ; [CPU_] |2519| 
         MOVW      DP,#_AdcbRegs+1       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2529,column 2,is_stmt,isa 0
-        AND       AL,@_AdcbRegs+1,#0xfff0 ; [CPU_] |2529| 
-        ORB       AL,#0x06              ; [CPU_] |2529| 
-        MOV       @_AdcbRegs+1,AL       ; [CPU_] |2529| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2530,column 2,is_stmt,isa 0
-        AND       @_AdcbRegs+1,#0xffbf  ; [CPU_] |2530| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2523,column 2,is_stmt,isa 0
+        AND       AL,@_AdcbRegs+1,#0xfff0 ; [CPU_] |2523| 
+        ORB       AL,#0x06              ; [CPU_] |2523| 
+        MOV       @_AdcbRegs+1,AL       ; [CPU_] |2523| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2524,column 2,is_stmt,isa 0
+        AND       @_AdcbRegs+1,#0xffbf  ; [CPU_] |2524| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2525,column 2,is_stmt,isa 0
+        AND       @_AdcbRegs+1,#0xff7f  ; [CPU_] |2525| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2528,column 2,is_stmt,isa 0
+        OR        @_AdcbRegs,#0x0004    ; [CPU_] |2528| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2531,column 2,is_stmt,isa 0
-        AND       @_AdcbRegs+1,#0xff7f  ; [CPU_] |2531| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2534,column 2,is_stmt,isa 0
-        OR        @_AdcbRegs,#0x0004    ; [CPU_] |2534| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2537,column 2,is_stmt,isa 0
-        OR        @_AdcbRegs,#0x0080    ; [CPU_] |2537| 
+        OR        @_AdcbRegs,#0x0080    ; [CPU_] |2531| 
         MOVW      DP,#_AdccRegs+1       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2541,column 2,is_stmt,isa 0
-        AND       AL,@_AdccRegs+1,#0xfff0 ; [CPU_] |2541| 
-        ORB       AL,#0x06              ; [CPU_] |2541| 
-        MOV       @_AdccRegs+1,AL       ; [CPU_] |2541| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2542,column 2,is_stmt,isa 0
-        AND       @_AdccRegs+1,#0xffbf  ; [CPU_] |2542| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2535,column 2,is_stmt,isa 0
+        AND       AL,@_AdccRegs+1,#0xfff0 ; [CPU_] |2535| 
+        ORB       AL,#0x06              ; [CPU_] |2535| 
+        MOV       @_AdccRegs+1,AL       ; [CPU_] |2535| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2536,column 2,is_stmt,isa 0
+        AND       @_AdccRegs+1,#0xffbf  ; [CPU_] |2536| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2537,column 2,is_stmt,isa 0
+        AND       @_AdccRegs+1,#0xff7f  ; [CPU_] |2537| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2540,column 2,is_stmt,isa 0
+        OR        @_AdccRegs,#0x0004    ; [CPU_] |2540| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2543,column 2,is_stmt,isa 0
-        AND       @_AdccRegs+1,#0xff7f  ; [CPU_] |2543| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2546,column 2,is_stmt,isa 0
-        OR        @_AdccRegs,#0x0004    ; [CPU_] |2546| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2549,column 2,is_stmt,isa 0
-        OR        @_AdccRegs,#0x0080    ; [CPU_] |2549| 
+        OR        @_AdccRegs,#0x0080    ; [CPU_] |2543| 
         MOVW      DP,#_AdcdRegs+1       ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2553,column 2,is_stmt,isa 0
-        AND       AL,@_AdcdRegs+1,#0xfff0 ; [CPU_] |2553| 
-        ORB       AL,#0x06              ; [CPU_] |2553| 
-        MOV       @_AdcdRegs+1,AL       ; [CPU_] |2553| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2564,column 6,is_stmt,isa 0
-        MOVB      AL,#0                 ; [CPU_] |2564| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2554,column 2,is_stmt,isa 0
-        AND       @_AdcdRegs+1,#0xffbf  ; [CPU_] |2554| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2547,column 2,is_stmt,isa 0
+        AND       AL,@_AdcdRegs+1,#0xfff0 ; [CPU_] |2547| 
+        ORB       AL,#0x06              ; [CPU_] |2547| 
+        MOV       @_AdcdRegs+1,AL       ; [CPU_] |2547| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2558,column 6,is_stmt,isa 0
+        MOVB      AL,#0                 ; [CPU_] |2558| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2548,column 2,is_stmt,isa 0
+        AND       @_AdcdRegs+1,#0xffbf  ; [CPU_] |2548| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2549,column 2,is_stmt,isa 0
+        AND       @_AdcdRegs+1,#0xff7f  ; [CPU_] |2549| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2552,column 2,is_stmt,isa 0
+        OR        @_AdcdRegs,#0x0004    ; [CPU_] |2552| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2555,column 2,is_stmt,isa 0
-        AND       @_AdcdRegs+1,#0xff7f  ; [CPU_] |2555| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2558,column 2,is_stmt,isa 0
-        OR        @_AdcdRegs,#0x0004    ; [CPU_] |2558| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2561,column 2,is_stmt,isa 0
-        OR        @_AdcdRegs,#0x0080    ; [CPU_] |2561| 
+        OR        @_AdcdRegs,#0x0080    ; [CPU_] |2555| 
 $C$L38:    
    RPT#255 || NOP
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2564,column 23,is_stmt,isa 0
-        ADDB      AL,#1                 ; [CPU_] |2564| 
-        CMP       AL,#1000              ; [CPU_] |2564| 
-        B         $C$L38,LO             ; [CPU_] |2564| 
-        ; branchcc occurs ; [] |2564| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2558,column 23,is_stmt,isa 0
+        ADDB      AL,#1                 ; [CPU_] |2558| 
+        CMP       AL,#1000              ; [CPU_] |2558| 
+        B         $C$L38,LO             ; [CPU_] |2558| 
+        ; branchcc occurs ; [] |2558| 
  EDIS
         SPM       #0                    ; [CPU_] 
 $C$DW$344	.dwtag  DW_TAG_TI_branch
@@ -6920,7 +6920,7 @@ $C$DW$344	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$342, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$342, DW_AT_TI_end_line(0xa09)
+	.dwattr $C$DW$342, DW_AT_TI_end_line(0xa03)
 	.dwattr $C$DW$342, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$342
@@ -6937,10 +6937,10 @@ $C$DW$345	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$345, DW_AT_external
 	.dwattr $C$DW$345, DW_AT_type(*$C$DW$T$28)
 	.dwattr $C$DW$345, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$345, DW_AT_TI_begin_line(0xa12)
+	.dwattr $C$DW$345, DW_AT_TI_begin_line(0xa0c)
 	.dwattr $C$DW$345, DW_AT_TI_begin_column(0x05)
 	.dwattr $C$DW$345, DW_AT_TI_max_frame_size(-6)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2578,column 44,is_stmt,address _ramper,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2572,column 44,is_stmt,address _ramper,isa 0
 
 	.dwfde $C$DW$CIE, _ramper
 $C$DW$346	.dwtag  DW_TAG_formal_parameter
@@ -6999,25 +6999,25 @@ $C$DW$351	.dwtag  DW_TAG_variable
         MOV32     *SP++,R4H             ; [CPU_] 
         ADDB      SP,#2                 ; [CPU_U] 
 	.dwcfi	cfa_offset, -6
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2582,column 2,is_stmt,isa 0
-        SUBF32    R3H,R0H,R1H           ; [CPU_] |2582| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2576,column 2,is_stmt,isa 0
+        SUBF32    R3H,R0H,R1H           ; [CPU_] |2576| 
         NOP       ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2583,column 3,is_stmt,isa 0
-        CMPF32    R3H,R2H               ; [CPU_] |2583| 
-        MOVST0    ZF, NF                ; [CPU_] |2583| 
-        B         $C$L39,LEQ            ; [CPU_] |2583| 
-        ; branchcc occurs ; [] |2583| 
-        ADDF32    R0H,R2H,R1H           ; [CPU_] |2583| 
-        B         $C$L40,UNC            ; [CPU_] |2583| 
-        ; branch occurs ; [] |2583| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2577,column 3,is_stmt,isa 0
+        CMPF32    R3H,R2H               ; [CPU_] |2577| 
+        MOVST0    ZF, NF                ; [CPU_] |2577| 
+        B         $C$L39,LEQ            ; [CPU_] |2577| 
+        ; branchcc occurs ; [] |2577| 
+        ADDF32    R0H,R2H,R1H           ; [CPU_] |2577| 
+        B         $C$L40,UNC            ; [CPU_] |2577| 
+        ; branch occurs ; [] |2577| 
 $C$L39:    
-        MOV32     R4H,R2H               ; [CPU_] |2583| 
-        NEGF32    R4H,R4H               ; [CPU_] |2583| 
-        CMPF32    R3H,R4H               ; [CPU_] |2583| 
-        MOVST0    ZF, NF                ; [CPU_] |2583| 
-        B         $C$L40,GEQ            ; [CPU_] |2583| 
-        ; branchcc occurs ; [] |2583| 
-        SUBF32    R0H,R1H,R2H           ; [CPU_] |2583| 
+        MOV32     R4H,R2H               ; [CPU_] |2577| 
+        NEGF32    R4H,R4H               ; [CPU_] |2577| 
+        CMPF32    R3H,R4H               ; [CPU_] |2577| 
+        MOVST0    ZF, NF                ; [CPU_] |2577| 
+        B         $C$L40,GEQ            ; [CPU_] |2577| 
+        ; branchcc occurs ; [] |2577| 
+        SUBF32    R0H,R1H,R2H           ; [CPU_] |2577| 
 $C$L40:    
         SUBB      SP,#2                 ; [CPU_U] 
 	.dwcfi	cfa_offset, -4
@@ -7029,7 +7029,7 @@ $C$DW$352	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$345, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$345, DW_AT_TI_end_line(0xa1c)
+	.dwattr $C$DW$345, DW_AT_TI_end_line(0xa16)
 	.dwattr $C$DW$345, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$345
@@ -7046,10 +7046,10 @@ $C$DW$353	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$353, DW_AT_external
 	.dwattr $C$DW$353, DW_AT_type(*$C$DW$T$28)
 	.dwattr $C$DW$353, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$353, DW_AT_TI_begin_line(0xa1f)
+	.dwattr $C$DW$353, DW_AT_TI_begin_line(0xa19)
 	.dwattr $C$DW$353, DW_AT_TI_begin_column(0x05)
 	.dwattr $C$DW$353, DW_AT_TI_max_frame_size(-6)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2591,column 50,is_stmt,address _ramper_speed,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2585,column 50,is_stmt,address _ramper_speed,isa 0
 
 	.dwfde $C$DW$CIE, _ramper_speed
 $C$DW$354	.dwtag  DW_TAG_formal_parameter
@@ -7108,29 +7108,29 @@ $C$DW$359	.dwtag  DW_TAG_variable
         MOV32     *SP++,R4H             ; [CPU_] 
         ADDB      SP,#2                 ; [CPU_U] 
 	.dwcfi	cfa_offset, -6
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2595,column 2,is_stmt,isa 0
-        SUBF32    R3H,R0H,R1H           ; [CPU_] |2595| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2589,column 2,is_stmt,isa 0
+        SUBF32    R3H,R0H,R1H           ; [CPU_] |2589| 
         NOP       ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2598,column 4,is_stmt,isa 0
-        CMPF32    R3H,R2H               ; [CPU_] |2598| 
-        MOVST0    ZF, NF                ; [CPU_] |2598| 
-        B         $C$L41,LEQ            ; [CPU_] |2598| 
-        ; branchcc occurs ; [] |2598| 
-        ADDF32    R0H,R2H,R1H           ; [CPU_] |2598| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2592,column 4,is_stmt,isa 0
+        CMPF32    R3H,R2H               ; [CPU_] |2592| 
+        MOVST0    ZF, NF                ; [CPU_] |2592| 
+        B         $C$L41,LEQ            ; [CPU_] |2592| 
+        ; branchcc occurs ; [] |2592| 
+        ADDF32    R0H,R2H,R1H           ; [CPU_] |2592| 
         NOP       ; [CPU_] 
-        MINF32    R0H,#16256            ; [CPU_] |2598| 
-        B         $C$L42,UNC            ; [CPU_] |2598| 
-        ; branch occurs ; [] |2598| 
+        MINF32    R0H,#16256            ; [CPU_] |2592| 
+        B         $C$L42,UNC            ; [CPU_] |2592| 
+        ; branch occurs ; [] |2592| 
 $C$L41:    
-        MOV32     R4H,R2H               ; [CPU_] |2598| 
-        NEGF32    R4H,R4H               ; [CPU_] |2598| 
-        CMPF32    R3H,R4H               ; [CPU_] |2598| 
-        MOVST0    ZF, NF                ; [CPU_] |2598| 
-        B         $C$L42,GEQ            ; [CPU_] |2598| 
-        ; branchcc occurs ; [] |2598| 
-        SUBF32    R0H,R1H,R2H           ; [CPU_] |2598| 
+        MOV32     R4H,R2H               ; [CPU_] |2592| 
+        NEGF32    R4H,R4H               ; [CPU_] |2592| 
+        CMPF32    R3H,R4H               ; [CPU_] |2592| 
+        MOVST0    ZF, NF                ; [CPU_] |2592| 
+        B         $C$L42,GEQ            ; [CPU_] |2592| 
+        ; branchcc occurs ; [] |2592| 
+        SUBF32    R0H,R1H,R2H           ; [CPU_] |2592| 
         NOP       ; [CPU_] 
-        MAXF32    R0H,#0                ; [CPU_] |2598| 
+        MAXF32    R0H,#0                ; [CPU_] |2592| 
 $C$L42:    
         SUBB      SP,#2                 ; [CPU_U] 
 	.dwcfi	cfa_offset, -4
@@ -7142,7 +7142,7 @@ $C$DW$360	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$353, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$353, DW_AT_TI_end_line(0xa33)
+	.dwattr $C$DW$353, DW_AT_TI_end_line(0xa2d)
 	.dwattr $C$DW$353, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$353
@@ -7159,10 +7159,10 @@ $C$DW$361	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$361, DW_AT_external
 	.dwattr $C$DW$361, DW_AT_type(*$C$DW$T$28)
 	.dwattr $C$DW$361, DW_AT_TI_begin_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$361, DW_AT_TI_begin_line(0xa36)
+	.dwattr $C$DW$361, DW_AT_TI_begin_line(0xa30)
 	.dwattr $C$DW$361, DW_AT_TI_begin_column(0x05)
 	.dwattr $C$DW$361, DW_AT_TI_max_frame_size(-4)
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2615,column 1,is_stmt,address _refPosGen,isa 0
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2609,column 1,is_stmt,address _refPosGen,isa 0
 
 	.dwfde $C$DW$CIE, _refPosGen
 $C$DW$362	.dwtag  DW_TAG_formal_parameter
@@ -7203,61 +7203,61 @@ $C$DW$364	.dwtag  DW_TAG_variable
 	.dwcfi	cfa_offset, -4
         SETC      SXM                   ; [CPU_] 
         MOVW      DP,#_ptr1             ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2616,column 9,is_stmt,isa 0
-        MOVL      XAR4,#_posArray       ; [CPU_U] |2616| 
-        MOV       ACC,@_ptr1 << 1       ; [CPU_] |2616| 
-        ADDL      XAR4,ACC              ; [CPU_] |2616| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2610,column 9,is_stmt,isa 0
+        MOVL      XAR4,#_posArray       ; [CPU_U] |2610| 
+        MOV       ACC,@_ptr1 << 1       ; [CPU_] |2610| 
+        ADDL      XAR4,ACC              ; [CPU_] |2610| 
         MOVW      DP,#_posSlewRate      ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2618,column 2,is_stmt,isa 0
-        MOV32     R1H,R0H               ; [CPU_] |2618| 
-        MOV32     R2H,@_posSlewRate     ; [CPU_] |2618| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2616,column 9,is_stmt,isa 0
-        MOVL      ACC,*+XAR4[0]         ; [CPU_] |2616| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2618,column 2,is_stmt,isa 0
-        MOV32     R0H,ACC               ; [CPU_] |2618| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2612,column 2,is_stmt,isa 0
+        MOV32     R1H,R0H               ; [CPU_] |2612| 
+        MOV32     R2H,@_posSlewRate     ; [CPU_] |2612| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2610,column 9,is_stmt,isa 0
+        MOVL      ACC,*+XAR4[0]         ; [CPU_] |2610| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2612,column 2,is_stmt,isa 0
+        MOV32     R0H,ACC               ; [CPU_] |2612| 
 $C$DW$365	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$365, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$365, DW_AT_name("_ramper")
 	.dwattr $C$DW$365, DW_AT_TI_call
 
-        LCR       #_ramper              ; [CPU_] |2618| 
-        ; call occurs [#_ramper] ; [] |2618| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2616,column 9,is_stmt,isa 0
-        MOV32     R2H,ACC               ; [CPU_] |2616| 
+        LCR       #_ramper              ; [CPU_] |2612| 
+        ; call occurs [#_ramper] ; [] |2612| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2610,column 9,is_stmt,isa 0
+        MOV32     R2H,ACC               ; [CPU_] |2610| 
         NOP       ; [CPU_] 
         NOP       ; [CPU_] 
         NOP       ; [CPU_] 
         NOP       ; [CPU_] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2620,column 2,is_stmt,isa 0
-        CMPF32    R2H,R0H               ; [CPU_] |2620| 
-        MOVST0    ZF, NF                ; [CPU_] |2620| 
-        B         $C$L43,NEQ            ; [CPU_] |2620| 
-        ; branchcc occurs ; [] |2620| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2621,column 2,is_stmt,isa 0
-        MOV32     R1H,@_cntr1           ; [CPU_] |2621| 
-        ADDF32    R1H,R1H,#16256        ; [CPU_] |2621| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2614,column 2,is_stmt,isa 0
+        CMPF32    R2H,R0H               ; [CPU_] |2614| 
+        MOVST0    ZF, NF                ; [CPU_] |2614| 
+        B         $C$L43,NEQ            ; [CPU_] |2614| 
+        ; branchcc occurs ; [] |2614| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2615,column 2,is_stmt,isa 0
+        MOV32     R1H,@_cntr1           ; [CPU_] |2615| 
+        ADDF32    R1H,R1H,#16256        ; [CPU_] |2615| 
         NOP       ; [CPU_] 
-        MOV32     @_cntr1,R1H           ; [CPU_] |2621| 
-        CMPF32    R1H,#17530            ; [CPU_] |2621| 
-        MOVST0    ZF, NF                ; [CPU_] |2621| 
-        B         $C$L43,LEQ            ; [CPU_] |2621| 
-        ; branchcc occurs ; [] |2621| 
+        MOV32     @_cntr1,R1H           ; [CPU_] |2615| 
+        CMPF32    R1H,#17530            ; [CPU_] |2615| 
+        MOVST0    ZF, NF                ; [CPU_] |2615| 
+        B         $C$L43,LEQ            ; [CPU_] |2615| 
+        ; branchcc occurs ; [] |2615| 
         MOVW      DP,#_ptrMax           ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2623,column 3,is_stmt,isa 0
-        ZERO      R1H                   ; [CPU_] |2623| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2624,column 3,is_stmt,isa 0
-        MOV       AL,@_ptrMax           ; [CPU_] |2624| 
-        INC       @_ptr1                ; [CPU_] |2624| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2617,column 3,is_stmt,isa 0
+        ZERO      R1H                   ; [CPU_] |2617| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2618,column 3,is_stmt,isa 0
+        MOV       AL,@_ptrMax           ; [CPU_] |2618| 
+        INC       @_ptr1                ; [CPU_] |2618| 
         MOVW      DP,#_cntr1            ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2623,column 3,is_stmt,isa 0
-        MOV32     @_cntr1,R1H           ; [CPU_] |2623| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2617,column 3,is_stmt,isa 0
+        MOV32     @_cntr1,R1H           ; [CPU_] |2617| 
         MOVW      DP,#_ptr1             ; [CPU_U] 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2624,column 3,is_stmt,isa 0
-        CMP       AL,@_ptr1             ; [CPU_] |2624| 
-        B         $C$L43,GT             ; [CPU_] |2624| 
-        ; branchcc occurs ; [] |2624| 
-	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2625,column 4,is_stmt,isa 0
-        MOV       @_ptr1,#0             ; [CPU_] |2625| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2618,column 3,is_stmt,isa 0
+        CMP       AL,@_ptr1             ; [CPU_] |2618| 
+        B         $C$L43,GT             ; [CPU_] |2618| 
+        ; branchcc occurs ; [] |2618| 
+	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2619,column 4,is_stmt,isa 0
+        MOV       @_ptr1,#0             ; [CPU_] |2619| 
 $C$L43:    
         SUBB      SP,#2                 ; [CPU_U] 
 	.dwcfi	cfa_offset, -2
@@ -7268,7 +7268,7 @@ $C$DW$366	.dwtag  DW_TAG_TI_branch
         LRETR     ; [CPU_] 
         ; return occurs ; [] 
 	.dwattr $C$DW$361, DW_AT_TI_end_file("../IDDK_PM_Servo_F2837x.c")
-	.dwattr $C$DW$361, DW_AT_TI_end_line(0xa44)
+	.dwattr $C$DW$361, DW_AT_TI_end_line(0xa3e)
 	.dwattr $C$DW$361, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$361

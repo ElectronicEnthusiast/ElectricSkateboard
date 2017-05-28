@@ -20,8 +20,8 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.Texas Instruments XDS100v2 USB Debug Probe/C28xx_CPU1" value="IDDK_PM_Servo_F2837x-v2"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.Texas Instruments XDS100v2 USB Debug Probe/C28xx_CPU2" value="IDDK_PM_Servo_F2837x-v2"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${target_config_active_default:IDDK_PM_Servo_F2837x-v2}"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.Texas Instruments XDS100v2 USB Debug Probe/C28xx_CPU1" value="C:/Users\Keith\workspace_v6_1_3\IDDK_PM_Servo_F2837x-v2\F2837x_FLASH\IDDK_PM_Servo_F2837x-v2.out"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.Texas Instruments XDS100v2 USB Debug Probe/C28xx_CPU2" value="C:/Users\Keith\workspace_v6_1_3\IDDK_PM_Servo_F2837x-v2\F2837x_FLASH\IDDK_PM_Servo_F2837x-v2.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.Texas Instruments XDS100v2 USB Debug Probe/C28xx_CPU1" value="C:/Users\Keith\Documents\GitHub\ElectricSkateboard\Software\IDDK_PM_Servo_F2837x-v2\F2837x_FLASH\IDDK_PM_Servo_F2837x-v2.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.Texas Instruments XDS100v2 USB Debug Probe/C28xx_CPU2" value="C:/Users\Keith\Documents\GitHub\ElectricSkateboard\Software\IDDK_PM_Servo_F2837x-v2\F2837x_FLASH\IDDK_PM_Servo_F2837x-v2.out"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/IDDK_PM_Servo_F2837x-v2"/>
 </listAttribute>

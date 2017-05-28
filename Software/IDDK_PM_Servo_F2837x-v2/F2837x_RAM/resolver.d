@@ -79,7 +79,7 @@ resolver.obj: C:/ti/controlSUITE/libs/app_libs/motor_control/math_blocks/v4.3/re
 resolver.obj: C:/ti/controlSUITE/libs/app_libs/motor_control/math_blocks/v4.3/pid_grando.h
 resolver.obj: C:/ti/controlSUITE/libs/app_libs/motor_control/math_blocks/v4.3/pid_reg3.h
 resolver.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-c2000_15.12.1.LTS/include/math.h
-resolver.obj: C:/Users/Keith/workspace_v6_1_3/IDDK_PM_Servo_F2837x-v2/utility\ Src\ Files/DLOG_4CH_F.h
+resolver.obj: C:/Users/Keith/Documents/GitHub/ElectricSkateboard/Software/IDDK_PM_Servo_F2837x-v2/utility\ Src\ Files/DLOG_4CH_F.h
 resolver.obj: C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/include/F2837xD_sdfm_drivers.h
 resolver.obj: C:/ti/controlSUITE/libs/app_libs/motor_control/libs/resolver/v101/include/Resolver_Float.h
 resolver.obj: ../F2837x_QEP_Module.h
@@ -169,7 +169,7 @@ C:/ti/controlSUITE/libs/app_libs/motor_control/math_blocks/v4.3/resolver.h:
 C:/ti/controlSUITE/libs/app_libs/motor_control/math_blocks/v4.3/pid_grando.h: 
 C:/ti/controlSUITE/libs/app_libs/motor_control/math_blocks/v4.3/pid_reg3.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-c2000_15.12.1.LTS/include/math.h: 
-C:/Users/Keith/workspace_v6_1_3/IDDK_PM_Servo_F2837x-v2/utility\ Src\ Files/DLOG_4CH_F.h: 
+C:/Users/Keith/Documents/GitHub/ElectricSkateboard/Software/IDDK_PM_Servo_F2837x-v2/utility\ Src\ Files/DLOG_4CH_F.h: 
 C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/include/F2837xD_sdfm_drivers.h: 
 C:/ti/controlSUITE/libs/app_libs/motor_control/libs/resolver/v101/include/Resolver_Float.h: 
 ../F2837x_QEP_Module.h: 

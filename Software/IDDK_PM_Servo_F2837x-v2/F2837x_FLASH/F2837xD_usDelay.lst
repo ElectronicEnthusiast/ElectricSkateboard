@@ -1,4 +1,4 @@
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:14 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 10:39:54 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_usDelay.asm PAGE    1
@@ -58,7 +58,7 @@ C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_usD
       52              ;  DELAY_CPU_CYCLES = 9 + 5*LoopCount
       53              ; LoopCount = (DELAY_CPU_CYCLES - 9) / 5
       54              ; The macro DELAY_US(A) performs this calculation for you
-TMS320C2000 Assembler PC v15.12.1 Sun Feb 26 22:57:14 2017
+TMS320C2000 Assembler PC v15.12.1 Sun May 28 10:39:54 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
 C:/ti/controlSUITE/device_support/F2837xD/v170/F2837xD_common/source/F2837xD_usDelay.asm PAGE    2
