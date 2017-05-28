@@ -1,5 +1,5 @@
 /* ============================================================================
-System Name:  	IDDK PMSM Servo Control
+System Name:  	IDDK PMSM Servo Control - ElectronicEnthusiast Version
 
 File Name:	  	IDDK_PM_Servo_F2837x.C
 
