@@ -76,14 +76,15 @@ Following is the list of the Build Level choices.
 /*------------------------------------------------------------------------------
 This line sets the BUILDLEVEL to one of the available choices.
 ------------------------------------------------------------------------------*/
-#define BUILDLEVEL LEVEL1
+//#define BUILDLEVEL LEVEL1
+#define BUILDLEVEL LEVEL2
 
 /*------------------------------------------------------------------------------
 Following is the list of Current sense options
 ------------------------------------------------------------------------------*/
 #define SHUNT_CURRENT_SENSE 1
 #define LEM_CURRENT_SENSE   2
-////#define SD_CURRENT_SENSE    3
+////#define SD_CURRENT_SENSE    3 //Sigma-Delta Current Sense Mode is not used
 
 /*------------------------------------------------------------------------------
 This line sets the CURRENT_SENSE to user's choice from the above.
@@ -94,6 +95,7 @@ This line sets the CURRENT_SENSE to user's choice from the above.
 Following is the list of Position Encoder options
 ------------------------------------------------------------------------------*/
 // Select Position Feedback Option
+#define NO_ENCODER_USED		  0
 #define QEP_POS_ENCODER       1
 #define RESOLVER_POS_ENCODER  2
 #define BISS_POS_ENCODER      3
@@ -103,7 +105,9 @@ Following is the list of Position Encoder options
 /*------------------------------------------------------------------------------
 This line sets the POSITION_ENCODER to user's choice from the above.
 ------------------------------------------------------------------------------*/
-#define POSITION_ENCODER QEP_POS_ENCODER
+#define POSITION_ENCODER NO_ENCODER_USED
+////#define POSITION_ENCODER QEP_POS_ENCODER
+////#define POSITION_ENCODER RESOLVER_POS_ENCODER
 
 #ifndef BUILDLEVEL
 #error  Critical: BUILDLEVEL must be defined !!
@@ -183,13 +187,22 @@ set the motor parameters to the one available
 #define POLES  	8						// Number of poles
 										// Number of poles
 
+//// Originally defined base quantites
+//#define BASE_VOLTAGE        236.14    // Base peak phase voltage (volt), Vdc/sqrt(3)
+//#define BASE_SHUNT_CURRENT    9.95    // Base peak phase current (amp), Max. measurable peak curr.
+//#define BASE_LEM_CURRENT     12.0     //  ----- do -----
+//#define BASE_TORQUE     		      // Base torque (N.m)
+//#define BASE_FLUX       			  // Base flux linkage (volt.sec/rad)
+//#define BASE_FREQ      	200           // Base electrical frequency (Hz)
+
 // Define the base quantites
-#define BASE_VOLTAGE        236.14    // Base peak phase voltage (volt), Vdc/sqrt(3)
+#define BASE_VOLTAGE        6.93    // Base peak phase voltage (volt), Vdc/sqrt(3) == 12/sqrt(3) == 6.9282
 #define BASE_SHUNT_CURRENT    9.95    // Base peak phase current (amp), Max. measurable peak curr.
-#define BASE_LEM_CURRENT     12.0     //  ----- do -----
+#define LEM_NUMBER_WINDINGS		4
+#define BASE_LEM_CURRENT     100/LEM_NUMBER_WINDINGS     // Base peak phase current (25 amp), Max. measurable peak curr with 4 windings through "LEM LA 100-P" current sensor
 #define BASE_TORQUE     		      // Base torque (N.m)
 #define BASE_FLUX       			  // Base flux linkage (volt.sec/rad)
-#define BASE_FREQ      	200           // Base electrical frequency (Hz)
+#define BASE_FREQ      	20000           // Base electrical frequency (Hz)
 
 
 /*-----------------------------------------------------------------------------

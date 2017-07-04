@@ -57,7 +57,7 @@ Description:	Project uses the following ISRs
 	Analog to Digital Conversion channels
 	  ADC A4/C+  --->  Ifb-SV
 	  ADC B4/C+  ---> Ifb-SW
-	  ADC A2/C+  ---> LEM V
+	  ADC /C+  ---> LEM V
 	  ADC B2/C+  ---> LEM W
 	  ADC D1     ---> R_SIN
 	  ADC C1     ---> R_COS
@@ -207,14 +207,14 @@ typedef struct {
 
 CURRENT_SENSOR current_sensor[3];
 
-float curLimit = 8.0;
+float curLimit = 15.0;
 
 // CMPSS parameters for Over Current Protection
 Uint16  clkPrescale = 20,
 		sampwin     = 30,
 		thresh      = 18,
-		LEM_curHi   = LEM(8.0),
-		LEM_curLo   = LEM(8.0),
+		LEM_curHi   = LEM(15.0),
+		LEM_curLo   = LEM(15.0),
 		SHUNT_curHi = SHUNT(8.0),
 		SHUNT_curLo = SHUNT(8.0);
 
@@ -237,6 +237,8 @@ int    EnableResolverISR,  // not used
 
 Uint16 SpeedLoopPrescaler = 10,      // Speed loop pre scalar
        SpeedLoopCount = 1;           // Speed loop counter
+
+volatile bool RunMotor = 0;
 
 // ****************************************************************************
 // Variables for Field Oriented Control
@@ -345,7 +347,7 @@ DLOG_4CH_F dlog_4ch1;
 #if BUILDLEVEL != LEVEL1
 inline void currentSensorSuite()
 {
-	volatile int16 temp;  // temp variable used to avoid warning msgs
+////	volatile int16 temp;  // temp variable used to avoid warning msgs
 
 #if (CNGD == HOT)
 	current_sensor[SHUNT_CURRENT_SENSE-1].As = (float)IFB_SV_PPB* ADC_PU_PPB_SCALE_FACTOR;
@@ -521,7 +523,7 @@ void posEncoderSuite(void)
 //*****************************************************************************
 
 void main(void)
-{
+ {
 
 	volatile int16 temp;
 
@@ -547,7 +549,6 @@ void main(void)
 #endif //(FLASH)
 
 	// Waiting for enable flag set
-	while (EnableFlag == FALSE)
 	{
 	  BackTicker++;
 	}
@@ -706,12 +707,12 @@ void main(void)
 	EALLOW;
 
 	// Analog signals that are sampled
-	// Ifb-SV  ADC A4/C+
-	// Ifb-SW  ADC B4/C+
-	// LEM V   ADC A2/C+
-	// LEM W   ADC B2/C+
-	// R_SIN   ADC D1
-	// R_COS   ADC C1
+	// LEM V   ADC B4/C+
+	// LEM W   ADC C4/C+
+	////// OLD_LEM V   ADC A2/C+
+	////// OLD_LEM W   ADC B2/C+
+	// Resolver_SIN   ADC D1
+	// Resolver_COS   ADC C1
 	// Vfb-U   ADC C3
 	// Vfb-V   ADC A3
 	// Vfb-W   ADC B3
@@ -728,33 +729,15 @@ void main(void)
 	// hencce ACQPS on soprano is 133/5~30
 
 	// Configure the SOC0 on ADC a-d
-#if (CGND == HOT)
-	// Shunt Motor Currents (SV) @ A4
-	// ********************************
-	AdcaRegs.ADCSOC0CTL.bit.CHSEL     = 4;    // SOC0 will convert pin A4
-	AdcaRegs.ADCSOC0CTL.bit.ACQPS     = 30;   // sample window in SYSCLK cycles
-	AdcaRegs.ADCSOC0CTL.bit.TRIGSEL   = 5;    // trigger on ePWM1 SOCA/C
-	// Configure the post processing block (PPB) to eliminate subtraction related calculation
-	AdcaRegs.ADCPPB1CONFIG.bit.CONFIG = 0;    // PPB is associated with SOC0
-	AdcaRegs.ADCPPB1OFFCAL.bit.OFFCAL = 0;    // Write zero to this for now till offset ISR is run
 
-	// Shunt Motor Currents (SW) @ B4
-	// ********************************
-	AdcbRegs.ADCSOC0CTL.bit.CHSEL     = 4;    // SOC0 will convert pin B4
-	AdcbRegs.ADCSOC0CTL.bit.ACQPS     = 30;   // sample window in SYSCLK cycles
-	AdcbRegs.ADCSOC0CTL.bit.TRIGSEL   = 5;    // trigger on ePWM1 SOCA/C
-	// Configure PPB to eliminate subtraction related calculation
-	AdcbRegs.ADCPPB1CONFIG.bit.CONFIG = 0;    // PPB is associated with SOC0
-	AdcbRegs.ADCPPB1OFFCAL.bit.OFFCAL = 0;    // Write zero to this for now till offset ISR is run
-#endif
-	// Resolver Fbk - Cosine @ C1
-	// ********************************
-	AdccRegs.ADCSOC0CTL.bit.CHSEL     = 15;   // SOC0 will convert pin C15
-	AdccRegs.ADCSOC0CTL.bit.ACQPS     = 30;   // sample window in SYSCLK cycles
-	AdccRegs.ADCSOC0CTL.bit.TRIGSEL   = 15;   // trigger on ePWM6 SOCA/C
-	// Configure PPB to eliminate subtraction related calculation
-	AdccRegs.ADCPPB1CONFIG.bit.CONFIG = 0;    // PPB is associated with SOC0
-	AdccRegs.ADCPPB1OFFCAL.bit.OFFCAL = 0;    // Write zero to this for now till offset ISR is run
+////	// Resolver Fbk - Cosine @ C1
+////	// ********************************
+////	AdccRegs.ADCSOC0CTL.bit.CHSEL     = 15;   // SOC0 will convert pin C15
+////	AdccRegs.ADCSOC0CTL.bit.ACQPS     = 30;   // sample window in SYSCLK cycles
+////	AdccRegs.ADCSOC0CTL.bit.TRIGSEL   = 15;   // trigger on ePWM6 SOCA/C
+////	// Configure PPB to eliminate subtraction related calculation
+////	AdccRegs.ADCPPB1CONFIG.bit.CONFIG = 0;    // PPB is associated with SOC0
+////	AdccRegs.ADCPPB1OFFCAL.bit.OFFCAL = 0;    // Write zero to this for now till offset ISR is run
 
 	// Resolver Fbk - sine @ D1
 	// ********************************
@@ -765,23 +748,23 @@ void main(void)
 	AdcdRegs.ADCPPB1CONFIG.bit.CONFIG = 0;    // PPB is associated with SOC0
 	AdcdRegs.ADCPPB1OFFCAL.bit.OFFCAL = 0;    // Write zero to this for now till offset ISR is run
 
-	// LEM motor current LEM-V @ at A2
+	// LEM motor current LEM-V @ at B4 (was A2)
 	// ********************************
-	AdcaRegs.ADCSOC1CTL.bit.CHSEL     = 2;    // SOC1 will convert pin A2
-	AdcaRegs.ADCSOC1CTL.bit.ACQPS     = 30;   // sample window in SYSCLK cycles
-	AdcaRegs.ADCSOC1CTL.bit.TRIGSEL   = 5;    // trigger on ePWM1 SOCA/C
-	// Configure PPB to eliminate subtraction related calculation
-	AdcaRegs.ADCPPB2CONFIG.bit.CONFIG = 1;    // PPB is associated with SOC1
-	AdcaRegs.ADCPPB2OFFCAL.bit.OFFCAL = 0;    // Write zero to this for now till offset ISR is run
-
-	// LEM motor current LEM-W @ at B2
-	// ********************************
-	AdcbRegs.ADCSOC1CTL.bit.CHSEL     = 2;    // SOC0 will convert pin B2
+	AdcbRegs.ADCSOC1CTL.bit.CHSEL     = 4;    // SOC1 will convert pin B4
 	AdcbRegs.ADCSOC1CTL.bit.ACQPS     = 30;   // sample window in SYSCLK cycles
 	AdcbRegs.ADCSOC1CTL.bit.TRIGSEL   = 5;    // trigger on ePWM1 SOCA/C
 	// Configure PPB to eliminate subtraction related calculation
 	AdcbRegs.ADCPPB2CONFIG.bit.CONFIG = 1;    // PPB is associated with SOC1
 	AdcbRegs.ADCPPB2OFFCAL.bit.OFFCAL = 0;    // Write zero to this for now till offset ISR is run
+
+	// LEM motor current LEM-W @ at C4 (was B2)
+	// ********************************
+	AdccRegs.ADCSOC1CTL.bit.CHSEL     = 4;    // SOC1 will convert pin C4
+	AdccRegs.ADCSOC1CTL.bit.ACQPS     = 30;   // sample window in SYSCLK cycles
+	AdccRegs.ADCSOC1CTL.bit.TRIGSEL   = 5;    // trigger on ePWM1 SOCA/C
+	// Configure PPB to eliminate subtraction related calculation
+	AdccRegs.ADCPPB2CONFIG.bit.CONFIG = 1;    // PPB is associated with SOC1
+	AdccRegs.ADCPPB2OFFCAL.bit.OFFCAL = 0;    // Write zero to this for now till offset ISR is run
 
 	// Phase Voltage Vfb-V @ A3
 	// ***************************
@@ -854,11 +837,6 @@ void main(void)
 	DacbRegs.DACOUTEN.bit.DACOUTEN = 1;
 	DacbRegs.DACVALS.bit.DACVALS   = 1024;
 
-//	//DAC "C" is not used on F28379D Launchpad (Not run out to headers, only DAC)
-//	DaccRegs.DACCTL.bit.DACREFSEL  = REFERENCE_VREF;
-//	//Enable DAC output
-//	DaccRegs.DACOUTEN.bit.DACOUTEN = 1;
-//	DaccRegs.DACVALS.bit.DACVALS   = 1024;
 	EDIS;
 
 // ****************************************************************************
@@ -867,7 +845,13 @@ void main(void)
 // ****************************************************************************
 // ****************************************************************************
     // Setup GPIO for SD current measurement
-	GPIO_SetupPinOptions(48, GPIO_INPUT, GPIO_ASYNC);
+////	GPIO_SetupPinOptions(41, GPIO_INPUT, GPIO_ASYNC); //ADCINA2 --> LEMV
+////	GPIO_SetupPinMux(41,0,7);
+
+////	GPIO_SetupPinOptions(48, GPIO_INPUT, GPIO_ASYNC); //ADCINB2 --> LEMW
+////	GPIO_SetupPinMux(48,0,7);
+
+	GPIO_SetupPinOptions(48, GPIO_INPUT, GPIO_ASYNC); //ADCINB2 --> LEMW
 	GPIO_SetupPinMux(48,0,7);
 
 	GPIO_SetupPinOptions(49, GPIO_INPUT, GPIO_ASYNC);
@@ -1185,10 +1169,10 @@ void main(void)
 // ****************************************************************************
 // ****************************************************************************
 	EALLOW;
-	// ADC C EOC of SOC0 is used to trigger Resolver Interrupt
-	AdccRegs.ADCINTSEL1N2.bit.INT1SEL  = 0;
-	AdccRegs.ADCINTSEL1N2.bit.INT1CONT = 1;
-	AdccRegs.ADCINTSEL1N2.bit.INT1E    = 1;
+////	// ADC C EOC of SOC0 is used to trigger Resolver Interrupt
+////	AdccRegs.ADCINTSEL1N2.bit.INT1SEL  = 0;
+////	AdccRegs.ADCINTSEL1N2.bit.INT1CONT = 1;
+////	AdccRegs.ADCINTSEL1N2.bit.INT1E    = 1;
 
 	//PWM11 INT is used to trigger Motor Control ISR
 	EPwm11Regs.ETSEL.bit.INTSEL = ET_CTRU_CMPA;   // INT on PRD event
@@ -2221,7 +2205,7 @@ interrupt void MotorControlISR(void)
 	DlogCh4 = park1.Beta;
 
 //------------------------------------------------------------------------------
-// Variable display on DACs B and A
+// Variable  display on DACs B and A
 //------------------------------------------------------------------------------
 	DacbRegs.DACVALS.bit.DACVALS = pi_pos.Ref*4096; //
 	DacaRegs.DACVALS.bit.DACVALS = pi_pos.Fbk*4096; //
@@ -2259,7 +2243,7 @@ interrupt void MotorControlISR(void)
 #define CTRIP_FILTER       2
 #define CTRIP_LATCH        3
 
-void cmpssConfig(volatile struct CMPSS_REGS *v, int16 Hi, int16 Lo)
+void cmpssConfig(volatile struct CMPSS_REGS *v, int16 HiLimitForCurrent, int16 LowLimitForCurrent)
 {
 	// Set up COMPCTL register
 	v->COMPCTL.bit.COMPDACE    = 1;             // Enable CMPSS
@@ -2275,7 +2259,9 @@ void cmpssConfig(volatile struct CMPSS_REGS *v, int16 Hi, int16 Lo)
 	v->COMPCTL.bit.CTRIPOUTLSEL = CTRIP_FILTER; // Dig filter output ==> CTRIPOUTL
 
 	// Set up COMPHYSCTL register
-	v->COMPHYSCTL.bit.COMPHYS   = 2; // COMP hysteresis set to 2x typical value
+////	v->COMPHYSCTL.bit.COMPHYS   = 2; // COMP hysteresis set to 2x typical value
+	v->COMPHYSCTL.bit.COMPHYS   = 0; // COMP hysteresis set to zero value (No delay in ADC trip logic)
+										//An issue happened where the ADC was outputting +3.3V when the LEM sensors were not attached to the pin.
 
 	// set up COMPDACCTL register
 	v->COMPDACCTL.bit.SELREF    = 0; // VDDA is REF for CMPSS DACs
@@ -2283,8 +2269,8 @@ void cmpssConfig(volatile struct CMPSS_REGS *v, int16 Hi, int16 Lo)
 	v->COMPDACCTL.bit.DACSOURCE = 0; // Ramp bypassed
 
 	// Load DACs - High and Low
-	v->DACHVALS.bit.DACVAL = Hi;     // Set DAC-H to allowed MAX +ve current
-	v->DACLVALS.bit.DACVAL = Lo;     // Set DAC-L to allowed MAX -ve current
+	v->DACHVALS.bit.DACVAL = HiLimitForCurrent;     // Set DAC-H to allowed MAX +ve current
+	v->DACLVALS.bit.DACVAL = LowLimitForCurrent;     // Set DAC-L to allowed MAX -ve current
 
 	// digital filter settings - HIGH side
 	v->CTRIPHFILCLKCTL.bit.CLKPRESCALE = clkPrescale; // set time between samples, max : 1023
@@ -2310,31 +2296,33 @@ void HVDMC_Protection(void)
 {
 	EALLOW;
 
-	// Configure GPIO used for Trip Mechanism
-
-	//GPIO input for reading the status of the LEM-overcurrent macro block (active low), GPIO40
-	//could trip PWM based on this, if desired
-	// Configure as Input
-	GpioCtrlRegs.GPBPUD.bit.GPIO40  = 1; // disable pull ups
-	GpioCtrlRegs.GPBMUX1.bit.GPIO40 = 0; // choose GPIO for mux option
-	GpioCtrlRegs.GPBDIR.bit.GPIO40  = 0; // set as input
-	GpioCtrlRegs.GPBINV.bit.GPIO40  = 1; //invert the input such that '0' is good and '1' is bad after inversion
-
-	InputXbarRegs.INPUT2SELECT = 40;     //Select GPIO40 as INPUTXBAR2
-
-	//Clearing the Fault(active low), GPIO41,
-	// Configure as Output
-	GpioCtrlRegs.GPBPUD.bit.GPIO41  = 1; // disable pull ups
-	GpioCtrlRegs.GPBMUX1.bit.GPIO41 = 0; // choose GPIO for mux option
-	GpioCtrlRegs.GPBDIR.bit.GPIO41  = 1; // set as output
-	GpioDataRegs.GPBSET.bit.GPIO41  = 1;
-
-	//Forcing IPM Shutdown (Trip) using GPIO58 (Active high)
-	// Configure as Output
-	GpioCtrlRegs.GPBPUD.bit.GPIO58   = 1; // disable pull ups
-	GpioCtrlRegs.GPBMUX2.bit.GPIO58  = 0; // choose GPIO for mux option
-	GpioCtrlRegs.GPBDIR.bit.GPIO58   = 1; // set as output
-	GpioDataRegs.GPBCLEAR.bit.GPIO58 = 1;
+//	// Configure GPIO used for Trip Mechanism
+//
+//	//GPIO input for reading the status of the LEM-overcurrent macro block (active low), GPIO40
+//	//could trip PWM based on this, if desired
+//	// Configure as Input
+//	GpioCtrlRegs.GPBPUD.bit.GPIO40  = 1; // disable pull ups
+//	GpioCtrlRegs.GPBMUX1.bit.GPIO40 = 0; // choose GPIO for mux option
+//	GpioCtrlRegs.GPBDIR.bit.GPIO40  = 0; // set as input
+//	GpioCtrlRegs.GPBINV.bit.GPIO40  = 1; //invert the input such that '0' is good and '1' is bad after inversion
+//
+//	InputXbarRegs.INPUT2SELECT = 40;     //Select GPIO40 as INPUTXBAR2
+//
+//
+//	//Might be ADCINA2 (Needs to be an input for F28379D)
+////	//Clearing the Fault(active low), GPIO41,
+////	// Configure as Output
+////	GpioCtrlRegs.GPBPUD.bit.GPIO41  = 1; // disable pull ups
+////	GpioCtrlRegs.GPBMUX1.bit.GPIO41 = 0; // choose GPIO for mux option
+////	GpioCtrlRegs.GPBDIR.bit.GPIO41  = 1; // set as output
+////	GpioDataRegs.GPBSET.bit.GPIO41  = 1;
+//
+//	//Forcing IPM Shutdown (Trip) using GPIO58 (Active high)
+//	// Configure as Output
+//	GpioCtrlRegs.GPBPUD.bit.GPIO58   = 1; // disable pull ups
+//	GpioCtrlRegs.GPBMUX2.bit.GPIO58  = 0; // choose GPIO for mux option
+//	GpioCtrlRegs.GPBDIR.bit.GPIO58   = 1; // set as output
+//	GpioDataRegs.GPBCLEAR.bit.GPIO58 = 1;
 
 	// LEM Current phase V(ADC A2, COMP1) and W(ADC B2, COMP3), High Low Compare event trips
 	LEM_curHi = 2048 + LEM(curLimit);
