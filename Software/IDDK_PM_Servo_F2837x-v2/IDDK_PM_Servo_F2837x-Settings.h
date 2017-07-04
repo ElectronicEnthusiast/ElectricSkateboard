@@ -202,7 +202,7 @@ set the motor parameters to the one available
 #define BASE_LEM_CURRENT     100/LEM_NUMBER_WINDINGS     // Base peak phase current (25 amp), Max. measurable peak curr with 4 windings through "LEM LA 100-P" current sensor
 #define BASE_TORQUE     		      // Base torque (N.m)
 #define BASE_FLUX       			  // Base flux linkage (volt.sec/rad)
-#define BASE_FREQ      	20000           // Base electrical frequency (Hz)
+#define BASE_FREQ      	200           // Base electrical frequency (Hz)
 
 
 /*-----------------------------------------------------------------------------

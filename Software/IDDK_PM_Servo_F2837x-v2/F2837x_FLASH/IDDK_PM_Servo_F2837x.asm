@@ -1,6 +1,6 @@
 ;***************************************************************
 ;* TMS320C2000 C/C++ Codegen                   PC v15.12.1.LTS *
-;* Date/Time created: Tue Jul 04 10:45:49 2017                 *
+;* Date/Time created: Tue Jul 04 11:13:54 2017                 *
 ;***************************************************************
 	.compiler_opts --abi=coffabi --cla_support=cla0 --float_support=fpu32 --hll_source=on --mem_model:code=flat --mem_model:data=large --object_format=coff --quiet --silicon_version=28 --symdebug:dwarf --symdebug:dwarf_version=3 --tmu_support=tmu0 
 FP	.set	XAR2
@@ -95,7 +95,7 @@ $C$DW$CU	.dwtag  DW_TAG_compile_unit
 	.align	1
 	.field  	-1,16
 	.field  	_LEM_curHi+0,32
-	.bits	2560,16			; _LEM_curHi @ 0
+	.bits	76,16			; _LEM_curHi @ 0
 
 	.sect	".cinit"
 	.align	1
@@ -113,7 +113,7 @@ $C$DW$CU	.dwtag  DW_TAG_compile_unit
 	.align	1
 	.field  	-1,16
 	.field  	_LEM_curLo+0,32
-	.bits	2560,16			; _LEM_curLo @ 0
+	.bits	76,16			; _LEM_curLo @ 0
 
 	.sect	".cinit"
 	.align	1
@@ -2121,8 +2121,8 @@ $C$DW$205	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$205, DW_AT_declaration
 	.dwattr $C$DW$205, DW_AT_external
 
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_15.12.1.LTS\bin\opt2000.exe C:\\Users\\Keith\\AppData\\Local\\Temp\\111602 C:\\Users\\Keith\\AppData\\Local\\Temp\\111604 
-;	C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_15.12.1.LTS\bin\ac2000.exe -@C:\\Users\\Keith\\AppData\\Local\\Temp\\1116012 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_15.12.1.LTS\bin\opt2000.exe C:\\Users\\Keith\\AppData\\Local\\Temp\\114002 C:\\Users\\Keith\\AppData\\Local\\Temp\\114004 
+;	C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_15.12.1.LTS\bin\ac2000.exe -@C:\\Users\\Keith\\AppData\\Local\\Temp\\1140012 
 	.sect	".text"
 	.clink
 	.global	_posEncoderSuite
@@ -4442,17 +4442,18 @@ _A1:
  EALLOW
         MOVW      DP,#_curLimit         ; [CPU_U] 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1306,column 4,is_stmt,isa 0
-        MOVIZ     R2H,#15786            ; [CPU_] |1306| 
+        MOVIZ     R2H,#15395            ; [CPU_] |1306| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1308,column 4,is_stmt,isa 0
         MOVIZ     R0H,#15821            ; [CPU_] |1308| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1306,column 4,is_stmt,isa 0
         MOV32     R1H,@_curLimit        ; [CPU_] |1306| 
-        MOVXI     R2H,#43691            ; [CPU_] |1306| 
         MPYF32    R1H,R1H,#17664        ; [CPU_] |1306| 
+        MOVXI     R2H,#55050            ; [CPU_] |1306| 
+        MPYF32    R2H,R2H,R1H           ; [CPU_] |1306| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1308,column 4,is_stmt,isa 0
         MOVXI     R0H,#54339            ; [CPU_] |1308| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1306,column 4,is_stmt,isa 0
-        MPYF32    R2H,R2H,R1H           ; [CPU_] |1306| 
+        MPYF32    R2H,R2H,#16000        ; [CPU_] |1306| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1308,column 4,is_stmt,isa 0
         MPYF32    R1H,R0H,R1H           ; [CPU_] |1308| 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 1306,column 4,is_stmt,isa 0
@@ -6025,11 +6026,13 @@ _HVDMC_Protection:
  EALLOW
         MOVW      DP,#_curLimit         ; [CPU_U] 
 	.dwpsn	file "../IDDK_PM_Servo_F2837x.c",line 2328,column 2,is_stmt,isa 0
-        MOVIZ     R0H,#15786            ; [CPU_] |2328| 
+        MOVIZ     R0H,#15395            ; [CPU_] |2328| 
         MOV32     R1H,@_curLimit        ; [CPU_] |2328| 
         MPYF32    R1H,R1H,#17664        ; [CPU_] |2328| 
-        MOVXI     R0H,#43691            ; [CPU_] |2328| 
-        MPYF32    R1H,R0H,R1H           ; [CPU_] |2328| 
+        MOVXI     R0H,#55050            ; [CPU_] |2328| 
+        MPYF32    R0H,R0H,R1H           ; [CPU_] |2328| 
+        NOP       ; [CPU_] 
+        MPYF32    R1H,R0H,#16000        ; [CPU_] |2328| 
         NOP       ; [CPU_] 
         ADDF32    R0H,R1H,#17664        ; [CPU_] |2328| 
         NOP       ; [CPU_] 
