@@ -1,7 +1,7 @@
 ******************************************************************************
              TMS320C2000 Linker PC v15.12.1                    
 ******************************************************************************
->> Linked Tue Jul 04 11:13:57 2017
+>> Linked Wed Jul 12 17:46:38 2017
 
 OUTPUT FILE NAME:   <IDDK_PM_Servo_F2837x-v2.out>
 ENTRY POINT SYMBOL: "code_start"  address: 00080000
@@ -12,11 +12,11 @@ MEMORY CONFIGURATION
          name            origin    length      used     unused   attr    fill
 ----------------------  --------  ---------  --------  --------  ----  --------
 PAGE 0:
-  RAMLS0LS1             00008000   00001000  00000309  00000cf7  RWIX
+  RAMLS0LS1             00008000   00001000  00000245  00000dbb  RWIX
   RAMLS2                00009000   00000800  00000000  00000800  RWIX
   BEGIN                 00080000   00000002  00000002  00000000  RWIX
   FLASHN                00080002   00001ffd  00000352  00001cab  RWIX
-  FLASHML               00082000   00004000  0000267b  00001985  RWIX
+  FLASHML               00082000   00004000  000025b7  00001a49  RWIX
   FLASHK                00086000   00002000  00000000  00002000  RWIX
   FLASHJ                00088000   00008000  00000000  00008000  RWIX
   FLASHI                00090000   00008000  00000000  00008000  RWIX
@@ -227,18 +227,18 @@ codestart
                   00084185    00000002     rts2800_fpu32.lib : pre_init.obj (.text)
                   00084187    00000001                       : startup.obj (.text)
 
-ramfuncs   0    00084188    00000309     RUN ADDR = 00008000
-                  00084188    000002d9     IDDK_PM_Servo_F2837x.obj (ramfuncs:retain)
-                  00084461    0000002c     F2837xD_SysCtrl.obj (ramfuncs)
-                  0008448d    00000004     F2837xD_usDelay.obj (ramfuncs)
+ramfuncs   0    00084188    00000245     RUN ADDR = 00008000
+                  00084188    00000215     IDDK_PM_Servo_F2837x.obj (ramfuncs:retain)
+                  0008439d    0000002c     F2837xD_SysCtrl.obj (ramfuncs)
+                  000843c9    00000004     F2837xD_usDelay.obj (ramfuncs)
 
-.econst    0    00084492    000001ea     
-                  00084492    000001c0     F2837xD_PieVect.obj (.econst:_PieVectTableInit)
-                  00084652    0000000c     rts2800_fpu32.lib : e_atan2f.obj (.econst)
-                  0008465e    0000000a                       : s_atanf.obj (.econst:_aT)
-                  00084668    00000008                       : s_atanf.obj (.econst:_atanhi)
-                  00084670    00000008                       : s_atanf.obj (.econst:_atanlo)
-                  00084678    00000004                       : s_atanf.obj (.econst)
+.econst    0    000843ce    000001ea     
+                  000843ce    000001c0     F2837xD_PieVect.obj (.econst:_PieVectTableInit)
+                  0008458e    0000000c     rts2800_fpu32.lib : e_atan2f.obj (.econst)
+                  0008459a    0000000a                       : s_atanf.obj (.econst:_aT)
+                  000845a4    00000008                       : s_atanf.obj (.econst:_atanhi)
+                  000845ac    00000008                       : s_atanf.obj (.econst:_atanlo)
+                  000845b4    00000004                       : s_atanf.obj (.econst)
 
 AdcaResultFile 
 *          1    00000b00    00000018     UNINITIALIZED
@@ -707,66 +707,66 @@ DcsmZ2OtpFile
 
 MODULE SUMMARY
 
-       Module                               code    ro data   rw data
-       ------                               ----    -------   -------
+       Module                               code   ro data   rw data
+       ------                               ----   -------   -------
     .\
-       F2837xD_GlobalVariableDefs.obj       0       0         8047   
-       IDDK_PM_Servo_F2837x.obj             3986    0         3120   
-       F2837xD_DefaultISR.obj               1413    0         0      
-       F2837xD_sdfm_drivers.obj             1002    0         0      
-       F2837xD_SysCtrl.obj                  860     0         0      
-       resolver.obj                         295     0         378    
-       endat.obj                            80      0         448    
-       F2837xD_PieVect.obj                  18      0         448    
-       F2837xD_Gpio.obj                     461     0         0      
-       bissc.obj                            76      0         384    
-       F2837xD_EPwm.obj                     329     0         0      
-       DLOG_4CH_F.obj                       135     0         0      
-       F2837xD_PieCtrl.obj                  40      0         0      
-       F2837xD_CodeStartBranch.obj          10      0         0      
-       F2837xD_usDelay.obj                  8       0         0      
-    +--+------------------------------------+-------+---------+---------+
-       Total:                               8713    0         12825  
-                                                                     
+       F2837xD_GlobalVariableDefs.obj       0      0         8047   
+       IDDK_PM_Servo_F2837x.obj             3594   0         3120   
+       F2837xD_DefaultISR.obj               1413   0         0      
+       F2837xD_sdfm_drivers.obj             1002   0         0      
+       F2837xD_SysCtrl.obj                  860    0         0      
+       resolver.obj                         295    0         378    
+       endat.obj                            80     0         448    
+       F2837xD_PieVect.obj                  18     0         448    
+       F2837xD_Gpio.obj                     461    0         0      
+       bissc.obj                            76     0         384    
+       F2837xD_EPwm.obj                     329    0         0      
+       DLOG_4CH_F.obj                       135    0         0      
+       F2837xD_PieCtrl.obj                  40     0         0      
+       F2837xD_CodeStartBranch.obj          10     0         0      
+       F2837xD_usDelay.obj                  8      0         0      
+    +--+------------------------------------+------+---------+---------+
+       Total:                               8321   0         12825  
+                                                                    
     C:/ti/ccsv6/tools/compiler/ti-cgt-c2000_15.12.1.LTS/lib/rts2800_fpu32.lib
-       u_div.obj                            11      0         0      
-    +--+------------------------------------+-------+---------+---------+
-       Total:                               11      0         0      
-                                                                     
+       u_div.obj                            11     0         0      
+    +--+------------------------------------+------+---------+---------+
+       Total:                               11     0         0      
+                                                                    
     C:/ti/controlSUITE/libs/app_libs/motor_control/libs/resolver/v101/lib/Resolver_Lib_Float.lib
-       Resolver_Float_Source.obj            448     0         18     
-    +--+------------------------------------+-------+---------+---------+
-       Total:                               448     0         18     
-                                                                     
+       Resolver_Float_Source.obj            448    0         18     
+    +--+------------------------------------+------+---------+---------+
+       Total:                               448    0         18     
+                                                                    
     C:/ti/controlSUITE/libs/app_libs/position_manager/v01_00_00_00/bissc/Float/lib/PM_bissC_Lib.lib
-       F2837xD_GlobalVariableDefs_clb.obj   0       0         2624   
-    +--+------------------------------------+-------+---------+---------+
-       Total:                               0       0         2624   
-                                                                     
+       F2837xD_GlobalVariableDefs_clb.obj   0      0         2624   
+    +--+------------------------------------+------+---------+---------+
+       Total:                               0      0         2624   
+                                                                    
     C:/ti/controlSUITE/libs/dsp/VCU/v2_10_00_00/lib/c28x_vcu0_library_fpu32.lib
-       vcu0_crc_16.obj                      129     0         0      
-    +--+------------------------------------+-------+---------+---------+
-       Total:                               129     0         0      
-                                                                     
+       vcu0_crc_16.obj                      129    0         0      
+    +--+------------------------------------+------+---------+---------+
+       Total:                               129    0         0      
+                                                                    
     C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_15.12.1.LTS\lib\rts2800_fpu32.lib
-       s_atanf.obj                          201     0         30     
-       e_atan2f.obj                         212     0         12     
-       fs_div.obj                           136     0         0      
-       boot.obj                             86      0         0      
-       cpy_tbl.obj                          70      0         0      
-       exit.obj                             41      0         20     
-       memcpy.obj                           30      0         0      
-       cpy_utils.obj                        26      0         0      
-       args_main.obj                        25      0         0      
-       _lock.obj                            9       0         14     
-       pre_init.obj                         2       0         0      
-       startup.obj                          1       0         0      
-    +--+------------------------------------+-------+---------+---------+
-       Total:                               839     0         76     
-                                                                     
-       Stack:                               0       0         768    
-    +--+------------------------------------+-------+---------+---------+
-       Grand Total:                         10140   0         16311  
+       s_atanf.obj                          201    0         30     
+       e_atan2f.obj                         212    0         12     
+       fs_div.obj                           136    0         0      
+       boot.obj                             86     0         0      
+       cpy_tbl.obj                          70     0         0      
+       exit.obj                             41     0         20     
+       memcpy.obj                           30     0         0      
+       cpy_utils.obj                        26     0         0      
+       args_main.obj                        25     0         0      
+       _lock.obj                            9      0         14     
+       pre_init.obj                         2      0         0      
+       startup.obj                          1      0         0      
+    +--+------------------------------------+------+---------+---------+
+       Total:                               839    0         76     
+                                                                    
+       Stack:                               0      0         768    
+    +--+------------------------------------+------+---------+---------+
+       Grand Total:                         9748   0         16311  
 
 
 GLOBAL DATA SYMBOLS: SORTED BY DATA PAGE
@@ -928,98 +928,98 @@ address     data page           name
 
 00009800     260 (00009800)     __stack
 
-0000c000     300 (0000c000)     _clearTripFlagDMC
-0000c001     300 (0000c000)     _OffsetCalCounter
-0000c002     300 (0000c000)     _RunMotor
-0000c003     300 (0000c000)     _SpeedLoopCount
-0000c004     300 (0000c000)     _HLT
-0000c005     300 (0000c000)     _TripFlagDMC
-0000c006     300 (0000c000)     _SerialCommsTimer
-0000c007     300 (0000c000)     _ptr1
-0000c008     300 (0000c000)     _ptrMax
+0000c000     300 (0000c000)     _thresh
+0000c001     300 (0000c000)     _LEM_curHi
+0000c002     300 (0000c000)     _clkPrescale
+0000c003     300 (0000c000)     _SHUNT_curHi
+0000c004     300 (0000c000)     _SHUNT_curLo
+0000c005     300 (0000c000)     _sampwin
+0000c006     300 (0000c000)     _LEM_curLo
+0000c007     300 (0000c000)     _SerialCommsTimer
+0000c008     300 (0000c000)     _HLT
 0000c009     300 (0000c000)     _LLT
-0000c00a     300 (0000c000)     _lsw
-0000c00b     300 (0000c000)     _EnableFlag
-0000c00c     300 (0000c000)     _SHUNT_curLo
-0000c00d     300 (0000c000)     _clkPrescale
-0000c00e     300 (0000c000)     _sampwin
-0000c00f     300 (0000c000)     _LEM_curHi
-0000c010     300 (0000c000)     _thresh
-0000c011     300 (0000c000)     _SHUNT_curHi
-0000c012     300 (0000c000)     _LEM_curLo
-0000c013     300 (0000c000)     _LedCnt1
-0000c014     300 (0000c000)     _Run_Delay
-0000c015     300 (0000c000)     _BackTicker
-0000c016     300 (0000c000)     _SpeedLoopPrescaler
-0000c017     300 (0000c000)     _EnableResolverISR
-0000c018     300 (0000c000)     _A_Task_Ptr
-0000c01a     300 (0000c000)     _Alpha_State_Ptr
-0000c01c     300 (0000c000)     _offset_SDFM1
-0000c01e     300 (0000c000)     _offset_SDFM2
-0000c020     300 (0000c000)     _offset_lemV
-0000c022     300 (0000c000)     _offset_lemW
-0000c024     300 (0000c000)     _IsrTicker
-0000c026     300 (0000c000)     _curLimit
-0000c028     300 (0000c000)     _K1
-0000c02a     300 (0000c000)     _C_Task_Ptr
-0000c02c     300 (0000c000)     _adc_cal
-0000c02e     300 (0000c000)     _cntr
-0000c030     300 (0000c000)     _B_Task_Ptr
-0000c032     300 (0000c000)     _offset_Rcos
-0000c034     300 (0000c000)     _K2
-0000c036     300 (0000c000)     _SVGenMacroCount_LEVEL1
-0000c038     300 (0000c000)     _offset_Rsin
-0000c03a     300 (0000c000)     _SpeedRef
-0000c03c     300 (0000c000)     _IqRef
-0000c03e     300 (0000c000)     _VqTesting
+0000c00a     300 (0000c000)     _ptrMax
+0000c00b     300 (0000c000)     _RunMotor
+0000c00c     300 (0000c000)     _Run_Delay
+0000c00d     300 (0000c000)     _SpeedLoopPrescaler
+0000c00e     300 (0000c000)     _LedCnt1
+0000c00f     300 (0000c000)     _ptr1
+0000c010     300 (0000c000)     _SpeedLoopCount
+0000c011     300 (0000c000)     _BackTicker
+0000c012     300 (0000c000)     _lsw
+0000c013     300 (0000c000)     _OffsetCalCounter
+0000c014     300 (0000c000)     _clearTripFlagDMC
+0000c015     300 (0000c000)     _EnableResolverISR
+0000c016     300 (0000c000)     _EnableFlag
+0000c017     300 (0000c000)     _TripFlagDMC
+0000c018     300 (0000c000)     _offset_Rcos
+0000c01a     300 (0000c000)     _offset_lemV
+0000c01c     300 (0000c000)     _T
+0000c01e     300 (0000c000)     _A_Task_Ptr
+0000c020     300 (0000c000)     _B_Task_Ptr
+0000c022     300 (0000c000)     _VdTesting
+0000c024     300 (0000c000)     _adc_cal
+0000c026     300 (0000c000)     _offset_Rsin
+0000c028     300 (0000c000)     _Alpha_State_Ptr
+0000c02a     300 (0000c000)     _K2
+0000c02c     300 (0000c000)     _offset_SDFM2
+0000c02e     300 (0000c000)     _SVGenMacroCount_LEVEL1
+0000c030     300 (0000c000)     _IsrTicker
+0000c032     300 (0000c000)     _K1
+0000c034     300 (0000c000)     _C_Task_Ptr
+0000c036     300 (0000c000)     _offset_SDFM1
+0000c038     300 (0000c000)     _curLimit
+0000c03a     300 (0000c000)     _offset_lemW
+0000c03c     300 (0000c000)     _IdRef_start
+0000c03e     300 (0000c000)     _SpeedRef
 
-0000c040     301 (0000c040)     _IdRef
-0000c042     301 (0000c040)     _T
-0000c044     301 (0000c040)     _cntr1
+0000c040     301 (0000c040)     _cntr1
+0000c042     301 (0000c040)     _IdRef
+0000c044     301 (0000c040)     _alignCnt
 0000c046     301 (0000c040)     _IdRef_run
-0000c048     301 (0000c040)     _IdRef_start
-0000c04a     301 (0000c040)     _alignCnt
-0000c04c     301 (0000c040)     _DlogCh4
-0000c04e     301 (0000c040)     _VdTesting
-0000c050     301 (0000c040)     _DlogCh3
-0000c052     301 (0000c040)     _DlogCh1
-0000c054     301 (0000c040)     _DlogCh2
-0000c056     301 (0000c040)     _posSlewRate
-0000c058     301 (0000c040)     _VTimer1
+0000c048     301 (0000c040)     _IqRef
+0000c04a     301 (0000c040)     _DlogCh2
+0000c04c     301 (0000c040)     _DlogCh1
+0000c04e     301 (0000c040)     _DlogCh4
+0000c050     301 (0000c040)     _posSlewRate
+0000c052     301 (0000c040)     _DlogCh3
+0000c054     301 (0000c040)     _VqTesting
+0000c056     301 (0000c040)     _cntr
+0000c058     301 (0000c040)     _VTimer0
 0000c05c     301 (0000c040)     _VTimer2
-0000c060     301 (0000c040)     _VTimer0
+0000c060     301 (0000c040)     _VTimer1
 0000c064     301 (0000c040)     _SDFM
 0000c06a     301 (0000c040)     _eQEP
 0000c070     301 (0000c040)     _clarke1
 
 0000c080     302 (0000c080)     _posEncMechTheta
-0000c08c     302 (0000c080)     _posEncElecTheta
-0000c098     302 (0000c080)     _rg1
-0000c0a4     302 (0000c080)     _ipark1
-0000c0b2     302 (0000c080)     _park1
+0000c08c     302 (0000c080)     _rg1
+0000c098     302 (0000c080)     _posEncElecTheta
+0000c0a4     302 (0000c080)     _park1
+0000c0b2     302 (0000c080)     _ipark1
 
-0000c0c0     303 (0000c0c0)     _rc2
-0000c0d0     303 (0000c0c0)     _rc1
-0000c0e0     303 (0000c0c0)     _posArray
-0000c0f0     303 (0000c0c0)     _resolver1
+0000c0c0     303 (0000c0c0)     _endat1
+0000c0d0     303 (0000c0c0)     _resolver1
+0000c0e0     303 (0000c0c0)     _biss1
+0000c0f0     303 (0000c0c0)     _TrigSel
 
-0000c100     304 (0000c100)     _biss1
-0000c110     304 (0000c100)     _endat1
-0000c120     304 (0000c100)     _TrigSel
-0000c130     304 (0000c100)     _ACQPS
+0000c100     304 (0000c100)     _rc2
+0000c110     304 (0000c100)     _posArray
+0000c120     304 (0000c100)     _ChSel
+0000c130     304 (0000c100)     _rc1
 
-0000c140     305 (0000c140)     _ChSel
-0000c150     305 (0000c140)     _current_sensor
-0000c162     305 (0000c140)     _svgen1
+0000c140     305 (0000c140)     _ACQPS
+0000c150     305 (0000c140)     _svgen1
+0000c162     305 (0000c140)     _current_sensor
 
 0000c180     306 (0000c180)     _qep1
 0000c192     306 (0000c180)     _speed1
 0000c1a6     306 (0000c180)     _volt1
 
-0000c1c0     307 (0000c1c0)     _pi_iq
+0000c1c0     307 (0000c1c0)     _pi_pos
 0000c1d8     307 (0000c1c0)     _pi_id
 
-0000c200     308 (0000c200)     _pi_pos
+0000c200     308 (0000c200)     _pi_iq
 0000c218     308 (0000c200)     _dlog_4ch1
 
 0000c240     309 (0000c240)     _ePWM
@@ -1132,7 +1132,7 @@ address     data page           name
 
 00078200    1e08 (00078200)     _DcsmZ2Otp
 
-00084492    2112 (00084480)     _PieVectTableInit
+000843ce    210f (000843c0)     _PieVectTableInit
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
@@ -1148,7 +1148,7 @@ page  address   name
 0     0008261e  _A1                                   
 0     000826d2  _A2                                   
 0     000826d8  _A3                                   
-1     0000c130  _ACQPS                                
+1     0000c140  _ACQPS                                
 0     00082a9e  _ADCA1_ISR                            
 0     00082d1e  _ADCA2_ISR                            
 0     00082d28  _ADCA3_ISR                            
@@ -1170,7 +1170,7 @@ page  address   name
 0     00082eea  _ADCD4_ISR                            
 0     00082ecc  _ADCD_EVT_ISR                         
 0     00082f26  _AUX_PLL_SLIP_ISR                     
-1     0000c018  _A_Task_Ptr                           
+1     0000c01e  _A_Task_Ptr                           
 1     0005f4c0  _AccessProtectionRegs                 
 1     00007400  _AdcaRegs                             
 1     00000b00  _AdcaResultRegs                       
@@ -1180,7 +1180,7 @@ page  address   name
 1     00000b40  _AdccResultRegs                       
 1     00007580  _AdcdRegs                             
 1     00000b60  _AdcdResultRegs                       
-1     0000c01a  _Alpha_State_Ptr                      
+1     0000c028  _Alpha_State_Ptr                      
 1     0005d180  _AnalogSubsysRegs                     
 0     000835f9  _AuxAuxClkSel                         
 0     000835db  _AuxIntOsc2Sel                        
@@ -1189,8 +1189,8 @@ page  address   name
 0     000826de  _B1                                   
 0     000826e4  _B2                                   
 0     000826ea  _B3                                   
-1     0000c030  _B_Task_Ptr                           
-1     0000c015  _BackTicker                           
+1     0000c020  _B_Task_Ptr                           
+1     0000c011  _BackTicker                           
 0     000825c5  _C0                                   
 0     000826f0  _C1                                   
 0     00082702  _C2                                   
@@ -1210,8 +1210,8 @@ page  address   name
 0     00082f30  _CLA_OVERFLOW_ISR                     
 0     00082f3a  _CLA_UNDERFLOW_ISR                    
 0     000825da  _CMPSS_DIG_FILTER                     
-1     0000c02a  _C_Task_Ptr                           
-1     0000c140  _ChSel                                
+1     0000c034  _C_Task_Ptr                           
+1     0000c120  _ChSel                                
 1     00001400  _Cla1Regs                             
 0     00000ce0  _Cla1SoftIntRegs                      
 1     00003200  _Clb1DataExchgRegs                    
@@ -1267,10 +1267,10 @@ page  address   name
 1     0005d000  _DevCfgRegs                           
 0     00083466  _DisableDog                           
 0     0008343b  _DisablePeripheralClocks              
-1     0000c052  _DlogCh1                              
-1     0000c054  _DlogCh2                              
-1     0000c050  _DlogCh3                              
-1     0000c04c  _DlogCh4                              
+1     0000c04c  _DlogCh1                              
+1     0000c04a  _DlogCh2                              
+1     0000c052  _DlogCh3                              
+1     0000c04e  _DlogCh4                              
 1     00007980  _DmaClaSrcSelRegs                     
 1     00001000  _DmaRegs                              
 0     00082b8e  _ECAP1_ISR                            
@@ -1337,10 +1337,10 @@ page  address   name
 1     00047800  _Emif2Regs                            
 1     00000d01  _EmuBMode                             
 1     00000d00  _EmuKey                               
-1     0000c00b  _EnableFlag                           
+1     0000c016  _EnableFlag                           
 0     000840fd  _EnableInterrupts                     
-1     0000c017  _EnableResolverISR                    
-0     00008305  _F28x_usDelay                         
+1     0000c015  _EnableResolverISR                    
+0     00008241  _F28x_usDelay                         
 1     0000cdc0  _FIR_COEFF                            
 0     00082f08  _FLASH_CORRECTABLE_ERROR_ISR          
 0     00082ddc  _FPU_OVERFLOW_ISR                     
@@ -1365,7 +1365,7 @@ page  address   name
 1     00007f00  _GpioDataRegs                         
 0     00083617  _HALT                                 
 0     00083630  _HIB                                  
-1     0000c004  _HLT                                  
+1     0000c008  _HLT                                  
 0     00082787  _HVDMC_Protection                     
 0     00082c7e  _I2CA_FIFO_ISR                        
 0     00082c74  _I2CA_ISR                             
@@ -1379,9 +1379,9 @@ page  address   name
 0     00082dfa  _IPC1_ISR                             
 0     00082e04  _IPC2_ISR                             
 0     00082e0e  _IPC3_ISR                             
-1     0000c040  _IdRef                                
+1     0000c042  _IdRef                                
 1     0000c046  _IdRef_run                            
-1     0000c048  _IdRef_start                          
+1     0000c03c  _IdRef_start                          
 0     00083505  _InitAuxPll                           
 0     00083acd  _InitEPwm10Gpio                       
 0     00083aea  _InitEPwm11Gpio                       
@@ -1396,7 +1396,7 @@ page  address   name
 0     00083a99  _InitEPwm8Gpio                        
 0     00083ab1  _InitEPwm9Gpio                        
 0     000839e0  _InitEPwmGpio                         
-0     000082d9  _InitFlash                            
+0     00008215  _InitFlash                            
 0     00083653  _InitGpio                             
 0     00083392  _InitPeripheralClocks                 
 0     000840de  _InitPieCtrl                          
@@ -1405,15 +1405,15 @@ page  address   name
 0     00083473  _InitSysPll                           
 1     00007900  _InputXbarRegs                        
 1     00050000  _IpcRegs                              
-1     0000c03c  _IqRef                                
-1     0000c024  _IsrTicker                            
-1     0000c028  _K1                                   
-1     0000c034  _K2                                   
-1     0000c00f  _LEM_curHi                            
-1     0000c012  _LEM_curLo                            
+1     0000c048  _IqRef                                
+1     0000c030  _IsrTicker                            
+1     0000c032  _K1                                   
+1     0000c02a  _K2                                   
+1     0000c001  _LEM_curHi                            
+1     0000c006  _LEM_curLo                            
 1     0000c009  _LLT                                  
 1     0000cd1a  _LOS_ERROR                            
-1     0000c013  _LedCnt1                              
+1     0000c00e  _LedCnt1                              
 0     00082c10  _MCBSPA_RX_ISR                        
 0     00082c1a  _MCBSPA_TX_ISR                        
 0     00082c24  _MCBSPB_RX_ISR                        
@@ -1426,7 +1426,7 @@ page  address   name
 0     00082a12  _NMI_ISR                              
 0     00082f5b  _NOTUSED_ISR                          
 1     00007060  _NmiIntruptRegs                       
-1     0000c001  _OffsetCalCounter                     
+1     0000c013  _OffsetCalCounter                     
 1     00007a80  _OutputXbarRegs                       
 0     00082f44  _PIE_RESERVED_ISR                     
 1     0000cd18  _PLL_ERROR                            
@@ -1434,19 +1434,19 @@ page  address   name
 0     00082885  _PWM_1ch_UpDwnCnt_CNF                 
 1     00000ce0  _PieCtrlRegs                          
 1     00000d00  _PieVectTable                         
-0     00084492  _PieVectTableInit                     
+0     000843ce  _PieVectTableInit                     
 0     00082f12  _RAM_ACCESS_VIOLATION_ISR             
 0     00082efe  _RAM_CORRECTABLE_ERROR_ISR            
 0     000829fe  _RTOS_ISR                             
-0     00084491  _RamfuncsLoadEnd                      
-abs   00000309  _RamfuncsLoadSize                     
+0     000843cd  _RamfuncsLoadEnd                      
+abs   00000245  _RamfuncsLoadSize                     
 0     00084188  _RamfuncsLoadStart                    
 0     00008000  _RamfuncsRunStart                     
 0     00083d63  _ResolverISR                          
 1     0005e608  _RomPrefetchRegs                      
 1     0005f540  _RomWaitStateRegs                     
-1     0000c002  _RunMotor                             
-1     0000c014  _Run_Delay                            
+1     0000c00b  _RunMotor                             
+1     0000c00c  _Run_Delay                            
 0     00082cc4  _SCIA_RX_ISR                          
 0     00082cce  _SCIA_TX_ISR                          
 0     00082cd8  _SCIB_RX_ISR                          
@@ -1459,8 +1459,8 @@ abs   00000309  _RamfuncsLoadSize
 0     00082e72  _SD2_ISR                              
 1     0000c064  _SDFM                                 
 0     00083310  _SDFM_disableMFE                      
-1     0000c011  _SHUNT_curHi                          
-1     0000c00c  _SHUNT_curLo                          
+1     0000c003  _SHUNT_curHi                          
+1     0000c004  _SHUNT_curLo                          
 1     0000cd40  _SINE_TABLE                           
 0     00082be8  _SPIA_RX_ISR                          
 0     00082bf2  _SPIA_TX_ISR                          
@@ -1469,7 +1469,7 @@ abs   00000309  _RamfuncsLoadSize
 0     00082e7c  _SPIC_RX_ISR                          
 0     00082e86  _SPIC_TX_ISR                          
 0     0008360c  _STANDBY                              
-1     0000c036  _SVGenMacroCount_LEVEL1               
+1     0000c02e  _SVGenMacroCount_LEVEL1               
 0     00082f1c  _SYS_PLL_SLIP_ISR                     
 1     00007200  _SciaRegs                             
 1     00007210  _ScibRegs                             
@@ -1487,11 +1487,11 @@ abs   00000309  _RamfuncsLoadSize
 0     00083302  _Sdfm_enableMFE                       
 0     0008331e  _Sdfm_enableMIE                       
 0     0008333a  _Sdfm_readFlagRegister                
-1     0000c006  _SerialCommsTimer                     
+1     0000c007  _SerialCommsTimer                     
 0     00083458  _ServiceDog                           
-1     0000c003  _SpeedLoopCount                       
-1     0000c016  _SpeedLoopPrescaler                   
-1     0000c03a  _SpeedRef                             
+1     0000c010  _SpeedLoopCount                       
+1     0000c00d  _SpeedLoopPrescaler                   
+1     0000c03e  _SpeedRef                             
 1     00006100  _SpiaRegs                             
 1     00006110  _SpibRegs                             
 1     00006120  _SpicRegs                             
@@ -1499,12 +1499,12 @@ abs   00000309  _RamfuncsLoadSize
 0     000835bb  _SysIntOsc1Sel                        
 0     000835c5  _SysIntOsc2Sel                        
 0     000835cf  _SysXtalOscSel                        
-1     0000c042  _T                                    
+1     0000c01c  _T                                    
 0     00082ada  _TIMER0_ISR                           
 0     000829e0  _TIMER1_ISR                           
 0     000829ea  _TIMER2_ISR                           
-1     0000c120  _TrigSel                              
-1     0000c005  _TripFlagDMC                          
+1     0000c0f0  _TrigSel                              
+1     0000c017  _TripFlagDMC                          
 0     00082e90  _UPPA_ISR                             
 0     00082e9a  _USBA_ISR                             
 0     00082a80  _USER10_ISR                           
@@ -1521,11 +1521,11 @@ abs   00000309  _RamfuncsLoadSize
 0     00082a76  _USER9_ISR                            
 1     00006200  _UppRegs                              
 0     00082dd2  _VCU_ISR                              
-1     0000c060  _VTimer0                              
-1     0000c058  _VTimer1                              
+1     0000c058  _VTimer0                              
+1     0000c060  _VTimer1                              
 1     0000c05c  _VTimer2                              
-1     0000c04e  _VdTesting                            
-1     0000c03e  _VqTesting                            
+1     0000c022  _VdTesting                            
+1     0000c054  _VqTesting                            
 0     00082ae4  _WAKE_ISR                             
 1     00007000  _WdRegs                               
 0     00082abc  _XINT1_ISR                            
@@ -1559,32 +1559,32 @@ abs   ffffffff  ___pinit__
 0     00084185  __system_pre_init                     
 1     0000c9aa  __unlock                              
 0     000840b5  _abort                                
-1     0000c02c  _adc_cal                              
-1     0000c04a  _alignCnt                             
+1     0000c024  _adc_cal                              
+1     0000c044  _alignCnt                             
 1     0000cd14  _angleErrMax                          
 0     00083bfd  _atan                                 
 0     00083b29  _atan2                                
 0     00083b29  _atan2f                               
 0     00083bfd  _atanf                                
 0     00083cc6  _baseParamsInit                       
-1     0000c100  _biss1                                
+1     0000c0e0  _biss1                                
 1     0000cc00  _bissCRCtableSCD                      
 1     0000cb80  _bissc_data_struct                    
 0     00084023  _bissc_spiRxFifoIsr                   
 0     00083f7d  _c_int00                              
 1     0000c070  _clarke1                              
-1     0000c000  _clearTripFlagDMC                     
-1     0000c00d  _clkPrescale                          
+1     0000c014  _clearTripFlagDMC                     
+1     0000c002  _clkPrescale                          
 0     0008270e  _cmpssConfig                          
-1     0000c02e  _cntr                                 
-1     0000c044  _cntr1                                
+1     0000c056  _cntr                                 
+1     0000c040  _cntr1                                
 1     0000c992  _coeff                                
 1     0000c99c  _coeff16                              
 0     0008406f  _copy_in                              
 1     0000c994  _cosFIR                               
 1     0000c9c1  _crc5_result                          
-1     0000c026  _curLimit                             
-1     0000c150  _current_sensor                       
+1     0000c038  _curLimit                             
+1     0000c162  _current_sensor                       
 0     00084124  _ddcopy                               
 0     00083cf8  _derivParamsCal                       
 1     0000c218  _dlog_4ch1                            
@@ -1593,7 +1593,7 @@ abs   ffffffff  ___pinit__
 0     00084124  _dpcopy                               
 1     0000c240  _ePWM                                 
 1     0000c06a  _eQEP                                 
-1     0000c110  _endat1                               
+1     0000c0c0  _endat1                               
 1     0000ca80  _endat22CRCtable                      
 1     0000ca00  _endat22Data                          
 1     0000cd2a  _errorFc                              
@@ -1604,66 +1604,66 @@ abs   ffffffff  ___pinit__
 0     00083efc  _getCRC16P1_vcu                       
 0     00083f3d  _getCRC16P2_vcu                       
 0     000839af  _init_resolver_Float                  
-1     0000c0a4  _ipark1                               
+1     0000c0b2  _ipark1                               
 1     0000cd12  _losLimit                             
-1     0000c00a  _lsw                                  
+1     0000c012  _lsw                                  
 0     00082001  _main                                 
 0     00084106  _memcpy                               
 1     0000c998  _nextCos16                            
 1     0000c996  _nextSin16                            
 1     0000cd1e  _offsetFc                             
 1     0000cd20  _offsetWfT                            
-1     0000c032  _offset_Rcos                          
-1     0000c038  _offset_Rsin                          
-1     0000c01c  _offset_SDFM1                         
-1     0000c01e  _offset_SDFM2                         
-1     0000c020  _offset_lemV                          
-1     0000c022  _offset_lemW                          
-1     0000c0b2  _park1                                
+1     0000c018  _offset_Rcos                          
+1     0000c026  _offset_Rsin                          
+1     0000c036  _offset_SDFM1                         
+1     0000c02c  _offset_SDFM2                         
+1     0000c01a  _offset_lemV                          
+1     0000c03a  _offset_lemW                          
+1     0000c0a4  _park1                                
 0     00084124  _pdcopy                               
 1     0000c1d8  _pi_id                                
-1     0000c1c0  _pi_iq                                
-1     0000c200  _pi_pos                               
+1     0000c200  _pi_iq                                
+1     0000c1c0  _pi_pos                               
 1     0000cd0a  _piconFz                              
 1     0000c25a  _pid_pos                              
 1     0000c280  _pid_spd                              
-1     0000c0e0  _posArray                             
-1     0000c08c  _posEncElecTheta                      
+1     0000c110  _posArray                             
+1     0000c098  _posEncElecTheta                      
 1     0000c080  _posEncMechTheta                      
 0     00082000  _posEncoderSuite                      
-1     0000c056  _posSlewRate                          
+1     0000c050  _posSlewRate                          
 0     00084124  _ppcopy                               
-1     0000c007  _ptr1                                 
-1     0000c008  _ptrMax                               
+1     0000c00f  _ptr1                                 
+1     0000c00a  _ptrMax                               
 1     0000c180  _qep1                                 
 0     0008296a  _ramper                               
 0     00082985  _ramper_speed                         
-1     0000c0d0  _rc1                                  
-1     0000c0c0  _rc2                                  
+1     0000c130  _rc1                                  
+1     0000c100  _rc2                                  
 0     000829a6  _refPosGen                            
 1     0000cd00  _resMagMax                            
 1     0000cd06  _resMagMin                            
 1     0000cd02  _resetAll                             
-1     0000c0f0  _resolver1                            
+1     0000c0d0  _resolver1                            
 0     00083d21  _resolver_PostProcess                 
 0     00083820  _resolver_algo_Float                  
 1     0000c9c0  _retval1                              
-1     0000c098  _rg1                                  
+1     0000c08c  _rg1                                  
 1     0000cd2c  _rslvrIn                              
 1     0000cd24  _rslvrKp                              
 1     0000cd80  _rslvrOut                             
-1     0000c00e  _sampwin                              
+1     0000c005  _sampwin                              
 1     0000c99e  _sinFIR                               
 1     0000cd22  _sineTable                            
 1     0000cd10  _skipLosCnt                           
 1     0000cd16  _skipLosPrd                           
 1     0000c192  _speed1                               
 0     00083fd3  _spiRxFifoIsr                         
-1     0000c162  _svgen1                               
+1     0000c150  _svgen1                               
 1     0000cd0c  _testAngleMax                         
 1     0000cd0e  _testCntMax                           
 1     0000cd08  _testCntr                             
-1     0000c010  _thresh                               
+1     0000c000  _thresh                               
 1     0000c99a  _tmp                                  
 1     0000c1a6  _volt1                                
 abs   ffffffff  binit                                 
@@ -1680,8 +1680,8 @@ page  address   name
 0     00000ce0  _Cla1SoftIntRegs                      
 0     00008000  _MotorControlISR                      
 0     00008000  _RamfuncsRunStart                     
-0     000082d9  _InitFlash                            
-0     00008305  _F28x_usDelay                         
+0     00008215  _InitFlash                            
+0     00008241  _F28x_usDelay                         
 0     00080000  code_start                            
 0     00080002  ___cinit__                            
 0     00080002  cinit                                 
@@ -1948,8 +1948,8 @@ page  address   name
 0     00084188  _RamfuncsLoadStart                    
 0     00084188  ___etext__                            
 0     00084188  etext                                 
-0     00084491  _RamfuncsLoadEnd                      
-0     00084492  _PieVectTableInit                     
+0     000843cd  _RamfuncsLoadEnd                      
+0     000843ce  _PieVectTableInit                     
 1     00000b00  _AdcaResultRegs                       
 1     00000b20  _AdcbResultRegs                       
 1     00000b40  _AdccResultRegs                       
@@ -2039,90 +2039,90 @@ page  address   name
 1     00007f00  _GpioDataRegs                         
 1     00009800  __stack                               
 1     00009b00  __STACK_END                           
-1     0000c000  _clearTripFlagDMC                     
-1     0000c001  _OffsetCalCounter                     
-1     0000c002  _RunMotor                             
-1     0000c003  _SpeedLoopCount                       
-1     0000c004  _HLT                                  
-1     0000c005  _TripFlagDMC                          
-1     0000c006  _SerialCommsTimer                     
-1     0000c007  _ptr1                                 
-1     0000c008  _ptrMax                               
+1     0000c000  _thresh                               
+1     0000c001  _LEM_curHi                            
+1     0000c002  _clkPrescale                          
+1     0000c003  _SHUNT_curHi                          
+1     0000c004  _SHUNT_curLo                          
+1     0000c005  _sampwin                              
+1     0000c006  _LEM_curLo                            
+1     0000c007  _SerialCommsTimer                     
+1     0000c008  _HLT                                  
 1     0000c009  _LLT                                  
-1     0000c00a  _lsw                                  
-1     0000c00b  _EnableFlag                           
-1     0000c00c  _SHUNT_curLo                          
-1     0000c00d  _clkPrescale                          
-1     0000c00e  _sampwin                              
-1     0000c00f  _LEM_curHi                            
-1     0000c010  _thresh                               
-1     0000c011  _SHUNT_curHi                          
-1     0000c012  _LEM_curLo                            
-1     0000c013  _LedCnt1                              
-1     0000c014  _Run_Delay                            
-1     0000c015  _BackTicker                           
-1     0000c016  _SpeedLoopPrescaler                   
-1     0000c017  _EnableResolverISR                    
-1     0000c018  _A_Task_Ptr                           
-1     0000c01a  _Alpha_State_Ptr                      
-1     0000c01c  _offset_SDFM1                         
-1     0000c01e  _offset_SDFM2                         
-1     0000c020  _offset_lemV                          
-1     0000c022  _offset_lemW                          
-1     0000c024  _IsrTicker                            
-1     0000c026  _curLimit                             
-1     0000c028  _K1                                   
-1     0000c02a  _C_Task_Ptr                           
-1     0000c02c  _adc_cal                              
-1     0000c02e  _cntr                                 
-1     0000c030  _B_Task_Ptr                           
-1     0000c032  _offset_Rcos                          
-1     0000c034  _K2                                   
-1     0000c036  _SVGenMacroCount_LEVEL1               
-1     0000c038  _offset_Rsin                          
-1     0000c03a  _SpeedRef                             
-1     0000c03c  _IqRef                                
-1     0000c03e  _VqTesting                            
-1     0000c040  _IdRef                                
-1     0000c042  _T                                    
-1     0000c044  _cntr1                                
+1     0000c00a  _ptrMax                               
+1     0000c00b  _RunMotor                             
+1     0000c00c  _Run_Delay                            
+1     0000c00d  _SpeedLoopPrescaler                   
+1     0000c00e  _LedCnt1                              
+1     0000c00f  _ptr1                                 
+1     0000c010  _SpeedLoopCount                       
+1     0000c011  _BackTicker                           
+1     0000c012  _lsw                                  
+1     0000c013  _OffsetCalCounter                     
+1     0000c014  _clearTripFlagDMC                     
+1     0000c015  _EnableResolverISR                    
+1     0000c016  _EnableFlag                           
+1     0000c017  _TripFlagDMC                          
+1     0000c018  _offset_Rcos                          
+1     0000c01a  _offset_lemV                          
+1     0000c01c  _T                                    
+1     0000c01e  _A_Task_Ptr                           
+1     0000c020  _B_Task_Ptr                           
+1     0000c022  _VdTesting                            
+1     0000c024  _adc_cal                              
+1     0000c026  _offset_Rsin                          
+1     0000c028  _Alpha_State_Ptr                      
+1     0000c02a  _K2                                   
+1     0000c02c  _offset_SDFM2                         
+1     0000c02e  _SVGenMacroCount_LEVEL1               
+1     0000c030  _IsrTicker                            
+1     0000c032  _K1                                   
+1     0000c034  _C_Task_Ptr                           
+1     0000c036  _offset_SDFM1                         
+1     0000c038  _curLimit                             
+1     0000c03a  _offset_lemW                          
+1     0000c03c  _IdRef_start                          
+1     0000c03e  _SpeedRef                             
+1     0000c040  _cntr1                                
+1     0000c042  _IdRef                                
+1     0000c044  _alignCnt                             
 1     0000c046  _IdRef_run                            
-1     0000c048  _IdRef_start                          
-1     0000c04a  _alignCnt                             
-1     0000c04c  _DlogCh4                              
-1     0000c04e  _VdTesting                            
-1     0000c050  _DlogCh3                              
-1     0000c052  _DlogCh1                              
-1     0000c054  _DlogCh2                              
-1     0000c056  _posSlewRate                          
-1     0000c058  _VTimer1                              
+1     0000c048  _IqRef                                
+1     0000c04a  _DlogCh2                              
+1     0000c04c  _DlogCh1                              
+1     0000c04e  _DlogCh4                              
+1     0000c050  _posSlewRate                          
+1     0000c052  _DlogCh3                              
+1     0000c054  _VqTesting                            
+1     0000c056  _cntr                                 
+1     0000c058  _VTimer0                              
 1     0000c05c  _VTimer2                              
-1     0000c060  _VTimer0                              
+1     0000c060  _VTimer1                              
 1     0000c064  _SDFM                                 
 1     0000c06a  _eQEP                                 
 1     0000c070  _clarke1                              
 1     0000c080  _posEncMechTheta                      
-1     0000c08c  _posEncElecTheta                      
-1     0000c098  _rg1                                  
-1     0000c0a4  _ipark1                               
-1     0000c0b2  _park1                                
-1     0000c0c0  _rc2                                  
-1     0000c0d0  _rc1                                  
-1     0000c0e0  _posArray                             
-1     0000c0f0  _resolver1                            
-1     0000c100  _biss1                                
-1     0000c110  _endat1                               
-1     0000c120  _TrigSel                              
-1     0000c130  _ACQPS                                
-1     0000c140  _ChSel                                
-1     0000c150  _current_sensor                       
-1     0000c162  _svgen1                               
+1     0000c08c  _rg1                                  
+1     0000c098  _posEncElecTheta                      
+1     0000c0a4  _park1                                
+1     0000c0b2  _ipark1                               
+1     0000c0c0  _endat1                               
+1     0000c0d0  _resolver1                            
+1     0000c0e0  _biss1                                
+1     0000c0f0  _TrigSel                              
+1     0000c100  _rc2                                  
+1     0000c110  _posArray                             
+1     0000c120  _ChSel                                
+1     0000c130  _rc1                                  
+1     0000c140  _ACQPS                                
+1     0000c150  _svgen1                               
+1     0000c162  _current_sensor                       
 1     0000c180  _qep1                                 
 1     0000c192  _speed1                               
 1     0000c1a6  _volt1                                
-1     0000c1c0  _pi_iq                                
+1     0000c1c0  _pi_pos                               
 1     0000c1d8  _pi_id                                
-1     0000c200  _pi_pos                               
+1     0000c200  _pi_iq                                
 1     0000c218  _dlog_4ch1                            
 1     0000c240  _ePWM                                 
 1     0000c25a  _pid_pos                              
@@ -2199,8 +2199,8 @@ page  address   name
 1     0005fb00  _Flash0EccRegs                        
 1     00078000  _DcsmZ1Otp                            
 1     00078200  _DcsmZ2Otp                            
+abs   00000245  _RamfuncsLoadSize                     
 abs   00000300  __STACK_SIZE                          
-abs   00000309  _RamfuncsLoadSize                     
 abs   ffffffff  ___TI_pprof_out_hndl                  
 abs   ffffffff  ___TI_prof_data_size                  
 abs   ffffffff  ___TI_prof_data_start                 

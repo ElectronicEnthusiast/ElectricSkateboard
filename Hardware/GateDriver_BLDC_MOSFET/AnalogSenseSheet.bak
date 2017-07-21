@@ -761,7 +761,7 @@ $EndComp
 Text Notes 5825 8175 1    39   ~ 0
 Rm == 22ohms since LEM \ndatasheet recommends \n20-25ohms at max temp \nto 100Amp sensing current\nThis also converts 15Vinput to 0.5V
 $Bitmap
-Pos 3075 7675
+Pos 3125 7525
 Scale 3.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 6D 00 00 00 E4 08 02 00 00 00 DC AB E2 
